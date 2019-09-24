@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.17)  23 SEP 2019 11:19
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.17)  24 SEP 2019 15:42
+>>>>>>> aeaa6b69b4718a14246a056d00f891503db18c8e
 entering extended mode
 **./HSR_SRS_main.tex
 (HSR_SRS_main.tex
@@ -1826,8 +1830,23 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
+<<<<<<< HEAD
 ("C:\Users\crenda\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry
 .sty"
+=======
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\pdflsc
+ape.sty"
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\lscape
+.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geomet
+ry.sty"
+>>>>>>> aeaa6b69b4718a14246a056d00f891503db18c8e
 Package: geometry 2018/04/16 v5.8 Page Geometry
 \Gm@cnth=\count424
 \Gm@cntv=\count425
@@ -1948,6 +1967,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
+<<<<<<< HEAD
 
 ("C:\Users\crenda\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\pdflscap
 e.sty"
@@ -1959,6 +1979,9 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ) ABD: EveryShipout initializing macros
+=======
+ABD: EveryShipout initializing macros
+>>>>>>> aeaa6b69b4718a14246a056d00f891503db18c8e
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -2093,8 +2116,7 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 6.
 Package tocbasic Info: Using my definition of `\numberline' on input line 7.
 Package tocbasic Info: Using my definition of `\numberline' on input line 8.
 Package tocbasic Info: Using my definition of `\numberline' on input line 9.
-Package tocbasic Info: Using my definition of `\numberline' on input line 24.
-Package tocbasic Info: Using my definition of `\numberline' on input line 25.
+Package tocbasic Info: Using my definition of `\numberline' on input line 10.
 )
 \tf@toc=\write8
 \openout8 = `HSR_SRS_main.toc'.
@@ -2103,21 +2125,22 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 25.
 
 
 ] (content/intro/einleitung.tex)
-(content/auftrag/auftrag.tex) (content/funcReqs/funcReqs.tex [3] [4])
-(content/otherReqs/otherReqs.tex [5]) [6] (HSR_SRS_main.bbl)
+(content/auftrag/auftrag.tex) (content/funcReqs/funcReqs.tex [3])
+(content/zeitplan/zeitplan.tex [4] [5
 
+]) 
 AED: lastpage setting LastPage
-[7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
- (HSR_SRS_main.aux (content/title/titel.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 83.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 83.
+(HSR_SRS_main.aux (content/title/titel.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 83.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 83.
 Package rerunfilecheck Info: File `HSR_SRS_main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 83.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  43691 strings out of 492895
  860113 string characters out of 3123268
  1108783 words of memory out of 3000000
@@ -2144,8 +2167,31 @@ enda\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <
 C:\Users\crenda\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecr
 m2488.pk>
 Output written on HSR_SRS_main.pdf (7 pages, 163414 bytes).
+=======
+ 43658 strings out of 492895
+ 861420 string characters out of 3122334
+ 1107288 words of memory out of 3000000
+ 46791 multiletter control sequences out of 15000+200000
+ 549074 words of font info for 65 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 59i,20n,100p,9108b,879s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\mtischha\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi6
+00\ecsx1200.pk> <C:\Users\mtischha\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jkn
+appen/ec/dpi600\tcrm1095.pk> <C:\Users\mtischha\AppData\Local\MiKTeX\2.9\fonts/
+pk/ljfour/jknappen/ec/dpi600\tcrm0900.pk> <C:\Users\mtischha\AppData\Local\MiKT
+eX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1095.pk> <C:\Users\mtischha\AppDa
+ta\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\m
+tischha\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk
+> <C:\Users\mtischha\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecrm1095.pk> <C:\Users\mtischha\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jkna
+ppen/ec/dpi600\ecbx1095.pk> <C:\Users\mtischha\AppData\Local\MiKTeX\2.9\fonts/p
+k/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\mtischha\AppData\Local\MiKTe
+X\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\mtischha\AppDat
+a\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk>
+Output written on HSR_SRS_main.pdf (5 pages, 117687 bytes).
+>>>>>>> aeaa6b69b4718a14246a056d00f891503db18c8e
 PDF statistics:
- 541 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 379 PDF objects out of 1000 (max. 8388607)
+ 15 named destinations out of 1000 (max. 500000)
+ 88 words of extra memory for PDF output out of 10000 (max. 10000000)
 
