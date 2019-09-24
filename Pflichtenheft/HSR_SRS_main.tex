@@ -29,7 +29,7 @@
 \cfoot{}
 \setkomafont{pagenumber}{\normalfont}
 \ofoot{\footnotesize\normalfont\pagemark\ von \pageref{LastPage}}
-\ifoot{\footnotesize\normalfont\copyright\ HSR Hochschule für Technik Rapperswil 2017, Prof. R. Bonderer}
+\ifoot{\footnotesize\normalfont\copyright\ HSR Hochschule für Technik Rapperswil 2019}
 	
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 % Inhaltsverzeichnis
@@ -59,8 +59,8 @@
 	\input{content/intro/einleitung}
 	\input{content/auftrag/auftrag}
 	\input{content/funcReqs/funcReqs}
-	\input{content/otherReqs/otherReqs}
-	
+	%\input{content/otherReqs/otherReqs}
+	\input{content/zeitplan/zeitplan}
 	
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 % ANHANG
@@ -70,15 +70,14 @@
 	%Nummerierung wieder auf roemisch umschalten
 	\newpage
 	
-	\section{Referenzen}
+	%\section{Referenzen}
 	\label{anx:ref}
 	% Do not repeat items covered in other documents or in a global project definitions and acronyms document
-	\renewcommand{\refname}{} %kein Titel vor Literaturverzeichnis
-	\vspace{-1.2cm}
-	\bibliographystyle{plain} %Literatur durchnumerieren
-	\bibliography{lit}
-	\nocite{*} %Alle Literatur aufführen
+	%\renewcommand{\refname}{} %kein Titel vor Literaturverzeichnis
+	%\vspace{-1.2cm}
+	%\bibliographystyle{plain} %Literatur durchnumerieren
+	%\bibliography{lit}
+	%\nocite{*} %Alle Literatur aufführen
 	
-\note{Do not repeat items covered in other documents or in a global project definitions and acronyms document}
 	
 \end{document}
