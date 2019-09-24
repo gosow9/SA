@@ -1,67 +1,40 @@
-\section{Funktionale Anforderungen}
+\section{Produktanforderungen}
 \label{sec:funcReqs}
-\note{Die funktionalen Anforderungen sind die wichtigsten Teile zur Beschreibung des Systems. Für die Beschreibung der funktionalen Anforderungen bieten sich Use Cases an, nicht nur für Software, sondern auch für das ganze System. Jeder Use Case beschreibt dabei eine Funktion. Im folgenden Raster ist vorgesehen, dass bei jedem Use Case auch nicht funktionale Anforderungen wie Antwortzeiten, etc. direkt beim Use Case stehen, falls diese zu dieser Funktion gehören.
+Das Empfängermodul ist autark und kann auf einem Display Stundenpläne anzeigen.
+Diese werden über eine drahtlose, bidirektionale Schnittstelle gesendet.
+Der Sender wird mit einem Computer bedient.
+Besteht das System aus mehreren Empfängern, so kann das Sendemodul diese unabhängig voneinander selektieren.
 
-Bei der Use Case Definition ist wichtig, dass die Granularität nicht zu fein gewählt wird. Allfällige Ausnahmefälle einer Funktion sollen beispielsweise in der Beschreibung des entsprechenden Use Cases geschehen und nicht allenfalls in einem "Unter-Use Case". 
+\subsection{Hardware}
+\textbf{Sender}
+	\begin{itemize}
+		\item[-] Schnittelle zum Computer
+		\item[-] Sendemodul
+	\end{itemize}
 
-Statt mittels Use Cases kann dieses Kapitel auch mit \textbf{Systemfunktion 1}, \textbf{Systemfunktion 2}, etc. gegliedert werden.}
+\textbf{Empfänger}
+	\begin{itemize}
+		\item[-] Mikrocontroller oder Vergleichbares (Prozessor, Speicher, usw.)
+		\item[-] E-Paper-Display
+		\item[-] Energy-Harvesting-Einheit
+		\item[-] Energiespeicher
+		\item[-] Empfangsmodul
+	\end{itemize}
 
+\subsection{Software}
+\textbf{Sender}
+\begin{itemize}
+	\item[-] Treiber für Sendemodul
+\end{itemize}
 
-\subsection{Überblick über die Systemfunktionen}
-\note{Hier kommt ein Use Case Diagramm hinein, das alle Funktionen zeigt. Allenfalls genügt ein Link zum Abschnitt Systemübersicht.}
+\textbf{Empfänger}
+\begin{itemize}
+	\item[-] Firmware für Mikrocontroller
+\end{itemize}
 
+\subsection{Varianten/Optionen}
+Ist der Prototyp funktionsfähig, soll zu einem späteren Zeitpunkt auch möglich sein, verschiedene Bildschirmgrössen zu verwenden, wobei sich auch Anzeige nicht nur auf Raumbelegungspläne beschränkt.
+Deshalb soll das System und insbesondere die Software so flexibel wie möglich entwickelt werden.
 
-\subsection{Actors}
-\note{Kurzbeschreibung der Actors.}
-
-
-\subsection{Kurzbeschreibung der Use Cases}
-\note{Jeder einzelne Use Case soll kurz beschrieben werden.}
-
-
-\subsection{<Use Case Name>}
-\note{Ist für jeden Use Case zu beschreiben. Die folgenden Unterkapitel sollen für jeden einzelnen Use Case vollständig vorhanden sein. Falls bei einem Abschnitt nichts zu schreiben ist, dann soll dies entsprechend vermerkt werden, z.B. falls ein Use Case keine Vorbedingungen braucht oder keine nicht-funktionalen Anforderungen vorhanden sind, kann bei diesem Abschnitt einfach das Wort "keine" stehen.}
-
-
-\subsubsection{Vorbedingungen}
-\note{Zustand des Systems bevor der Use Case eintritt, z.B. kann hier stehen, dass ein System erfolgreich initialisiert sein muss, damit diese Funktion ausgeführt werden kann.}
-
-\subsubsection{Nachbedingungen}
-\note{Zustand des Systems nachdem der Use Case durchlaufen ist, z.B. kann hier bei einem Kalibrations-Use Case stehen, dass das System kalibriert oder allenfalls in einem Fehlerzustand ist.}
-
-\subsubsection{Nicht-funktionale Anforderungen}
-\note{Zusicherungen, die für Design und Realisierung wichtig sind, wie z.B. Antwortzeit, Häufigkeit, Priorität usw.}
-
-\subsubsection{Hauptszenario}
-\note{Beschreibung des Use Cases, ggf. gegliedert in Einzelpunkte. Beschrieben wird der Normalfall. Variationen werden mit Unterszenario-Nummer erwähnt (\textit{\textbf{[S-1]}} , \textit{\textbf{[S-2]}}, usw.) und separat als Unterszenarien beschrieben. Fehlerfälle werden mit Fehlerszenario-Nummern angegeben (\textit{\textbf{[E-1]}}, \textit{\textbf{[E-2]}}, usw.) und separat als Fehlerszenarien beschrieben.
-
-Beispiele:
-Falls gewünscht können zusätzliche Informationen erfasst werden \textit{\textbf{[S-1]}}.
-
-Beim Einlesen der Daten können die Fehler \textit{\textbf{[E-1]}}, \textit{\textbf{[E-2]}} oder \textit{\textbf{[E-3]}} auftreten.}
-
-\subsubsection{Unterszenarien}
-\note{\textit{\textbf{[S-1]}} Zusatzinformationen erfassen
-
-\textit{\textbf{[S-2]}} ...}
-
-\paragraph{\textit{\textbf{[S-1]}} Zusatzinformationen erfassen}
-\paragraph{\textit{\textbf{[S-2]}} ...}
-
-\subsubsection{Fehlerszenarien}
-\note{\textit{\textbf{[E-1]}} Daten nicht verfügbar
-
-\textit{\textbf{[E-2]}} Falsches Datenformat
-
-\textit{\textbf{[E-3]}} ...}
-
-\paragraph{\textit{\textbf{[E-1]}} Daten nicht verfügbar}
-\paragraph{\textit{\textbf{[E-1]}} Falsches Datenformat}
-\paragraph{\textit{\textbf{[E-2]}} ...}
-
-\subsubsection{Regeln}
-\note{Gültigkeits- und Validierungsregeln, Berechnungsformeln usw.}
-
-\subsubsection{Anmerkungen}
-
-\subsubsection{Beispiele}
+\subsection{Dokumentation}
+Die Dokumentation beinhaltet sämtliche Überlegungen, Abklärungen, Berechnungen und Untersuchungen, welche im Laufe der Semesterarbeit gemacht wurden.
