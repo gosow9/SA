@@ -3,7 +3,7 @@
 # Autoren:            
 Cédric Renda, Manuel Tischhauser
 # Verantwortlicher:   
-Heinz Matthias
+Heinz Mathis
 
 # Projekt beschrieb
 
