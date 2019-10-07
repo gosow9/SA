@@ -4,6 +4,7 @@
 Cédric Renda, Manuel Tischhauser
 # Verantwortlicher:   
 Heinz Mathis
+Selina Malacarne
 
 # Projekt beschrieb
 
