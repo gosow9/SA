@@ -8,12 +8,25 @@
 		<item value="1058" key="dialogHeight"/>
 		<item value="1161" key="dialogWidth"/>
 		<list key="textEntries">
+<<<<<<< HEAD
 		</list>
 		<list key="orderedElements">
 		</list>
 		<list key="orderedProviders">
 		</list>
 		<list key="textArray">
+=======
+			<item value="1"/>
+		</list>
+		<list key="orderedElements">
+			<item value="search.in.help"/>
+		</list>
+		<list key="orderedProviders">
+			<item value="org.eclipse.ui.actions"/>
+		</list>
+		<list key="textArray">
+			<item value="project template"/>
+>>>>>>> manuel
 		</list>
 	</section>
 	<section name="NewWizardAction">

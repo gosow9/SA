@@ -46,6 +46,10 @@ int main(void)
         GPIO_PIN3,
         GPIO_PRIMARY_MODULE_FUNCTION
     );
+<<<<<<< HEAD
+=======
+
+>>>>>>> manuel
     //P2.3 to Busy_Pin
     GPIO_setAsPeripheralModuleFunctionInputPin(
         GPIO_PORT_P2,
@@ -53,6 +57,11 @@ int main(void)
         GPIO_PRIMARY_MODULE_FUNCTION
     );
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> manuel
     //SPI initialisieren
     EUSCI_B_SPI_initMasterParam param = {0};
     param.selectClockSource = EUSCI_B_SPI_CLOCKSOURCE_SMCLK;

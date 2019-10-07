@@ -16,7 +16,11 @@
 	<section name="com.ti.ccstudio.project.ui.internal.properties.DynamicPropertiesPageManager">
 	</section>
 	<section name="com.ti.ccstudio.project.ui.internal.wizards.importexport.ProjectImportPage">
+<<<<<<< HEAD
 		<item value="\\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\waveshare-repo\STM32" key="CCS.BROWSE_DIRS_FILTER"/>
+=======
+		<item value="\\hsr.ch\root\alg\skripte\Elektrotechnik\Fachbereich\Embedded_Systems_1\EmbSys1\Praktikum\P03_ClockSystem_Timer\Aufgabe\MSP430FR6989_CLOCKSYSTEM_TIMER" key="CCS.BROWSE_DIRS_FILTER"/>
+>>>>>>> manuel
 		<item value="false" key="CCS.IMPORT_FROM_ARCHIVE"/>
 		<item value="true" key="CCS.COPY_INTO_WORKSPACE"/>
 		<item value="false" key="CCS.IMPORT_REFERENCED_PROJECTS"/>
