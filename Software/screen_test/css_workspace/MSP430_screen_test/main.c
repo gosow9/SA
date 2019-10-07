@@ -1,5 +1,5 @@
 #include "driverlib.h"
-
+#include "EPD_Test.h"
 
 /**
  * main.c
@@ -46,10 +46,7 @@ int main(void)
         GPIO_PIN3,
         GPIO_PRIMARY_MODULE_FUNCTION
     );
-<<<<<<< HEAD
-=======
 
->>>>>>> manuel
     //P2.3 to Busy_Pin
     GPIO_setAsPeripheralModuleFunctionInputPin(
         GPIO_PORT_P2,
@@ -57,11 +54,6 @@ int main(void)
         GPIO_PRIMARY_MODULE_FUNCTION
     );
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> manuel
     //SPI initialisieren
     EUSCI_B_SPI_initMasterParam param = {0};
     param.selectClockSource = EUSCI_B_SPI_CLOCKSOURCE_SMCLK;
@@ -75,13 +67,16 @@ int main(void)
 
     EUSCI_B_SPI_enable(EUSCI_B0_BASE);
 
-
-
     /*
     * Disable the GPIO power-on default high-impedance mode to activate
     * previously configured port settings
     */
     PMM_unlockLPM5();
 	
+    //EPD_7in5_test();
+
+
+    while(1)
+
 	return 0;
 }
