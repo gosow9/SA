@@ -14,11 +14,7 @@
  <void id="ArrayList0" method="get">
   <object idref="SolutionManager$PersistState0"/>
   <void method="add">
-<<<<<<< HEAD
-   <string>\\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\dvt\AnalysisSolutionsTemp\AnalysisSolution1570438820568\null</string>
-=======
-   <string>\\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\dvt\AnalysisSolutionsTemp\AnalysisSolution1570176793806\null</string>
->>>>>>> manuel
+   <string>\\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\dvt\AnalysisSolutionsTemp\AnalysisSolution1570459038437\null</string>
   </void>
   <void method="add">
    <string>C:\ti\ccs910\ccs\ccs_base\dvt_4.1.0.201905081124\CodeGen\solutions\CodeGenCoverage</string>

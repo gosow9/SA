@@ -1,34 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<section name="WorkbenchPreferenceDialogSettings">
-		<item value="626" key="DIALOG_X_ORIGIN"/>
-		<item value="218" key="DIALOG_Y_ORIGIN"/>
-	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="1058" key="dialogHeight"/>
-		<item value="1161" key="dialogWidth"/>
+		<item value="-1" key="dialogHeight"/>
+		<item value="-1" key="dialogWidth"/>
 		<list key="textEntries">
-<<<<<<< HEAD
 		</list>
 		<list key="orderedElements">
 		</list>
 		<list key="orderedProviders">
 		</list>
 		<list key="textArray">
-=======
-			<item value="1"/>
 		</list>
-		<list key="orderedElements">
-			<item value="search.in.help"/>
-		</list>
-		<list key="orderedProviders">
-			<item value="org.eclipse.ui.actions"/>
-		</list>
-		<list key="textArray">
-			<item value="project template"/>
->>>>>>> manuel
-		</list>
-	</section>
-	<section name="NewWizardAction">
 	</section>
 </section>
