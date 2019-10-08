@@ -1,0 +1,32 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../EPD/DEV_Config.c \
+../EPD/GUI_Paint.c 
+
+C_DEPS += \
+./EPD/DEV_Config.d \
+./EPD/GUI_Paint.d 
+
+OBJS += \
+./EPD/DEV_Config.obj \
+./EPD/GUI_Paint.obj 
+
+OBJS__QUOTED += \
+"EPD\DEV_Config.obj" \
+"EPD\GUI_Paint.obj" 
+
+C_DEPS__QUOTED += \
+"EPD\DEV_Config.d" \
+"EPD\GUI_Paint.d" 
+
+C_SRCS__QUOTED += \
+"../EPD/DEV_Config.c" \
+"../EPD/GUI_Paint.c" 
+
+

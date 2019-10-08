@@ -3,67 +3,179 @@
 
 "C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
  
-Building file: "../EPD/GUI_Paint.c"
+Building file: "../EPD/GUI/GUI_Paint.c"
 Invoking: MSP430 Compiler
-"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="EPD/GUI_Paint.d_raw" --obj_directory="EPD"  "../EPD/GUI_Paint.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/ti/ccs910/ccs/ccs_base/EPD/Config" --include_path="C:/ti/ccs910/ccs/ccs_base/EPD/Fonts" --include_path="C:/ti/ccs910/ccs/ccs_base/EPD/GUI" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="EPD/GUI/GUI_Paint.d_raw" --obj_directory="EPD/GUI"  "../EPD/GUI/GUI_Paint.c"
  
 >> Compilation failure
-EPD/subdir_rules.mk:9: recipe for target 'EPD/GUI_Paint.obj' failed
+EPD/GUI/subdir_rules.mk:9: recipe for target 'EPD/GUI/GUI_Paint.obj' failed
 \\SVM-C113.HSR.CH\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\MSP430_screen_test\Debug
 CMD.EXE was started with the above path as the current directory.
 UNC paths are not supported.  Defaulting to Windows directory.
 \\SVM-C113.HSR.CH\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\MSP430_screen_test\Debug
 CMD.EXE was started with the above path as the current directory.
 UNC paths are not supported.  Defaulting to Windows directory.
-"..\EPD\DEV_Config.h", line 51: fatal error #1965: cannot open source file "main.h"
-1 catastrophic error detected in the compilation of "../EPD/GUI_Paint.c".
-Compilation terminated.
-gmake: *** [EPD/GUI_Paint.obj] Error 1
-Building file: "../main.c"
+"../EPD/GUI/GUI_Paint.c", line 89: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../EPD/GUI/GUI_Paint.c", line 90: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../EPD/GUI/GUI_Paint.c", line 91: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../EPD/GUI/GUI_Paint.c", line 92: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../EPD/GUI/GUI_Paint.c", line 91: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 96: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../EPD/GUI/GUI_Paint.c", line 97: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../EPD/GUI/GUI_Paint.c", line 101: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../EPD/GUI/GUI_Paint.c", line 104: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../EPD/GUI/GUI_Paint.c", line 126: warning #225-D: function "printf" declared implicitly
+"../EPD/GUI/GUI_Paint.c", line 129: warning #225-D: function "printf" declared implicitly
+"../EPD/GUI/GUI_Paint.c", line 126: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 129: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 142: warning #225-D: function "printf" declared implicitly
+"../EPD/GUI/GUI_Paint.c", line 145: warning #225-D: function "printf" declared implicitly
+"../EPD/GUI/GUI_Paint.c", line 142: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 145: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 160: warning #225-D: function "printf" declared implicitly
+"../EPD/GUI/GUI_Paint.c", line 204: warning #225-D: function "printf" declared implicitly
+"../EPD/GUI/GUI_Paint.c", line 160: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 204: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 208: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 211: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 213: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 223: error #256: type name is not allowed
+"../EPD/GUI/GUI_Paint.c", line 223: error #66: expected a ";"
+"../EPD/GUI/GUI_Paint.c", line 223: error #20: identifier "Y" is undefined
+"../EPD/GUI/GUI_Paint.c", line 224: error #256: type name is not allowed
+"../EPD/GUI/GUI_Paint.c", line 224: error #66: expected a ";"
+"../EPD/GUI/GUI_Paint.c", line 224: error #20: identifier "X" is undefined
+"../EPD/GUI/GUI_Paint.c", line 243: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 244: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 263: warning #225-D: function "printf" declared implicitly
+"../EPD/GUI/GUI_Paint.c", line 271: warning #188-D: pointless comparison of unsigned integer with zero
+"../EPD/GUI/GUI_Paint.c", line 271: warning #188-D: pointless comparison of unsigned integer with zero
+"../EPD/GUI/GUI_Paint.c", line 263: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 269: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 270: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 278: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 279: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 302: warning #225-D: function "printf" declared implicitly
+"../EPD/GUI/GUI_Paint.c", line 302: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 322: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 360: warning #225-D: function "printf" declared implicitly
+"../EPD/GUI/GUI_Paint.c", line 360: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 366: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 366: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 392: warning #225-D: function "printf" declared implicitly
+"../EPD/GUI/GUI_Paint.c", line 392: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 407: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 463: warning #225-D: function "printf" declared implicitly
+"../EPD/GUI/GUI_Paint.c", line 463: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 467: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 470: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 471: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 475: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 479: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 488: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 491: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 513: warning #225-D: function "printf" declared implicitly
+"../EPD/GUI/GUI_Paint.c", line 513: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 561: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 562: remark #2553-D: (ULP 14.1) Array index (involving "Num") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 563: remark #2553-D: (ULP 14.1) Array index (involving "Num") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 565: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 566: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 568: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 573: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 581: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 585: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 597: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 598: remark #2553-D: (ULP 14.1) Array index (involving "Num") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 598: remark #2553-D: (ULP 14.1) Array index (involving "Num") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 599: remark #2553-D: (ULP 14.1) Array index (involving "Num") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 601: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 602: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 604: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 609: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 617: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 621: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 561: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 562: remark #2553-D: (ULP 14.1) Array index (involving "Num") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 563: remark #2553-D: (ULP 14.1) Array index (involving "Num") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 565: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 566: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 597: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 598: remark #2553-D: (ULP 14.1) Array index (involving "Num") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 598: remark #2553-D: (ULP 14.1) Array index (involving "Num") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 599: remark #2553-D: (ULP 14.1) Array index (involving "Num") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 601: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 602: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 561: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 562: remark #2553-D: (ULP 14.1) Array index (involving "Num") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 563: remark #2553-D: (ULP 14.1) Array index (involving "Num") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 565: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 566: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 562: remark #2553-D: (ULP 14.1) Array index (involving "Num") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 563: remark #2553-D: (ULP 14.1) Array index (involving "Num") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 565: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 566: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 563: remark #2553-D: (ULP 14.1) Array index (involving "Num") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 565: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 566: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 597: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 598: remark #2553-D: (ULP 14.1) Array index (involving "Num") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 598: remark #2553-D: (ULP 14.1) Array index (involving "Num") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 599: remark #2553-D: (ULP 14.1) Array index (involving "Num") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 601: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 602: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 598: remark #2553-D: (ULP 14.1) Array index (involving "Num") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 598: remark #2553-D: (ULP 14.1) Array index (involving "Num") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 599: remark #2553-D: (ULP 14.1) Array index (involving "Num") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 601: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 602: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 599: remark #2553-D: (ULP 14.1) Array index (involving "Num") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 601: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 602: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 656: warning #225-D: function "printf" declared implicitly
+"../EPD/GUI/GUI_Paint.c", line 656: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 662: remark #2553-D: (ULP 14.1) Array index (involving "Num_Bit") of type "int16_t". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 662: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 664: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 669: remark #2553-D: (ULP 14.1) Array index (involving "Str_Bit") of type "int16_t". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 669: remark #2553-D: (ULP 14.1) Array index (involving "Num_Bit") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 696: remark #2553-D: (ULP 14.1) Array index (involving "pTime") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 696: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 697: remark #2553-D: (ULP 14.1) Array index (involving "pTime") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 697: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 698: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 699: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 699: remark #2553-D: (ULP 14.1) Array index (involving "pTime") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 700: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 700: remark #2553-D: (ULP 14.1) Array index (involving "pTime") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 701: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 702: remark #2553-D: (ULP 14.1) Array index (involving "pTime") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 702: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 703: remark #2553-D: (ULP 14.1) Array index (involving "pTime") of type "int". Recommend using "unsigned int"
+"../EPD/GUI/GUI_Paint.c", line 703: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/GUI/GUI_Paint.c", line 719: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../EPD/GUI/GUI_Paint.c", line 720: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+6 errors detected in the compilation of "../EPD/GUI/GUI_Paint.c".
+gmake: *** [EPD/GUI/GUI_Paint.obj] Error 1
+Building file: "../EPD/Config/DEV_Config.c"
 Invoking: MSP430 Compiler
-"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/ti/ccs910/ccs/ccs_base/EPD/Config" --include_path="C:/ti/ccs910/ccs/ccs_base/EPD/Fonts" --include_path="C:/ti/ccs910/ccs/ccs_base/EPD/GUI" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="EPD/Config/DEV_Config.d_raw" --obj_directory="EPD/Config"  "../EPD/Config/DEV_Config.c"
  
 >> Compilation failure
-subdir_rules.mk:9: recipe for target 'main.obj' failed
+EPD/Config/subdir_rules.mk:9: recipe for target 'EPD/Config/DEV_Config.obj' failed
 \\SVM-C113.HSR.CH\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\MSP430_screen_test\Debug
 CMD.EXE was started with the above path as the current directory.
 UNC paths are not supported.  Defaulting to Windows directory.
 \\SVM-C113.HSR.CH\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\MSP430_screen_test\Debug
 CMD.EXE was started with the above path as the current directory.
 UNC paths are not supported.  Defaulting to Windows directory.
-"../main.c", line 2: fatal error #1965: cannot open source file "EPD_Test.h"
-1 catastrophic error detected in the compilation of "../main.c".
+"../EPD/Config/DEV_Config.c", line 33: fatal error #1965: cannot open source file "stm32f1xx_hal_spi.h"
+1 catastrophic error detected in the compilation of "../EPD/Config/DEV_Config.c".
 Compilation terminated.
-gmake: *** [main.obj] Error 1
-Building file: "../EPD/DEV_Config.c"
-Invoking: MSP430 Compiler
-"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="EPD/DEV_Config.d_raw" --obj_directory="EPD"  "../EPD/DEV_Config.c"
- 
->> Compilation failure
-EPD/subdir_rules.mk:9: recipe for target 'EPD/DEV_Config.obj' failed
-\\SVM-C113.HSR.CH\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\MSP430_screen_test\Debug
-CMD.EXE was started with the above path as the current directory.
-UNC paths are not supported.  Defaulting to Windows directory.
-\\SVM-C113.HSR.CH\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\MSP430_screen_test\Debug
-CMD.EXE was started with the above path as the current directory.
-UNC paths are not supported.  Defaulting to Windows directory.
-"..\EPD\DEV_Config.h", line 51: fatal error #1965: cannot open source file "main.h"
-1 catastrophic error detected in the compilation of "../EPD/DEV_Config.c".
-Compilation terminated.
-gmake: *** [EPD/DEV_Config.obj] Error 1
-\\SVM-C113.HSR.CH\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\MSP430_screen_test\Debug
-CMD.EXE was started with the above path as the current directory.
-UNC paths are not supported.  Defaulting to Windows directory.
-\\SVM-C113.HSR.CH\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\MSP430_screen_test\Debug
-CMD.EXE was started with the above path as the current directory.
-UNC paths are not supported.  Defaulting to Windows directory.
-"..\EPD\DEV_Config.h", line 51: fatal error #1965: cannot open source file "main.h"
-1 catastrophic error detected in the compilation of "../EPD/EPD_7in5.c".
-Compilation terminated.
-gmake: *** [EPD/EPD_7in5.obj] Error 1
+gmake: *** [EPD/Config/DEV_Config.obj] Error 1
 Building file: "../EPD/EPD_7in5.c"
 Invoking: MSP430 Compiler
-"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="EPD/EPD_7in5.d_raw" --obj_directory="EPD"  "../EPD/EPD_7in5.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/ti/ccs910/ccs/ccs_base/EPD/Config" --include_path="C:/ti/ccs910/ccs/ccs_base/EPD/Fonts" --include_path="C:/ti/ccs910/ccs/ccs_base/EPD/GUI" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="EPD/EPD_7in5.d_raw" --obj_directory="EPD"  "../EPD/EPD_7in5.c"
  
 >> Compilation failure
 EPD/subdir_rules.mk:9: recipe for target 'EPD/EPD_7in5.obj' failed
@@ -73,32 +185,61 @@ UNC paths are not supported.  Defaulting to Windows directory.
 \\SVM-C113.HSR.CH\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\MSP430_screen_test\Debug
 CMD.EXE was started with the above path as the current directory.
 UNC paths are not supported.  Defaulting to Windows directory.
-"..\EPD\DEV_Config.h", line 51: fatal error #1965: cannot open source file "main.h"
-1 catastrophic error detected in the compilation of "../EPD/EPD_7in5_test.c".
-Compilation terminated.
-gmake: *** [EPD/EPD_7in5_test.obj] Error 1
-Building file: "../EPD/EPD_7in5_test.c"
+"../EPD/EPD_7in5.c", line 96: error #20: identifier "GPIOA" is undefined
+"../EPD/EPD_7in5.c", line 96: error #20: identifier "GPIO_PIN_1" is undefined
+"../EPD/EPD_7in5.c", line 111: error #20: identifier "GPIOA" is undefined
+"../EPD/EPD_7in5.c", line 111: error #20: identifier "GPIO_PIN_2" is undefined
+"../EPD/EPD_7in5.c", line 112: error #20: identifier "GPIO_PIN_4" is undefined
+"../EPD/EPD_7in5.c", line 124: error #20: identifier "GPIOA" is undefined
+"../EPD/EPD_7in5.c", line 124: error #20: identifier "GPIO_PIN_2" is undefined
+"../EPD/EPD_7in5.c", line 125: error #20: identifier "GPIO_PIN_4" is undefined
+"../EPD/EPD_7in5.c", line 136: warning #225-D: function "printf" declared implicitly
+"../EPD/EPD_7in5.c", line 137: error #20: identifier "GPIOA" is undefined
+"../EPD/EPD_7in5.c", line 137: error #20: identifier "GPIO_PIN_3" is undefined
+"../EPD/EPD_7in5.c", line 136: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/EPD_7in5.c", line 140: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/EPD_7in5.c", line 216: error #256: type name is not allowed
+"../EPD/EPD_7in5.c", line 216: error #66: expected a ";"
+"../EPD/EPD_7in5.c", line 216: error #20: identifier "j" is undefined
+"../EPD/EPD_7in5.c", line 217: error #256: type name is not allowed
+"../EPD/EPD_7in5.c", line 217: error #66: expected a ";"
+"../EPD/EPD_7in5.c", line 217: error #20: identifier "i" is undefined
+"../EPD/EPD_7in5.c", line 218: error #256: type name is not allowed
+"../EPD/EPD_7in5.c", line 218: error #66: expected a ";"
+"../EPD/EPD_7in5.c", line 218: error #20: identifier "k" is undefined
+"../EPD/EPD_7in5.c", line 211: remark #1535-D: (ULP 8.1) variable "Width" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../EPD/EPD_7in5.c", line 211: remark #1535-D: (ULP 8.1) variable "Height" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../EPD/EPD_7in5.c", line 238: error #256: type name is not allowed
+"../EPD/EPD_7in5.c", line 238: error #66: expected a ";"
+"../EPD/EPD_7in5.c", line 238: error #20: identifier "j" is undefined
+"../EPD/EPD_7in5.c", line 239: error #256: type name is not allowed
+"../EPD/EPD_7in5.c", line 239: error #66: expected a ";"
+"../EPD/EPD_7in5.c", line 239: error #20: identifier "i" is undefined
+"../EPD/EPD_7in5.c", line 241: error #256: type name is not allowed
+"../EPD/EPD_7in5.c", line 241: error #66: expected a ";"
+"../EPD/EPD_7in5.c", line 241: error #20: identifier "k" is undefined
+"../EPD/EPD_7in5.c", line 233: remark #1535-D: (ULP 8.1) variable "Width" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../EPD/EPD_7in5.c", line 233: remark #1535-D: (ULP 8.1) variable "Height" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+28 errors detected in the compilation of "../EPD/EPD_7in5.c".
+gmake: *** [EPD/EPD_7in5.obj] Error 1
+Building file: "../MSP430_hal/msp430_hal.c"
 Invoking: MSP430 Compiler
-"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="EPD/EPD_7in5_test.d_raw" --obj_directory="EPD"  "../EPD/EPD_7in5_test.c"
- 
->> Compilation failure
-EPD/subdir_rules.mk:9: recipe for target 'EPD/EPD_7in5_test.obj' failed
-Building file: "../EPD/ImageData.c"
-Invoking: MSP430 Compiler
-"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="EPD/ImageData.d_raw" --obj_directory="EPD"  "../EPD/ImageData.c"
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/ti/ccs910/ccs/ccs_base/EPD/Config" --include_path="C:/ti/ccs910/ccs/ccs_base/EPD/Fonts" --include_path="C:/ti/ccs910/ccs/ccs_base/EPD/GUI" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="MSP430_hal/msp430_hal.d_raw" --obj_directory="MSP430_hal"  "../MSP430_hal/msp430_hal.c"
 \\SVM-C113.HSR.CH\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\MSP430_screen_test\Debug
 CMD.EXE was started with the above path as the current directory.
 UNC paths are not supported.  Defaulting to Windows directory.
 \\SVM-C113.HSR.CH\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\MSP430_screen_test\Debug
 CMD.EXE was started with the above path as the current directory.
 UNC paths are not supported.  Defaulting to Windows directory.
+"../MSP430_hal/msp430_hal.c", line 32: warning #176-D: expression has no effect
+"../MSP430_hal/msp430_hal.c", line 32: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
 \\SVM-C113.HSR.CH\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\MSP430_screen_test\Debug
 CMD.EXE was started with the above path as the current directory.
 UNC paths are not supported.  Defaulting to Windows directory.
 \\SVM-C113.HSR.CH\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\MSP430_screen_test\Debug
 CMD.EXE was started with the above path as the current directory.
 UNC paths are not supported.  Defaulting to Windows directory.
-Finished building: "../EPD/ImageData.c"
+Finished building: "../MSP430_hal/msp430_hal.c"
  
 gmake: Target 'all' not remade because of errors.
 

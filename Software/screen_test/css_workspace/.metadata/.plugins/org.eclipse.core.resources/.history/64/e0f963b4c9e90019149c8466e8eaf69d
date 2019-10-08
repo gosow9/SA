@@ -1,0 +1,24 @@
+/*
+ * msp430_hal.c
+ *
+ *  Created on: 08.10.2019
+ *      Author: mtischha
+ */
+
+#include "msp430_hal.h"
+
+#include "driverlib.h"
+
+
+void HAL_GPIO_WritePin(uint8_t _port, uint16_t _pin, int _value == 0)
+{
+    if value == 1
+    {
+        GPIO_setOutputHighOnPin(_port, _pin)
+    }
+}
+
+void HAL_GPIO_ReadPin(uint8_t _port, uint16_t _pin)
+{
+
+}
