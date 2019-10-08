@@ -35,6 +35,7 @@ int EPD_7in5_test(void)
     printf("EPD_7IN5_test Demo\r\n");
     DEV_Module_Init();
 
+
     printf("e-Paper Init and Clear...\r\n");
     EPD_7IN5_Init();
     EPD_7IN5_Clear();
@@ -42,7 +43,7 @@ int EPD_7in5_test(void)
 
     //Create a new image cache
     UBYTE *BlackImage;
-    /* you have to edit the startup_stm32fxxx.s file and set a big enough heap size */
+    //you have to edit the startup_stm32fxxx.s file and set a big enough heap size
     UWORD Imagesize = ((EPD_7IN5_WIDTH % 8 == 0)? (EPD_7IN5_WIDTH / 8 ): (EPD_7IN5_WIDTH / 8 + 1)) * EPD_7IN5_HEIGHT;
     if((BlackImage = (UBYTE *)malloc(Imagesize)) == NULL) {
         printf("Failed to apply for black memory...\r\n");
