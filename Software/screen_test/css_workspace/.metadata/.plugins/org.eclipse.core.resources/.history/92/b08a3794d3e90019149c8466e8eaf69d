@@ -1,0 +1,18 @@
+/*
+ * msp430_hal.h
+ *
+ *  Created on: 08.10.2019
+ *      Author: mtischha
+ */
+
+#ifndef MSP430_HAL_MSP430_HAL_H_
+#define MSP430_HAL_MSP430_HAL_H_
+
+#include "driverlib.h"
+
+void HAL_GPIO_WritePin(uint8_t _port, uint16_t _pin, int _value);
+uint8_t HAL_GPIO_ReadPin(uint8_t _port, uint16_t _pin);
+
+HAL_Delay(__xms)
+
+#endif /* MSP430_HAL_MSP430_HAL_H_ */

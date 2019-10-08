@@ -1,0 +1,26 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../MSP430_hal/msp430_hal.c 
+
+C_DEPS += \
+./MSP430_hal/msp430_hal.d 
+
+OBJS += \
+./MSP430_hal/msp430_hal.obj 
+
+OBJS__QUOTED += \
+"MSP430_hal\msp430_hal.obj" 
+
+C_DEPS__QUOTED += \
+"MSP430_hal\msp430_hal.d" 
+
+C_SRCS__QUOTED += \
+"../MSP430_hal/msp430_hal.c" 
+
+

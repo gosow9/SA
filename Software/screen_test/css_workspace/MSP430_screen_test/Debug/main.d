@@ -1,6 +1,10 @@
 # FIXED
 
 main.obj: ../main.c
+main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD/EPD_Test.h
+main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD/Config/DEV_Config.h
+main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD/main.h
+main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD/../MSP430_hal/msp430_hal.h
 main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx/driverlib.h
 main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx/inc/hw_memmap.h
 main.obj: C:/ti/ccs910/ccs/ccs_base/msp430/include/msp430.h
@@ -53,8 +57,20 @@ main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/cs
 main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx/eusci_b_spi.h
 main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx/mtif.h
 main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx/lcd_c.h
+main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD/GUI/GUI_Paint.h
+main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD/GUI/../Fonts/fonts.h
+main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD/imagedata.h
+main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD/Config/Debug.h
+main.obj: C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/stdlib.h
+main.obj: C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/_ti_config.h
+main.obj: C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/linkage.h
+main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx/driverlib.h
 
 ../main.c: 
+//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD/EPD_Test.h: 
+//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD/Config/DEV_Config.h: 
+//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD/main.h: 
+//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD/../MSP430_hal/msp430_hal.h: 
 //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx/driverlib.h: 
 //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx/inc/hw_memmap.h: 
 C:/ti/ccs910/ccs/ccs_base/msp430/include/msp430.h: 
@@ -107,3 +123,11 @@ C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/stdbool.h:
 //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx/eusci_b_spi.h: 
 //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx/mtif.h: 
 //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx/lcd_c.h: 
+//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD/GUI/GUI_Paint.h: 
+//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD/GUI/../Fonts/fonts.h: 
+//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD/imagedata.h: 
+//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD/Config/Debug.h: 
+C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/stdlib.h: 
+C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/_ti_config.h: 
+C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/linkage.h: 
+//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx/driverlib.h: 

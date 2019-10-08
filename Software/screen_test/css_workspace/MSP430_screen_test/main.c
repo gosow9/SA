@@ -1,5 +1,5 @@
-#include "driverlib.h"
 #include "EPD_Test.h"
+#include "driverlib.h"
 
 /**
  * main.c
@@ -10,9 +10,9 @@ int main(void)
     WDT_A_hold(WDT_A_BASE);
 
     //Set DCO frequency to max DCO setting
-    CS_setDCOFreq(CS_DCORSEL_0,CS_DCOFSEL_3);
+    CS_setDCOFreq(CS_DCORSEL_0,CS_DCOFSEL_3); //f=4MHZ
     //Select DCO as the clock source for SMCLK with no frequency divider
-    CS_initClockSignal(CS_SMCLK,CS_DCOCLK_SELECT,CS_CLOCK_DIVIDER_32);
+    CS_initClockSignal(CS_SMCLK,CS_DCOCLK_SELECT,CS_CLOCK_DIVIDER_1);
 
 
     //GPIO initialisieren
@@ -22,13 +22,13 @@ int main(void)
         GPIO_PIN6,
         GPIO_SECONDARY_MODULE_FUNCTION
     );
-    //P1.4 to SPI_CS
+    //P1.4 to SPI_CLK
     GPIO_setAsPeripheralModuleFunctionOutputPin(
         GPIO_PORT_P1,
         GPIO_PIN4,
         GPIO_SECONDARY_MODULE_FUNCTION
     );
-    //P1.3 to SPI_Reset
+    //P2.5 to SPI_CS
     GPIO_setAsPeripheralModuleFunctionOutputPin(
         GPIO_PORT_P2,
         GPIO_PIN5,
@@ -42,8 +42,8 @@ int main(void)
     );
     //P3.1 to RST_Pin
     GPIO_setAsPeripheralModuleFunctionOutputPin(
-        GPIO_PORT_P2,
-        GPIO_PIN3,
+        GPIO_PORT_P3,
+        GPIO_PIN1,
         GPIO_PRIMARY_MODULE_FUNCTION
     );
 
@@ -61,7 +61,7 @@ int main(void)
     param.desiredSpiClock = 500000;
     param.msbFirst = EUSCI_B_SPI_MSB_FIRST;
     param.clockPhase = EUSCI_B_SPI_PHASE_DATA_CHANGED_ONFIRST_CAPTURED_ON_NEXT;
-    param.clockPolarity = EUSCI_B_SPI_CLOCKPOLARITY_INACTIVITY_HIGH;
+    param.clockPolarity = EUSCI_B_SPI_CLOCKPOLARITY_INACTIVITY_LOW;
     param.spiMode = EUSCI_B_SPI_3PIN;
     EUSCI_B_SPI_initMaster(EUSCI_B0_BASE, &param);
 
@@ -73,7 +73,7 @@ int main(void)
     */
     PMM_unlockLPM5();
 	
-    //EPD_7in5_test();
+    EPD_7in5_test();
 
 
     while(1)

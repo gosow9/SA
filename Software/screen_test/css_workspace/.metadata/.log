@@ -2983,3 +2983,2594 @@ org.xml.sax.SAXParseException; systemId: file:////SVM-C113.HSR.CH/mtischha/Docum
 
 !ENTRY org.eclipse.cdt.core 1 0 2019-10-07 16:37:28.654
 !MESSAGE Indexed 'spi_test' (36 sources, 50 headers) in 0.703 sec: 4'433 declarations; 14'020 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!SESSION 2019-10-08 12:55:06.874 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2019-10-08 12:55:10.126
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2019-10-08 12:55:10.126
+!MESSAGE debugServerDir=C:/ti/ccs910/ccs/ccs_base/DebugServer
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-10-08 12:55:16.376
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-10-08 12:55:16.376
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-10-08 12:55:16.376
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.ti.ccstudio.ui 1 0 2019-10-08 12:55:21.031
+!MESSAGE CCS IDE session started!
+	CCS build: 9.1.0.00010
+	CCS location: C:/ti/ccs910/ccs
+	Workspace location: //svm-c113.hsr.ch/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 12:55:21.141
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 12:55:21.141
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 12:55:21.141
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 12:55:21.156
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 12:55:21.156
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 12:55:21.156
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 12:55:21.172
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 12:55:21.234
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 12:55:21.234
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 12:55:21.297
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY org.eclipse.ui.ide 4 4 2019-10-08 12:57:53.604
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 2019-10-08 12:57:53.604
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2019-10-08 12:57:53.604
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:52)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1627)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1706)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1179)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2332)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:526)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SESSION 2019-10-08 12:57:55.738 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2019-10-08 12:57:58.983
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2019-10-08 12:57:58.983
+!MESSAGE debugServerDir=C:/ti/ccs910/ccs/ccs_base/DebugServer
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-10-08 12:58:03.692
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-10-08 12:58:03.692
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-10-08 12:58:03.708
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.ti.ccstudio.ui 1 0 2019-10-08 12:58:07.425
+!MESSAGE CCS IDE session started!
+	CCS build: 9.1.0.00010
+	CCS location: C:/ti/ccs910/ccs
+	Workspace location: //svm-c113.hsr.ch/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 12:58:07.535
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 12:58:07.535
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 12:58:07.550
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 12:58:07.550
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 12:58:07.550
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 12:58:07.550
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 12:58:07.566
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 12:58:07.582
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 12:58:07.582
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 12:58:07.597
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY org.eclipse.core.resources 4 568 2019-10-08 13:03:06.772
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.resources 4 568 2019-10-08 13:08:32.790
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.resources 4 568 2019-10-08 13:14:25.207
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.resources 4 568 2019-10-08 13:42:37.912
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.resources 4 568 2019-10-08 13:47:38.487
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.resources 4 568 2019-10-08 13:53:15.417
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.resources 4 568 2019-10-08 13:58:23.418
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.resources 4 568 2019-10-08 14:10:38.057
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.cdt.ui 4 0 2019-10-08 14:12:45.712
+!MESSAGE Error in CDT UI during reconcile
+!STACK 1
+C Model Exception: C Model Status [Element msp430_hal.c does not exist.]
+	at org.eclipse.cdt.internal.core.model.CElement.newNotPresentException(CElement.java:484)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:580)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:62)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:635)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:362)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:78)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+!SUBENTRY 1 org.eclipse.cdt.core 4 969 2019-10-08 14:12:45.712
+!MESSAGE Element msp430_hal.c does not exist.
+
+!ENTRY org.eclipse.core.resources 4 568 2019-10-08 14:16:07.915
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.resources 4 568 2019-10-08 14:27:06.590
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.resources 4 568 2019-10-08 14:40:13.740
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.resources 4 568 2019-10-08 14:45:29.489
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.resources 4 568 2019-10-08 14:51:30.919
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.resources 4 568 2019-10-08 14:58:25.146
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.resources 4 568 2019-10-08 15:04:28.705
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 15:30:58.409
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile$Finder.compare(PDOMFile.java:871)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.findFiles(PDOMFile.java:763)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.getFiles(PDOM.java:587)
+	at org.eclipse.cdt.internal.core.index.CIndex.getFiles(CIndex.java:257)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getContextToHeader(TranslationUnit.java:928)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.CModelBuilder2.parse(CModelBuilder2.java:147)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.parseUsingCModelBuilder(TranslationUnit.java:678)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.parse(TranslationUnit.java:666)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.buildStructure(TranslationUnit.java:465)
+	at org.eclipse.cdt.internal.core.model.Openable.generateInfos(Openable.java:261)
+	at org.eclipse.cdt.internal.core.model.CElement.openWhenClosed(CElement.java:427)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:570)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:62)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:635)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:362)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:78)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.initialReconcile(CReconcilingStrategy.java:122)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:117)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.initialReconcile(CCompositeReconcilingStrategy.java:108)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:95)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.initialProcess(CReconciler.java:338)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:174)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 15:30:58.424
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:71)
+	at org.eclipse.cdt.internal.core.pdom.dom.NamedNodeCollector.compare(NamedNodeCollector.java:93)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:586)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.getBindingsViaCache(PDOMLinkage.java:408)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1395)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1385)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:643)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:504)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CScope.getBinding(CScope.java:285)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.lookup(CVisitor.java:1069)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.resolveBinding(CVisitor.java:845)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.createBinding(CVisitor.java:466)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.resolveBinding(CASTName.java:63)
+	at org.eclipse.cdt.internal.ui.editor.SemanticToken.getBinding(SemanticToken.java:47)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightings$ExternalSDKHighlighting.consumes(SemanticHighlightings.java:1550)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visitNode(SemanticHighlightingReconciler.java:233)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visit(SemanticHighlightingReconciler.java:195)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.accept(CASTName.java:129)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIdExpression.accept(CASTIdExpression.java:82)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression.accept(CASTUnaryExpression.java:92)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTEqualsInitializer.accept(ASTEqualsInitializer.java:59)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTDeclarator.postAccept(CASTDeclarator.java:181)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTDeclarator.accept(CASTDeclarator.java:171)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTSimpleDeclaration.accept(CASTSimpleDeclaration.java:103)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTTranslationUnit.accept(ASTTranslationUnit.java:275)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconcilePositions(SemanticHighlightingReconciler.java:448)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:413)
+	at org.eclipse.cdt.internal.ui.editor.CEditor.reconciled(CEditor.java:3105)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:99)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.initialReconcile(CReconcilingStrategy.java:122)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:117)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.initialReconcile(CCompositeReconcilingStrategy.java:108)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:95)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.initialProcess(CReconciler.java:338)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:174)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 15:30:58.424
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:71)
+	at org.eclipse.cdt.internal.core.pdom.dom.NamedNodeCollector.compare(NamedNodeCollector.java:93)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:586)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.getBindingsViaCache(PDOMLinkage.java:408)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1395)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1385)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:643)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:504)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CScope.getBinding(CScope.java:285)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.lookup(CVisitor.java:1069)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.resolveBinding(CVisitor.java:845)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.createBinding(CVisitor.java:466)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.resolveBinding(CASTName.java:63)
+	at org.eclipse.cdt.internal.ui.editor.SemanticToken.getBinding(SemanticToken.java:47)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightings$ExternalSDKHighlighting.consumes(SemanticHighlightings.java:1550)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visitNode(SemanticHighlightingReconciler.java:233)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visit(SemanticHighlightingReconciler.java:195)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.accept(CASTName.java:129)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIdExpression.accept(CASTIdExpression.java:82)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression.accept(CASTUnaryExpression.java:92)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIfStatement.accept(CASTIfStatement.java:131)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTCompoundStatement.accept(CASTCompoundStatement.java:81)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionDefinition.accept(CASTFunctionDefinition.java:133)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTTranslationUnit.accept(ASTTranslationUnit.java:275)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconcilePositions(SemanticHighlightingReconciler.java:448)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:413)
+	at org.eclipse.cdt.internal.ui.editor.CEditor.reconciled(CEditor.java:3105)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:99)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.initialReconcile(CReconcilingStrategy.java:122)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:117)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.initialReconcile(CCompositeReconcilingStrategy.java:108)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:95)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.initialProcess(CReconciler.java:338)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:174)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 15:30:58.472
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile$Finder.compare(PDOMFile.java:871)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.findFiles(PDOMFile.java:763)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.getFiles(PDOM.java:587)
+	at org.eclipse.cdt.internal.core.index.CIndex.getFiles(CIndex.java:257)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getContextToHeader(TranslationUnit.java:928)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:838)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:348)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:341)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:166)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:255)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:214)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:336)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:162)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:136)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 15:31:07.200
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile$Finder.compare(PDOMFile.java:871)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.findFiles(PDOMFile.java:763)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.getFiles(PDOM.java:587)
+	at org.eclipse.cdt.internal.core.index.CIndex.getFiles(CIndex.java:257)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getContextToHeader(TranslationUnit.java:928)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.CModelBuilder2.parse(CModelBuilder2.java:147)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.parseUsingCModelBuilder(TranslationUnit.java:678)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.parse(TranslationUnit.java:666)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.buildStructure(TranslationUnit.java:465)
+	at org.eclipse.cdt.internal.core.model.Openable.generateInfos(Openable.java:261)
+	at org.eclipse.cdt.internal.core.model.CElement.openWhenClosed(CElement.java:427)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:570)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:62)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:635)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:362)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:78)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.initialReconcile(CReconcilingStrategy.java:122)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:117)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.initialReconcile(CCompositeReconcilingStrategy.java:108)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:95)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.initialProcess(CReconciler.java:338)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:174)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 15:31:07.215
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:71)
+	at org.eclipse.cdt.internal.core.pdom.dom.NamedNodeCollector.compare(NamedNodeCollector.java:93)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:586)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.getBindingsViaCache(PDOMLinkage.java:408)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1395)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1385)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:643)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:504)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CScope.getBinding(CScope.java:285)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.lookup(CVisitor.java:1069)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.resolveBinding(CVisitor.java:845)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.createBinding(CVisitor.java:466)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.resolveBinding(CASTName.java:63)
+	at org.eclipse.cdt.internal.ui.editor.SemanticToken.getBinding(SemanticToken.java:47)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightings$ExternalSDKHighlighting.consumes(SemanticHighlightings.java:1550)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visitNode(SemanticHighlightingReconciler.java:233)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visit(SemanticHighlightingReconciler.java:195)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.accept(CASTName.java:129)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIdExpression.accept(CASTIdExpression.java:82)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression.accept(CASTUnaryExpression.java:92)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTEqualsInitializer.accept(ASTEqualsInitializer.java:59)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTDeclarator.postAccept(CASTDeclarator.java:181)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTDeclarator.accept(CASTDeclarator.java:171)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTSimpleDeclaration.accept(CASTSimpleDeclaration.java:103)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTTranslationUnit.accept(ASTTranslationUnit.java:275)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconcilePositions(SemanticHighlightingReconciler.java:448)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:413)
+	at org.eclipse.cdt.internal.ui.editor.CEditor.reconciled(CEditor.java:3105)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:99)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.initialReconcile(CReconcilingStrategy.java:122)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:117)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.initialReconcile(CCompositeReconcilingStrategy.java:108)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:95)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.initialProcess(CReconciler.java:338)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:174)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 15:31:07.215
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:71)
+	at org.eclipse.cdt.internal.core.pdom.dom.NamedNodeCollector.compare(NamedNodeCollector.java:93)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:586)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.getBindingsViaCache(PDOMLinkage.java:408)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1395)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1385)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:643)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:504)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CScope.getBinding(CScope.java:285)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.lookup(CVisitor.java:1069)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.resolveBinding(CVisitor.java:845)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.createBinding(CVisitor.java:466)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.resolveBinding(CASTName.java:63)
+	at org.eclipse.cdt.internal.ui.editor.SemanticToken.getBinding(SemanticToken.java:47)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightings$ExternalSDKHighlighting.consumes(SemanticHighlightings.java:1550)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visitNode(SemanticHighlightingReconciler.java:233)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visit(SemanticHighlightingReconciler.java:195)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.accept(CASTName.java:129)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIdExpression.accept(CASTIdExpression.java:82)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression.accept(CASTUnaryExpression.java:92)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIfStatement.accept(CASTIfStatement.java:131)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTCompoundStatement.accept(CASTCompoundStatement.java:81)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionDefinition.accept(CASTFunctionDefinition.java:133)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTTranslationUnit.accept(ASTTranslationUnit.java:275)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconcilePositions(SemanticHighlightingReconciler.java:448)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:413)
+	at org.eclipse.cdt.internal.ui.editor.CEditor.reconciled(CEditor.java:3105)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:99)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.initialReconcile(CReconcilingStrategy.java:122)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:117)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.initialReconcile(CCompositeReconcilingStrategy.java:108)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:95)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.initialProcess(CReconciler.java:338)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:174)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 15:31:07.262
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile$Finder.compare(PDOMFile.java:871)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.findFiles(PDOMFile.java:763)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.getFiles(PDOM.java:587)
+	at org.eclipse.cdt.internal.core.index.CIndex.getFiles(CIndex.java:257)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getContextToHeader(TranslationUnit.java:928)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:838)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:348)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:341)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:166)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:255)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:214)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:336)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:162)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:136)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 15:32:16.078
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile$Finder.compare(PDOMFile.java:871)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.findFiles(PDOMFile.java:763)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.getFiles(PDOM.java:587)
+	at org.eclipse.cdt.internal.core.index.CIndex.getFiles(CIndex.java:257)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getContextToHeader(TranslationUnit.java:928)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.CModelBuilder2.parse(CModelBuilder2.java:147)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.parseUsingCModelBuilder(TranslationUnit.java:678)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.parse(TranslationUnit.java:666)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.buildStructure(TranslationUnit.java:465)
+	at org.eclipse.cdt.internal.core.model.Openable.generateInfos(Openable.java:261)
+	at org.eclipse.cdt.internal.core.model.CElement.openWhenClosed(CElement.java:427)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:570)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:62)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:635)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:362)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:78)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 15:32:16.141
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:71)
+	at org.eclipse.cdt.internal.core.pdom.dom.NamedNodeCollector.compare(NamedNodeCollector.java:93)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:586)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.getBindingsViaCache(PDOMLinkage.java:408)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1395)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1385)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:643)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:504)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CScope.getBinding(CScope.java:285)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.lookup(CVisitor.java:1069)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.resolveBinding(CVisitor.java:845)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.createBinding(CVisitor.java:466)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.resolveBinding(CASTName.java:63)
+	at org.eclipse.cdt.internal.ui.editor.SemanticToken.getBinding(SemanticToken.java:47)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightings$ExternalSDKHighlighting.consumes(SemanticHighlightings.java:1550)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visitNode(SemanticHighlightingReconciler.java:233)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visit(SemanticHighlightingReconciler.java:195)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.accept(CASTName.java:129)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIdExpression.accept(CASTIdExpression.java:82)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression.accept(CASTUnaryExpression.java:92)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTEqualsInitializer.accept(ASTEqualsInitializer.java:59)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTDeclarator.postAccept(CASTDeclarator.java:181)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTDeclarator.accept(CASTDeclarator.java:171)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTSimpleDeclaration.accept(CASTSimpleDeclaration.java:103)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTTranslationUnit.accept(ASTTranslationUnit.java:275)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconcilePositions(SemanticHighlightingReconciler.java:448)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:413)
+	at org.eclipse.cdt.internal.ui.editor.CEditor.reconciled(CEditor.java:3105)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:99)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 15:32:16.141
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:71)
+	at org.eclipse.cdt.internal.core.pdom.dom.NamedNodeCollector.compare(NamedNodeCollector.java:93)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:586)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.getBindingsViaCache(PDOMLinkage.java:408)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1395)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1385)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:643)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:504)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CScope.getBinding(CScope.java:285)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.lookup(CVisitor.java:1069)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.resolveBinding(CVisitor.java:845)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.createBinding(CVisitor.java:466)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.resolveBinding(CASTName.java:63)
+	at org.eclipse.cdt.internal.ui.editor.SemanticToken.getBinding(SemanticToken.java:47)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightings$ExternalSDKHighlighting.consumes(SemanticHighlightings.java:1550)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visitNode(SemanticHighlightingReconciler.java:233)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visit(SemanticHighlightingReconciler.java:195)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.accept(CASTName.java:129)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIdExpression.accept(CASTIdExpression.java:82)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression.accept(CASTUnaryExpression.java:92)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIfStatement.accept(CASTIfStatement.java:131)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTCompoundStatement.accept(CASTCompoundStatement.java:81)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionDefinition.accept(CASTFunctionDefinition.java:133)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTTranslationUnit.accept(ASTTranslationUnit.java:275)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconcilePositions(SemanticHighlightingReconciler.java:448)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:413)
+	at org.eclipse.cdt.internal.ui.editor.CEditor.reconciled(CEditor.java:3105)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:99)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 15:35:26.994
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile$Finder.compare(PDOMFile.java:871)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.findFiles(PDOMFile.java:763)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.getFiles(PDOM.java:587)
+	at org.eclipse.cdt.internal.core.index.CIndex.getFiles(CIndex.java:257)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getContextToHeader(TranslationUnit.java:928)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.CModelBuilder2.parse(CModelBuilder2.java:147)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.parseUsingCModelBuilder(TranslationUnit.java:678)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.parse(TranslationUnit.java:666)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.buildStructure(TranslationUnit.java:465)
+	at org.eclipse.cdt.internal.core.model.Openable.generateInfos(Openable.java:261)
+	at org.eclipse.cdt.internal.core.model.CElement.openWhenClosed(CElement.java:427)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:570)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:62)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:635)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:362)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:78)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 15:35:27.040
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:71)
+	at org.eclipse.cdt.internal.core.pdom.dom.NamedNodeCollector.compare(NamedNodeCollector.java:93)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:586)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.getBindingsViaCache(PDOMLinkage.java:408)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1395)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1385)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:643)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:504)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CScope.getBinding(CScope.java:285)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.lookup(CVisitor.java:1069)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.resolveBinding(CVisitor.java:845)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.createBinding(CVisitor.java:466)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.resolveBinding(CASTName.java:63)
+	at org.eclipse.cdt.internal.ui.editor.SemanticToken.getBinding(SemanticToken.java:47)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightings$ExternalSDKHighlighting.consumes(SemanticHighlightings.java:1550)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visitNode(SemanticHighlightingReconciler.java:233)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visit(SemanticHighlightingReconciler.java:195)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.accept(CASTName.java:129)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIdExpression.accept(CASTIdExpression.java:82)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression.accept(CASTUnaryExpression.java:92)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTEqualsInitializer.accept(ASTEqualsInitializer.java:59)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTDeclarator.postAccept(CASTDeclarator.java:181)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTDeclarator.accept(CASTDeclarator.java:171)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTSimpleDeclaration.accept(CASTSimpleDeclaration.java:103)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTTranslationUnit.accept(ASTTranslationUnit.java:275)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconcilePositions(SemanticHighlightingReconciler.java:448)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:413)
+	at org.eclipse.cdt.internal.ui.editor.CEditor.reconciled(CEditor.java:3105)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:99)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 15:35:27.056
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:71)
+	at org.eclipse.cdt.internal.core.pdom.dom.NamedNodeCollector.compare(NamedNodeCollector.java:93)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:586)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.getBindingsViaCache(PDOMLinkage.java:408)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1395)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1385)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:643)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:504)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CScope.getBinding(CScope.java:285)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.lookup(CVisitor.java:1069)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.resolveBinding(CVisitor.java:845)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.createBinding(CVisitor.java:466)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.resolveBinding(CASTName.java:63)
+	at org.eclipse.cdt.internal.ui.editor.SemanticToken.getBinding(SemanticToken.java:47)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightings$ExternalSDKHighlighting.consumes(SemanticHighlightings.java:1550)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visitNode(SemanticHighlightingReconciler.java:233)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visit(SemanticHighlightingReconciler.java:195)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.accept(CASTName.java:129)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIdExpression.accept(CASTIdExpression.java:82)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression.accept(CASTUnaryExpression.java:92)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIfStatement.accept(CASTIfStatement.java:131)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTCompoundStatement.accept(CASTCompoundStatement.java:81)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionDefinition.accept(CASTFunctionDefinition.java:133)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTTranslationUnit.accept(ASTTranslationUnit.java:275)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconcilePositions(SemanticHighlightingReconciler.java:448)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:413)
+	at org.eclipse.cdt.internal.ui.editor.CEditor.reconciled(CEditor.java:3105)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:99)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.core.resources 4 568 2019-10-08 15:36:28.710
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.cdt.ui 4 4 2019-10-08 15:45:07.941
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: IOException
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:45)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:71)
+	at org.eclipse.cdt.internal.core.pdom.dom.NamedNodeCollector.compare(NamedNodeCollector.java:93)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:586)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.getBindingsViaCache(PDOMLinkage.java:408)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1395)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1385)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:643)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.navigationFallBack(OpenDeclarationsJob.java:918)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.runOnAST(OpenDeclarationsJob.java:359)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:221)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:336)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.performNavigation(OpenDeclarationsJob.java:170)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.run(OpenDeclarationsJob.java:146)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+Caused by: java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	... 20 more
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-10-08 15:45:07.941
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:71)
+	at org.eclipse.cdt.internal.core.pdom.dom.NamedNodeCollector.compare(NamedNodeCollector.java:93)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:586)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.getBindingsViaCache(PDOMLinkage.java:408)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1395)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1385)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:643)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.navigationFallBack(OpenDeclarationsJob.java:918)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.runOnAST(OpenDeclarationsJob.java:359)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:221)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:336)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.performNavigation(OpenDeclarationsJob.java:170)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.run(OpenDeclarationsJob.java:146)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.cdt.ui 4 4 2019-10-08 15:45:08.629
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: IOException
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:45)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:71)
+	at org.eclipse.cdt.internal.core.pdom.dom.NamedNodeCollector.compare(NamedNodeCollector.java:93)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:586)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.getBindingsViaCache(PDOMLinkage.java:408)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1395)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1385)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:643)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.navigationFallBack(OpenDeclarationsJob.java:918)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.runOnAST(OpenDeclarationsJob.java:359)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:221)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:336)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.performNavigation(OpenDeclarationsJob.java:170)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.run(OpenDeclarationsJob.java:146)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+Caused by: java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	... 20 more
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-10-08 15:45:08.629
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:71)
+	at org.eclipse.cdt.internal.core.pdom.dom.NamedNodeCollector.compare(NamedNodeCollector.java:93)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:586)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.getBindingsViaCache(PDOMLinkage.java:408)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1395)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1385)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:643)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.navigationFallBack(OpenDeclarationsJob.java:918)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.runOnAST(OpenDeclarationsJob.java:359)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:221)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:336)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.performNavigation(OpenDeclarationsJob.java:170)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.run(OpenDeclarationsJob.java:146)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 15:47:02.150
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile$Finder.compare(PDOMFile.java:871)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.findFiles(PDOMFile.java:763)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.getFiles(PDOM.java:587)
+	at org.eclipse.cdt.internal.core.index.CIndex.getFiles(CIndex.java:257)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getContextToHeader(TranslationUnit.java:928)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.CModelBuilder2.parse(CModelBuilder2.java:147)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.parseUsingCModelBuilder(TranslationUnit.java:678)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.parse(TranslationUnit.java:666)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.buildStructure(TranslationUnit.java:465)
+	at org.eclipse.cdt.internal.core.model.Openable.generateInfos(Openable.java:261)
+	at org.eclipse.cdt.internal.core.model.CElement.openWhenClosed(CElement.java:427)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:570)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:62)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:635)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:362)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:78)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 15:47:02.165
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:71)
+	at org.eclipse.cdt.internal.core.pdom.dom.NamedNodeCollector.compare(NamedNodeCollector.java:93)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:586)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.getBindingsViaCache(PDOMLinkage.java:408)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1395)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1385)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:643)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:504)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CScope.getBinding(CScope.java:285)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.lookup(CVisitor.java:1069)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.resolveBinding(CVisitor.java:845)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.createBinding(CVisitor.java:466)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.resolveBinding(CASTName.java:63)
+	at org.eclipse.cdt.internal.ui.editor.SemanticToken.getBinding(SemanticToken.java:47)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightings$ExternalSDKHighlighting.consumes(SemanticHighlightings.java:1550)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visitNode(SemanticHighlightingReconciler.java:233)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visit(SemanticHighlightingReconciler.java:195)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.accept(CASTName.java:129)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIdExpression.accept(CASTIdExpression.java:82)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression.accept(CASTUnaryExpression.java:92)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTEqualsInitializer.accept(ASTEqualsInitializer.java:59)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTDeclarator.postAccept(CASTDeclarator.java:181)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTDeclarator.accept(CASTDeclarator.java:171)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTSimpleDeclaration.accept(CASTSimpleDeclaration.java:103)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTTranslationUnit.accept(ASTTranslationUnit.java:275)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconcilePositions(SemanticHighlightingReconciler.java:448)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:413)
+	at org.eclipse.cdt.internal.ui.editor.CEditor.reconciled(CEditor.java:3105)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:99)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 15:47:02.165
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:71)
+	at org.eclipse.cdt.internal.core.pdom.dom.NamedNodeCollector.compare(NamedNodeCollector.java:93)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:586)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.getBindingsViaCache(PDOMLinkage.java:408)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1395)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1385)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:643)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:504)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CScope.getBinding(CScope.java:285)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.lookup(CVisitor.java:1069)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.resolveBinding(CVisitor.java:845)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.createBinding(CVisitor.java:466)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.resolveBinding(CASTName.java:63)
+	at org.eclipse.cdt.internal.ui.editor.SemanticToken.getBinding(SemanticToken.java:47)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightings$ExternalSDKHighlighting.consumes(SemanticHighlightings.java:1550)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visitNode(SemanticHighlightingReconciler.java:233)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visit(SemanticHighlightingReconciler.java:195)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.accept(CASTName.java:129)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIdExpression.accept(CASTIdExpression.java:82)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression.accept(CASTUnaryExpression.java:92)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIfStatement.accept(CASTIfStatement.java:131)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTCompoundStatement.accept(CASTCompoundStatement.java:81)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionDefinition.accept(CASTFunctionDefinition.java:133)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTTranslationUnit.accept(ASTTranslationUnit.java:275)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconcilePositions(SemanticHighlightingReconciler.java:448)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:413)
+	at org.eclipse.cdt.internal.ui.editor.CEditor.reconciled(CEditor.java:3105)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:99)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 15:48:34.305
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile$Finder.compare(PDOMFile.java:871)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.findFiles(PDOMFile.java:763)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.getFiles(PDOM.java:587)
+	at org.eclipse.cdt.internal.core.index.CIndex.getFiles(CIndex.java:257)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getContextToHeader(TranslationUnit.java:928)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.CModelBuilder2.parse(CModelBuilder2.java:147)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.parseUsingCModelBuilder(TranslationUnit.java:678)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.parse(TranslationUnit.java:666)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.buildStructure(TranslationUnit.java:465)
+	at org.eclipse.cdt.internal.core.model.Openable.generateInfos(Openable.java:261)
+	at org.eclipse.cdt.internal.core.model.CElement.openWhenClosed(CElement.java:427)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:570)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:62)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:635)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:362)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:78)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 15:48:34.351
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:71)
+	at org.eclipse.cdt.internal.core.pdom.dom.NamedNodeCollector.compare(NamedNodeCollector.java:93)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:586)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.getBindingsViaCache(PDOMLinkage.java:408)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1395)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1385)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:643)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:504)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CScope.getBinding(CScope.java:285)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.lookup(CVisitor.java:1069)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.resolveBinding(CVisitor.java:845)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.createBinding(CVisitor.java:466)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.resolveBinding(CASTName.java:63)
+	at org.eclipse.cdt.internal.ui.editor.SemanticToken.getBinding(SemanticToken.java:47)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightings$ExternalSDKHighlighting.consumes(SemanticHighlightings.java:1550)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visitNode(SemanticHighlightingReconciler.java:233)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visit(SemanticHighlightingReconciler.java:195)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.accept(CASTName.java:129)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIdExpression.accept(CASTIdExpression.java:82)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression.accept(CASTUnaryExpression.java:92)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTEqualsInitializer.accept(ASTEqualsInitializer.java:59)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTDeclarator.postAccept(CASTDeclarator.java:181)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTDeclarator.accept(CASTDeclarator.java:171)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTSimpleDeclaration.accept(CASTSimpleDeclaration.java:103)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTTranslationUnit.accept(ASTTranslationUnit.java:275)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconcilePositions(SemanticHighlightingReconciler.java:448)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:413)
+	at org.eclipse.cdt.internal.ui.editor.CEditor.reconciled(CEditor.java:3105)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:99)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 15:48:34.351
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:71)
+	at org.eclipse.cdt.internal.core.pdom.dom.NamedNodeCollector.compare(NamedNodeCollector.java:93)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:586)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.getBindingsViaCache(PDOMLinkage.java:408)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1395)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1385)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:643)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:504)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CScope.getBinding(CScope.java:285)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.lookup(CVisitor.java:1069)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.resolveBinding(CVisitor.java:845)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.createBinding(CVisitor.java:466)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.resolveBinding(CASTName.java:63)
+	at org.eclipse.cdt.internal.ui.editor.SemanticToken.getBinding(SemanticToken.java:47)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightings$ExternalSDKHighlighting.consumes(SemanticHighlightings.java:1550)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visitNode(SemanticHighlightingReconciler.java:233)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visit(SemanticHighlightingReconciler.java:195)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.accept(CASTName.java:129)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIdExpression.accept(CASTIdExpression.java:82)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression.accept(CASTUnaryExpression.java:92)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIfStatement.accept(CASTIfStatement.java:131)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTCompoundStatement.accept(CASTCompoundStatement.java:81)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionDefinition.accept(CASTFunctionDefinition.java:133)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTTranslationUnit.accept(ASTTranslationUnit.java:275)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconcilePositions(SemanticHighlightingReconciler.java:448)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:413)
+	at org.eclipse.cdt.internal.ui.editor.CEditor.reconciled(CEditor.java:3105)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:99)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.core.resources 4 568 2019-10-08 16:01:04.999
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:00.668
+!MESSAGE >>1570543320668 Ta: (ResourceExplorerPlugin::start discoverCCSPort()) took 31
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:00.684
+!MESSAGE Plugin start call t.start()
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:00.684
+!MESSAGE >>1570543320684 Tb: (ResourceExplorerPlugin::new Thread to start plugin 16
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:00.684
+!MESSAGE REX 1570543320684 [A:plugin start] Starting Server
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:00.684
+!MESSAGE REX OpenExplorerHandler:: Open Explorer
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:00.699
+!MESSAGE REX [OS:plugin start] win32
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:00.699
+!MESSAGE REX OpenExplorerHandler:: just_started_plugin = true
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:00.699
+!MESSAGE REX [A] startServer()
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:00.699
+!MESSAGE REX [A-] ResourceExplorerPlugin.p == null
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:00.699
+!MESSAGE REX attempt_process_cleanup = true
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:00.746
+!MESSAGE REX 1570543320746 Tz: ResourceExplorerPage::createMainArea took 0
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:00.746
+!MESSAGE REX 1570543320746 Launching Browser
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:01.137
+!MESSAGE REX 1570543321137 [killServerProcesses] 
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:01.137
+!MESSAGE REX 1570543321137 Tc: Utilities::startServer preamble453
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:01.152
+!MESSAGE REX 1570543321152 [D:plugin start] ccs_eclipse_folder: file:/C:/ti/ccs910/ccs/eclipse/
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:01.152
+!MESSAGE REX 1570543321152 [E:plugin start] ccs_eclipse_folder: C:/ti/ccs910/ccs/eclipse/
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:01.168
+!MESSAGE REX 1570543321168 Ti: Utilities::proxy 16
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:01.168
+!MESSAGE REX 1570543321168 These are the commands [C:\ti\ccs910\ccs\tirex/node.exe, app.js, C:\ti\ccs910\ccs\tirex\ti-rex-core/dinfra-desktop/dinfra.js, C:\ti\ccs910\ccs\tirex\ti-rex-core/config/dconfig_localserver.json, C:\ti\ccs910\ccs\tirex\ti-rex-core/config/app_localserver_win.json, --ccs_port=58284, --myHttpPort=55432, --logsDirUncaughtException=C:\Users\mtischha\AppData\Local\TEXASI~1\CCS\ccs910\0\dmp\, --ccsVersion=9.1.0.00010, --tirexPluginVersion=4.1.0.201905081124]
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:01.183
+!MESSAGE REX 1570543321168 Td: Utilities::before pb.start() 16
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:01.262
+!MESSAGE REX 1570543321262 Te: Utilities::before isAlive loop 79
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:01.262
+!MESSAGE REX 1570543321262 Tf: Utilities::after ResourceExplorerPlugin.p.isAlive() loop 0
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:01.262
+!MESSAGE REX pollServerState for up or ready
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:01.277
+!MESSAGE REX Sending 'GET' request to URL : http://127.0.0.1:55432/api/serverstate
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:01.543
+!MESSAGE REX 1570543321543 Tz: ResourceExplorerPage::createBrowser took 781
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:01.543
+!MESSAGE REX Using browser port 55432
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:01.543
+!MESSAGE REX 1570543321543 server starting page: file:/C:/ti/ccs910/ccs/eclipse/..\tirex\ti-rex-core\public\plugin\serverstarting.html
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:02.792
+!MESSAGE REX 1570543322792 [] setUrl: file:/C:/ti/ccs910/ccs/eclipse/..\tirex\ti-rex-core\public\plugin\serverstarting.html
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:02.838
+!MESSAGE REX Sending 'GET' request to URL : http://127.0.0.1:55432/api/serverstate
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:02.838
+!MESSAGE REX 1570543322838 Utilities::sendGet Response Code from local server: 503
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:03.346
+!MESSAGE REX Sending 'GET' request to URL : http://127.0.0.1:55432/api/serverstate
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:03.346
+!MESSAGE REX 1570543323346 Utilities::sendGet Response Code from local server: 503
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:03.861
+!MESSAGE REX Sending 'GET' request to URL : http://127.0.0.1:55432/api/serverstate
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:03.861
+!MESSAGE REX 1570543323861 Utilities::sendGet Response Code from local server: 503
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:04.363
+!MESSAGE REX Sending 'GET' request to URL : http://127.0.0.1:55432/api/serverstate
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:05.067
+!MESSAGE REX 1570543325066 Utilities::sendGet Response Code from local server: 503
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:05.573
+!MESSAGE REX Sending 'GET' request to URL : http://127.0.0.1:55432/api/serverstate
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:05.573
+!MESSAGE REX 1570543325573 Utilities::sendGet Response Code from local server: 503
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:06.074
+!MESSAGE REX Sending 'GET' request to URL : http://127.0.0.1:55432/api/serverstate
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:06.074
+!MESSAGE REX 1570543326074 Utilities::sendGet Response Code from local server: 200
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:06.074
+!MESSAGE REX [serverStatus] ready
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:06.074
+!MESSAGE REX serverState is ready
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:06.074
+!MESSAGE REX 1570543326074 Tg: Utilities::after server isAlive 4812
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:06.089
+!MESSAGE REX 1570543326089 Th: Utilities::refreshEditor 15
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:06.089
+!MESSAGE REX Sending 'POST' request to URL : http://127.0.0.1:55432/localpkg/scan
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:06.112
+!MESSAGE REX 1570543326111 Utilities::sendPost Response Code from local server: 200
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:06.139
+!MESSAGE REX 1570543326138 Changing URL to http://localhost:55432
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:39.430
+!MESSAGE REX OpenExplorerHandler:: Open Explorer
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:39.430
+!MESSAGE REX OpenExplorerHandler:: just_started_plugin = false
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:39.430
+!MESSAGE REX OpenExplorerHandler:: Call startServer()
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:39.446
+!MESSAGE REX 1570543359446 [A:menu] Starting Server
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:39.446
+!MESSAGE REX [OS:menu] win32
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:39.446
+!MESSAGE REX [A] startServer()
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:39.446
+!MESSAGE REX 1570543359446 [B:menu] process handle != null
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:39.446
+!MESSAGE REX 1570543359446 Tz: ResourceExplorerPage::createMainArea took 0
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:39.446
+!MESSAGE REX pollServerState for up or ready
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:39.446
+!MESSAGE REX 1570543359446 Launching Browser
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:39.462
+!MESSAGE REX Sending 'GET' request to URL : http://127.0.0.1:55432/api/serverstate
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:39.462
+!MESSAGE REX 1570543359462 Utilities::sendGet Response Code from local server: 200
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:39.462
+!MESSAGE REX [serverStatus] ready
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:39.462
+!MESSAGE REX serverState is ready
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:39.462
+!MESSAGE REX [A-] server_up = true
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:39.462
+!MESSAGE REX attempt_process_cleanup = false
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:39.477
+!MESSAGE REX 1570543359477 Tc: Utilities::startServer preamble31
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:39.680
+!MESSAGE REX 1570543359680 Tz: ResourceExplorerPage::createBrowser took 218
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:39.680
+!MESSAGE REX Using browser port 55432
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:39.680
+!MESSAGE REX 1570543359680 server starting page: file:/C:/ti/ccs910/ccs/eclipse/..\tirex\ti-rex-core\public\plugin\serverstarting.html
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:39.680
+!MESSAGE REX Sending 'POST' request to URL : http://127.0.0.1:55432/localpkg/scan
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:39.696
+!MESSAGE REX 1570543359696 Utilities::sendPost Response Code from local server: 200
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:02:39.712
+!MESSAGE REX 1570543359712 [ready] setUrl: http://localhost:55432
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:03:16.318
+!MESSAGE REX OpenExplorerHandler:: Open Explorer
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:03:16.333
+!MESSAGE REX OpenExplorerHandler:: just_started_plugin = false
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:03:16.333
+!MESSAGE REX OpenExplorerHandler:: Call startServer()
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:03:16.333
+!MESSAGE REX 1570543396333 [A:menu] Starting Server
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:03:16.333
+!MESSAGE REX [OS:menu] win32
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:03:16.333
+!MESSAGE REX [A] startServer()
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:03:16.349
+!MESSAGE REX 1570543396333 Tz: ResourceExplorerPage::createMainArea took 0
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:03:16.349
+!MESSAGE REX 1570543396333 [B:menu] process handle != null
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:03:16.349
+!MESSAGE REX 1570543396349 Launching Browser
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:03:16.349
+!MESSAGE REX pollServerState for up or ready
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:03:16.349
+!MESSAGE REX Sending 'GET' request to URL : http://127.0.0.1:55432/api/serverstate
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:03:16.349
+!MESSAGE REX 1570543396349 Utilities::sendGet Response Code from local server: 200
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:03:16.365
+!MESSAGE REX [serverStatus] ready
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:03:16.365
+!MESSAGE REX serverState is ready
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:03:16.365
+!MESSAGE REX [A-] server_up = true
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:03:16.365
+!MESSAGE REX attempt_process_cleanup = false
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:03:16.365
+!MESSAGE REX 1570543396365 Tc: Utilities::startServer preamble32
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:03:16.615
+!MESSAGE REX 1570543396615 Tz: ResourceExplorerPage::createBrowser took 266
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:03:16.615
+!MESSAGE REX Using browser port 55432
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:03:16.615
+!MESSAGE REX 1570543396615 server starting page: file:/C:/ti/ccs910/ccs/eclipse/..\tirex\ti-rex-core\public\plugin\serverstarting.html
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:03:16.615
+!MESSAGE REX Sending 'POST' request to URL : http://127.0.0.1:55432/localpkg/scan
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:03:16.667
+!MESSAGE REX 1570543396639 Utilities::sendPost Response Code from local server: 200
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:03:16.683
+!MESSAGE REX 1570543396667 [ready] setUrl: http://localhost:55432
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 16:08:56.983
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile$Finder.compare(PDOMFile.java:871)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.findFiles(PDOMFile.java:763)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.getFiles(PDOM.java:587)
+	at org.eclipse.cdt.internal.core.index.CIndex.getFiles(CIndex.java:257)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getContextToHeader(TranslationUnit.java:928)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.CModelBuilder2.parse(CModelBuilder2.java:147)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.parseUsingCModelBuilder(TranslationUnit.java:678)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.parse(TranslationUnit.java:666)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.buildStructure(TranslationUnit.java:465)
+	at org.eclipse.cdt.internal.core.model.Openable.generateInfos(Openable.java:261)
+	at org.eclipse.cdt.internal.core.model.CElement.openWhenClosed(CElement.java:427)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:570)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:62)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:635)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:362)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:78)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.initialReconcile(CReconcilingStrategy.java:122)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:117)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.initialReconcile(CCompositeReconcilingStrategy.java:108)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:95)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.initialProcess(CReconciler.java:338)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:174)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 16:08:56.998
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:71)
+	at org.eclipse.cdt.internal.core.pdom.dom.NamedNodeCollector.compare(NamedNodeCollector.java:93)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:586)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.getBindingsViaCache(PDOMLinkage.java:408)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1395)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1385)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:643)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:504)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CScope.getBinding(CScope.java:285)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.lookup(CVisitor.java:1069)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.resolveBinding(CVisitor.java:845)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.createBinding(CVisitor.java:466)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.resolveBinding(CASTName.java:63)
+	at org.eclipse.cdt.internal.ui.editor.SemanticToken.getBinding(SemanticToken.java:47)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightings$ExternalSDKHighlighting.consumes(SemanticHighlightings.java:1550)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visitNode(SemanticHighlightingReconciler.java:233)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visit(SemanticHighlightingReconciler.java:195)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.accept(CASTName.java:129)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIdExpression.accept(CASTIdExpression.java:82)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression.accept(CASTUnaryExpression.java:92)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTEqualsInitializer.accept(ASTEqualsInitializer.java:59)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTDeclarator.postAccept(CASTDeclarator.java:181)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTDeclarator.accept(CASTDeclarator.java:171)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTSimpleDeclaration.accept(CASTSimpleDeclaration.java:103)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTTranslationUnit.accept(ASTTranslationUnit.java:275)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconcilePositions(SemanticHighlightingReconciler.java:448)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:413)
+	at org.eclipse.cdt.internal.ui.editor.CEditor.reconciled(CEditor.java:3105)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:99)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.initialReconcile(CReconcilingStrategy.java:122)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:117)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.initialReconcile(CCompositeReconcilingStrategy.java:108)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:95)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.initialProcess(CReconciler.java:338)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:174)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 16:08:56.998
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:71)
+	at org.eclipse.cdt.internal.core.pdom.dom.NamedNodeCollector.compare(NamedNodeCollector.java:93)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:586)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.getBindingsViaCache(PDOMLinkage.java:408)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1395)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1385)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:643)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:504)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CScope.getBinding(CScope.java:285)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.lookup(CVisitor.java:1069)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.resolveBinding(CVisitor.java:845)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.createBinding(CVisitor.java:466)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.resolveBinding(CASTName.java:63)
+	at org.eclipse.cdt.internal.ui.editor.SemanticToken.getBinding(SemanticToken.java:47)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightings$ExternalSDKHighlighting.consumes(SemanticHighlightings.java:1550)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visitNode(SemanticHighlightingReconciler.java:233)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visit(SemanticHighlightingReconciler.java:195)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.accept(CASTName.java:129)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIdExpression.accept(CASTIdExpression.java:82)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression.accept(CASTUnaryExpression.java:92)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIfStatement.accept(CASTIfStatement.java:131)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTCompoundStatement.accept(CASTCompoundStatement.java:81)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionDefinition.accept(CASTFunctionDefinition.java:133)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTTranslationUnit.accept(ASTTranslationUnit.java:275)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconcilePositions(SemanticHighlightingReconciler.java:448)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:413)
+	at org.eclipse.cdt.internal.ui.editor.CEditor.reconciled(CEditor.java:3105)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:99)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.initialReconcile(CReconcilingStrategy.java:122)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:117)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.initialReconcile(CCompositeReconcilingStrategy.java:108)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:95)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.initialProcess(CReconciler.java:338)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:174)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 16:08:57.060
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile$Finder.compare(PDOMFile.java:871)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.findFiles(PDOMFile.java:763)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.getFiles(PDOM.java:587)
+	at org.eclipse.cdt.internal.core.index.CIndex.getFiles(CIndex.java:257)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getContextToHeader(TranslationUnit.java:928)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:838)
+	at org.eclipse.cdt.internal.core.model.ASTCache$1.run(ASTCache.java:348)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.cdt.internal.core.model.ASTCache.createAST(ASTCache.java:341)
+	at org.eclipse.cdt.internal.core.model.ASTCache.getAST(ASTCache.java:166)
+	at org.eclipse.cdt.internal.core.model.ASTCache.acquireSharedAST(ASTCache.java:255)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:214)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:336)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:162)
+	at org.eclipse.cdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:136)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 16:09:17.944
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile$Finder.compare(PDOMFile.java:871)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.findFiles(PDOMFile.java:763)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.getFiles(PDOM.java:587)
+	at org.eclipse.cdt.internal.core.index.CIndex.getFiles(CIndex.java:257)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getContextToHeader(TranslationUnit.java:928)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.CModelBuilder2.parse(CModelBuilder2.java:147)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.parseUsingCModelBuilder(TranslationUnit.java:678)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.parse(TranslationUnit.java:666)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.buildStructure(TranslationUnit.java:465)
+	at org.eclipse.cdt.internal.core.model.Openable.generateInfos(Openable.java:261)
+	at org.eclipse.cdt.internal.core.model.CElement.openWhenClosed(CElement.java:427)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:570)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:62)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:635)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:362)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:78)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 16:09:17.959
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:71)
+	at org.eclipse.cdt.internal.core.pdom.dom.NamedNodeCollector.compare(NamedNodeCollector.java:93)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:586)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.getBindingsViaCache(PDOMLinkage.java:408)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1395)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1385)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:643)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:504)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CScope.getBinding(CScope.java:285)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.lookup(CVisitor.java:1069)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.resolveBinding(CVisitor.java:845)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.createBinding(CVisitor.java:466)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.resolveBinding(CASTName.java:63)
+	at org.eclipse.cdt.internal.ui.editor.SemanticToken.getBinding(SemanticToken.java:47)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightings$ExternalSDKHighlighting.consumes(SemanticHighlightings.java:1550)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visitNode(SemanticHighlightingReconciler.java:233)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visit(SemanticHighlightingReconciler.java:195)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.accept(CASTName.java:129)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIdExpression.accept(CASTIdExpression.java:82)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression.accept(CASTUnaryExpression.java:92)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTEqualsInitializer.accept(ASTEqualsInitializer.java:59)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTDeclarator.postAccept(CASTDeclarator.java:181)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTDeclarator.accept(CASTDeclarator.java:171)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTSimpleDeclaration.accept(CASTSimpleDeclaration.java:103)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTTranslationUnit.accept(ASTTranslationUnit.java:275)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconcilePositions(SemanticHighlightingReconciler.java:448)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:413)
+	at org.eclipse.cdt.internal.ui.editor.CEditor.reconciled(CEditor.java:3105)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:99)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 16:09:17.959
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:71)
+	at org.eclipse.cdt.internal.core.pdom.dom.NamedNodeCollector.compare(NamedNodeCollector.java:93)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:586)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.getBindingsViaCache(PDOMLinkage.java:408)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1395)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1385)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:643)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:504)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CScope.getBinding(CScope.java:285)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.lookup(CVisitor.java:1069)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.resolveBinding(CVisitor.java:845)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.createBinding(CVisitor.java:466)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.resolveBinding(CASTName.java:63)
+	at org.eclipse.cdt.internal.ui.editor.SemanticToken.getBinding(SemanticToken.java:47)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightings$ExternalSDKHighlighting.consumes(SemanticHighlightings.java:1550)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visitNode(SemanticHighlightingReconciler.java:233)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visit(SemanticHighlightingReconciler.java:195)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.accept(CASTName.java:129)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIdExpression.accept(CASTIdExpression.java:82)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression.accept(CASTUnaryExpression.java:92)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIfStatement.accept(CASTIfStatement.java:131)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTCompoundStatement.accept(CASTCompoundStatement.java:81)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionDefinition.accept(CASTFunctionDefinition.java:133)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTTranslationUnit.accept(ASTTranslationUnit.java:275)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconcilePositions(SemanticHighlightingReconciler.java:448)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:413)
+	at org.eclipse.cdt.internal.ui.editor.CEditor.reconciled(CEditor.java:3105)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:99)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 16:09:30.205
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile$Finder.compare(PDOMFile.java:871)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.findFiles(PDOMFile.java:763)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.getFiles(PDOM.java:587)
+	at org.eclipse.cdt.internal.core.index.CIndex.getFiles(CIndex.java:257)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getContextToHeader(TranslationUnit.java:928)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:843)
+	at org.eclipse.cdt.internal.core.model.CModelBuilder2.parse(CModelBuilder2.java:147)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.parseUsingCModelBuilder(TranslationUnit.java:678)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.parse(TranslationUnit.java:666)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.buildStructure(TranslationUnit.java:465)
+	at org.eclipse.cdt.internal.core.model.Openable.generateInfos(Openable.java:261)
+	at org.eclipse.cdt.internal.core.model.CElement.openWhenClosed(CElement.java:427)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:570)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:62)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:635)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:362)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:78)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 16:09:30.220
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:71)
+	at org.eclipse.cdt.internal.core.pdom.dom.NamedNodeCollector.compare(NamedNodeCollector.java:93)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:586)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.getBindingsViaCache(PDOMLinkage.java:408)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1395)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1385)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:643)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:504)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CScope.getBinding(CScope.java:285)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.lookup(CVisitor.java:1069)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.resolveBinding(CVisitor.java:845)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.createBinding(CVisitor.java:466)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.resolveBinding(CASTName.java:63)
+	at org.eclipse.cdt.internal.ui.editor.SemanticToken.getBinding(SemanticToken.java:47)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightings$ExternalSDKHighlighting.consumes(SemanticHighlightings.java:1550)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visitNode(SemanticHighlightingReconciler.java:233)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visit(SemanticHighlightingReconciler.java:195)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.accept(CASTName.java:129)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIdExpression.accept(CASTIdExpression.java:82)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression.accept(CASTUnaryExpression.java:92)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTEqualsInitializer.accept(ASTEqualsInitializer.java:59)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTDeclarator.postAccept(CASTDeclarator.java:181)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTDeclarator.accept(CASTDeclarator.java:171)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTSimpleDeclaration.accept(CASTSimpleDeclaration.java:103)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTTranslationUnit.accept(ASTTranslationUnit.java:275)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconcilePositions(SemanticHighlightingReconciler.java:448)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:413)
+	at org.eclipse.cdt.internal.ui.editor.CEditor.reconciled(CEditor.java:3105)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:99)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-10-08 16:09:30.236
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at sun.nio.ch.FileDispatcherImpl.pread0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pread(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.readInternal(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.read(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:175)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:304)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getRecPtr(Database.java:513)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:71)
+	at org.eclipse.cdt.internal.core.pdom.dom.NamedNodeCollector.compare(NamedNodeCollector.java:93)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:559)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:578)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:586)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:531)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.getBindingsViaCache(PDOMLinkage.java:408)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1395)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.findBindings(PDOM.java:1385)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:643)
+	at org.eclipse.cdt.internal.core.index.CIndex.findBindings(CIndex.java:504)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CScope.getBinding(CScope.java:285)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.lookup(CVisitor.java:1069)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.resolveBinding(CVisitor.java:845)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CVisitor.createBinding(CVisitor.java:466)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.resolveBinding(CASTName.java:63)
+	at org.eclipse.cdt.internal.ui.editor.SemanticToken.getBinding(SemanticToken.java:47)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightings$ExternalSDKHighlighting.consumes(SemanticHighlightings.java:1550)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visitNode(SemanticHighlightingReconciler.java:233)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler$AbstractPositionCollector.visit(SemanticHighlightingReconciler.java:195)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTName.accept(CASTName.java:129)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIdExpression.accept(CASTIdExpression.java:82)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression.accept(CASTUnaryExpression.java:92)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTBinaryExpression.accept(CASTBinaryExpression.java:128)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTIfStatement.accept(CASTIfStatement.java:131)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTCompoundStatement.accept(CASTCompoundStatement.java:81)
+	at org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionDefinition.accept(CASTFunctionDefinition.java:133)
+	at org.eclipse.cdt.internal.core.dom.parser.ASTTranslationUnit.accept(ASTTranslationUnit.java:275)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconcilePositions(SemanticHighlightingReconciler.java:448)
+	at org.eclipse.cdt.internal.ui.editor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:413)
+	at org.eclipse.cdt.internal.ui.editor.CEditor.reconciled(CEditor.java:3105)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:99)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.core.resources 4 568 2019-10-08 16:14:06.321
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.ui 2 2 2019-10-08 16:26:43.184
+!MESSAGE com.ti.ccstudio.system.setup.ui.views.TargetConfigurationView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY com.ti.ccstudio.debug 1 0 2019-10-08 16:26:48.884
+!MESSAGE DS_ERROR: MSP430: Error initializing emulator: No USB FET was found
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2019-10-08 16:26:49.058
+!MESSAGE DS_ERROR: Error initializing emulator:
+No USB FET was found
+
+!ENTRY org.eclipse.core.resources 4 568 2019-10-08 16:31:27.214
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.resources 4 568 2019-10-08 16:36:56.918
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.resources 4 568 2019-10-08 16:43:43.667
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.resources 4 568 2019-10-08 16:49:43.875
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1735)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1816)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1204)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1145)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.ui.ide 4 4 2019-10-08 16:54:53.175
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 2019-10-08 16:54:53.175
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2019-10-08 16:54:53.175
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:52)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1627)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1706)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1179)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2332)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:526)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:54:53.315
+!MESSAGE >>1570546493315  killing node server
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:54:53.315
+!MESSAGE REX Sending 'GET' request to URL : http://localhost:55432/api/exit
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2019-10-08 16:54:53.315
+!MESSAGE REX 1570546493315 Utilities::sendGet Response Code from local server: 200
+!SESSION 2019-10-08 16:55:00.365 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2019-10-08 16:55:18.086
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2019-10-08 16:55:18.086
+!MESSAGE debugServerDir=C:/ti/ccs910/ccs/ccs_base/DebugServer
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-10-08 16:55:27.117
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-10-08 16:55:27.133
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-10-08 16:55:27.133
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.ti.ccstudio.ui 1 0 2019-10-08 16:55:27.429
+!MESSAGE CCS IDE session started!
+	CCS build: 9.1.0.00010
+	CCS location: C:/ti/ccs910/ccs
+	Workspace location: //svm-c113.hsr.ch/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 16:55:27.617
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 16:55:27.617
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 16:55:27.617
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 16:55:27.633
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 16:55:27.633
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 16:55:27.648
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 16:55:27.664
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 16:55:27.664
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 16:55:27.679
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2019-10-08 16:55:27.711
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY org.eclipse.ui.ide 4 4 2019-10-08 16:55:38.130
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 2019-10-08 16:55:38.130
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2019-10-08 16:55:38.130
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: \\svm-c113.hsr.ch\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:52)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1627)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1706)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1179)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2332)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:526)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY org.eclipse.equinox.p2.updatechecker 4 0 2019-10-08 16:55:38.442
+!MESSAGE Exception in update check thread
+!STACK 0
+org.eclipse.core.runtime.OperationCanceledException
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:126)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:158)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.handleRemoteIndexFile(AbstractRepositoryManager.java:721)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:715)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:657)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:107)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:102)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:165)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:107)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:121)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:60)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:767)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:668)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:107)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:102)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:149)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:127)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:75)
+
+!ENTRY org.eclipse.core.jobs 4 2 2019-10-08 16:55:38.489
+!MESSAGE An internal error occurred during: "Replace IU Job".
+!STACK 0
+java.lang.NullPointerException
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter.log(CCSAppCenter.java:446)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter._replaceIusWithLatest(CCSAppCenter.java:414)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter.access$3(CCSAppCenter.java:358)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter$2.run(CCSAppCenter.java:234)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)

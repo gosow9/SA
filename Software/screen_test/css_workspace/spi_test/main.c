@@ -7,7 +7,11 @@
 
 #include "driverlib.h"
 
-int main(void)
+
+#define EPD_DC_PIN      GPIO_PORT_P1, GPIO_PIN7
+
+
+void main(void)
 {
     //Stop watchdog timer
     WDT_A_hold(WDT_A_BASE);
@@ -26,8 +30,7 @@ int main(void)
 
     //P1.7 to SOMI
     GPIO_setAsPeripheralModuleFunctionInputPin(
-        GPIO_PORT_P1,
-        GPIO_PIN7,
+        EPD_DC_PIN,
         GPIO_PRIMARY_MODULE_FUNCTION
     );
 
@@ -61,5 +64,4 @@ int main(void)
     {
         EUSCI_B_SPI_transmitData(EUSCI_B0_BASE, 0x53);
     }
-    return 0;
 }
