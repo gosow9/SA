@@ -46,15 +46,17 @@ def main(data_path):
     sample = advertising_data[:, 0]
     voltage = advertising_data[:, 1]
     current = advertising_data[:, 2]
+    current = np.where(current >0.1, 0.1, current)
     power = voltage*current
     plt.plot(sample, voltage)
     plt.figure()
-    plt.ylim(0,0.1)
+    plt.ylim(0,0.2)
     plt.grid(True)
-    plt.plot(current[3000:4500],'.-')
-#    plt.figure()
-#    plt.plot(sample, power)
-    print(np.max(current))
+    plt.plot(current,'.-')
+    plt.figure()
+    plt.plot(sample, power)
+
+    print(np.sum(power)/90)
     #simple_linear_regression(tv_data, sales_data)
 
 
