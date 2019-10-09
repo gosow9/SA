@@ -10,7 +10,7 @@ int main(void)
     WDT_A_hold(WDT_A_BASE);
 
     //Set DCO frequency to max DCO setting
-    CS_setDCOFreq(CS_DCORSEL_0,CS_DCOFSEL_3); //f=4MHZ
+    CS_setDCOFreq(CS_DCORSEL_0,CS_DCOFSEL_0); //f=1MHZ
     //Select DCO as the clock source for SMCLK with no frequency divider
     CS_initClockSignal(CS_SMCLK,CS_DCOCLK_SELECT,CS_CLOCK_DIVIDER_1);
 
@@ -32,26 +32,24 @@ int main(void)
     GPIO_setAsPeripheralModuleFunctionOutputPin(
         GPIO_PORT_P2,
         GPIO_PIN5,
-        GPIO_PRIMARY_MODULE_FUNCTION
-    );
-    //P3.0 to DC_Pin
-    GPIO_setAsPeripheralModuleFunctionOutputPin(
-        GPIO_PORT_P3,
-        GPIO_PIN1,
-        GPIO_PRIMARY_MODULE_FUNCTION
-    );
-    //P3.1 to RST_Pin
-    GPIO_setAsPeripheralModuleFunctionOutputPin(
-        GPIO_PORT_P3,
-        GPIO_PIN1,
-        GPIO_PRIMARY_MODULE_FUNCTION
+        GPIO_SECONDARY_MODULE_FUNCTION
     );
 
+
+    //P3.0 to DC_Pin
+    GPIO_setAsOutputPin(
+        GPIO_PORT_P3,
+        GPIO_PIN0
+    );
+    //P3.1 to RST_Pin
+    GPIO_setAsOutputPin(
+        GPIO_PORT_P3,
+        GPIO_PIN1
+    );
     //P2.3 to Busy_Pin
-    GPIO_setAsPeripheralModuleFunctionInputPin(
+    GPIO_setAsInputPin(
         GPIO_PORT_P2,
-        GPIO_PIN3,
-        GPIO_PRIMARY_MODULE_FUNCTION
+        GPIO_PIN3
     );
 
     //SPI initialisieren

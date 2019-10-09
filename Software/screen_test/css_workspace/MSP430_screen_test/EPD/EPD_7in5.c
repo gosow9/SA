@@ -213,9 +213,13 @@ void EPD_7IN5_Clear(void)
     Height = EPD_7IN5_HEIGHT;
 
     EPD_7IN5_SendCommand(0x10);
-    for (UWORD j = 0; j < Height; j++) {
-        for (UWORD i = 0; i < Width; i++) {
-            for(UBYTE k = 0; k < 4; k++) {
+
+    UWORD j, i;
+    UBYTE k;
+
+    for (j = 0; j < Height; j++){
+        for (i = 0; i < Width; i++) {
+            for(k = 0; k < 4; k++) {
                 EPD_7IN5_SendData(0x33);
             }
         }
@@ -234,11 +238,14 @@ void EPD_7IN5_Display(UBYTE *Image)
     Width = (EPD_7IN5_WIDTH % 8 == 0)? (EPD_7IN5_WIDTH / 8 ): (EPD_7IN5_WIDTH / 8 + 1);
     Height = EPD_7IN5_HEIGHT;
 
+    UWORD j, i;
+    UBYTE k;
+
     EPD_7IN5_SendCommand(0x10);
-    for (UWORD j = 0; j < Height; j++) {
-        for (UWORD i = 0; i < Width; i++) {
+    for (j = 0; j < Height; j++) {
+        for (i = 0; i < Width; i++) {
             Data_Black = ~Image[i + j * Width];
-            for(UBYTE k = 0; k < 8; k++) {
+            for(k = 0; k < 8; k++) {
                 if(Data_Black & 0x80)
                     Data = 0x00;
                 else

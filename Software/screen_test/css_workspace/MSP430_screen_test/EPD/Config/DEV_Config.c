@@ -30,12 +30,10 @@
 #
 ******************************************************************************/
 #include "DEV_Config.h"
-#include "stm32f1xx_hal_spi.h"
 
-extern SPI_HandleTypeDef hspi1;
 void DEV_SPI_WriteByte(UBYTE value)
 {
-    HAL_SPI_Transmit(&hspi1, &value, 1, 1000);
+    EUSCI_B_SPI_transmitData(EUSCI_B0_BASE, value);
 }
 
 void DEV_Module_Init(void)
@@ -54,3 +52,39 @@ void DEV_Module_Exit(void)
     DEV_Digital_Write(EPD_RST_PIN, 0);
 }
 
+void DEV_Digital_Write(uint8_t _port, uint16_t _pin, int _value)
+{
+    if(_value == 1)
+    {
+        GPIO_setOutputHighOnPin(_port, _pin);
+    }
+    else
+    {
+        GPIO_setOutputLowOnPin(_port, _pin);
+    }
+}
+uint8_t DEV_Digital_Read(uint8_t _port, uint16_t _pin)
+{
+    return GPIO_getInputPinValue(_port, _pin);
+}
+
+void DEV_Delay_ms(uint32_t __xms)
+{
+    //Start TIMER_A
+    Timer_A_initContinuousModeParam initContParam = {0};
+    initContParam.clockSource = TIMER_A_CLOCKSOURCE_SMCLK; //4MHZ in main.c
+    initContParam.clockSourceDivider = TIMER_A_CLOCKSOURCE_DIVIDER_1;
+    initContParam.timerInterruptEnable_TAIE = TIMER_A_TAIE_INTERRUPT_DISABLE;
+    initContParam.timerClear = TIMER_A_DO_CLEAR;
+    initContParam.startTimer = false;
+    Timer_A_initContinuousMode(TIMER_A1_BASE, &initContParam);
+
+    Timer_A_startCounter(TIMER_A1_BASE, TIMER_A_CONTINUOUS_MODE );
+
+    uint32_t wait = __xms*1000;
+
+    while(Timer_A_getCounterValue(TIMER_A1_BASE)<wait)
+    {
+    }
+    Timer_A_stop(TIMER_A1_BASE);
+}
