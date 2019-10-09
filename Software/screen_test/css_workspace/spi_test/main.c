@@ -10,6 +10,7 @@
 
 #define EPD_DC_PIN      GPIO_PORT_P1, GPIO_PIN7
 
+void DEV_Delay_ms(uint32_t __xms);
 
 void main(void)
 {
@@ -17,9 +18,9 @@ void main(void)
     WDT_A_hold(WDT_A_BASE);
 
     //Set DCO frequency to max DCO setting
-    CS_setDCOFreq(CS_DCORSEL_0,CS_DCOFSEL_3);
+    CS_setDCOFreq(CS_DCORSEL_0,CS_DCOFSEL_0);
     //Select DCO as the clock source for SMCLK with no frequency divider
-    CS_initClockSignal(CS_SMCLK,CS_DCOCLK_SELECT,CS_CLOCK_DIVIDER_32);
+    CS_initClockSignal(CS_SMCLK,CS_DCOCLK_SELECT,CS_CLOCK_DIVIDER_1);
 
     //P1.6 to SIMO
     GPIO_setAsPeripheralModuleFunctionOutputPin(
@@ -54,7 +55,7 @@ void main(void)
     param.desiredSpiClock = 500000;
     param.msbFirst = EUSCI_B_SPI_MSB_FIRST;
     param.clockPhase = EUSCI_B_SPI_PHASE_DATA_CHANGED_ONFIRST_CAPTURED_ON_NEXT;
-    param.clockPolarity = EUSCI_B_SPI_CLOCKPOLARITY_INACTIVITY_HIGH;
+    param.clockPolarity = EUSCI_B_SPI_CLOCKPOLARITY_INACTIVITY_LOW;
     param.spiMode = EUSCI_B_SPI_3PIN;
     EUSCI_B_SPI_initMaster(EUSCI_B0_BASE, &param);
 
@@ -62,6 +63,6 @@ void main(void)
 
     while(1)
     {
-        EUSCI_B_SPI_transmitData(EUSCI_B0_BASE, 0x53);
+        EUSCI_B_SPI_transmitData(EUSCI_B0_BASE, 0x01);
     }
 }

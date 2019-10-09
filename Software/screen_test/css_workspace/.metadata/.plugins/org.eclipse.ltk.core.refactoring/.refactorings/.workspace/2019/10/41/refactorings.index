@@ -8,3 +8,5 @@
 1570534816856	Delete 3 resources
 1570536345356	Delete resource 'MSP430_screen_test/driverlib/MSP430_hal'
 1570536417748	Delete resource 'MSP430_screen_test/MSP430_hal/MSP430_hal.c'
+1570619439609	Delete resource 'MSP430_screen_test/MSP430_hal'
+1570638865686	Delete resource 'MSP430_screen_test/EPD/main.h'

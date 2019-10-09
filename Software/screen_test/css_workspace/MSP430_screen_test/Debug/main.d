@@ -3,16 +3,6 @@
 main.obj: ../main.c
 main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD/EPD_Test.h
 main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD/Config/DEV_Config.h
-main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD/main.h
-main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD/../MSP430_hal/msp430_hal.h
-main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx/driverlib.h
-main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx/inc/hw_memmap.h
-main.obj: C:/ti/ccs910/ccs/ccs_base/msp430/include/msp430.h
-main.obj: C:/ti/ccs910/ccs/ccs_base/msp430/include/msp430fr6989.h
-main.obj: C:/ti/ccs910/ccs/ccs_base/msp430/include/in430.h
-main.obj: C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/intrinsics.h
-main.obj: C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/intrinsics_legacy_undefs.h
-main.obj: C:/ti/ccs910/ccs/ccs_base/msp430/include/msp430fr5xx_6xxgeneric.h
 main.obj: C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/stdint.h
 main.obj: C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/_stdint40.h
 main.obj: C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/sys/stdint.h
@@ -21,6 +11,14 @@ main.obj: C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/sys/
 main.obj: C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/machine/_types.h
 main.obj: C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/machine/_stdint.h
 main.obj: C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/sys/_stdint.h
+main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx/driverlib.h
+main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx/inc/hw_memmap.h
+main.obj: C:/ti/ccs910/ccs/ccs_base/msp430/include/msp430.h
+main.obj: C:/ti/ccs910/ccs/ccs_base/msp430/include/msp430fr6989.h
+main.obj: C:/ti/ccs910/ccs/ccs_base/msp430/include/in430.h
+main.obj: C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/intrinsics.h
+main.obj: C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/intrinsics_legacy_undefs.h
+main.obj: C:/ti/ccs910/ccs/ccs_base/msp430/include/msp430fr5xx_6xxgeneric.h
 main.obj: C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/stdbool.h
 main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx/hspll.h
 main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx/sysctl.h
@@ -69,16 +67,6 @@ main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/cs
 ../main.c: 
 //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD/EPD_Test.h: 
 //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD/Config/DEV_Config.h: 
-//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD/main.h: 
-//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD/../MSP430_hal/msp430_hal.h: 
-//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx/driverlib.h: 
-//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx/inc/hw_memmap.h: 
-C:/ti/ccs910/ccs/ccs_base/msp430/include/msp430.h: 
-C:/ti/ccs910/ccs/ccs_base/msp430/include/msp430fr6989.h: 
-C:/ti/ccs910/ccs/ccs_base/msp430/include/in430.h: 
-C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/intrinsics.h: 
-C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/intrinsics_legacy_undefs.h: 
-C:/ti/ccs910/ccs/ccs_base/msp430/include/msp430fr5xx_6xxgeneric.h: 
 C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/stdint.h: 
 C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/_stdint40.h: 
 C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/sys/stdint.h: 
@@ -87,6 +75,14 @@ C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/sys/_types.h:
 C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/machine/_types.h: 
 C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/machine/_stdint.h: 
 C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/sys/_stdint.h: 
+//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx/driverlib.h: 
+//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx/inc/hw_memmap.h: 
+C:/ti/ccs910/ccs/ccs_base/msp430/include/msp430.h: 
+C:/ti/ccs910/ccs/ccs_base/msp430/include/msp430fr6989.h: 
+C:/ti/ccs910/ccs/ccs_base/msp430/include/in430.h: 
+C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/intrinsics.h: 
+C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/intrinsics_legacy_undefs.h: 
+C:/ti/ccs910/ccs/ccs_base/msp430/include/msp430fr5xx_6xxgeneric.h: 
 C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/stdbool.h: 
 //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx/hspll.h: 
 //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx/sysctl.h: 

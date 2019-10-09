@@ -48,9 +48,8 @@
 #ifndef _DEV_CONFIG_H_
 #define _DEV_CONFIG_H_
 
-#include "main.h"
-#include "../MSP430_hal/msp430_hal.h"
 #include <stdint.h>
+#include "driverlib.h"
 
 /**
  * data
@@ -70,13 +69,14 @@
 /**
  * GPIO read and write
 **/
-#define DEV_Digital_Write(_pin, _value) HAL_GPIO_WritePin(_pin, _value)
-#define DEV_Digital_Read(_pin) HAL_GPIO_ReadPin(_pin)
+
+uint8_t DEV_Digital_Read(uint8_t _port, uint16_t _pin);
+void DEV_Digital_Write(uint8_t _port, uint16_t _pin, int _value);
 
 /**
  * delay x ms
 **/
-#define DEV_Delay_ms(__xms) HAL_Delay(__xms);
+void DEV_Delay_ms(uint32_t __xms);
 
 void DEV_SPI_WriteByte(UBYTE value);
 
