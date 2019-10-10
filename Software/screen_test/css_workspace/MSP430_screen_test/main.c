@@ -29,12 +29,10 @@ int main(void)
         GPIO_SECONDARY_MODULE_FUNCTION
     );
     //P2.5 to SPI_CS
-    GPIO_setAsPeripheralModuleFunctionOutputPin(
+    GPIO_setAsOutputPin(
         GPIO_PORT_P2,
-        GPIO_PIN5,
-        GPIO_SECONDARY_MODULE_FUNCTION
+        GPIO_PIN5
     );
-
 
     //P3.0 to DC_Pin
     GPIO_setAsOutputPin(

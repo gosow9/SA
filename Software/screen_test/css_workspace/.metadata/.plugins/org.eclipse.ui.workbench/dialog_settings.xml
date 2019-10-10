@@ -7,8 +7,8 @@
 	<section name="org.eclipse.ui.preferences.keysPreferencePage">
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="-1" key="dialogHeight"/>
-		<item value="-1" key="dialogWidth"/>
+		<item value="1058" key="dialogHeight"/>
+		<item value="1161" key="dialogWidth"/>
 		<list key="textEntries">
 		</list>
 		<list key="orderedElements">
