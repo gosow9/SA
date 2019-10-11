@@ -15,11 +15,20 @@ void main(void)
     //Stop watchdog timer
     WDT_A_hold(WDT_A_BASE);
 
-    //GPO pin
-    GPIO_setAsOutputPin(
+    //GPiO pin
+    GPIO_setAsInputPin(
         GPIO_PORT_P2,
-        GPIO_PIN1
+        GPIO_PIN3
     );
+    GPIO_setAsOutputPin(
+        GPIO_PORT_P1,
+        GPIO_PIN3
+    );
+    GPIO_setAsOutputPin(
+         GPIO_PORT_P3,
+         GPIO_PIN0
+     );
+
 
     //Set DCO frequency to max DCO setting
     CS_setDCOFreq(CS_DCORSEL_0,CS_DCOFSEL_0);
@@ -68,10 +77,13 @@ void main(void)
 
     while(1)
     {
-        DEV_Digital_Write(PORT21, 1);
+        DEV_Digital_Write(GPIO_PORT_P1, GPIO_PIN3, 1);
         DEV_Delay_ms(1);
-        DEV_Digital_Write(PORT21, 0);
+        DEV_Digital_Write(GPIO_PORT_P3, GPIO_PIN0, DEV_Digital_Read(GPIO_PORT_P2, GPIO_PIN3));
+        DEV_Delay_ms(2);
+        DEV_Digital_Write(GPIO_PORT_P1, GPIO_PIN3, 0);
         DEV_Delay_ms(1);
-        //EUSCI_B_SPI_transmitData(EUSCI_B0_BASE, 0x01);
+        DEV_Digital_Write(GPIO_PORT_P3, GPIO_PIN0, DEV_Digital_Read(GPIO_PORT_P2, GPIO_PIN3));
+        DEV_Delay_ms(2);
     }
 }

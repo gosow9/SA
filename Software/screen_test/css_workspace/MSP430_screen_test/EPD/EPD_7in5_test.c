@@ -41,6 +41,9 @@ int EPD_7in5_test(void)
     EPD_7IN5_Clear();
     DEV_Delay_ms(500);
 
+
+
+
     //Create a new image cache
     UBYTE *BlackImage;
     //you have to edit the startup_stm32fxxx.s file and set a big enough heap size

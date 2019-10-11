@@ -63,14 +63,15 @@
 **/
 #define EPD_RST_PIN     GPIO_PORT_P3, GPIO_PIN1
 #define EPD_DC_PIN      GPIO_PORT_P3, GPIO_PIN0
-#define EPD_CS_PIN      GPIO_PORT_P2, GPIO_PIN5
+#define EPD_CS_PIN      GPIO_PORT_P1, GPIO_PIN3
 #define EPD_BUSY_PIN    GPIO_PORT_P2, GPIO_PIN3
 
 /**
  * GPIO read and write
 **/
 
-uint8_t DEV_Digital_Read(uint8_t _port, uint16_t _pin);
+#define DEV_Digital_Read(_pin) GPIO_getInputPinValue(_pin)
+
 void DEV_Digital_Write(uint8_t _port, uint16_t _pin, int _value);
 
 /**
