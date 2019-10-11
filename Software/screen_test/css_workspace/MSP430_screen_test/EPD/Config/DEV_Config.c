@@ -63,10 +63,6 @@ void DEV_Digital_Write(uint8_t _port, uint16_t _pin, int _value)
         GPIO_setOutputLowOnPin(_port, _pin);
     }
 }
-uint8_t DEV_Digital_Read(uint8_t _port, uint16_t _pin)
-{
-    return GPIO_getInputPinValue(_port, _pin);
-}
 
 void DEV_Delay_ms(uint32_t __xms)
 {
@@ -81,7 +77,7 @@ void DEV_Delay_ms(uint32_t __xms)
 
     Timer_A_startCounter(TIMER_A1_BASE, TIMER_A_CONTINUOUS_MODE );
 
-    uint32_t wait = __xms*1000;
+    uint32_t wait = 100;//__xms*4000;
 
     while(Timer_A_getCounterValue(TIMER_A1_BASE)<wait)
     {
