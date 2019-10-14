@@ -3,6 +3,58 @@
 
 "C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
  
-gmake[1]: 'MSP430_screen_test.out' is up to date.
+Building file: "../EPD/EPD_7in5_test.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/ti/ccs910/ccs/ccs_base/EPD/Config" --include_path="C:/ti/ccs910/ccs/ccs_base/EPD/Fonts" --include_path="C:/ti/ccs910/ccs/ccs_base/EPD/GUI" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/driverlib/MSP430FR5xx_6xx" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test/EPD" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/MSP430_screen_test" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="EPD/EPD_7in5_test.d_raw" --obj_directory="EPD"  "../EPD/EPD_7in5_test.c"
+\\SVM-C113.HSR.CH\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\MSP430_screen_test\Debug
+CMD.EXE was started with the above path as the current directory.
+UNC paths are not supported.  Defaulting to Windows directory.
+\\SVM-C113.HSR.CH\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\MSP430_screen_test\Debug
+CMD.EXE was started with the above path as the current directory.
+UNC paths are not supported.  Defaulting to Windows directory.
+"../EPD/EPD_7in5_test.c", line 35: warning #225-D: function "printf" declared implicitly
+"../EPD/EPD_7in5_test.c", line 35: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/EPD_7in5_test.c", line 39: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/EPD_7in5_test.c", line 52: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/EPD_7in5_test.c", line 55: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/EPD_7in5_test.c", line 60: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/EPD_7in5_test.c", line 70: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/EPD_7in5_test.c", line 75: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/EPD_7in5_test.c", line 94: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/EPD_7in5_test.c", line 99: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/EPD_7in5_test.c", line 102: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/EPD_7in5_test.c", line 108: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../EPD/EPD_7in5_test.c", line 50: remark #1535-D: (ULP 8.1) variable "Imagesize" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+\\SVM-C113.HSR.CH\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\MSP430_screen_test\Debug
+CMD.EXE was started with the above path as the current directory.
+UNC paths are not supported.  Defaulting to Windows directory.
+\\SVM-C113.HSR.CH\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\MSP430_screen_test\Debug
+CMD.EXE was started with the above path as the current directory.
+UNC paths are not supported.  Defaulting to Windows directory.
+Finished building: "../EPD/EPD_7in5_test.c"
+ 
+Building target: "MSP430_screen_test.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"MSP430_screen_test.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/EPD" -i"C:/ti/ccs910/ccs/ccs_base/driverlib" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MSP430_screen_test_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "MSP430_screen_test.out" "./main.obj" "./EPD/Config/DEV_Config.obj" "./EPD/EPD_7in5.obj" "./EPD/EPD_7in5_test.obj" "./EPD/ImageData.obj" "./EPD/Fonts/font12.obj" "./EPD/Fonts/font12CN.obj" "./EPD/Fonts/font16.obj" "./EPD/Fonts/font20.obj" "./EPD/Fonts/font24.obj" "./EPD/Fonts/font24CN.obj" "./EPD/Fonts/font8.obj" "./EPD/GUI/GUI_Paint.obj" "./driverlib/MSP430FR5xx_6xx/adc12_b.obj" "./driverlib/MSP430FR5xx_6xx/aes256.obj" "./driverlib/MSP430FR5xx_6xx/comp_e.obj" "./driverlib/MSP430FR5xx_6xx/crc.obj" "./driverlib/MSP430FR5xx_6xx/crc32.obj" "./driverlib/MSP430FR5xx_6xx/cs.obj" "./driverlib/MSP430FR5xx_6xx/dma.obj" "./driverlib/MSP430FR5xx_6xx/esi.obj" "./driverlib/MSP430FR5xx_6xx/eusci_a_spi.obj" "./driverlib/MSP430FR5xx_6xx/eusci_a_uart.obj" "./driverlib/MSP430FR5xx_6xx/eusci_b_i2c.obj" "./driverlib/MSP430FR5xx_6xx/eusci_b_spi.obj" "./driverlib/MSP430FR5xx_6xx/framctl.obj" "./driverlib/MSP430FR5xx_6xx/framctl_a.obj" "./driverlib/MSP430FR5xx_6xx/gpio.obj" "./driverlib/MSP430FR5xx_6xx/hspll.obj" "./driverlib/MSP430FR5xx_6xx/lcd_c.obj" "./driverlib/MSP430FR5xx_6xx/mpu.obj" "./driverlib/MSP430FR5xx_6xx/mpy32.obj" "./driverlib/MSP430FR5xx_6xx/mtif.obj" "./driverlib/MSP430FR5xx_6xx/pmm.obj" "./driverlib/MSP430FR5xx_6xx/ram.obj" "./driverlib/MSP430FR5xx_6xx/ref_a.obj" "./driverlib/MSP430FR5xx_6xx/rtc_b.obj" "./driverlib/MSP430FR5xx_6xx/rtc_c.obj" "./driverlib/MSP430FR5xx_6xx/saph.obj" "./driverlib/MSP430FR5xx_6xx/saph_a.obj" "./driverlib/MSP430FR5xx_6xx/sdhs.obj" "./driverlib/MSP430FR5xx_6xx/sfr.obj" "./driverlib/MSP430FR5xx_6xx/sysctl.obj" "./driverlib/MSP430FR5xx_6xx/timer_a.obj" "./driverlib/MSP430FR5xx_6xx/timer_b.obj" "./driverlib/MSP430FR5xx_6xx/tlv.obj" "./driverlib/MSP430FR5xx_6xx/uups.obj" "./driverlib/MSP430FR5xx_6xx/wdt_a.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+\\SVM-C113.HSR.CH\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\MSP430_screen_test\Debug
+CMD.EXE was started with the above path as the current directory.
+UNC paths are not supported.  Defaulting to Windows directory.
+\\SVM-C113.HSR.CH\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\MSP430_screen_test\Debug
+CMD.EXE was started with the above path as the current directory.
+UNC paths are not supported.  Defaulting to Windows directory.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+\\SVM-C113.HSR.CH\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\MSP430_screen_test\Debug
+CMD.EXE was started with the above path as the current directory.
+UNC paths are not supported.  Defaulting to Windows directory.
+Finished building target: "MSP430_screen_test.out"
+ 
+\\SVM-C113.HSR.CH\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\MSP430_screen_test\Debug
+CMD.EXE was started with the above path as the current directory.
+UNC paths are not supported.  Defaulting to Windows directory.
 
 **** Build Finished ****

@@ -1,0 +1,24 @@
+
+**** Build of configuration Debug for project bildschrim_beschreiben ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/bildschrim_beschreiben/driverlib/MSP430FR5xx_6xx" --include_path="C:/ti/ccs910/ccs/ccs_base/driverlib" --include_path="//SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/bildschrim_beschreiben" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --preinclude="C:/ti/ccs910/ccs/ccs_base/msp430/EPD" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+\\SVM-C113.HSR.CH\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\bildschrim_beschreiben\Debug
+CMD.EXE was started with the above path as the current directory.
+UNC paths are not supported.  Defaulting to Windows directory.
+\\SVM-C113.HSR.CH\mtischha\Documents\GitHub\SA\Software\screen_test\css_workspace\bildschrim_beschreiben\Debug
+CMD.EXE was started with the above path as the current directory.
+UNC paths are not supported.  Defaulting to Windows directory.
+Command-line error #1966: cannot open source file "C:/ti/ccs910/ccs/ccs_base/msp430/EPD": Invalid argument
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
