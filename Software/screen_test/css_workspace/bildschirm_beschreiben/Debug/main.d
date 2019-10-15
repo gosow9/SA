@@ -56,6 +56,8 @@ main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/cs
 main.obj: ../EPD/EPD_7in5.h
 main.obj: ../EPD/Config/DEV_Config.h
 main.obj: //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/bildschirm_beschreiben/driverlib/MSP430FR5xx_6xx/driverlib.h
+main.obj: ../EPD/GUI/GUI_Paint.h
+main.obj: ../EPD/GUI/../Fonts/fonts.h
 
 ../main.c: 
 //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/bildschirm_beschreiben/driverlib/MSP430FR5xx_6xx/driverlib.h: 
@@ -113,3 +115,5 @@ C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include/stdbool.h:
 ../EPD/EPD_7in5.h: 
 ../EPD/Config/DEV_Config.h: 
 //SVM-C113.HSR.CH/mtischha/Documents/GitHub/SA/Software/screen_test/css_workspace/bildschirm_beschreiben/driverlib/MSP430FR5xx_6xx/driverlib.h: 
+../EPD/GUI/GUI_Paint.h: 
+../EPD/GUI/../Fonts/fonts.h: 

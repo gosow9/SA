@@ -1,5 +1,6 @@
 #include "driverlib.h"
 #include "EPD/EPD_7in5.h"
+#include "EPD/GUI/GUI_Paint.h"
 
 /**
  * main.c
@@ -72,10 +73,9 @@ int main(void)
 	
     DEV_Module_Init();
     EPD_7IN5_Init();
-    //EPD_7IN5_Clear();
 
-
-
+    EPD_7IN5_Clear();
+    Paint_Clear(WHITE);
 
     EPD_7IN5_Sleep();
     DEV_Module_Exit();
