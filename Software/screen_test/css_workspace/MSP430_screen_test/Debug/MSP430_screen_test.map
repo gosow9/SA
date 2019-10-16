@@ -1,7 +1,7 @@
 ******************************************************************************
                   MSP430 Linker PC v18.12.2                    
 ******************************************************************************
->> Linked Tue Oct 15 16:18:51 2019
+>> Linked Wed Oct 16 13:59:35 2019
 
 OUTPUT FILE NAME:   <MSP430_screen_test.out>
 ENTRY POINT SYMBOL: "_c_int00_noargs_mpu"  address: 00004800
@@ -79,7 +79,7 @@ MEMORY CONFIGURATION
   INT53                 0000fffa   00000002  00000002  00000000  RWIX
   INT54                 0000fffc   00000002  00000002  00000000  RWIX
   RESET                 0000fffe   00000002  00000002  00000000  RWIX
-  FRAM2                 00010000   00014000  00002a84  0001157c  RWIX
+  FRAM2                 00010000   00014000  00002a80  00011580  RWIX
 
 
 SECTION ALLOCATION MAP
@@ -272,7 +272,7 @@ SYSNMI     0    0000fffc    00000002
                   0000e928    00000014     rts430x_lc_rd_eabi.lib : _printfi_min.c.obj (.const:.string)
                   0000e93c    00000012     main.obj (.const:$P$T0$1)
 
-.text      0    00010000    00002a84     
+.text      0    00010000    00002a80     
                   00010000    000002f0     EPD_7in5_test.obj (.text:EPD_7in5_test)
                   000102f0    0000028a     GUI_Paint.obj (.text:Paint_DrawString_CN)
                   0001057a    000001d2     GUI_Paint.obj (.text:Paint_DrawCircle)
@@ -291,106 +291,106 @@ SYSNMI     0    0000fffc    00000002
                   00011392    000000da     EPD_7in5.obj (.text:EPD_7IN5_Init)
                   0001146c    000000da     rts430x_lc_rd_eabi.lib : _printfi_min.c.obj (.text:_pproc_diouxp)
                   00011546    000000da                            : memory.c.obj (.text:free)
-                  00011620    000000be     main.obj (.text:main)
-                  000116de    000000bc     GUI_Paint.obj (.text:Paint_DrawRectangle)
-                  0001179a    0000009a     rts430x_lc_rd_eabi.lib : hostlseek.c.obj (.text:HOSTlseek)
-                  00011834    00000090                            : fputc.c.obj (.text:fputc)
-                  000118c4    0000007e                            : _io_perm.c.obj (.text:__TI_wrt_ok)
-                  00011942    0000007a     EPD_7in5.obj (.text:EPD_7IN5_Display)
-                  000119bc    0000007a     GUI_Paint.obj (.text:Paint_DrawPoint)
-                  00011a36    0000007a     GUI_Paint.obj (.text:Paint_DrawString_EN)
-                  00011ab0    00000076     rts430x_lc_rd_eabi.lib : copy_decompress_lzss.c.obj (.text:decompress:lzss:__TI_decompress_lzss)
-                  00011b26    00000074                            : hostrename.c.obj (.text:HOSTrename)
-                  00011b9a    00000074                            : fclose.c.obj (.text:__TI_closefile)
-                  00011c0e    00000072     gpio.obj (.text:GPIO_setAsPeripheralModuleFunctionOutputPin)
-                  00011c80    00000070     rts430x_lc_rd_eabi.lib : hostopen.c.obj (.text:HOSTopen)
-                  00011cf0    00000070                            : memory.c.obj (.text:split)
-                  00011d60    0000006c                            : hostwrite.c.obj (.text:HOSTwrite)
-                  00011dcc    0000006a     cs.obj (.text:CS_initClockSignal)
-                  00011e36    0000006a     rts430x_lc_rd_eabi.lib : hostread.c.obj (.text:HOSTread)
-                  00011ea0    0000006a                            : fseek.c.obj (.text:fseek)
-                  00011f0a    00000064                            : fflush.c.obj (.text:__TI_doflush)
-                  00011f6e    0000005a                            : close.c.obj (.text:close)
-                  00011fc8    0000005a                            : getdevice.c.obj (.text:getdevice)
-                  00012022    00000058                            : div32u.asm.obj (.text)
-                  0001207a    00000056     eusci_b_spi.obj (.text:EUSCI_B_SPI_initMaster)
-                  000120d0    00000054     GUI_Paint.obj (.text:Paint_NewImage)
-                  00012124    00000054     rts430x_lc_rd_eabi.lib : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit_hold_wdt:__TI_auto_init_nobinit_nopinit_hold_wdt)
-                  00012178    0000004e                            : hostclose.c.obj (.text:HOSTclose)
-                  000121c6    0000004a                            : exit.c.obj (.text:exit)
-                  00012210    0000004a                            : printf.c.obj (.text:printf)
-                  0001225a    00000048                            : _printfi_min.c.obj (.text:_pproc_str)
-                  000122a2    00000046     EPD_7in5.obj (.text:EPD_7IN5_Clear)
-                  000122e8    00000046     rts430x_lc_rd_eabi.lib : hostunlink.c.obj (.text:HOSTunlink)
-                  0001232e    00000044     EPD_7in5.obj (.text:EPD_7IN5_Reset)
-                  00012372    00000040     gpio.obj (.text:GPIO_setAsInputPin)
-                  000123b2    00000040     rts430x_lc_rd_eabi.lib : div32s.asm.obj (.text)
-                  000123f2    0000003e                            : lsl32.asm.obj (.text:l_lsl_const)
-                  00012430    0000003e                            : lseek.c.obj (.text:lseek)
-                  0001246e    0000003c     GUI_Paint.obj (.text:Paint_DrawBitMap)
-                  000124aa    0000003c     rts430x_lc_rd_eabi.lib : write.c.obj (.text:write)
-                  000124e6    00000038     GUI_Paint.obj (.text:Paint_Clear)
-                  0001251e    00000036     rts430x_lc_rd_eabi.lib : fopen.c.obj (.text:__TI_cleanup)
-                  00012554    00000036                            : trgmsg.c.obj (.text:__TI_writemsg)
-                  0001258a    00000034     gpio.obj (.text:GPIO_setAsOutputPin)
-                  000125be    00000032     rts430x_lc_rd_eabi.lib : trgmsg.c.obj (.text:__TI_readmsg)
-                  000125f0    00000032                            : strncpy.c.obj (.text:strncpy)
-                  00012622    00000030                            : unlink.c.obj (.text:unlink)
-                  00012652    0000002e     EPD_7in5.obj (.text:EPD_7IN5_SendCommand)
-                  00012680    0000002e     EPD_7in5.obj (.text:EPD_7IN5_SendData)
-                  000126ae    0000002e     rts430x_lc_rd_eabi.lib : getdevice.c.obj (.text:finddevice)
-                  000126dc    0000002c     MSPMPU_INIT_LIB_CCS_msp430_large_code_restricted_data.lib : mpu_init.o (.text:__mpu_init)
-                  00012708    0000002c     rts430x_lc_rd_eabi.lib : memory.c.obj (.text:free_list_insert)
-                  00012734    0000002c                            : div16s.asm.obj (.text)
-                  00012760    0000002a                            : memory.c.obj (.text:free_list_remove)
-                  0001278a    00000024     DEV_Config.obj (.text:DEV_Module_Exit)
-                  000127ae    00000024     DEV_Config.obj (.text:DEV_Module_Init)
-                  000127d2    00000024     rts430x_lc_rd_eabi.lib : copy_zero_init.c.obj (.text:decompress:ZI:__TI_zero_init_nomemset:__TI_zero_init_nomemset)
-                  000127f6    00000024                            : mult32_f5hw.asm.obj (.text)
-                  0001281a    00000020     wdt_a.obj (.text:WDT_A_hold)
-                  0001283a    0000001e     DEV_Config.obj (.text:DEV_Delay_ms)
-                  00012858    0000001e     rts430x_lc_rd_eabi.lib : memccpy.c.obj (.text:memccpy)
-                  00012876    0000001c     EPD_7in5.obj (.text:EPD_7IN5_Sleep)
-                  00012892    0000001c     gpio.obj (.text:GPIO_getInputPinValue)
-                  000128ae    0000001c     gpio.obj (.text:GPIO_setOutputHighOnPin)
-                  000128ca    0000001c     gpio.obj (.text:GPIO_setOutputLowOnPin)
-                  000128e6    0000001c     rts430x_lc_rd_eabi.lib : strchr.c.obj (.text:strchr)
-                  00012902    0000001c                            : strcmp.c.obj (.text:strcmp)
-                  0001291e    0000001a     cs.obj (.text:CS_getSMCLK)
-                  00012938    0000001a     EPD_7in5.obj (.text:EPD_7IN5_ReadBusy)
-                  00012952    00000018     EPD_7in5.obj (.text:EPD_7IN5_TurnOnDisplay)
-                  0001296a    00000018     rts430x_lc_rd_eabi.lib : mult16_f5hw.asm.obj (.text)
-                  00012982    00000016                            : memory.c.obj (.text:heap_start)
-                  00012998    00000016                            : memchr.c.obj (.text:memchr)
-                  000129ae    00000016                            : memset.c.obj (.text:memset)
-                  000129c4    00000016                            : div16u.asm.obj (.text)
-                  000129da    00000014                            : memcpy.c.obj (.text:memcpy)
-                  000129ee    00000012                            : copy_decompress_none.c.obj (.text:decompress:none:__TI_decompress_none)
-                  00012a00    00000012                            : strcpy.c.obj (.text:strcpy)
-                  00012a12    00000010     DEV_Config.obj (.text:DEV_Digital_Write)
-                  00012a22    0000000e     rts430x_lc_rd_eabi.lib : strlen.c.obj (.text:strlen)
-                  00012a30    0000000c     DEV_Config.obj (.text:DEV_SPI_WriteByte)
-                  00012a3c    0000000c     eusci_b_spi.obj (.text:EUSCI_B_SPI_transmitData)
-                  00012a48    0000000a     rts430x_lc_rd_eabi.lib : asr16.asm.obj (.text)
-                  00012a52    00000008                            : memory.c.obj (.text:malloc)
-                  00012a5a    00000006     eusci_b_spi.obj (.text:EUSCI_B_SPI_enable)
-                  00012a60    00000006     pmm.obj (.text:PMM_unlockLPM5)
-                  00012a66    00000006     GUI_Paint.obj (.text:Paint_SelectImage)
-                  00012a6c    00000006     rts430x_lc_rd_eabi.lib : printf.c.obj (.text:_outc)
-                  00012a72    00000006                            : exit.c.obj (.text:abort)
-                  00012a78    00000004                            : printf.c.obj (.text:_outs)
-                  00012a7c    00000004                            : pre_init.c.obj (.text:_system_pre_init)
-                  00012a80    00000002                            : _lock.c.obj (.text:_nop)
-                  00012a82    00000002                            : startup.c.obj (.text:_system_post_cinit)
+                  00011620    000000bc     GUI_Paint.obj (.text:Paint_DrawRectangle)
+                  000116dc    000000ba     main.obj (.text:main)
+                  00011796    0000009a     rts430x_lc_rd_eabi.lib : hostlseek.c.obj (.text:HOSTlseek)
+                  00011830    00000090                            : fputc.c.obj (.text:fputc)
+                  000118c0    0000007e                            : _io_perm.c.obj (.text:__TI_wrt_ok)
+                  0001193e    0000007a     EPD_7in5.obj (.text:EPD_7IN5_Display)
+                  000119b8    0000007a     GUI_Paint.obj (.text:Paint_DrawPoint)
+                  00011a32    0000007a     GUI_Paint.obj (.text:Paint_DrawString_EN)
+                  00011aac    00000076     rts430x_lc_rd_eabi.lib : copy_decompress_lzss.c.obj (.text:decompress:lzss:__TI_decompress_lzss)
+                  00011b22    00000074                            : hostrename.c.obj (.text:HOSTrename)
+                  00011b96    00000074                            : fclose.c.obj (.text:__TI_closefile)
+                  00011c0a    00000072     gpio.obj (.text:GPIO_setAsPeripheralModuleFunctionOutputPin)
+                  00011c7c    00000070     rts430x_lc_rd_eabi.lib : hostopen.c.obj (.text:HOSTopen)
+                  00011cec    00000070                            : memory.c.obj (.text:split)
+                  00011d5c    0000006c                            : hostwrite.c.obj (.text:HOSTwrite)
+                  00011dc8    0000006a     cs.obj (.text:CS_initClockSignal)
+                  00011e32    0000006a     rts430x_lc_rd_eabi.lib : hostread.c.obj (.text:HOSTread)
+                  00011e9c    0000006a                            : fseek.c.obj (.text:fseek)
+                  00011f06    00000064                            : fflush.c.obj (.text:__TI_doflush)
+                  00011f6a    0000005a                            : close.c.obj (.text:close)
+                  00011fc4    0000005a                            : getdevice.c.obj (.text:getdevice)
+                  0001201e    00000058                            : div32u.asm.obj (.text)
+                  00012076    00000056     eusci_b_spi.obj (.text:EUSCI_B_SPI_initMaster)
+                  000120cc    00000054     GUI_Paint.obj (.text:Paint_NewImage)
+                  00012120    00000054     rts430x_lc_rd_eabi.lib : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit_hold_wdt:__TI_auto_init_nobinit_nopinit_hold_wdt)
+                  00012174    0000004e                            : hostclose.c.obj (.text:HOSTclose)
+                  000121c2    0000004a                            : exit.c.obj (.text:exit)
+                  0001220c    0000004a                            : printf.c.obj (.text:printf)
+                  00012256    00000048                            : _printfi_min.c.obj (.text:_pproc_str)
+                  0001229e    00000046     EPD_7in5.obj (.text:EPD_7IN5_Clear)
+                  000122e4    00000046     rts430x_lc_rd_eabi.lib : hostunlink.c.obj (.text:HOSTunlink)
+                  0001232a    00000044     EPD_7in5.obj (.text:EPD_7IN5_Reset)
+                  0001236e    00000040     gpio.obj (.text:GPIO_setAsInputPin)
+                  000123ae    00000040     rts430x_lc_rd_eabi.lib : div32s.asm.obj (.text)
+                  000123ee    0000003e                            : lsl32.asm.obj (.text:l_lsl_const)
+                  0001242c    0000003e                            : lseek.c.obj (.text:lseek)
+                  0001246a    0000003c     GUI_Paint.obj (.text:Paint_DrawBitMap)
+                  000124a6    0000003c     rts430x_lc_rd_eabi.lib : write.c.obj (.text:write)
+                  000124e2    00000038     GUI_Paint.obj (.text:Paint_Clear)
+                  0001251a    00000036     rts430x_lc_rd_eabi.lib : fopen.c.obj (.text:__TI_cleanup)
+                  00012550    00000036                            : trgmsg.c.obj (.text:__TI_writemsg)
+                  00012586    00000034     gpio.obj (.text:GPIO_setAsOutputPin)
+                  000125ba    00000032     rts430x_lc_rd_eabi.lib : trgmsg.c.obj (.text:__TI_readmsg)
+                  000125ec    00000032                            : strncpy.c.obj (.text:strncpy)
+                  0001261e    00000030                            : unlink.c.obj (.text:unlink)
+                  0001264e    0000002e     EPD_7in5.obj (.text:EPD_7IN5_SendCommand)
+                  0001267c    0000002e     EPD_7in5.obj (.text:EPD_7IN5_SendData)
+                  000126aa    0000002e     rts430x_lc_rd_eabi.lib : getdevice.c.obj (.text:finddevice)
+                  000126d8    0000002c     MSPMPU_INIT_LIB_CCS_msp430_large_code_restricted_data.lib : mpu_init.o (.text:__mpu_init)
+                  00012704    0000002c     rts430x_lc_rd_eabi.lib : memory.c.obj (.text:free_list_insert)
+                  00012730    0000002c                            : div16s.asm.obj (.text)
+                  0001275c    0000002a                            : memory.c.obj (.text:free_list_remove)
+                  00012786    00000024     DEV_Config.obj (.text:DEV_Module_Exit)
+                  000127aa    00000024     DEV_Config.obj (.text:DEV_Module_Init)
+                  000127ce    00000024     rts430x_lc_rd_eabi.lib : copy_zero_init.c.obj (.text:decompress:ZI:__TI_zero_init_nomemset:__TI_zero_init_nomemset)
+                  000127f2    00000024                            : mult32_f5hw.asm.obj (.text)
+                  00012816    00000020     wdt_a.obj (.text:WDT_A_hold)
+                  00012836    0000001e     DEV_Config.obj (.text:DEV_Delay_ms)
+                  00012854    0000001e     rts430x_lc_rd_eabi.lib : memccpy.c.obj (.text:memccpy)
+                  00012872    0000001c     EPD_7in5.obj (.text:EPD_7IN5_Sleep)
+                  0001288e    0000001c     gpio.obj (.text:GPIO_getInputPinValue)
+                  000128aa    0000001c     gpio.obj (.text:GPIO_setOutputHighOnPin)
+                  000128c6    0000001c     gpio.obj (.text:GPIO_setOutputLowOnPin)
+                  000128e2    0000001c     rts430x_lc_rd_eabi.lib : strchr.c.obj (.text:strchr)
+                  000128fe    0000001c                            : strcmp.c.obj (.text:strcmp)
+                  0001291a    0000001a     cs.obj (.text:CS_getSMCLK)
+                  00012934    0000001a     EPD_7in5.obj (.text:EPD_7IN5_ReadBusy)
+                  0001294e    00000018     EPD_7in5.obj (.text:EPD_7IN5_TurnOnDisplay)
+                  00012966    00000018     rts430x_lc_rd_eabi.lib : mult16_f5hw.asm.obj (.text)
+                  0001297e    00000016                            : memory.c.obj (.text:heap_start)
+                  00012994    00000016                            : memchr.c.obj (.text:memchr)
+                  000129aa    00000016                            : memset.c.obj (.text:memset)
+                  000129c0    00000016                            : div16u.asm.obj (.text)
+                  000129d6    00000014                            : memcpy.c.obj (.text:memcpy)
+                  000129ea    00000012                            : copy_decompress_none.c.obj (.text:decompress:none:__TI_decompress_none)
+                  000129fc    00000012                            : strcpy.c.obj (.text:strcpy)
+                  00012a0e    00000010     DEV_Config.obj (.text:DEV_Digital_Write)
+                  00012a1e    0000000e     rts430x_lc_rd_eabi.lib : strlen.c.obj (.text:strlen)
+                  00012a2c    0000000c     DEV_Config.obj (.text:DEV_SPI_WriteByte)
+                  00012a38    0000000c     eusci_b_spi.obj (.text:EUSCI_B_SPI_transmitData)
+                  00012a44    0000000a     rts430x_lc_rd_eabi.lib : asr16.asm.obj (.text)
+                  00012a4e    00000008                            : memory.c.obj (.text:malloc)
+                  00012a56    00000006     eusci_b_spi.obj (.text:EUSCI_B_SPI_enable)
+                  00012a5c    00000006     pmm.obj (.text:PMM_unlockLPM5)
+                  00012a62    00000006     GUI_Paint.obj (.text:Paint_SelectImage)
+                  00012a68    00000006     rts430x_lc_rd_eabi.lib : printf.c.obj (.text:_outc)
+                  00012a6e    00000006                            : exit.c.obj (.text:abort)
+                  00012a74    00000004                            : printf.c.obj (.text:_outs)
+                  00012a78    00000004                            : pre_init.c.obj (.text:_system_pre_init)
+                  00012a7c    00000002                            : _lock.c.obj (.text:_nop)
+                  00012a7e    00000002                            : startup.c.obj (.text:_system_post_cinit)
 
 MODULE SUMMARY
 
        Module                       code    ro data   rw data
        ------                       ----    -------   -------
     .\
-       main.obj                     190     18        0      
+       main.obj                     186     18        0      
     +--+----------------------------+-------+---------+---------+
-       Total:                       190     18        0      
+       Total:                       186     18        0      
                                                              
     .\EPD\
        ImageData.obj                0       30720     0      
@@ -521,7 +521,7 @@ MODULE SUMMARY
        Stack:                       0       0         160    
        Linker Generated:            0       163       0      
     +--+----------------------------+-------+---------+---------+
-       Grand Total:                 10924   41475     1252   
+       Grand Total:                 10920   41475     1252   
 
 
 LINKER GENERATED COPY TABLES
@@ -800,8 +800,8 @@ address   name
 000009ce  AESAXIN_L                                  
 000004be  BCD2BIN                                    
 000004bc  BIN2BCD                                    
-00012a72  C$$EXIT                                    
-00012586  C$$IO$$                                    
+00012a6e  C$$EXIT                                    
+00012582  C$$IO$$                                    
 0000043e  CAPTIO0CTL                                 
 0000043f  CAPTIO0CTL_H                               
 0000043e  CAPTIO0CTL_L                               
@@ -904,14 +904,14 @@ address   name
 0000016c  CSCTL6                                     
 0000016d  CSCTL6_H                                   
 0000016c  CSCTL6_L                                   
-0001291e  CS_getSMCLK                                
-00011dcc  CS_initClockSignal                         
+0001291a  CS_getSMCLK                                
+00011dc8  CS_initClockSignal                         
 000108c8  CS_setDCOFreq                              
-0001283a  DEV_Delay_ms                               
-00012a12  DEV_Digital_Write                          
-0001278a  DEV_Module_Exit                            
-000127ae  DEV_Module_Init                            
-00012a30  DEV_SPI_WriteByte                          
+00012836  DEV_Delay_ms                               
+00012a0e  DEV_Digital_Write                          
+00012786  DEV_Module_Exit                            
+000127aa  DEV_Module_Init                            
+00012a2c  DEV_SPI_WriteByte                          
 00000510  DMA0CTL                                    
 00000516  DMA0DA                                     
 00000518  DMA0DAH                                    
@@ -942,11 +942,11 @@ address   name
 00000506  DMACTL3                                    
 00000508  DMACTL4                                    
 0000050e  DMAIV                                      
-000122a2  EPD_7IN5_Clear                             
-00011942  EPD_7IN5_Display                           
+0001229e  EPD_7IN5_Clear                             
+0001193e  EPD_7IN5_Display                           
 00011392  EPD_7IN5_Init                              
-00012938  EPD_7IN5_ReadBusy                          
-00012876  EPD_7IN5_Sleep                             
+00012934  EPD_7IN5_ReadBusy                          
+00012872  EPD_7IN5_Sleep                             
 00010000  EPD_7in5_test                              
 00000d20  ESIAFE                                     
 00000d21  ESIAFE_H                                   
@@ -1280,9 +1280,9 @@ address   name
 00000d72  ESITSM9_L                                  
 00000d25  ESITSM_H                                   
 00000d24  ESITSM_L                                   
-00012a5a  EUSCI_B_SPI_enable                         
-0001207a  EUSCI_B_SPI_initMaster                     
-00012a3c  EUSCI_B_SPI_transmitData                   
+00012a56  EUSCI_B_SPI_enable                         
+00012076  EUSCI_B_SPI_initMaster                     
+00012a38  EUSCI_B_SPI_transmitData                   
 00000140  FRCTL0                                     
 00000141  FRCTL0_H                                   
 00000140  FRCTL0_L                                   
@@ -1300,19 +1300,19 @@ address   name
 00000146  GCCTL1                                     
 00000147  GCCTL1_H                                   
 00000146  GCCTL1_L                                   
-00012892  GPIO_getInputPinValue                      
-00012372  GPIO_setAsInputPin                         
-0001258a  GPIO_setAsOutputPin                        
-00011c0e  GPIO_setAsPeripheralModuleFunctionOutputPin
-000128ae  GPIO_setOutputHighOnPin                    
-000128ca  GPIO_setOutputLowOnPin                     
-00012178  HOSTclose                                  
-0001179a  HOSTlseek                                  
-00011c80  HOSTopen                                   
-00011e36  HOSTread                                   
-00011b26  HOSTrename                                 
-000122e8  HOSTunlink                                 
-00011d60  HOSTwrite                                  
+0001288e  GPIO_getInputPinValue                      
+0001236e  GPIO_setAsInputPin                         
+00012586  GPIO_setAsOutputPin                        
+00011c0a  GPIO_setAsPeripheralModuleFunctionOutputPin
+000128aa  GPIO_setOutputHighOnPin                    
+000128c6  GPIO_setOutputLowOnPin                     
+00012174  HOSTclose                                  
+00011796  HOSTlseek                                  
+00011c7c  HOSTopen                                   
+00011e32  HOSTread                                   
+00011b22  HOSTrename                                 
+000122e4  HOSTunlink                                 
+00011d5c  HOSTwrite                                  
 00000a40  LCDBM1                                     
 00000a49  LCDBM10                                    
 00000a4a  LCDBM11                                    
@@ -1635,20 +1635,20 @@ address   name
 0000012a  PMMIFG                                     
 0000012b  PMMIFG_H                                   
 0000012a  PMMIFG_L                                   
-00012a60  PMM_unlockLPM5                             
+00012a5c  PMM_unlockLPM5                             
 00001e62  Paint                                      
-000124e6  Paint_Clear                                
-0001246e  Paint_DrawBitMap                           
+000124e2  Paint_Clear                                
+0001246a  Paint_DrawBitMap                           
 00011016  Paint_DrawChar                             
 0001057a  Paint_DrawCircle                           
 00010c42  Paint_DrawLine                             
 00010e36  Paint_DrawNum                              
-000119bc  Paint_DrawPoint                            
-000116de  Paint_DrawRectangle                        
+000119b8  Paint_DrawPoint                            
+00011620  Paint_DrawRectangle                        
 000102f0  Paint_DrawString_CN                        
-00011a36  Paint_DrawString_EN                        
-000120d0  Paint_NewImage                             
-00012a66  Paint_SelectImage                          
+00011a32  Paint_DrawString_EN                        
+000120cc  Paint_NewImage                             
+00012a62  Paint_SelectImage                          
 00010d42  Paint_SetPixel                             
 00000158  RCCTL0                                     
 00000159  RCCTL0_H                                   
@@ -1974,7 +1974,7 @@ address   name
 0000015c  WDTCTL                                     
 0000015d  WDTCTL_H                                   
 0000015c  WDTCTL_L                                   
-0001281a  WDT_A_hold                                 
+00012816  WDT_A_hold                                 
 00004400  _CIOBUF_                                   
 00002400  __STACK_END                                
 000000a0  __STACK_SIZE                               
@@ -1984,13 +1984,13 @@ address   name
 0000e9d0  __TI_Handler_Table_Base                    
 0000e9dc  __TI_Handler_Table_Limit                   
 00004820  __TI_ISR_TRAP                              
-00012124  __TI_auto_init_nobinit_nopinit_hold_wdt    
-0001251e  __TI_cleanup                               
+00012120  __TI_auto_init_nobinit_nopinit_hold_wdt    
+0001251a  __TI_cleanup                               
 00001dac  __TI_cleanup_ptr                           
-00011b9a  __TI_closefile                             
-00011ab0  __TI_decompress_lzss                       
-000129ee  __TI_decompress_none                       
-00011f0a  __TI_doflush                               
+00011b96  __TI_closefile                             
+00011aac  __TI_decompress_lzss                       
+000129ea  __TI_decompress_none                       
+00011f06  __TI_doflush                               
 00001db0  __TI_dtors_ptr                             
 00001dbe  __TI_enable_exit_profile_output            
 00001dbc  __TI_ft_end                                
@@ -2026,91 +2026,91 @@ ffffffff  __TI_pprof_out_hndl
 000112b6  __TI_printfi_minimal                       
 ffffffff  __TI_prof_data_size                        
 ffffffff  __TI_prof_data_start                       
-000125be  __TI_readmsg                               
+000125ba  __TI_readmsg                               
 00001dc2  __TI_tmpnams                               
-00012554  __TI_writemsg                              
-000118c4  __TI_wrt_ok                                
-000127d2  __TI_zero_init_nomemset                    
+00012550  __TI_writemsg                              
+000118c0  __TI_wrt_ok                                
+000127ce  __TI_zero_init_nomemset                    
 ffffffff  __c_args__                                 
 00000001  __mpu_enable                               
-000126dc  __mpu_init                                 
-00012734  __mspabi_divi                              
-000123b2  __mspabi_divli                             
-000129c4  __mspabi_divu                              
-00012022  __mspabi_divul                             
-0001296a  __mspabi_mpyi_f5hw                         
-000127f6  __mspabi_mpyl_f5hw                         
-00012734  __mspabi_remi                              
-000123b2  __mspabi_remli                             
-000129c4  __mspabi_remu                              
-00012022  __mspabi_remul                             
-0001242a  __mspabi_slll_1                            
-00012406  __mspabi_slll_10                           
-00012402  __mspabi_slll_11                           
-000123fe  __mspabi_slll_12                           
-000123fa  __mspabi_slll_13                           
-000123f6  __mspabi_slll_14                           
-000123f2  __mspabi_slll_15                           
-00012426  __mspabi_slll_2                            
-00012422  __mspabi_slll_3                            
-0001241e  __mspabi_slll_4                            
-0001241a  __mspabi_slll_5                            
-00012416  __mspabi_slll_6                            
-00012412  __mspabi_slll_7                            
-0001240e  __mspabi_slll_8                            
-0001240a  __mspabi_slll_9                            
-00012a48  __mspabi_srai                              
+000126d8  __mpu_init                                 
+00012730  __mspabi_divi                              
+000123ae  __mspabi_divli                             
+000129c0  __mspabi_divu                              
+0001201e  __mspabi_divul                             
+00012966  __mspabi_mpyi_f5hw                         
+000127f2  __mspabi_mpyl_f5hw                         
+00012730  __mspabi_remi                              
+000123ae  __mspabi_remli                             
+000129c0  __mspabi_remu                              
+0001201e  __mspabi_remul                             
+00012426  __mspabi_slll_1                            
+00012402  __mspabi_slll_10                           
+000123fe  __mspabi_slll_11                           
+000123fa  __mspabi_slll_12                           
+000123f6  __mspabi_slll_13                           
+000123f2  __mspabi_slll_14                           
+000123ee  __mspabi_slll_15                           
+00012422  __mspabi_slll_2                            
+0001241e  __mspabi_slll_3                            
+0001241a  __mspabi_slll_4                            
+00012416  __mspabi_slll_5                            
+00012412  __mspabi_slll_6                            
+0001240e  __mspabi_slll_7                            
+0001240a  __mspabi_slll_8                            
+00012406  __mspabi_slll_9                            
+00012a44  __mspabi_srai                              
 00004800  _c_int00_noargs_mpu                        
 00001cc8  _device                                    
 00001c00  _ftable                                    
 00001db4  _lock                                      
-00012a80  _nop                                       
+00012a7c  _nop                                       
 0000fffe  _reset_vector                              
 00002360  _stack                                     
 00001d40  _stream                                    
 00004520  _sys_memory                                
-00012a82  _system_post_cinit                         
-00012a7c  _system_pre_init                           
+00012a7e  _system_post_cinit                         
+00012a78  _system_pre_init                           
 00001db8  _unlock                                    
-00012a72  abort                                      
+00012a6e  abort                                      
 00010b3a  aligned_alloc                              
-00011f6e  close                                      
-000121c6  exit                                       
-000126ae  finddevice                                 
-00011834  fputc                                      
+00011f6a  close                                      
+000121c2  exit                                       
+000126aa  finddevice                                 
+00011830  fputc                                      
 00010f26  fputs                                      
 00004800  fram_ipe_end                               
 00004800  fram_ipe_start                             
 00004400  fram_rw_start                              
 00004800  fram_rx_start                              
 00011546  free                                       
-00011ea0  fseek                                      
+00011e9c  fseek                                      
 00004828  gImage_7in5                                
-00011fc8  getdevice                                  
-00012430  lseek                                      
-00011620  main                                       
-00012a52  malloc                                     
+00011fc4  getdevice                                  
+0001242c  lseek                                      
+000116dc  main                                       
+00012a4e  malloc                                     
 00010b3a  memalign                                   
-00012858  memccpy                                    
-00012998  memchr                                     
-000129da  memcpy                                     
-000129ae  memset                                     
+00012854  memccpy                                    
+00012994  memchr                                     
+000129d6  memcpy                                     
+000129aa  memset                                     
 0000a501  mpu_ctl0_value                             
 00001513  mpu_sam_value                              
 00000480  mpu_segment_border1                        
 00000480  mpu_segment_border2                        
 00001e78  parmbuf                                    
-00012210  printf                                     
-00011834  putc                                       
-00012622  remove                                     
+0001220c  printf                                     
+00011830  putc                                       
+0001261e  remove                                     
 000111d8  setvbuf                                    
-000128e6  strchr                                     
-00012902  strcmp                                     
-00012a00  strcpy                                     
-00012a22  strlen                                     
-000125f0  strncpy                                    
-00012622  unlink                                     
-000124aa  write                                      
+000128e2  strchr                                     
+000128fe  strcmp                                     
+000129fc  strcpy                                     
+00012a1e  strlen                                     
+000125ec  strncpy                                    
+0001261e  unlink                                     
+000124a6  write                                      
 
 
 GLOBAL SYMBOLS: SORTED BY Symbol Address 
@@ -3579,108 +3579,108 @@ address   name
 000112b6  __TI_printfi_minimal                       
 00011392  EPD_7IN5_Init                              
 00011546  free                                       
-00011620  main                                       
-000116de  Paint_DrawRectangle                        
-0001179a  HOSTlseek                                  
-00011834  fputc                                      
-00011834  putc                                       
-000118c4  __TI_wrt_ok                                
-00011942  EPD_7IN5_Display                           
-000119bc  Paint_DrawPoint                            
-00011a36  Paint_DrawString_EN                        
-00011ab0  __TI_decompress_lzss                       
-00011b26  HOSTrename                                 
-00011b9a  __TI_closefile                             
-00011c0e  GPIO_setAsPeripheralModuleFunctionOutputPin
-00011c80  HOSTopen                                   
-00011d60  HOSTwrite                                  
-00011dcc  CS_initClockSignal                         
-00011e36  HOSTread                                   
-00011ea0  fseek                                      
-00011f0a  __TI_doflush                               
-00011f6e  close                                      
-00011fc8  getdevice                                  
-00012022  __mspabi_divul                             
-00012022  __mspabi_remul                             
-0001207a  EUSCI_B_SPI_initMaster                     
-000120d0  Paint_NewImage                             
-00012124  __TI_auto_init_nobinit_nopinit_hold_wdt    
-00012178  HOSTclose                                  
-000121c6  exit                                       
-00012210  printf                                     
-000122a2  EPD_7IN5_Clear                             
-000122e8  HOSTunlink                                 
-00012372  GPIO_setAsInputPin                         
-000123b2  __mspabi_divli                             
-000123b2  __mspabi_remli                             
-000123f2  __mspabi_slll_15                           
-000123f6  __mspabi_slll_14                           
-000123fa  __mspabi_slll_13                           
-000123fe  __mspabi_slll_12                           
-00012402  __mspabi_slll_11                           
-00012406  __mspabi_slll_10                           
-0001240a  __mspabi_slll_9                            
-0001240e  __mspabi_slll_8                            
-00012412  __mspabi_slll_7                            
-00012416  __mspabi_slll_6                            
-0001241a  __mspabi_slll_5                            
-0001241e  __mspabi_slll_4                            
-00012422  __mspabi_slll_3                            
-00012426  __mspabi_slll_2                            
-0001242a  __mspabi_slll_1                            
-00012430  lseek                                      
-0001246e  Paint_DrawBitMap                           
-000124aa  write                                      
-000124e6  Paint_Clear                                
-0001251e  __TI_cleanup                               
-00012554  __TI_writemsg                              
-00012586  C$$IO$$                                    
-0001258a  GPIO_setAsOutputPin                        
-000125be  __TI_readmsg                               
-000125f0  strncpy                                    
-00012622  remove                                     
-00012622  unlink                                     
-000126ae  finddevice                                 
-000126dc  __mpu_init                                 
-00012734  __mspabi_divi                              
-00012734  __mspabi_remi                              
-0001278a  DEV_Module_Exit                            
-000127ae  DEV_Module_Init                            
-000127d2  __TI_zero_init_nomemset                    
-000127f6  __mspabi_mpyl_f5hw                         
-0001281a  WDT_A_hold                                 
-0001283a  DEV_Delay_ms                               
-00012858  memccpy                                    
-00012876  EPD_7IN5_Sleep                             
-00012892  GPIO_getInputPinValue                      
-000128ae  GPIO_setOutputHighOnPin                    
-000128ca  GPIO_setOutputLowOnPin                     
-000128e6  strchr                                     
-00012902  strcmp                                     
-0001291e  CS_getSMCLK                                
-00012938  EPD_7IN5_ReadBusy                          
-0001296a  __mspabi_mpyi_f5hw                         
-00012998  memchr                                     
-000129ae  memset                                     
-000129c4  __mspabi_divu                              
-000129c4  __mspabi_remu                              
-000129da  memcpy                                     
-000129ee  __TI_decompress_none                       
-00012a00  strcpy                                     
-00012a12  DEV_Digital_Write                          
-00012a22  strlen                                     
-00012a30  DEV_SPI_WriteByte                          
-00012a3c  EUSCI_B_SPI_transmitData                   
-00012a48  __mspabi_srai                              
-00012a52  malloc                                     
-00012a5a  EUSCI_B_SPI_enable                         
-00012a60  PMM_unlockLPM5                             
-00012a66  Paint_SelectImage                          
-00012a72  C$$EXIT                                    
-00012a72  abort                                      
-00012a7c  _system_pre_init                           
-00012a80  _nop                                       
-00012a82  _system_post_cinit                         
+00011620  Paint_DrawRectangle                        
+000116dc  main                                       
+00011796  HOSTlseek                                  
+00011830  fputc                                      
+00011830  putc                                       
+000118c0  __TI_wrt_ok                                
+0001193e  EPD_7IN5_Display                           
+000119b8  Paint_DrawPoint                            
+00011a32  Paint_DrawString_EN                        
+00011aac  __TI_decompress_lzss                       
+00011b22  HOSTrename                                 
+00011b96  __TI_closefile                             
+00011c0a  GPIO_setAsPeripheralModuleFunctionOutputPin
+00011c7c  HOSTopen                                   
+00011d5c  HOSTwrite                                  
+00011dc8  CS_initClockSignal                         
+00011e32  HOSTread                                   
+00011e9c  fseek                                      
+00011f06  __TI_doflush                               
+00011f6a  close                                      
+00011fc4  getdevice                                  
+0001201e  __mspabi_divul                             
+0001201e  __mspabi_remul                             
+00012076  EUSCI_B_SPI_initMaster                     
+000120cc  Paint_NewImage                             
+00012120  __TI_auto_init_nobinit_nopinit_hold_wdt    
+00012174  HOSTclose                                  
+000121c2  exit                                       
+0001220c  printf                                     
+0001229e  EPD_7IN5_Clear                             
+000122e4  HOSTunlink                                 
+0001236e  GPIO_setAsInputPin                         
+000123ae  __mspabi_divli                             
+000123ae  __mspabi_remli                             
+000123ee  __mspabi_slll_15                           
+000123f2  __mspabi_slll_14                           
+000123f6  __mspabi_slll_13                           
+000123fa  __mspabi_slll_12                           
+000123fe  __mspabi_slll_11                           
+00012402  __mspabi_slll_10                           
+00012406  __mspabi_slll_9                            
+0001240a  __mspabi_slll_8                            
+0001240e  __mspabi_slll_7                            
+00012412  __mspabi_slll_6                            
+00012416  __mspabi_slll_5                            
+0001241a  __mspabi_slll_4                            
+0001241e  __mspabi_slll_3                            
+00012422  __mspabi_slll_2                            
+00012426  __mspabi_slll_1                            
+0001242c  lseek                                      
+0001246a  Paint_DrawBitMap                           
+000124a6  write                                      
+000124e2  Paint_Clear                                
+0001251a  __TI_cleanup                               
+00012550  __TI_writemsg                              
+00012582  C$$IO$$                                    
+00012586  GPIO_setAsOutputPin                        
+000125ba  __TI_readmsg                               
+000125ec  strncpy                                    
+0001261e  remove                                     
+0001261e  unlink                                     
+000126aa  finddevice                                 
+000126d8  __mpu_init                                 
+00012730  __mspabi_divi                              
+00012730  __mspabi_remi                              
+00012786  DEV_Module_Exit                            
+000127aa  DEV_Module_Init                            
+000127ce  __TI_zero_init_nomemset                    
+000127f2  __mspabi_mpyl_f5hw                         
+00012816  WDT_A_hold                                 
+00012836  DEV_Delay_ms                               
+00012854  memccpy                                    
+00012872  EPD_7IN5_Sleep                             
+0001288e  GPIO_getInputPinValue                      
+000128aa  GPIO_setOutputHighOnPin                    
+000128c6  GPIO_setOutputLowOnPin                     
+000128e2  strchr                                     
+000128fe  strcmp                                     
+0001291a  CS_getSMCLK                                
+00012934  EPD_7IN5_ReadBusy                          
+00012966  __mspabi_mpyi_f5hw                         
+00012994  memchr                                     
+000129aa  memset                                     
+000129c0  __mspabi_divu                              
+000129c0  __mspabi_remu                              
+000129d6  memcpy                                     
+000129ea  __TI_decompress_none                       
+000129fc  strcpy                                     
+00012a0e  DEV_Digital_Write                          
+00012a1e  strlen                                     
+00012a2c  DEV_SPI_WriteByte                          
+00012a38  EUSCI_B_SPI_transmitData                   
+00012a44  __mspabi_srai                              
+00012a4e  malloc                                     
+00012a56  EUSCI_B_SPI_enable                         
+00012a5c  PMM_unlockLPM5                             
+00012a62  Paint_SelectImage                          
+00012a6e  C$$EXIT                                    
+00012a6e  abort                                      
+00012a78  _system_pre_init                           
+00012a7c  _nop                                       
+00012a7e  _system_post_cinit                         
 ffffffff  __TI_pprof_out_hndl                        
 ffffffff  __TI_prof_data_size                        
 ffffffff  __TI_prof_data_start                       
