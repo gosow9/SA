@@ -75,7 +75,6 @@ int main(void)
     EPD_7IN5_Init();
 
     EPD_7IN5_Clear();
-    Paint_Clear(WHITE);
 
     EPD_7IN5_Sleep();
     DEV_Module_Exit();
