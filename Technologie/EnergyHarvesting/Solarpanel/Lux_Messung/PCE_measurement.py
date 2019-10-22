@@ -3,13 +3,13 @@ import time
 import struct
 
 baudrate = 9600 #whatever baudrate you are listening to
-com_port2 = 'COM13' #replace with your com port path
+com_port2 = 'COM5' #replace with your com port path
 
 
-sniffer_PCE = serial.Serial(com_port2, baudrate, timeout = 1)
+sniffer_PCE = serial.Serial(com_port2, baudrate, timeout=1)
 time.sleep(1)
 sniffer_PCE.reset_input_buffer()
-f = open('measuredData.txt','w')
+f = open('measuredData.txt', 'w')
 while 1:
   try:
     sniffer_PCE.write(serial.to_bytes('\x11'.encode('utf-8')))
