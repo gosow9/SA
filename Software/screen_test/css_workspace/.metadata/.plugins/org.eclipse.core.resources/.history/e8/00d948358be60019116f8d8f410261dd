@@ -1,0 +1,38 @@
+/*
+ * main.c
+ *
+ *  Created on: 03.10.2019
+ *      Author: mtischha
+ */
+
+#include "driverlib.h"
+
+int main(void)
+{
+    //Stop watchdog timer
+    WDT_A_hold(WDT_A_BASE);
+
+    //Set DCO frequency to max DCO setting
+    CS_setDCOFreq(CS_DCORSEL_0,CS_DCOFSEL_3);
+    //Select DCO as the clock source for SMCLK with no frequency divider
+    CS_initClockSignal(CS_SMCLK,CS_DCOCLK_SELECT,CS_CLOCK_DIVIDER_1);
+
+    //P1.6 to SIMO
+    GPIO_setAsPeripheralModuleFunctionOutputPin(
+        GPIO_PORT_P1,
+        GPIO_PIN6,
+        GPIO_PRIMARY_MODULE_FUNCTION
+    );
+
+    //P1.7 to SOMI
+    GPIO_setAsPeripheralModuleFunctionOutputPin(
+        GPIO_PORT_P1,
+        GPIO_PIN7,
+        GPIO_PRIMARY_MODULE_FUNCTION
+    );
+
+
+    while(1)
+
+    return 0;
+}

@@ -1,0 +1,14 @@
+/*
+ * main.c
+ *
+ *  Created on: 03.10.2019
+ *      Author: mtischha
+ */
+
+#include "driverlib.h"
+
+int main(void)
+{
+
+    return 0;
+}

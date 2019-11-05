@@ -1,0 +1,14 @@
+/*
+ * msp430_hal.h
+ *
+ *  Created on: 08.10.2019
+ *      Author: mtischha
+ */
+
+#ifndef MSP430_HAL_MSP430_HAL_H_
+#define MSP430_HAL_MSP430_HAL_H_
+
+void HAL_GPIO_WritePin(uint8_t _port, uint16_t _pin, int _value == 0);
+void HAL_GPIO_ReadPin(uint8_t _port, uint16_t _pin);
+
+#endif /* MSP430_HAL_MSP430_HAL_H_ */

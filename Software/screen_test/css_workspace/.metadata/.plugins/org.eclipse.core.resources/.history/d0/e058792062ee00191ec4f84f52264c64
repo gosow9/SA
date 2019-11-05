@@ -1,0 +1,38 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../EPD/EPD_7in5.c \
+../EPD/EPD_7in5_test.c \
+../EPD/ImageData.c 
+
+C_DEPS += \
+./EPD/EPD_7in5.d \
+./EPD/EPD_7in5_test.d \
+./EPD/ImageData.d 
+
+OBJS += \
+./EPD/EPD_7in5.obj \
+./EPD/EPD_7in5_test.obj \
+./EPD/ImageData.obj 
+
+OBJS__QUOTED += \
+"EPD\EPD_7in5.obj" \
+"EPD\EPD_7in5_test.obj" \
+"EPD\ImageData.obj" 
+
+C_DEPS__QUOTED += \
+"EPD\EPD_7in5.d" \
+"EPD\EPD_7in5_test.d" \
+"EPD\ImageData.d" 
+
+C_SRCS__QUOTED += \
+"../EPD/EPD_7in5.c" \
+"../EPD/EPD_7in5_test.c" \
+"../EPD/ImageData.c" 
+
+
