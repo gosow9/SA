@@ -1,8 +1,0 @@
-
-**** Build of configuration Debug for project MSP430_screen_test ****
-
-"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
- 
-gmake[1]: 'MSP430_screen_test.out' is up to date.
-
-**** Build Finished ****
