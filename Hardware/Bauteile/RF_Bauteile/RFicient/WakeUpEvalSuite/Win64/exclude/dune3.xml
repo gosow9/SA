@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+    <Description>
+        <text>registers which are excluded</text>
+    </Description>
+    <Register>
+        <regName>N_LCO_TARGET_433</regName>
+        <regAddr>5</regAddr>
+        <regValue>0x21</regValue>
+        <regName>N_LCO_TARGET_868</regName>
+        <regAddr>6</regAddr>
+        <regValue>0x18</regValue>
+        <regName>N_LCO_TARGET_2G4</regName>
+        <regAddr>7</regAddr>
+        <regValue>0x63</regValue>
+        <regName>COMPREF_W_433</regName>
+        <regAddr>12</regAddr>
+        <regValue>0x8</regValue>
+        <regName>COMPREF_W_868</regName>
+        <regAddr>13</regAddr>
+        <regValue>0x9</regValue>
+        <regName>COMPREF_W_2G4</regName>
+        <regAddr>14</regAddr>
+        <regValue>0x8</regValue>
+        <regName>COMPREF_M_433</regName>
+        <regAddr>15</regAddr>
+        <regValue>0x16</regValue>
+        <regName>COMPREF_M_868</regName>
+        <regAddr>16</regAddr>
+        <regValue>0x16</regValue>
+        <regName>COMPREF_M_2G4</regName>
+        <regAddr>17</regAddr>
+        <regValue>0x16</regValue>
+        <regName>COMPREF_S_433</regName>
+        <regAddr>18</regAddr>
+        <regValue>0xd</regValue>
+        <regName>COMPREF_S_868</regName>
+        <regAddr>19</regAddr>
+        <regValue>0xd</regValue>
+        <regName>COMPREF_S_2G4</regName>
+        <regAddr>20</regAddr>
+        <regValue>0xd</regValue>
+    </Register>
+</Config>
