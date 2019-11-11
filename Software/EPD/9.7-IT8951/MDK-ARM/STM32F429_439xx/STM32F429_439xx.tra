@@ -1,0 +1,62 @@
+*** Creating Trace Output File '.\STM32F429_439xx\STM32F429_439xx.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\stm32f429_439xx\system_stm32f4xx.o"'
+### List of Objects: adding '".\stm32f429_439xx\startup_stm32f429_439xx.o"'
+### List of Objects: adding '".\stm32f429_439xx\misc.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_can.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_cryp.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_cryp_des.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_dac.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_dcmi.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_dma2d.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_flash.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_hash.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_hash_sha1.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_iwdg.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_pwr.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_rng.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_sai.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_spi.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_tim.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_wwdg.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_adc.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_cryp_aes.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_dbgmcu.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_exti.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_gpio.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_i2c.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_rcc.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_sdio.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_usart.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_crc.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_dma.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_hash_md5.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_rtc.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_cryp_tdes.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_ltdc.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_syscfg.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_fmc.o"'
+### List of Objects: adding '".\stm32f429_439xx\main.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f4xx_it.o"'
+### List of Objects: adding '".\stm32f429_439xx\usart.o"'
+### List of Objects: adding '".\stm32f429_439xx\32f429_sdram.o"'
+### List of Objects: adding '".\stm32f429_439xx\pic.o"'
+### List of Objects: adding '".\stm32f429_439xx\delay.o"'
+### List of Objects: adding '".\stm32f429_439xx\stm32f40x_systick.o"'
+### List of Objects: adding '".\stm32f429_439xx\it8951.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M4.fp ".\stm32f429_439xx\system_stm32f4xx.o" ".\stm32f429_439xx\startup_stm32f429_439xx.o" ".\stm32f429_439xx\misc.o" ".\stm32f429_439xx\stm32f4xx_can.o" ".\stm32f429_439xx\stm32f4xx_cryp.o" ".\stm32f429_439xx\stm32f4xx_cryp_des.o" ".\stm32f429_439xx\stm32f4xx_dac.o" ".\stm32f429_439xx\stm32f4xx_dcmi.o" ".\stm32f429_439xx\stm32f4xx_dma2d.o" ".\stm32f429_439xx\stm32f4xx_flash.o" ".\stm32f429_439xx\stm32f4xx_hash.o" ".\stm32f429_439xx\stm32f4xx_hash_sha1.o" ".\stm32f429_439xx\stm32f4xx_iwdg.o" ".\stm32f429_439xx\stm32f4xx_pwr.o" ".\stm32f429_439xx\stm32f4xx_rng.o" ".\stm32f429_439xx\stm32f4xx_sai.o" ".\stm32f429_439xx\stm32f4xx_spi.o" ".\stm32f429_439xx\stm32f4xx_tim.o" ".\stm32f429_439xx\stm32f4xx_wwdg.o" ".\stm32f429_439xx\stm32f4xx_adc.o" ".\stm32f429_439xx\stm32f4xx_cryp_aes.o" ".\stm32f429_439xx\stm32f4xx_dbgmcu.o" ".\stm32f429_439xx\stm32f4xx_exti.o" ".\stm32f429_439xx\stm32f4xx_gpio.o" ".\stm32f429_439xx\stm32f4xx_i2c.o" ".\stm32f429_439xx\stm32f4xx_rcc.o" ".\stm32f429_439xx\stm32f4xx_sdio.o" ".\stm32f429_439xx\stm32f4xx_usart.o" ".\stm32f429_439xx\stm32f4xx_crc.o" ".\stm32f429_439xx\stm32f4xx_dma.o" ".\stm32f429_439xx\stm32f4xx_hash_md5.o" ".\stm32f429_439xx\stm32f4xx_rtc.o" ".\stm32f429_439xx\stm32f4xx_cryp_tdes.o" ".\stm32f429_439xx\stm32f4xx_ltdc.o" ".\stm32f429_439xx\stm32f4xx_syscfg.o" ".\stm32f429_439xx\stm32f4xx_fmc.o" ".\stm32f429_439xx\main.o" ".\stm32f429_439xx\stm32f4xx_it.o" ".\stm32f429_439xx\usart.o" ".\stm32f429_439xx\32f429_sdram.o" ".\stm32f429_439xx\pic.o" ".\stm32f429_439xx\delay.o" ".\stm32f429_439xx\stm32f40x_systick.o" ".\stm32f429_439xx\it8951.o" --library_type=microlib --strict --scatter ".\STM32F429_439xx\STM32F429_439xx.sct" 
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\STM32F429_439xx\STM32F429_439xx.map" -o .\STM32F429_439xx\STM32F429_439xx.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\STM32F429_439xx\STM32F429_439xx.axf'
+### ADS-LD Command File: '.\STM32F429_439xx\STM32F429_439xx.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\STM32F429_439xx\STM32F429_439xx.lnp', Handle=0x000007C8
+### Writing '.lnp' file
+### ADS-LD Command file '.\STM32F429_439xx\STM32F429_439xx.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

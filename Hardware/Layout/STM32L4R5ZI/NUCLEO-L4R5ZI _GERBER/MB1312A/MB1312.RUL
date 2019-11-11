@@ -1,0 +1,11 @@
+DRC Rules Export File for PCB: C:\Users\john lin\Desktop\Nucleo144\MB1312.PcbDoc
+RuleKind=Clearance|RuleName=D6_PAD|Scope=Board|Minimum=7.80
+RuleKind=Width|RuleName=PWR|Scope=Board|Minimum=8.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=6.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=5.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=Clearance|RuleName=Polygon|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=SB|Scope=Board|Minimum=5.00
+RuleKind=Clearance|RuleName=U9_PAD|Scope=Board|Minimum=5.90
+RuleKind=Clearance|RuleName=U7_PAD|Scope=Board|Minimum=5.90

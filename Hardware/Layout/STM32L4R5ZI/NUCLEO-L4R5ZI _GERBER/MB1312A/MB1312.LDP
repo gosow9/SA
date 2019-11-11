@@ -1,0 +1,4 @@
+Layer Pairs Export File for PCB: C:\Users\john lin\Desktop\Nucleo144\MB1312.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=mb1312-roundholes.txt|LayerPairs=gtl,gbl
+LayersSetName=Top_Bot_Square_Holes|DrillFile=mb1312-squareholes.txt|LayerPairs=gtl,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=mb1312-slotholes.txt|LayerPairs=gtl,gbl
