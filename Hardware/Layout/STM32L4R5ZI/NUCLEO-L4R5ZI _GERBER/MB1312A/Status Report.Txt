@@ -1,0 +1,14 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [MB1312.PrjPCB]
+   Generated File[MB1312-RoundHoles.TXT]
+   Generated File[MB1312-SquareHoles.TXT]
+   Generated File[MB1312-SlotHoles.TXT]
+   Generated File[MB1312.LDP]
+   Generated File[MB1312.DRR]
+
+
+Files Generated   : 5
+Documents Printed : 0
+
+Finished Output Generation At 18:30:35 On 2016/11/11
