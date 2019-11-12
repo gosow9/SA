@@ -96,8 +96,16 @@ if __name__ == '__main__':
     import serial
     import struct
     import datetime
-       
-    v1 = VISA_Device('ASRL1::INSTR')
+    
+    #lux-Messung
+    baudrate = 9600 #whatever baudrate you are listening to
+    com_port2 = 'COM16' #replace with your com port path
+
+    sniffer_PCE = serial.Serial(com_port2, baudrate, timeout=1)
+    sniffer_PCE.reset_input_buffer()
+
+    #Spannung
+    v1 = VISA_Device('USB0::0x0AAD::0x00FF::019137691::INSTR')
     v2 = VISA_Device('USB0::0x2A8D::0x0101::MY57502226::INSTR')
     v3 = VISA_Device('USB0::0x2A8D::0x0101::MY57502216::INSTR')
 
@@ -107,10 +115,51 @@ if __name__ == '__main__':
     print(v1.id())
     print(v2.id())
     print(v3.id())
-      
-    print(v1._inst.write('READ?'))
-    #print(v2._inst.query('READ?'))
-    #print(v3._inst.query('READ?'))
     
+    v1._inst.write('SYSTem:COMMunicate:ENABle ON,USB')
+    v1._inst.write('SENSe:VOLTage:DC:IMPedance:AUTO ON')
+    v1._inst.write('SENSe:VOLTage:DC:ZERO:AUTO ON')
+    v1._inst.write('SENSe:VOLTage:DC:RANGE:AUTO OFF')
     
+    v2._inst.write('SYSTem:COMMunicate:ENABle ON,USB')
+    v2._inst.write('SENSe:VOLTage:DC:IMPedance:AUTO ON')
+    v2._inst.write('SENSe:VOLTage:DC:ZERO:AUTO ON')
+    v2._inst.write('SENSe:VOLTage:DC:RANGE:AUTO OFF')
+    
+    v3._inst.write('SYSTem:COMMunicate:ENABle ON,USB')
+    v3._inst.write('SENSe:VOLTage:DC:IMPedance:AUTO ON')
+    v3._inst.write('SENSe:VOLTage:DC:ZERO:AUTO ON')
+    v3._inst.write('SENSe:VOLTage:DC:RANGE:AUTO OFF')
+    
+    nsync = 0
+    file = open('ladeverhalten.txt', 'w')
+    t_ref = time.time()
+    while True:
+        try:
+            t = time.time()
+            
+            sniffer_PCE.write(serial.to_bytes('\x11'.encode('utf-8')))
+            data_PCE = sniffer_PCE.read(19); 
+
+            lux = data_PCE[10]*100 + data_PCE[11]
+            
+            V_sys = float(v1._inst.query('READ?'))
+            V_bat = float(v2._inst.query('READ?'))
+            V_in = float(v3._inst.query('READ?'))
+                       
+            s = '{}, {:f}, {:f}, {:f}, {:f}, {:f}\n'.format(str(datetime.datetime.now()), t-t_ref, V_sys, V_bat, V_in, lux)
+            file.write(s)
+            print(s)
+        
+            time.sleep(10)
+            
+            
+        except (KeyboardInterrupt, SystemExit):
+            print('interrupted')
+            break
+    file.close()
+    
+    v1.disconnect()
+    v2.disconnect()
+    v3.disconnect()
     
