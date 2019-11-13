@@ -1,27 +1,36 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Nov  9 16:52:49 2019
+Spyder Editor
 
-@author: crenda
+Dies ist eine temporäre Skriptdatei.
 """
-import numpy as np
-from PIL import Image, ImageDraw, ImageFont
 
-img = Image.new('RGBA', (1200, 825), 'white')    
-idraw = ImageDraw.Draw(img)
-text = "High Tatras"
-h = np.arange(105,900,180)
-header = 105
-gainsbro = (220,220,220)
-darkgray = (169,169,169)
-h = []
-font = ImageFont.truetype("arial.ttf", size=18)
-print(h)
-for i in h:
-    print(i)
-    idraw.rectangle((0, i, 1200, i+90), fill=(220,220,220))
-    idraw.text((10, 10), text, font=font)
-    idraw.line((0, i, 1200, i), fill=(0, 0, 0), width=10)
-    idraw.line((0, i+90, 1200, i+90), fill=(0, 0, 0), width=10)
- 
-img.save('rectangle.bmp')
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Parameter
+on = 50 # Standard deviation of white noise
+
+# Load image
+name = 'iceage.bmp'
+
+f = plt.imread('E-LINK-TCON-DEMO/DemoPIC/{}'.format(name))
+
+# Tranform image to grayscale and float
+if f.ndim > 2:
+    f = np.mean(f,axis=2)
+f = np.array(f, dtype=float)
+(M, N) = f.shape
+
+f = np.array(np.round(f/255*15), dtype=int)
+x = np.reshape(f, -1)
+
+f_out = [hex(x[i]+x[i+1]*16) for i in np.arange(0, np.size(x), 2)]
+
+with open('{}'.format(name.strip('bmp')+'c'), 'w') as file:
+    s = 'const unsigned char {}[]={}'.format(name.strip('.bmp'), '{')
+    file.write(s)
+    s = ','.join([str(i) for i in f_out])
+    file.write(s)
+    file.write('}')
+
