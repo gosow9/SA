@@ -1,3 +1,4 @@
+"Core/Src/05.o"
 "Core/Src/EpdDriver.o"
 "Core/Src/bmp.o"
 "Core/Src/gpio.o"

@@ -141,6 +141,7 @@ void IT8951DisplayExample(void);
 void IT8951DisplayExample2(void);
 void IT8951Display1bppExample2(void);
 void IT8951DisplayExample3(void);
+void IT8951DisplayExample4(void);
 void IT8951_GUI_Example(void);
 void IT8951_BMP_Example(void);
 //void IT8951_BMP_Example(uint32_t x, uint32_t y,char *path);
