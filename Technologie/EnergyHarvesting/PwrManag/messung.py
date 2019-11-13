@@ -132,7 +132,8 @@ if __name__ == '__main__':
     v3._inst.write('SENSe:VOLTage:DC:RANGE:AUTO OFF')
     
     nsync = 0
-    file = open('ladeverhalten.txt', 'w')
+    file = open('blaentladeverhalten.txt', 'w')
+    file.write('t, t_rel, V_sys, V_bat, V_in, lux\n')
     t_ref = time.time()
     while True:
         try:
@@ -151,7 +152,7 @@ if __name__ == '__main__':
             file.write(s)
             print(s)
         
-            time.sleep(10)
+            #time.sleep(0.2)
             
             
         except (KeyboardInterrupt, SystemExit):
