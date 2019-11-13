@@ -92,43 +92,44 @@ int main(void)
   IT8951_Init();
   //IT8951DisplayExample3();
   /* USER CODE BEGIN 2 */
-	IT8951DisplayBox(0, 0, 1200,50, 0x00);
-	HAL_Delay(100);
-	IT8951DisplayBox(0, 50, 1200,50, 0x11);
-	HAL_Delay(100);
-	IT8951DisplayBox(0, 100, 1200,50, 0x22);
-	HAL_Delay(100);
-	IT8951DisplayBox(0, 150, 1200,50, 0x33);
-	HAL_Delay(100);
-	IT8951DisplayBox(0, 200, 1200,50, 0x44);
-	HAL_Delay(100);
-	IT8951DisplayBox(0, 250, 1200,50, 0x55);
-	HAL_Delay(100);
-	IT8951DisplayBox(0, 300, 1200,50, 0x66);
-	HAL_Delay(100);
-	IT8951DisplayBox(0, 350, 1200,50, 0x77);
-	HAL_Delay(100);
-	IT8951DisplayBox(0, 400, 1200,50, 0x88);
-	HAL_Delay(100);
-	IT8951DisplayBox(0, 450, 1200,50, 0x99);
-	HAL_Delay(100);
-	IT8951DisplayBox(0, 500, 1200,50, 0xaa);
-	HAL_Delay(100);
-	IT8951DisplayBox(0, 550, 1200,50, 0xbb);
-	HAL_Delay(100);
-	IT8951DisplayBox(0, 600, 1200,50, 0xcc);
-	HAL_Delay(100);
-	IT8951DisplayBox(0, 650, 1200,50, 0xdd);
-	HAL_Delay(100);
-	IT8951DisplayBox(0, 700, 1200,50, 0xee);
-	HAL_Delay(100);
-	IT8951DisplayBox(0, 750, 1200,50, 0xff);
-	HAL_Delay(100);
-	IT8951DisplayBox(0, 800, 1200,25, 0xf0);
+//	IT8951DisplayBox(0, 0, 1200,50, 0x00);
+//	HAL_Delay(100);
+//	IT8951DisplayBox(0, 50, 1200,50, 0x11);
+//	HAL_Delay(100);
+//	IT8951DisplayBox(0, 100, 1200,50, 0x22);
+//	HAL_Delay(100);
+//	IT8951DisplayBox(0, 150, 1200,50, 0x33);
+//	HAL_Delay(100);
+//	IT8951DisplayBox(0, 200, 1200,50, 0x44);
+//	HAL_Delay(100);
+//	IT8951DisplayBox(0, 250, 1200,50, 0x55);
+//	HAL_Delay(100);
+//	IT8951DisplayBox(0, 300, 1200,50, 0x66);
+//	HAL_Delay(100);
+//	IT8951DisplayBox(0, 350, 1200,50, 0x77);
+//	HAL_Delay(100);
+//	IT8951DisplayBox(0, 400, 1200,50, 0x88);
+//	HAL_Delay(100);
+//	IT8951DisplayBox(0, 450, 1200,50, 0x99);
+//	HAL_Delay(100);
+//	IT8951DisplayBox(0, 500, 1200,50, 0xaa);
+//	HAL_Delay(100);
+//	IT8951DisplayBox(0, 550, 1200,50, 0xbb);
+//	HAL_Delay(100);
+//	IT8951DisplayBox(0, 600, 1200,50, 0xcc);
+//	HAL_Delay(100);
+//	IT8951DisplayBox(0, 650, 1200,50, 0xdd);
+//	HAL_Delay(100);
+//	IT8951DisplayBox(0, 700, 1200,50, 0xee);
+//	HAL_Delay(100);
+//	IT8951DisplayBox(0, 750, 1200,50, 0xff);
+//	HAL_Delay(100);
+//	IT8951DisplayBox(0, 800, 1200,25, 0xf0);
   /* USER CODE BEGIN 2 */
+  IT8951DisplayExample3();
  while(1)
  {
-	//IT8951DisplayExample3();
+
   /* USER CODE END 2 */
 
 
