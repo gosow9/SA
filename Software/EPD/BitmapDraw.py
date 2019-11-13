@@ -32,5 +32,5 @@ with open('{}'.format(name.strip('bmp')+'c'), 'w') as file:
     file.write(s)
     s = ','.join([str(i) for i in f_out])
     file.write(s)
-    file.write('}')
+    file.write('};')
 
