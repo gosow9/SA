@@ -126,9 +126,11 @@ int main(void)
 //	HAL_Delay(100);
 //	IT8951DisplayBox(0, 800, 1200,25, 0xf0);
   /* USER CODE BEGIN 2 */
-  IT8951DisplayExample3();
+  //IT8951DisplayExample3();
  while(1)
  {
+	 IT8951DisplayExample3();
+	 IT8951DisplayExample4();
 
   /* USER CODE END 2 */
 
