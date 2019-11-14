@@ -1,0 +1,74 @@
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+Dies ist eine temporäre Skriptdatei.
+"""
+
+import matplotlib.pyplot as plt
+import matplotlib.dates as md
+import numpy as np
+import pandas as pd
+from datetime import datetime
+
+
+def avfilter(x, M): #M immer ungerade
+    avfilter = np.ones(M)/M
+    av_x = np.convolve(x, avfilter)
+    return av_x[int((M-1)/2):np.size(av_x)-int((M-1)/2)]
+
+#plt.style.use('ggplot')
+
+data = pd.read_csv('ladeverhalten.txt')
+
+t = pd.DataFrame.to_numpy(data.t).reshape(-1,1)[:,0]
+t_rel = pd.DataFrame.to_numpy(data.t_rel).reshape(-1,1)[:,0]
+V_sys = pd.DataFrame.to_numpy(data.V_sys).reshape(-1,1)[:,0]
+V_bat = pd.DataFrame.to_numpy(data.V_bat).reshape(-1,1)[:,0]
+V_in = pd.DataFrame.to_numpy(data.V_in).reshape(-1,1)[:,0]
+lux = pd.DataFrame.to_numpy(data.lux).reshape(-1,1)[:,0]
+
+#Mitteln
+V_sys = avfilter(V_sys, 33)
+V_bat = avfilter(V_bat, 33)
+V_in = avfilter(V_in, 33)
+lux = avfilter(lux, 33)
+
+
+#zuschneiden
+l = 20
+r = 20
+org_len = np.size(t_rel)
+
+t = t[l:org_len-r]
+t_rel = t_rel[l:org_len-r]
+V_sys = V_sys[l:org_len-r]
+V_bat = V_bat[l:org_len-r]
+V_in = V_in[l:org_len-r]
+lux = lux[l:org_len-r]
+
+#t zu date_time_obj
+t_obj = [datetime.strptime(t[i], '%Y-%m-%d %H:%M:%S.%f') for i in range(np.size(t))]
+#nur Uhrzeit behalten
+t_obj = [t_obj[i].time() for i in range(len(t_obj))]
+
+#◙plot
+fig1, ax1 = plt.subplots()
+ax1.set_xlabel('time')
+ax1.set_ylabel('voltage')
+ax1.set_ylim([0, 4])
+ax1.plot(t_obj, V_sys, label='V_sys', color='tab:red')
+ax1.plot(t_obj, V_bat, label='V_bat')
+ax1.plot(t_obj, V_in, label='V_in')
+
+plt.gcf().autofmt_xdate()
+
+#ax2 = ax1.twinx()
+#ax2.set_ylabel('lux', color='tab:green')
+#ax2.set_ylim([0, 1000])
+#ax2.tick_params(axis='y', labelcolor='tab:green')
+#ax2.plot(t_rel, lux, label='lux', color='tab:green')
+#
+#ax1.legend(loc='best')
+#ax2.legend(loc='best')
+
