@@ -62,4 +62,4 @@ plt.show()
 
 fig.legend(bbox_to_anchor=(0.3, 0.35))
 
-tikzplotlib.save("test.tikz")
+tikzplotlib.save('../pictures/entladen.tikz')

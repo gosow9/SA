@@ -3,6 +3,7 @@ import matplotlib.dates as md
 import numpy as np
 import pandas as pd
 from datetime import datetime
+import tikzplotlib
 
 
 def avfilter(x, M): #M immer ungerade
@@ -40,6 +41,16 @@ V_bat = V_bat[l:org_len-r]
 V_in = V_in[l:org_len-r]
 lux = lux[l:org_len-r]
 
+#grössen reduzieren
+index = np.arange(0, len(t), 1.005)
+
+t = np.delete(t, index)
+t_rel = np.delete(t_rel, index)
+V_sys = np.delete(V_sys, index)
+V_bat = np.delete(V_bat, index)
+V_in = np.delete(V_in, index)
+lux = np.delete(lux, index)
+
 #t zu date_time_obj
 t_obj = [datetime.strptime(t[i], '%Y-%m-%d %H:%M:%S.%f') for i in range(np.size(t))]
 
@@ -68,3 +79,6 @@ ax1.set_xlim([t_obj[0], t_obj[len(t_obj)-1]])
 
 fig.legend(bbox_to_anchor=(0.3, 0.35))
 
+plt.show()
+
+tikzplotlib.save('../pictures/laden.tikz')
