@@ -12,7 +12,7 @@ import numpy as np
 on = 50 # Standard deviation of white noise
 
 # Load image
-name = 'iceage.bmp'
+name = 'Kalender.png'
 
 f = plt.imread('E-LINK-TCON-DEMO/DemoPIC/{}'.format(name))
 
@@ -27,8 +27,8 @@ x = np.reshape(f, -1)
 
 f_out = [hex(x[i]+x[i+1]*16) for i in np.arange(0, np.size(x), 2)]
 
-with open('{}'.format(name.strip('bmp')+'c'), 'w') as file:
-    s = 'const unsigned char {}[]={}'.format(name.strip('.bmp'), '{')
+with open('{}'.format(name.strip('png')+'c'), 'w') as file:
+    s = 'const unsigned char {}[]={}'.format(name.strip('.png'), '{')
     file.write(s)
     s = ','.join([str(i) for i in f_out])
     file.write(s)

@@ -37,8 +37,8 @@ EpdSpi_Driver.list \
 all: EpdSpi_Driver.elf secondary-outputs
 
 # Tool invocations
-EpdSpi_Driver.elf: $(OBJS) $(USER_OBJS) C:\HSR\SA\Software\Nucleo_L4R5ZI\EpdSpi_Driver\STM32L4R5ZITX_FLASH.ld
-	arm-none-eabi-gcc -o "EpdSpi_Driver.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\HSR\SA\Software\Nucleo_L4R5ZI\EpdSpi_Driver\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EpdSpi_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+EpdSpi_Driver.elf: $(OBJS) $(USER_OBJS) C:\HSR\05\ Semester\Semester\ Arbeit\SA\Software\Nucleo_L4R5ZI\EpdSpi_Driver\STM32L4R5ZITX_FLASH.ld
+	arm-none-eabi-gcc -o "EpdSpi_Driver.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\HSR\05 Semester\Semester Arbeit\SA\Software\Nucleo_L4R5ZI\EpdSpi_Driver\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EpdSpi_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
