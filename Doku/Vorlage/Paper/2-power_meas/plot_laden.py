@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-Dies ist eine temporäre Skriptdatei.
-"""
-
 import matplotlib.pyplot as plt
 import matplotlib.dates as md
 import numpy as np
@@ -49,11 +42,9 @@ lux = lux[l:org_len-r]
 
 #t zu date_time_obj
 t_obj = [datetime.strptime(t[i], '%Y-%m-%d %H:%M:%S.%f') for i in range(np.size(t))]
-#nur Uhrzeit behalten
-t_obj = [t_obj[i].time() for i in range(len(t_obj))]
 
-#◙plot
-fig1, ax1 = plt.subplots()
+#plot V_sys, V_bat, Vin
+fig, ax1 = plt.subplots()
 ax1.set_xlabel('time')
 ax1.set_ylabel('voltage')
 ax1.set_ylim([0, 4])
@@ -61,14 +52,19 @@ ax1.plot(t_obj, V_sys, label='V_sys', color='tab:red')
 ax1.plot(t_obj, V_bat, label='V_bat')
 ax1.plot(t_obj, V_in, label='V_in')
 
-plt.gcf().autofmt_xdate()
+#plot lux
+ax2 = ax1.twinx()
+ax2.set_ylabel('lux', color='tab:green')
+ax2.set_ylim([0, 1000])
+ax2.tick_params(axis='y', labelcolor='tab:green')
+ax2.plot(t_obj, lux, label='lux', color='tab:green')
 
-#ax2 = ax1.twinx()
-#ax2.set_ylabel('lux', color='tab:green')
-#ax2.set_ylim([0, 1000])
-#ax2.tick_params(axis='y', labelcolor='tab:green')
-#ax2.plot(t_rel, lux, label='lux', color='tab:green')
-#
-#ax1.legend(loc='best')
-#ax2.legend(loc='best')
+#zeitachse
+ax1.xaxis.set_major_locator(md.HourLocator(interval=2))
+ax1.xaxis.set_major_formatter(md.DateFormatter('%H:%S'))
+ax1.grid(True)
+plt.setp(ax1.xaxis.get_majorticklabels(), rotation=60)
+ax1.set_xlim([t_obj[0], t_obj[len(t_obj)-1]])
+
+fig.legend(bbox_to_anchor=(0.3, 0.35))
 
