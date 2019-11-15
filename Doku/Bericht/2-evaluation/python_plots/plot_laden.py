@@ -41,8 +41,8 @@ V_bat = V_bat[l:org_len-r]
 V_in = V_in[l:org_len-r]
 lux = lux[l:org_len-r]
 
-#grössen reduzieren
-index = np.arange(0, len(t), 1.005)
+#grössen reduzieren (für tikz-file)
+index = np.arange(0, len(t), 2)
 
 t = np.delete(t, index)
 t_rel = np.delete(t_rel, index)
