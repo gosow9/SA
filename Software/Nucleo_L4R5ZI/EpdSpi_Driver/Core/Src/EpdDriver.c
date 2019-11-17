@@ -18,7 +18,8 @@ extern uint32_t gulImgBufAddr;		//IT8951 Image buffer address
 //Global varivale
 IT8951DevInfo gstI80DevInfo;
 //uint8_t* gpFrameBuf; //Host Source Frame buffer
-uint8_t* gpFrameBuf; //Host Source Frame buffer
+//uint8_t* gpFrameBuf; //Host Source Frame buffer
+static uint8_t gpFrameBuf[495000]={0};
 
 uint32_t gulImgBufAddr; //IT8951 Image buffer address
 
@@ -755,7 +756,7 @@ uint8_t IT8951_Init()
 
 void IT8951_Cancel()
 {
-	free(gpFrameBuf);
+	//free(gpFrameBuf);
 
 	//bcm2835_spi_end();
 	//bcm2835_close();
@@ -904,12 +905,11 @@ void IT8951DisplayExample3()
 //extern const unsigned char kal1[];
 void IT8951DisplayExample4()
 {
-	uint8_t pic[495000]={0};
 	IT8951LdImgInfo stLdImgInfo;
 	IT8951AreaImgInfo stAreaImgInfo;
 	//uint32_t i;
 	//uint8_t pic[495000];
-	//memset(pic, 0xFF, 495000);
+	memset(gpFrameBuf, 0xFF, 495000);
 //	for (i = 0;i < 495000;i++)
 //	{
 //		pic[i] = kal1[i];
@@ -918,7 +918,7 @@ void IT8951DisplayExample4()
 	IT8951WaitForDisplayReady();
 
 	//Setting Load image information
-	stLdImgInfo.ulStartFBAddr    = (uint32_t)pic;
+	stLdImgInfo.ulStartFBAddr    = (uint32_t)gpFrameBuf;
 	stLdImgInfo.usEndianType     = IT8951_LDIMG_L_ENDIAN;
 	stLdImgInfo.usPixelFormat    = IT8951_4BPP;
 	stLdImgInfo.usRotate         = IT8951_ROTATE_0;
