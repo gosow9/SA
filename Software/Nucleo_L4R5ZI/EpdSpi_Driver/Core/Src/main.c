@@ -129,7 +129,7 @@ int main(void)
   //IT8951DisplayExample3();
  while(1)
  {
-	 IT8951DisplayExample3();
+	 //IT8951DisplayExample3();
 	 IT8951DisplayExample4();
 
   /* USER CODE END 2 */

@@ -1,0 +1,4 @@
+Record=DiagramHierarchy|SourceDocument=MultiBoardSchematic1.MbsDoc|Kind=Multi-board Schematic Module|Designator=1|Source=..\..\..\STM32L4R5ZI\NUCLEO-L4R5ZI _SCH\MB1312A-04\MB1312.PrjPCB
+Record=SubProject|SourceDocument=MultiBoardSchematic1.MbsDoc|ProjectPath=..\..\..\STM32L4R5ZI\NUCLEO-L4R5ZI _SCH\MB1312A-04\MB1312.PrjPCB
+Record=DiagramHierarchy|SourceDocument=MultiBoardSchematic1.MbsDoc|Kind=Multi-board Schematic Module|Designator=2|Source=..\SRAM_Header\SRAM_Header.PrjPcb
+Record=SubProject|SourceDocument=MultiBoardSchematic1.MbsDoc|ProjectPath=..\SRAM_Header\SRAM_Header.PrjPcb

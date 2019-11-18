@@ -903,8 +903,13 @@ void IT8951DisplayExample3()
 	//IT8951Sleep();
 }
 //extern const unsigned char kal1[];
+extern const unsigned char iceage[];
 void IT8951DisplayExample4()
 {
+<<<<<<< Updated upstream
+=======
+	//uint8_t pic[495000]={0};
+>>>>>>> Stashed changes
 	IT8951LdImgInfo stLdImgInfo;
 	IT8951AreaImgInfo stAreaImgInfo;
 	//uint32_t i;
@@ -918,7 +923,11 @@ void IT8951DisplayExample4()
 	IT8951WaitForDisplayReady();
 
 	//Setting Load image information
+<<<<<<< Updated upstream
 	stLdImgInfo.ulStartFBAddr    = (uint32_t)gpFrameBuf;
+=======
+	stLdImgInfo.ulStartFBAddr    = (uint32_t)iceage;
+>>>>>>> Stashed changes
 	stLdImgInfo.usEndianType     = IT8951_LDIMG_L_ENDIAN;
 	stLdImgInfo.usPixelFormat    = IT8951_4BPP;
 	stLdImgInfo.usRotate         = IT8951_ROTATE_0;

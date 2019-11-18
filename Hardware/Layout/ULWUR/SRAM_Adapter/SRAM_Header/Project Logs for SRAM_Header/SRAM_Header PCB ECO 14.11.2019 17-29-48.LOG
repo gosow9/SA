@@ -1,0 +1,167 @@
+Added Component: Designator=CN1(HDR_2x36_2R54_V_M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revision"; Value = "17-Jul-2002: Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "System"; Value = "Connector"; VariantName = "[No Variations]"
+Added Component: Designator=CN2(HDR_2x36_2R54_V_M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revision"; Value = "17-Jul-2002: Re-released for DXP Platform."; VariantName = "[No Variations]"
+Added Component: Designator=U?(ISSI-TSOP-2-44_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.issi.com/US/index.shtml"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.issi.com/WW/pdf/61-64WV20488.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Package Specification"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.issi.com/WW/pdf/61-64WV6416EEBLL.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "Rev. B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Integrated Silicon Solution Inc (ISSI)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Organization"; Value = "2M x 8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "44-Pin 400 mil TSOP-2, Body 18.41 x 10.16 mm, Pitch 0.8 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "TSOP-2-44"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Rev. F, 06/2008"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packing"; Value = "Tray / Tube"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "IS61WV20488BLL-10TLI"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Pb-Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Speed (ns)"; Value = "10"; VariantName = "[No Variations]"
+Added Component: Designator=U?(ISSI-TSOP-2-44_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.issi.com/US/index.shtml"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.issi.com/WW/pdf/61-64WV20488.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Package Specification"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.issi.com/WW/pdf/61-64WV6416EEBLL.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "Rev. B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Integrated Silicon Solution Inc (ISSI)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Organization"; Value = "2M x 8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "44-Pin 400 mil TSOP-2, Body 18.41 x 10.16 mm, Pitch 0.8 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "TSOP-2-44"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Rev. F, 06/2008"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packing"; Value = "Tray / Tube"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "IS61WV20488BLL-10TLI"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Pb-Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Speed (ns)"; Value = "10"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+3V3 Pin=CN1-16
+Added Pin To Net: NetName=+3V3 Pin=U?-11
+Added Pin To Net: NetName=+3V3 Pin=U?-33
+Added Net: Name=+3V3
+Added Pin To Net: NetName=GND Pin=CN1-8
+Added Pin To Net: NetName=GND Pin=CN1-19
+Added Pin To Net: NetName=GND Pin=CN1-20
+Added Pin To Net: NetName=GND Pin=CN1-22
+Added Pin To Net: NetName=GND Pin=CN1-49
+Added Pin To Net: NetName=GND Pin=CN1-60
+Added Pin To Net: NetName=GND Pin=CN1-71
+Added Pin To Net: NetName=GND Pin=CN1-72
+Added Pin To Net: NetName=GND Pin=CN2-9
+Added Pin To Net: NetName=GND Pin=CN2-20
+Added Pin To Net: NetName=GND Pin=CN2-39
+Added Pin To Net: NetName=GND Pin=CN2-54
+Added Pin To Net: NetName=GND Pin=CN2-63
+Added Pin To Net: NetName=GND Pin=CN2-71
+Added Pin To Net: NetName=GND Pin=CN2-72
+Added Pin To Net: NetName=GND Pin=U?-12
+Added Pin To Net: NetName=GND Pin=U?-34
+Added Net: Name=GND
+Added Pin To Net: NetName=PD0 Pin=CN1-57
+Added Pin To Net: NetName=PD0 Pin=U?-13
+Added Net: Name=PD0
+Added Pin To Net: NetName=PD1 Pin=CN1-55
+Added Pin To Net: NetName=PD1 Pin=U?-14
+Added Net: Name=PD1
+Added Pin To Net: NetName=PD4 Pin=CN1-39
+Added Pin To Net: NetName=PD4 Pin=U?-37
+Added Net: Name=PD4
+Added Pin To Net: NetName=PD5 Pin=CN1-41
+Added Pin To Net: NetName=PD5 Pin=U?-15
+Added Net: Name=PD5
+Added Pin To Net: NetName=PD7 Pin=CN1-45
+Added Pin To Net: NetName=PD7 Pin=U?-8
+Added Net: Name=PD7
+Added Pin To Net: NetName=PD11 Pin=CN2-45
+Added Pin To Net: NetName=PD11 Pin=U?-39
+Added Net: Name=PD11
+Added Pin To Net: NetName=PD12 Pin=CN2-43
+Added Pin To Net: NetName=PD12 Pin=U?-40
+Added Net: Name=PD12
+Added Pin To Net: NetName=PD13 Pin=CN2-41
+Added Pin To Net: NetName=PD13 Pin=U?-41
+Added Net: Name=PD13
+Added Pin To Net: NetName=PD14 Pin=CN2-46
+Added Pin To Net: NetName=PD14 Pin=U?-9
+Added Net: Name=PD14
+Added Pin To Net: NetName=PD15 Pin=CN2-48
+Added Pin To Net: NetName=PD15 Pin=U?-10
+Added Net: Name=PD15
+Added Pin To Net: NetName=PE3 Pin=CN1-47
+Added Pin To Net: NetName=PE3 Pin=U?-25
+Added Net: Name=PE3
+Added Pin To Net: NetName=PE4 Pin=CN1-48
+Added Pin To Net: NetName=PE4 Pin=U?-42
+Added Net: Name=PE4
+Added Pin To Net: NetName=PE7 Pin=CN2-44
+Added Pin To Net: NetName=PE7 Pin=U?-31
+Added Net: Name=PE7
+Added Pin To Net: NetName=PE8 Pin=CN2-40
+Added Pin To Net: NetName=PE8 Pin=U?-32
+Added Net: Name=PE8
+Added Pin To Net: NetName=PE9 Pin=CN2-52
+Added Pin To Net: NetName=PE9 Pin=U?-35
+Added Net: Name=PE9
+Added Pin To Net: NetName=PE10 Pin=CN2-47
+Added Pin To Net: NetName=PE10 Pin=U?-36
+Added Net: Name=PE10
+Added Pin To Net: NetName=PF0 Pin=CN1-53
+Added Pin To Net: NetName=PF0 Pin=U?-3
+Added Net: Name=PF0
+Added Pin To Net: NetName=PF1 Pin=CN1-51
+Added Pin To Net: NetName=PF1 Pin=U?-4
+Added Net: Name=PF1
+Added Pin To Net: NetName=PF2 Pin=CN1-52
+Added Pin To Net: NetName=PF2 Pin=U?-5
+Added Net: Name=PF2
+Added Pin To Net: NetName=PF3 Pin=CN2-58
+Added Pin To Net: NetName=PF3 Pin=U?-6
+Added Net: Name=PF3
+Added Pin To Net: NetName=PF4 Pin=CN2-38
+Added Pin To Net: NetName=PF4 Pin=U?-7
+Added Net: Name=PF4
+Added Pin To Net: NetName=PF5 Pin=CN2-36
+Added Pin To Net: NetName=PF5 Pin=U?-16
+Added Net: Name=PF5
+Added Pin To Net: NetName=PF12 Pin=CN2-59
+Added Pin To Net: NetName=PF12 Pin=U?-17
+Added Net: Name=PF12
+Added Pin To Net: NetName=PF13 Pin=CN2-57
+Added Pin To Net: NetName=PF13 Pin=U?-18
+Added Net: Name=PF13
+Added Pin To Net: NetName=PF14 Pin=CN2-50
+Added Pin To Net: NetName=PF14 Pin=U?-19
+Added Net: Name=PF14
+Added Pin To Net: NetName=PF15 Pin=CN2-60
+Added Pin To Net: NetName=PF15 Pin=U?-20
+Added Net: Name=PF15
+Added Pin To Net: NetName=PG0 Pin=CN1-59
+Added Pin To Net: NetName=PG0 Pin=U?-26
+Added Net: Name=PG0
+Added Pin To Net: NetName=PG1 Pin=CN1-58
+Added Pin To Net: NetName=PG1 Pin=U?-27
+Added Net: Name=PG1
+Added Pin To Net: NetName=PG2 Pin=CN1-42
+Added Pin To Net: NetName=PG2 Pin=U?-28
+Added Net: Name=PG2
+Added Pin To Net: NetName=PG3 Pin=CN1-44
+Added Pin To Net: NetName=PG3 Pin=U?-29
+Added Net: Name=PG3
+Added Pin To Net: NetName=PG4 Pin=CN2-69
+Added Pin To Net: NetName=PG4 Pin=U?-30
+Added Net: Name=PG4
+Added Pin To Net: NetName=PG5 Pin=CN2-68
+Added Pin To Net: NetName=PG5 Pin=U?-38
+Added Net: Name=PG5
+Added Class: Name=SRAM_Adapter
+Added Room: Name=SRAM_Adapter
