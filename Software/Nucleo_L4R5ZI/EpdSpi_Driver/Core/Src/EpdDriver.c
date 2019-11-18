@@ -7,7 +7,7 @@
 
 
 #include "EpdDriver.h"
-
+#include <stdlib.h>
 
 /*
 extern IT8951DevInfo gstI80DevInfo;
@@ -18,6 +18,8 @@ extern uint32_t gulImgBufAddr;		//IT8951 Image buffer address
 //Global varivale
 IT8951DevInfo gstI80DevInfo;
 //uint8_t* gpFrameBuf; //Host Source Frame buffer
+//uint8_t* gpFrameBuf; //Host Source Frame buffer
+
 //uint8_t* gpFrameBuf; //Host Source Frame buffer
 static uint8_t gpFrameBuf[495000]={0};
 
@@ -903,31 +905,47 @@ void IT8951DisplayExample3()
 	//IT8951Sleep();
 }
 //extern const unsigned char kal1[];
-extern const unsigned char iceage[];
+
+
+
 void IT8951DisplayExample4()
 {
-<<<<<<< Updated upstream
-=======
-	//uint8_t pic[495000]={0};
->>>>>>> Stashed changes
 	IT8951LdImgInfo stLdImgInfo;
 	IT8951AreaImgInfo stAreaImgInfo;
-	//uint32_t i;
-	//uint8_t pic[495000];
+	IT8951WaitForDisplayReady();
+	//uint8_t pic[495000]={0};
+//	 gpFrameBuf = (uint8_t*) malloc(495000);
 	memset(gpFrameBuf, 0xFF, 495000);
-//	for (i = 0;i < 495000;i++)
-//	{
-//		pic[i] = kal1[i];
-//	}
+	//Setting Load image information
+	stLdImgInfo.ulStartFBAddr    = (uint32_t)gpFrameBuf;
+	stLdImgInfo.usEndianType     = IT8951_LDIMG_L_ENDIAN;
+	stLdImgInfo.usPixelFormat    = IT8951_4BPP;
+	stLdImgInfo.usRotate         = IT8951_ROTATE_0;
+	stLdImgInfo.ulImgBufBaseAddr = gulImgBufAddr;
+	//Set Load Area
+	stAreaImgInfo.usX      = 0;
+	stAreaImgInfo.usY      = 0;
+	stAreaImgInfo.usWidth  = gstI80DevInfo.usPanelW;
+ 	stAreaImgInfo.usHeight = gstI80DevInfo.usPanelH;
 
+	//Load Image from Host to IT8951 Image Buffer
+	IT8951HostAreaPackedPixelWrite(&stLdImgInfo, &stAreaImgInfo);//Display function 2
+	//Display Area ?V (x,y,w,h) with mode 2 for fast gray clear mode - depends on current waveform
+	IT8951DisplayArea(0,0, gstI80DevInfo.usPanelW, gstI80DevInfo.usPanelH, 2);
+	//IT8951Sleep();
+}
+
+
+
+extern const unsigned char Kalender[];
+void EpdDriverLoadTemplate()
+{
+	IT8951LdImgInfo stLdImgInfo;
+	IT8951AreaImgInfo stAreaImgInfo;
 	IT8951WaitForDisplayReady();
 
 	//Setting Load image information
-<<<<<<< Updated upstream
-	stLdImgInfo.ulStartFBAddr    = (uint32_t)gpFrameBuf;
-=======
-	stLdImgInfo.ulStartFBAddr    = (uint32_t)iceage;
->>>>>>> Stashed changes
+	stLdImgInfo.ulStartFBAddr    = (uint32_t)Kalender;
 	stLdImgInfo.usEndianType     = IT8951_LDIMG_L_ENDIAN;
 	stLdImgInfo.usPixelFormat    = IT8951_4BPP;
 	stLdImgInfo.usRotate         = IT8951_ROTATE_0;
@@ -995,6 +1013,39 @@ void IT8951DisplayBox(uint16_t usX, uint16_t usY, uint16_t usWidth,uint16_t usHe
 	stLdImgInfo.ulStartFBAddr    = (uint32_t)box;
 	stLdImgInfo.usEndianType     = IT8951_LDIMG_L_ENDIAN;
 	stLdImgInfo.usPixelFormat    = IT8951_8BPP;
+	stLdImgInfo.usRotate         = IT8951_ROTATE_0;
+	stLdImgInfo.ulImgBufBaseAddr = gulImgBufAddr;
+	//Set Load Area
+	stAreaImgInfo.usX      = usX;
+	stAreaImgInfo.usY      = usY;
+	stAreaImgInfo.usWidth  = usWidth;
+	stAreaImgInfo.usHeight = usHeight;
+
+	//Load Image from Host to IT8951 Image Buffer
+	IT8951HostAreaPackedPixelWrite(&stLdImgInfo, &stAreaImgInfo);//Display function 2
+	//Display Area ?V (x,y,w,h) with mode 2 for fast gray clear mode - depends on current waveform
+	IT8951DisplayArea(stAreaImgInfo.usX,stAreaImgInfo.usY , stAreaImgInfo.usWidth , stAreaImgInfo.usHeight, 2);
+	 //IT8951DisplayArea(uint16_t usX, uint16_t usY, uint16_t usW, uint16_t usH, uint16_t usDpyMode)
+}
+
+
+void IT8951DisplayBox4Bit(uint16_t usX, uint16_t usY, uint16_t usWidth,uint16_t usHeight, uint8_t color)
+{
+	IT8951LdImgInfo stLdImgInfo;
+	IT8951AreaImgInfo stAreaImgInfo;
+	uint8_t box[usWidth*usHeight];
+
+//	for (i = 0;i < 1200*825;i++)
+//	{
+	//gpFrameBuf[i] = pic[i];
+//	}
+	memset(box, color, usWidth*usHeight);
+	IT8951WaitForDisplayReady();
+
+	//Setting Load image information
+	stLdImgInfo.ulStartFBAddr    = (uint32_t)box;
+	stLdImgInfo.usEndianType     = IT8951_LDIMG_L_ENDIAN;
+	stLdImgInfo.usPixelFormat    = IT8951_4BPP;
 	stLdImgInfo.usRotate         = IT8951_ROTATE_0;
 	stLdImgInfo.ulImgBufBaseAddr = gulImgBufAddr;
 	//Set Load Area
@@ -1206,4 +1257,6 @@ void IT8951Display1bppExample2()
     //e.g. if we want to set b0(Background color) for Black-0x00 , Set b1(Foreground) for White-0xFF
     IT8951DisplayArea1bpp(0,0, gstI80DevInfo.usPanelW, gstI80DevInfo.usPanelH, 0, 0x00, 0xFF);
 }
+
+
 
