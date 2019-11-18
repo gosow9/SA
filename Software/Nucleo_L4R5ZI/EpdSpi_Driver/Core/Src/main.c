@@ -131,7 +131,11 @@ int main(void)
  {
 	 IT8951DisplayExample3();
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	 IT8951DisplayExample4();
+=======
+	 //IT8951DisplayExample4();
+>>>>>>> Stashed changes
 =======
 	 //IT8951DisplayExample4();
 >>>>>>> Stashed changes

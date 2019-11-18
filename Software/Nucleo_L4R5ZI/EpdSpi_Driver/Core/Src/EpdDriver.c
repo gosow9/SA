@@ -910,9 +910,42 @@ void IT8951DisplayExample3()
 }
 //extern const unsigned char kal1[];
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 void IT8951DisplayExample4()
 {
 	uint8_t pic[495000]={0};
+=======
+extern const unsigned char Kalender[];
+void EpdDriverLoadTemplate()
+{
+	IT8951LdImgInfo stLdImgInfo;
+	IT8951AreaImgInfo stAreaImgInfo;
+	IT8951WaitForDisplayReady();
+
+	//Setting Load image information
+	stLdImgInfo.ulStartFBAddr    = (uint32_t)Kalender;
+	stLdImgInfo.usEndianType     = IT8951_LDIMG_L_ENDIAN;
+	stLdImgInfo.usPixelFormat    = IT8951_4BPP;
+	stLdImgInfo.usRotate         = IT8951_ROTATE_0;
+	stLdImgInfo.ulImgBufBaseAddr = gulImgBufAddr;
+	//Set Load Area
+	stAreaImgInfo.usX      = 0;
+	stAreaImgInfo.usY      = 0;
+	stAreaImgInfo.usWidth  = gstI80DevInfo.usPanelW;
+ 	stAreaImgInfo.usHeight = gstI80DevInfo.usPanelH;
+
+	//Load Image from Host to IT8951 Image Buffer
+	IT8951HostAreaPackedPixelWrite(&stLdImgInfo, &stAreaImgInfo);//Display function 2
+	//Display Area ?V (x,y,w,h) with mode 2 for fast gray clear mode - depends on current waveform
+	IT8951DisplayArea(0,0, gstI80DevInfo.usPanelW, gstI80DevInfo.usPanelH, 2);
+	//IT8951Sleep();
+}
+void IT8951DisplayExample4()
+{
+
+	//uint8_t pic[495000]={0};
+//	 gpFrameBuf = (uint8_t*) malloc(495000);
+>>>>>>> Stashed changes
 =======
 extern const unsigned char Kalender[];
 void EpdDriverLoadTemplate()
@@ -959,13 +992,19 @@ void IT8951DisplayExample4()
 
 	//Setting Load image information
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	stLdImgInfo.ulStartFBAddr    = (uint32_t)pic;
 =======
+=======
+>>>>>>> Stashed changes
 
 	stLdImgInfo.ulStartFBAddr    = (uint32_t)gpFrameBuf;
 
 	//stLdImgInfo.ulStartFBAddr    = (uint32_t)iceage;
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 	stLdImgInfo.usEndianType     = IT8951_LDIMG_L_ENDIAN;
 	stLdImgInfo.usPixelFormat    = IT8951_4BPP;

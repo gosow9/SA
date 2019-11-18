@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 EpdDriver.c:29:6:LCDWaitForReady	16	static
 EpdDriver.c:48:6:LCDWriteCmdCode	24	static
 EpdDriver.c:97:6:LCDWriteData	24	static
@@ -39,6 +40,8 @@ EpdDriver.c:1125:6:IT8951Load1bppImage	48	static
 EpdDriver.c:1149:6:IT8951Display1bppExample	40	static
 EpdDriver.c:1175:6:IT8951Display1bppExample2	40	static
 =======
+=======
+>>>>>>> Stashed changes
 EpdDriver.c:32:6:LCDWaitForReady	16	static
 EpdDriver.c:51:6:LCDWriteCmdCode	24	static
 EpdDriver.c:100:6:LCDWriteData	24	static
@@ -79,4 +82,7 @@ EpdDriver.c:1124:6:IT8951_BMP_Example	40	static
 EpdDriver.c:1160:6:IT8951Load1bppImage	48	static
 EpdDriver.c:1184:6:IT8951Display1bppExample	32	static
 EpdDriver.c:1210:6:IT8951Display1bppExample2	32	static
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
