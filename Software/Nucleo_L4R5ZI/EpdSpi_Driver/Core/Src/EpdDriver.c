@@ -7,7 +7,7 @@
 
 
 #include "EpdDriver.h"
-
+#include <stdlib.h>
 
 /*
 extern IT8951DevInfo gstI80DevInfo;
@@ -18,7 +18,14 @@ extern uint32_t gulImgBufAddr;		//IT8951 Image buffer address
 //Global varivale
 IT8951DevInfo gstI80DevInfo;
 //uint8_t* gpFrameBuf; //Host Source Frame buffer
+<<<<<<< Updated upstream
 uint8_t* gpFrameBuf; //Host Source Frame buffer
+=======
+//uint8_t* gpFrameBuf; //Host Source Frame buffer
+
+
+static uint8_t gpFrameBuf[495000]={0};
+>>>>>>> Stashed changes
 
 uint32_t gulImgBufAddr; //IT8951 Image buffer address
 
@@ -902,23 +909,20 @@ void IT8951DisplayExample3()
 	//IT8951Sleep();
 }
 //extern const unsigned char kal1[];
+<<<<<<< Updated upstream
 void IT8951DisplayExample4()
 {
 	uint8_t pic[495000]={0};
+=======
+extern const unsigned char Kalender[];
+void EpdDriverLoadTemplate()
+{
 	IT8951LdImgInfo stLdImgInfo;
 	IT8951AreaImgInfo stAreaImgInfo;
-	//uint32_t i;
-	//uint8_t pic[495000];
-	//memset(pic, 0xFF, 495000);
-//	for (i = 0;i < 495000;i++)
-//	{
-//		pic[i] = kal1[i];
-//	}
-
 	IT8951WaitForDisplayReady();
 
 	//Setting Load image information
-	stLdImgInfo.ulStartFBAddr    = (uint32_t)pic;
+	stLdImgInfo.ulStartFBAddr    = (uint32_t)Kalender;
 	stLdImgInfo.usEndianType     = IT8951_LDIMG_L_ENDIAN;
 	stLdImgInfo.usPixelFormat    = IT8951_4BPP;
 	stLdImgInfo.usRotate         = IT8951_ROTATE_0;
@@ -934,6 +938,51 @@ void IT8951DisplayExample4()
 	//Display Area ?V (x,y,w,h) with mode 2 for fast gray clear mode - depends on current waveform
 	IT8951DisplayArea(0,0, gstI80DevInfo.usPanelW, gstI80DevInfo.usPanelH, 2);
 	//IT8951Sleep();
+}
+void IT8951DisplayExample4()
+{
+
+	//uint8_t pic[495000]={0};
+//	 gpFrameBuf = (uint8_t*) malloc(495000);
+>>>>>>> Stashed changes
+	IT8951LdImgInfo stLdImgInfo;
+	IT8951AreaImgInfo stAreaImgInfo;
+	//uint32_t i;
+	//uint8_t pic[495000];
+	//memset(pic, 0xFF, 495000);
+//	for (i = 0;i < 495000;i++)
+//	{
+//		pic[i] = kal1[i];
+//	}
+
+	IT8951WaitForDisplayReady();
+
+	//Setting Load image information
+<<<<<<< Updated upstream
+	stLdImgInfo.ulStartFBAddr    = (uint32_t)pic;
+=======
+
+	stLdImgInfo.ulStartFBAddr    = (uint32_t)gpFrameBuf;
+
+	//stLdImgInfo.ulStartFBAddr    = (uint32_t)iceage;
+
+>>>>>>> Stashed changes
+	stLdImgInfo.usEndianType     = IT8951_LDIMG_L_ENDIAN;
+	stLdImgInfo.usPixelFormat    = IT8951_4BPP;
+	stLdImgInfo.usRotate         = IT8951_ROTATE_0;
+	stLdImgInfo.ulImgBufBaseAddr = gulImgBufAddr;
+	//Set Load Area
+	stAreaImgInfo.usX      = 0;
+	stAreaImgInfo.usY      = 0;
+	stAreaImgInfo.usWidth  = gstI80DevInfo.usPanelW;
+ 	stAreaImgInfo.usHeight = gstI80DevInfo.usPanelH;
+
+	//Load Image from Host to IT8951 Image Buffer
+	IT8951HostAreaPackedPixelWrite(&stLdImgInfo, &stAreaImgInfo);//Display function 2
+	//Display Area ?V (x,y,w,h) with mode 2 for fast gray clear mode - depends on current waveform
+	IT8951DisplayArea(0,0, gstI80DevInfo.usPanelW, gstI80DevInfo.usPanelH, 2);
+	//IT8951Sleep();
+	//free(gpFrameBuf);
 }
 
 //void IT8951DisplayBox()

@@ -22,10 +22,10 @@
 #include "main.h"
 #include "spi.h"
 #include "gpio.h"
-#include "EpdDriver.h"
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "EpdDriver.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -89,9 +89,9 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_SPI1_Init();
-  IT8951_Init();
-  //IT8951DisplayExample3();
   /* USER CODE BEGIN 2 */
+  IT8951_Init();
+  EpdDriverLoadTemplate();
 //	IT8951DisplayBox(0, 0, 1200,50, 0x00);
 //	HAL_Delay(100);
 //	IT8951DisplayBox(0, 50, 1200,50, 0x11);
@@ -130,10 +130,13 @@ int main(void)
  while(1)
  {
 	 IT8951DisplayExample3();
+<<<<<<< Updated upstream
 	 IT8951DisplayExample4();
+=======
+	 //IT8951DisplayExample4();
+>>>>>>> Stashed changes
 
   /* USER CODE END 2 */
-
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */

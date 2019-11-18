@@ -1,5 +1,6 @@
 "Core/Src/05.o"
 "Core/Src/EpdDriver.o"
+"Core/Src/Kalender.o"
 "Core/Src/bmp.o"
 "Core/Src/gpio.o"
 "Core/Src/iceage.o"
