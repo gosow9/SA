@@ -20,12 +20,17 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "dma.h"
 #include "spi.h"
+#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "EpdDriver.h"
+#include "GUI_Paint.h"
+#include "ULPWUR.h"
+#include <string.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -77,6 +82,11 @@ int main(void)
 
   /* USER CODE BEGIN Init */
 
+ // char tex[]={'H','A','L','L','O','\0'};
+  char * fach = "WsComm v1";
+  char * doz = "MAH";
+  uint8_t* trans = "Ready";
+  uint8_t rxBuf[1024];
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -89,11 +99,12 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_SPI1_Init();
-
-  //IT8951DisplayExample3();
+  MX_DMA_Init();
+  MX_UART4_Init();
+  HAL_UART_MspInit(&huart4);
   /* USER CODE BEGIN 2 */
   IT8951_Init();
-  EpdDriverLoadTemplate();
+
 	//IT8951DisplayBox(0, 0, 200,50, 0x00);
 //	HAL_Delay(100);
 //	IT8951DisplayBox(0, 50, 1200,50, 0x11);
@@ -129,13 +140,42 @@ int main(void)
 	//IT8951DisplayBox(0, 200, 100,25, 0xf0);
   /* USER CODE BEGIN 2 */
   //IT8951DisplayExample3();
+//  EpdDriverLoadTemplate();
+//
+ DrawCalenderField(1, fach, doz);
+ DrawCalenderField(2, fach, doz);
+ DrawCalenderField(3, fach, doz);
+ DrawCalenderField(7, fach, doz);
+
+  //Paint_DrawChar(50, 50, 'B',&Font20, KALDARK, 0x00);
+//  Paint_Clear(KALDARK);
+  //Paint_DrawChar(10, 10, 'A',&Font12, KALDARK, 0x00);
+  //Paint_DrawChar(50, 50, 'B',&Font20, KALDARK, 0x00);
+
+ HAL_UART_Transmit(&huart4, trans, 6, HAL_MAX_DELAY);
+  //EpdDriverDrawBox(uint8_t* buffer, uint16_t usX, uint16_t usY, uint16_t usWidth, uint16_t usHeight)
  while(1)
  {
 	 //IT8951DisplayExample3();
-	 IT8951DisplayExample4();
+	 //IT8951DisplayExample4();
+
+	 HAL_UART_Receive(&huart4, rxBuf, 2,HAL_MAX_DELAY);
+	 if(rxBuf[0]=='t'|rxBuf[0]=='T')
+	 {
+		 EpdDriverLoadTemplate();
+		 HAL_UART_Transmit(&huart4, trans, 6, HAL_MAX_DELAY);
+	 }
+	 if(rxBuf[0]=='r')
+	 {
+		 HAL_UART_Transmit(&huart4, trans, 6, HAL_MAX_DELAY);
+		 HAL_UART_Receive(&huart4, rxBuf, 2,HAL_MAX_DELAY);
+		 DrawCalenderField((uint8_t*)rxBuf[0]-48, fach, doz);
+	 }
+
+
+		  //HAL_UART_Receive(&huart4, datain, 2, HAL_MAX_DELAY);
 
   /* USER CODE END 2 */
-
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -154,6 +194,7 @@ void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+  RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
 
   /** Configure the main internal regulator output voltage 
   */
@@ -187,6 +228,12 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_5) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_UART4;
+  PeriphClkInit.Uart4ClockSelection = RCC_UART4CLKSOURCE_PCLK1;
+  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {
     Error_Handler();
   }
