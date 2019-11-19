@@ -963,6 +963,32 @@ void EpdDriverLoadTemplate()
 	//IT8951Sleep();
 }
 
+
+void EpdDriverDrawBox(uint8_t* buffer, uint16_t usX, uint16_t usY, uint16_t usWidth, uint16_t usHeight)
+{
+	IT8951LdImgInfo stLdImgInfo;
+	IT8951AreaImgInfo stAreaImgInfo;
+	IT8951WaitForDisplayReady();
+
+	//Setting Load image information
+	stLdImgInfo.ulStartFBAddr    = (uint32_t)buffer;
+	stLdImgInfo.usEndianType     = IT8951_LDIMG_L_ENDIAN;
+	stLdImgInfo.usPixelFormat    = IT8951_8BPP;
+	stLdImgInfo.usRotate         = IT8951_ROTATE_0;
+	stLdImgInfo.ulImgBufBaseAddr = gulImgBufAddr;
+	//Set Load Area
+	stAreaImgInfo.usX      = usX;
+	stAreaImgInfo.usY      = usY;
+	stAreaImgInfo.usWidth  = usWidth;
+ 	stAreaImgInfo.usHeight = usHeight;
+
+	//Load Image from Host to IT8951 Image Buffer
+	IT8951HostAreaPackedPixelWrite(&stLdImgInfo, &stAreaImgInfo);//Display function 2
+	//Display Area ?V (x,y,w,h) with mode 2 for fast gray clear mode - depends on current waveform
+	IT8951DisplayArea(stAreaImgInfo.usX,stAreaImgInfo.usY, stAreaImgInfo.usWidth, stAreaImgInfo.usHeight, 2);
+	//IT8951Sleep();
+}
+
 //void IT8951DisplayBox()
 //{
 //	IT8951LdImgInfo stLdImgInfo;

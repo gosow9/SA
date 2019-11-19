@@ -33,9 +33,10 @@ EpdDriver.c:831:6:IT8951DisplayExample2	40	static
 EpdDriver.c:876:6:IT8951DisplayExample3	40	static
 EpdDriver.c:911:6:IT8951DisplayExample4	40	static
 EpdDriver.c:941:6:EpdDriverLoadTemplate	40	static
-EpdDriver.c:999:6:IT8951DisplayBox	64	dynamic
-EpdDriver.c:1032:6:IT8951DisplayBox4Bit	64	dynamic
-EpdDriver.c:1149:6:IT8951_BMP_Example	40	static
-EpdDriver.c:1185:6:IT8951Load1bppImage	48	static
-EpdDriver.c:1209:6:IT8951Display1bppExample	32	static
-EpdDriver.c:1235:6:IT8951Display1bppExample2	32	static
+EpdDriver.c:967:6:EpdDriverDrawBox	64	static
+EpdDriver.c:1025:6:IT8951DisplayBox	64	dynamic
+EpdDriver.c:1058:6:IT8951DisplayBox4Bit	64	dynamic
+EpdDriver.c:1175:6:IT8951_BMP_Example	40	static
+EpdDriver.c:1211:6:IT8951Load1bppImage	48	static
+EpdDriver.c:1235:6:IT8951Display1bppExample	32	static
+EpdDriver.c:1261:6:IT8951Display1bppExample2	32	static
