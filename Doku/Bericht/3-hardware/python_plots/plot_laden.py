@@ -3,7 +3,6 @@ import matplotlib.dates as md
 import numpy as np
 import pandas as pd
 from datetime import datetime
-import tikzplotlib
 
 
 def avfilter(x, M): #M immer ungerade
@@ -78,7 +77,3 @@ plt.setp(ax1.xaxis.get_majorticklabels(), rotation=60)
 ax1.set_xlim([t_obj[0], t_obj[len(t_obj)-1]])
 
 fig.legend(bbox_to_anchor=(0.3, 0.35))
-
-plt.show()
-
-tikzplotlib.save('../pictures/laden.tikz')

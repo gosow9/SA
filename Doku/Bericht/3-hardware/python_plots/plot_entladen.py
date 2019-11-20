@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import tikzplotlib
 
 def avfilter(x, M): #M immer ungerade
     avfilter = np.ones(M)/M
@@ -38,10 +37,15 @@ V_bat = V_bat[l:org_len-r]
 V_in = V_in[l:org_len-r]
 lux = lux[l:org_len-r]
 
+# use LaTeX fonts in the plot
+plt.rc('text', usetex=True)
+plt.rc('font', family='serif')
+
+
 #plot V_sys, V_bat, Vin
 fig, ax1 = plt.subplots()
-ax1.set_xlabel('time(s)')
-ax1.set_ylabel('voltage')
+ax1.set_xlabel('Time(s)')
+ax1.set_ylabel('Voltage')
 ax1.set_ylim([0, 4])
 ax1.plot(t_rel, V_sys, label='V_sys', color='tab:red')
 ax1.plot(t_rel, V_bat, label='V_bat')
@@ -58,8 +62,7 @@ ax2.set_ylim([0, 1000])
 ax2.tick_params(axis='y', labelcolor='tab:green')
 ax2.plot(t_rel, lux, label='lux', color='tab:green')
 
-plt.show()
-
 fig.legend(bbox_to_anchor=(0.3, 0.35))
 
-tikzplotlib.save('../pictures/entladen.tikz')
+plt.show()
+
