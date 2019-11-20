@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.11.15)  18 NOV 2019 12:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.11.15)  20 NOV 2019 17:56
 entering extended mode
 **./main.tex
 (main.tex
@@ -1256,37 +1256,60 @@ This may cause the page layout to be inconsistent, however.
 ] (00-abbreviations/00-abbreviations.tex)
 (1-intro/1-intro.tex
 Chapter 1.
-) (2-evaluation/2-evaluation.tex [1
+) (2-requirements/2-requirements.tex [1
 
 ] [2
 
 ]
 Chapter 2.
-) [3] [4] (main.ind)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 129.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 129.
+) (3-theory/3-theory.tex [3] [4
+
+]
+Chapter 3.
+) (4-development/4-development.tex [5] [6
+
+]
+Chapter 4.
+) (5-results/5-results.tex [7] [8
+
+]
+Chapter 5.
+) (6-summary/6-summary.tex [9] [10
+
+]
+Chapter 6.
+) [11] [12] (main.ind)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 129.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 129.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F92FEB900C053B47089610543B31A927;144.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 129.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 132.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 132.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 078C565B9A57D989A6D29EC882668E91;345
+(rerunfilecheck)             After:  6EFFB12FD191780B1D8D5955B8D48E86;431.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 132.
  ) 
 Here is how much of TeX's memory you used:
- 20831 strings out of 492895
- 369697 string characters out of 3122333
+ 20866 strings out of 492895
+ 370428 string characters out of 3122333
  472137 words of memory out of 3000000
- 24280 multiletter control sequences out of 15000+200000
- 40158 words of font info for 79 fonts, out of 3000000 for 9000
+ 24283 multiletter control sequences out of 15000+200000
+ 37109 words of font info for 76 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,11n,48p,3238b,386s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/mtischha/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.
 enc}<C:/Users/mtischha/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/
 utmb8a.pfb><C:/Users/mtischha/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw
 /times/utmr8a.pfb>
-Output written on main.pdf (8 pages, 36518 bytes).
+Output written on main.pdf (16 pages, 44359 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 13 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 123 PDF objects out of 1000 (max. 8388607)
+ 27 named destinations out of 1000 (max. 500000)
+ 69 words of extra memory for PDF output out of 10000 (max. 10000000)
 
