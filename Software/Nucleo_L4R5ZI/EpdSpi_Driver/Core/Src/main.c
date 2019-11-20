@@ -83,10 +83,11 @@ int main(void)
   /* USER CODE BEGIN Init */
 
  // char tex[]={'H','A','L','L','O','\0'};
-  char * fach = "WsComm v1";
-  char * doz = "MAH";
-  uint8_t* trans = "Ready";
-  uint8_t rxBuf[1024];
+  char  fach[11];
+  char  doz[4];
+  char* tempLoad = "Template Loaded";
+  //char end[1] = {'\N'};
+  uint8_t rxBuf[50]={0};
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -105,74 +106,58 @@ int main(void)
   /* USER CODE BEGIN 2 */
   IT8951_Init();
 
-	//IT8951DisplayBox(0, 0, 200,50, 0x00);
-//	HAL_Delay(100);
-//	IT8951DisplayBox(0, 50, 1200,50, 0x11);
-//	HAL_Delay(100);
-//	IT8951DisplayBox(0, 100, 1200,50, 0x22);
-//	HAL_Delay(100);
-//	IT8951DisplayBox(0, 150, 1200,50, 0x33);
-//	HAL_Delay(100);
-//	IT8951DisplayBox(0, 200, 1200,50, 0x44);
-//	HAL_Delay(100);
-//	IT8951DisplayBox(0, 250, 1200,50, 0x55);
-//	HAL_Delay(100);
-//	IT8951DisplayBox(0, 300, 1200,50, 0x66);
-//	HAL_Delay(100);
-//	IT8951DisplayBox(0, 350, 1200,50, 0x77);
-//	HAL_Delay(100);
-//	IT8951DisplayBox(0, 400, 1200,50, 0x88);
-//	HAL_Delay(100);
-//	IT8951DisplayBox(0, 450, 1200,50, 0x99);
-//	HAL_Delay(100);
-//	IT8951DisplayBox(0, 500, 1200,50, 0xaa);
-//	HAL_Delay(100);
-//	IT8951DisplayBox(0, 550, 1200,50, 0xbb);
-//	HAL_Delay(100);
-//	IT8951DisplayBox(0, 600, 1200,50, 0xcc);
-//	HAL_Delay(100);
-//	IT8951DisplayBox(0, 650, 1200,50, 0xdd);
-//	HAL_Delay(100);
-//	IT8951DisplayBox(0, 700, 1200,50, 0xee);
-//	HAL_Delay(100);
-//	IT8951DisplayBox(0, 750, 1200,50, 0xff);
-//	HAL_Delay(100);
-	//IT8951DisplayBox(0, 200, 100,25, 0xf0);
+
   /* USER CODE BEGIN 2 */
   //IT8951DisplayExample3();
 //  EpdDriverLoadTemplate();
 //
- DrawCalenderField(1, fach, doz);
- DrawCalenderField(2, fach, doz);
- DrawCalenderField(3, fach, doz);
- DrawCalenderField(7, fach, doz);
+// DrawCalenderField(1, fach, doz);
+// DrawCalenderField(2, fach, doz);
+// DrawCalenderField(3, fach, doz);
+// DrawCalenderField(7, fach, doz);
 
   //Paint_DrawChar(50, 50, 'B',&Font20, KALDARK, 0x00);
 //  Paint_Clear(KALDARK);
   //Paint_DrawChar(10, 10, 'A',&Font12, KALDARK, 0x00);
   //Paint_DrawChar(50, 50, 'B',&Font20, KALDARK, 0x00);
 
- HAL_UART_Transmit(&huart4, trans, 6, HAL_MAX_DELAY);
+// HAL_UART_Transmit(&huart4, trans, 6, HAL_MAX_DELAY);
   //EpdDriverDrawBox(uint8_t* buffer, uint16_t usX, uint16_t usY, uint16_t usWidth, uint16_t usHeight)
  while(1)
  {
 	 //IT8951DisplayExample3();
 	 //IT8951DisplayExample4();
 
-	 HAL_UART_Receive(&huart4, rxBuf, 2,HAL_MAX_DELAY);
-	 if(rxBuf[0]=='t'|rxBuf[0]=='T')
+	 HAL_UART_Receive(&huart4, rxBuf, 20,HAL_MAX_DELAY);
+	 if(rxBuf[0]==0)
 	 {
 		 EpdDriverLoadTemplate();
-		 HAL_UART_Transmit(&huart4, trans, 6, HAL_MAX_DELAY);
+		 for(int i=0; i<50;i++)
+		 {rxBuf[i]=0;}
+		 //HAL_UART_Transmit(&huart4, (uint8_t*)tempLoad, 16, HAL_MAX_DELAY);
+		// HAL_UART_Transmit(&huart4, end, 1, HAL_MAX_DELAY);
 	 }
-	 if(rxBuf[0]=='r')
+	 if((0<rxBuf[0]) & (rxBuf[0] <=35))
 	 {
-		 HAL_UART_Transmit(&huart4, trans, 6, HAL_MAX_DELAY);
-		 HAL_UART_Receive(&huart4, rxBuf, 2,HAL_MAX_DELAY);
-		 DrawCalenderField((uint8_t*)rxBuf[0]-48, fach, doz);
+		 for(int i=15; i<18;i++)
+			 {doz[i-15]=rxBuf[i];}
+		 for(int i=1; i<11;i++)
+		 	 {fach[i-1]=rxBuf[i];}
+		 doz[3]='\0';
+		 DrawCalenderField(rxBuf[0], fach, doz);
+		 EpdDriverShowDisp();
+		 for(int i=0; i<50;i++)
+		 	 {rxBuf[i]=0;}
+
+		 //HAL_UART_Transmit(&huart4, (uint8_t*)tempLoad, 16, HAL_MAX_DELAY);
+		 //HAL_UART_Transmit(&huart4, trans, 6, HAL_MAX_DELAY);
+		 //HAL_UART_Receive(&huart4, rxBuf, 2,HAL_MAX_DELAY);
+
 	 }
-
-
+	 if(37 == rxBuf[0])
+	 	 {
+		 EpdDriverShowDisp();
+	 	 }
 		  //HAL_UART_Receive(&huart4, datain, 2, HAL_MAX_DELAY);
 
   /* USER CODE END 2 */

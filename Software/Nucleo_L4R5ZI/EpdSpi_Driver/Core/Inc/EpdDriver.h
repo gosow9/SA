@@ -146,6 +146,7 @@ void EpdDriverLoadTemplate(void);
 void EpdDriverDrawBox(uint8_t* buffer, uint16_t usX, uint16_t usY, uint16_t usWidth,uint16_t usHeight);
 void IT8951_GUI_Example(void);
 void IT8951_BMP_Example(void);
+void EpdDriverShowDisp(void);
 //void IT8951_BMP_Example(uint32_t x, uint32_t y,char *path);
 
 

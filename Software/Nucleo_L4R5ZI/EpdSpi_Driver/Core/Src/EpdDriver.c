@@ -734,7 +734,7 @@ uint8_t IT8951_Init()
 
 	//bcm2835_gpio_write(RESET, LOW);
 	HAL_GPIO_WritePin(EPD_RST_GPIO_Port, EPD_RST_Pin, RESET);
-	HAL_Delay(100);
+	HAL_Delay(10);
 	HAL_GPIO_WritePin(EPD_RST_GPIO_Port, EPD_RST_Pin, SET);
 	//bcm2835_gpio_write(RESET, HIGH);
 
@@ -752,7 +752,7 @@ uint8_t IT8951_Init()
 
  	//Set to Enable I80 Packed mode
  	IT8951WriteReg(I80CPCR, 0x0001);
-
+ 	EpdDriverLoadTemplate();
 	return 0;
 }
 
@@ -985,10 +985,14 @@ void EpdDriverDrawBox(uint8_t* buffer, uint16_t usX, uint16_t usY, uint16_t usWi
 	//Load Image from Host to IT8951 Image Buffer
 	IT8951HostAreaPackedPixelWrite(&stLdImgInfo, &stAreaImgInfo);//Display function 2
 	//Display Area ?V (x,y,w,h) with mode 2 for fast gray clear mode - depends on current waveform
-	IT8951DisplayArea(stAreaImgInfo.usX,stAreaImgInfo.usY, stAreaImgInfo.usWidth, stAreaImgInfo.usHeight, 2);
+	//IT8951DisplayArea(stAreaImgInfo.usX,stAreaImgInfo.usY, stAreaImgInfo.usWidth, stAreaImgInfo.usHeight, 2);
 	//IT8951Sleep();
 }
 
+void EpdDriverShowDisp()
+{
+	IT8951DisplayArea(0,0,1200,825, 2);
+}
 //void IT8951DisplayBox()
 //{
 //	IT8951LdImgInfo stLdImgInfo;
