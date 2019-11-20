@@ -21,16 +21,14 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "dma.h"
-#include "spi.h"
 #include "usart.h"
+#include "spi.h"
+#include "usb_otg.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "EpdDriver.h"
-#include "GUI_Paint.h"
-#include "ULPWUR.h"
-#include <string.h>
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -82,12 +80,6 @@ int main(void)
 
   /* USER CODE BEGIN Init */
 
- // char tex[]={'H','A','L','L','O','\0'};
-  char  fach[11];
-  char  doz[4];
-  char* tempLoad = "Template Loaded";
-  //char end[1] = {'\N'};
-  uint8_t rxBuf[50]={0};
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -99,71 +91,20 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_LPUART1_UART_Init();
+  MX_USART3_UART_Init();
+  MX_USB_OTG_FS_PCD_Init();
   MX_SPI1_Init();
   MX_DMA_Init();
   MX_UART4_Init();
-  HAL_UART_MspInit(&huart4);
   /* USER CODE BEGIN 2 */
-  IT8951_Init();
-
-
-  /* USER CODE BEGIN 2 */
-  //IT8951DisplayExample3();
-//  EpdDriverLoadTemplate();
-//
-// DrawCalenderField(1, fach, doz);
-// DrawCalenderField(2, fach, doz);
-// DrawCalenderField(3, fach, doz);
-// DrawCalenderField(7, fach, doz);
-
-  //Paint_DrawChar(50, 50, 'B',&Font20, KALDARK, 0x00);
-//  Paint_Clear(KALDARK);
-  //Paint_DrawChar(10, 10, 'A',&Font12, KALDARK, 0x00);
-  //Paint_DrawChar(50, 50, 'B',&Font20, KALDARK, 0x00);
-
-// HAL_UART_Transmit(&huart4, trans, 6, HAL_MAX_DELAY);
-  //EpdDriverDrawBox(uint8_t* buffer, uint16_t usX, uint16_t usY, uint16_t usWidth, uint16_t usHeight)
- while(1)
- {
-	 //IT8951DisplayExample3();
-	 //IT8951DisplayExample4();
-
-	 HAL_UART_Receive(&huart4, rxBuf, 20,HAL_MAX_DELAY);
-	 if(rxBuf[0]==0)
-	 {
-		 EpdDriverLoadTemplate();
-		 for(int i=0; i<50;i++)
-		 {rxBuf[i]=0;}
-		 //HAL_UART_Transmit(&huart4, (uint8_t*)tempLoad, 16, HAL_MAX_DELAY);
-		// HAL_UART_Transmit(&huart4, end, 1, HAL_MAX_DELAY);
-	 }
-	 if((0<rxBuf[0]) & (rxBuf[0] <=35))
-	 {
-		 for(int i=15; i<18;i++)
-			 {doz[i-15]=rxBuf[i];}
-		 for(int i=1; i<11;i++)
-		 	 {fach[i-1]=rxBuf[i];}
-		 doz[3]='\0';
-		 DrawCalenderField(rxBuf[0], fach, doz);
-		 EpdDriverShowDisp();
-		 for(int i=0; i<50;i++)
-		 	 {rxBuf[i]=0;}
-
-		 //HAL_UART_Transmit(&huart4, (uint8_t*)tempLoad, 16, HAL_MAX_DELAY);
-		 //HAL_UART_Transmit(&huart4, trans, 6, HAL_MAX_DELAY);
-		 //HAL_UART_Receive(&huart4, rxBuf, 2,HAL_MAX_DELAY);
-
-	 }
-	 if(37 == rxBuf[0])
-	 	 {
-		 EpdDriverShowDisp();
-	 	 }
-		  //HAL_UART_Receive(&huart4, datain, 2, HAL_MAX_DELAY);
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  while (1)
+  {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -189,13 +130,12 @@ void SystemClock_Config(void)
   }
   /** Initializes the CPU, AHB and APB busses clocks 
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
-  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
-  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+  RCC_OscInitStruct.HSEState = RCC_HSE_BYPASS;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
-  RCC_OscInitStruct.PLL.PLLM = 2;
-  RCC_OscInitStruct.PLL.PLLN = 28;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
+  RCC_OscInitStruct.PLL.PLLM = 1;
+  RCC_OscInitStruct.PLL.PLLN = 30;
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
   RCC_OscInitStruct.PLL.PLLQ = RCC_PLLQ_DIV2;
   RCC_OscInitStruct.PLL.PLLR = RCC_PLLR_DIV2;
@@ -216,8 +156,19 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_UART4;
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART3|RCC_PERIPHCLK_UART4
+                              |RCC_PERIPHCLK_LPUART1|RCC_PERIPHCLK_USB;
+  PeriphClkInit.Usart3ClockSelection = RCC_USART3CLKSOURCE_PCLK1;
   PeriphClkInit.Uart4ClockSelection = RCC_UART4CLKSOURCE_PCLK1;
+  PeriphClkInit.Lpuart1ClockSelection = RCC_LPUART1CLKSOURCE_PCLK1;
+  PeriphClkInit.UsbClockSelection = RCC_USBCLKSOURCE_PLLSAI1;
+  PeriphClkInit.PLLSAI1.PLLSAI1Source = RCC_PLLSOURCE_HSE;
+  PeriphClkInit.PLLSAI1.PLLSAI1M = 1;
+  PeriphClkInit.PLLSAI1.PLLSAI1N = 12;
+  PeriphClkInit.PLLSAI1.PLLSAI1P = RCC_PLLP_DIV2;
+  PeriphClkInit.PLLSAI1.PLLSAI1Q = RCC_PLLQ_DIV2;
+  PeriphClkInit.PLLSAI1.PLLSAI1R = RCC_PLLR_DIV2;
+  PeriphClkInit.PLLSAI1.PLLSAI1ClockOut = RCC_PLLSAI1_48M2CLK;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {
     Error_Handler();
