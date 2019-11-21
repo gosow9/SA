@@ -62,6 +62,6 @@ ax2.plot(t_rel, lux, label=r'$E_v$', color='tab:green')
 
 fig.legend(bbox_to_anchor=(0.3, 0.4))
 
-plt.show()
+plt.tight_layout()
 
 fig.savefig('entladen.pdf')
