@@ -41,33 +41,36 @@ V_in = V_in[l:org_len-r]
 lux = lux[l:org_len-r]
 
 #grössen reduzieren (für tikz-file)
-index = np.arange(0, len(t), 2)
-
-t = np.delete(t, index)
-t_rel = np.delete(t_rel, index)
-V_sys = np.delete(V_sys, index)
-V_bat = np.delete(V_bat, index)
-V_in = np.delete(V_in, index)
-lux = np.delete(lux, index)
+#index = np.arange(0, len(t), 2)
+#
+#t = np.delete(t, index)
+#t_rel = np.delete(t_rel, index)
+#V_sys = np.delete(V_sys, index)
+#V_bat = np.delete(V_bat, index)
+#V_in = np.delete(V_in, index)
+#lux = np.delete(lux, index)
 
 #t zu date_time_obj
 t_obj = [datetime.strptime(t[i], '%Y-%m-%d %H:%M:%S.%f') for i in range(np.size(t))]
 
+# use LaTeX fonts in the plot
+plt.rcParams['font.family'] = 'STIXGeneral'
+
 #plot V_sys, V_bat, Vin
 fig, ax1 = plt.subplots()
-ax1.set_xlabel('time')
-ax1.set_ylabel('voltage')
+ax1.set_xlabel('Time')
+ax1.set_ylabel('Voltage (V)')
 ax1.set_ylim([0, 4])
-ax1.plot(t_obj, V_sys, label='V_sys', color='tab:red')
-ax1.plot(t_obj, V_bat, label='V_bat')
-ax1.plot(t_obj, V_in, label='V_in')
+ax1.plot(t_obj, V_sys, label=r'$V_{sys}$', color='tab:red')
+ax1.plot(t_obj, V_bat, label=r'$V_{bat}$')
+ax1.plot(t_obj, V_in, label='$V_{in}$')
 
 #plot lux
 ax2 = ax1.twinx()
-ax2.set_ylabel('lux', color='tab:green')
+ax2.set_ylabel('Illuminance (lux)', color='tab:green')
 ax2.set_ylim([0, 1000])
 ax2.tick_params(axis='y', labelcolor='tab:green')
-ax2.plot(t_obj, lux, label='lux', color='tab:green')
+ax2.plot(t_obj, lux, label=r'$E_v$', color='tab:green')
 
 #zeitachse
 ax1.xaxis.set_major_locator(md.HourLocator(interval=2))
@@ -77,3 +80,5 @@ plt.setp(ax1.xaxis.get_majorticklabels(), rotation=60)
 ax1.set_xlim([t_obj[0], t_obj[len(t_obj)-1]])
 
 fig.legend(bbox_to_anchor=(0.3, 0.35))
+
+fig.savefig('laden.pdf')
