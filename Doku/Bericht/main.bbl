@@ -1,0 +1,52 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{amorton}{manual}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labeltitlesource}{title}
+      \field{month}{08}
+      \field{title}{{Amorphous Silicon Solar Cells}}
+      \field{year}{2019}
+      \keyw{manual}
+    \endentry
+    \entry{adp}{manual}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labeltitlesource}{title}
+      \field{month}{02}
+      \field{title}{{Ultralow Power Boost Regulator with MPPT and Charge Management }}
+      \field{year}{2017}
+      \keyw{manual}
+    \endentry
+    \entry{yuden}{manual}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labeltitlesource}{title}
+      \field{month}{08}
+      \field{title}{{Cylinder Type Lithium Ion Capacitors }}
+      \field{year}{2019}
+      \keyw{manual}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

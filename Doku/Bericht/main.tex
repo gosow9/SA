@@ -26,14 +26,22 @@
 \usepackage{array}
 \usepackage{tikz}
 \usepackage{pdfpages}
+
+%bibliography
+\usepackage[hyperref=true,backend=biber,style=ieee,defernumbers=true]{biblatex}
+\addbibresource{references.bib}
+
 \input{common/linsys.tex}
 \makeindex
+
+
 \begin{document}
 \pagestyle{fancy}
 \lhead{}
 \rhead{}
 \frontmatter
 \newcommand\HRule{\noindent\rule{\linewidth}{1.5pt}}
+
 
 
 \hypersetup{
@@ -112,11 +120,18 @@ HSR Hochschule Für Technik Rapperswil
 \input{1-intro/1-intro.tex}
 \input{2-requirements/2-requirements.tex}
 \input{3-theory/3-theory.tex}
-\input{4-development/4-development.tex}
-\input{5-results/5-results.tex}
-\input{6-summary/6-summary.tex}
+\input{4-evaluation/4-evaluation.tex}
+\input{5-development/5-development.tex}
+\input{6-results/6-results.tex}
+\input{7-summary/7-summary.tex}
+
+%bibliography
+\chapter*{Sources}
+\addcontentsline{toc}{chapter}{Sources} 
+\printbibliography[heading=none]
 
 \appendix
+\input{Appendix/appendix.tex}
 
 \vfill
 \pagebreak
