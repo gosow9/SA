@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.11.15)  21 NOV 2019 16:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.11.15)  22 NOV 2019 11:47
 entering extended mode
 **./main.tex
 (main.tex
@@ -1336,73 +1336,63 @@ f)
 Package pdftex.def Info: 4-development/overview/graphics/Blockschaltbild.pdf  u
 sed on input line 5.
 (pdftex.def)             Requested size: 422.53758pt x 298.7755pt.
-) (4-development/hardware/hardware.tex
-<4-development/hardware/graphics/laden.pdf, id=118, 462.52798pt x 346.89601pt>
+) (4-development/hardware/hardware.tex [7 <./4-development/overview/graphics/Bl
+ockschaltbild.pdf>]
+<4-development/hardware/graphics/laden.pdf, id=140, 462.52798pt x 346.89601pt>
 File: 4-development/hardware/graphics/laden.pdf Graphic file (type pdf)
 <use 4-development/hardware/graphics/laden.pdf>
 Package pdftex.def Info: 4-development/hardware/graphics/laden.pdf  used on inp
-ut line 5.
+ut line 21.
 (pdftex.def)             Requested size: 409.71689pt x 307.30202pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<4-development/hardware/graphics/entladen.pdf, id=119, 462.52798pt x 346.89601p
+<4-development/hardware/graphics/entladen.pdf, id=141, 462.52798pt x 346.89601p
 t>
 File: 4-development/hardware/graphics/entladen.pdf Graphic file (type pdf)
 <use 4-development/hardware/graphics/entladen.pdf>
 Package pdftex.def Info: 4-development/hardware/graphics/entladen.pdf  used on 
-input line 11.
+input line 27.
 (pdftex.def)             Requested size: 409.71689pt x 307.30202pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (4-development/software/software.tex)) (5-results/5-results.tex [7 <./4-devel
-opment/overview/graphics/Blockschaltbild.pdf>] [8 <./4-development/hardware/gra
-phics/laden.pdf> <./4-development/hardware/graphics/entladen.pdf
+) (4-development/software/software.tex)) (5-results/5-results.tex [8 <./4-devel
+opment/hardware/graphics/laden.pdf>] [9 <./4-development/hardware/graphics/entl
+aden.pdf>] [10
 
-pdfTeX warning: pdflatex.exe (file ./4-development/hardware/graphics/entladen.p
-df): PDF inclusion: multiple pdfs with page group included in a single page
->]
+]
 Chapter 5.
-) (6-summary/6-summary.tex [9
-
-] [10
+) (6-summary/6-summary.tex [11] [12
 
 ]
 Chapter 6.
-) [11] [12] (main.ind)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 133.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
+) [13] [14] (main.ind)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 133.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 133.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: E5333B7D519860A1B09F26C0383C80B3;549
-(rerunfilecheck)             After:  D3840E63235BF3DBB1053A01EC029C4D;549.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 84096710173F86ACF457A9648F7D2AE6;559.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 21646 strings out of 492895
- 383910 string characters out of 3122333
+ 21656 strings out of 492895
+ 384001 string characters out of 3122333
  486756 words of memory out of 3000000
- 25013 multiletter control sequences out of 15000+200000
- 40158 words of font info for 79 fonts, out of 3000000 for 9000
+ 25015 multiletter control sequences out of 15000+200000
+ 44844 words of font info for 83 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,11n,48p,3238b,388s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/mtischha/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.
-enc}<C:/Users/mtischha/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/
-utmb8a.pfb><C:/Users/mtischha/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw
-/times/utmr8a.pfb>
-Output written on main.pdf (16 pages, 1995202 bytes).
+enc}<C:/Users/mtischha/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txf
+onts/rtxmi.pfb><C:/Users/mtischha/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/txfonts/rtxr.pfb><C:/Users/mtischha/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/txfonts/txsy.pfb><C:/Users/mtischha/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/mtischha/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
+Output written on main.pdf (18 pages, 2005170 bytes).
 PDF statistics:
- 280 PDF objects out of 1000 (max. 8388607)
- 31 named destinations out of 1000 (max. 500000)
+ 308 PDF objects out of 1000 (max. 8388607)
+ 37 named destinations out of 1000 (max. 500000)
  116 words of extra memory for PDF output out of 10000 (max. 10000000)
 
