@@ -20,8 +20,8 @@ IT8951DevInfo gstI80DevInfo;
 //uint8_t* gpFrameBuf; //Host Source Frame buffer
 //uint8_t* gpFrameBuf; //Host Source Frame buffer
 
-//uint8_t* gpFrameBuf; //Host Source Frame buffer
-static uint8_t gpFrameBuf[495000]={0};
+uint8_t* gpFrameBuf; //Host Source Frame buffer
+//static uint8_t gpFrameBuf[495000]={0};
 
 uint32_t gulImgBufAddr; //IT8951 Image buffer address
 
@@ -145,23 +145,25 @@ void LCDWriteData(uint16_t usData)
 
 void LCDWriteNData(uint16_t* pwBuf, uint32_t ulSizeWordCnt)
 {
-	uint32_t i;
+	//uint32_t i;
 
-
+	uint8_t dma = 1;
 	uint8_t wPreamble[2] = {0x00, 0x00};
-	uint8_t wDat[2];
+	//uint8_t wDat[2];
 	LCDWaitForReady();
-
+	uint8_t* Buf = (uint8_t*)pwBuf;
 	HAL_GPIO_WritePin(EPD_CS_GPIO_Port, EPD_CS_Pin, RESET);
 	HAL_SPI_Transmit(&hspi1, wPreamble, 1, HAL_MAX_DELAY);
 	LCDWaitForReady();
-	for(i=0;i<ulSizeWordCnt;i++)
-		{
-		wDat[0]=pwBuf[i];
-		wDat[1]=pwBuf[i]>>8;
-		HAL_SPI_Transmit(&hspi1, wDat, 1, HAL_MAX_DELAY);
-		}
-
+	HAL_SPI_Transmit_DMA(&hspi1, Buf, ulSizeWordCnt);
+//	for(i=0;i<ulSizeWordCnt;i++)
+//		{
+//		wDat[0]=pwBuf[i];
+//		wDat[1]=pwBuf[i]>>8;
+//		HAL_SPI_Transmit(&hspi1, wDat, 1, HAL_MAX_DELAY);
+//		}
+	while(dma == 1)
+	{}
 	HAL_GPIO_WritePin(EPD_CS_GPIO_Port, EPD_CS_Pin, SET);
 
 	/*
@@ -734,7 +736,7 @@ uint8_t IT8951_Init()
 
 	//bcm2835_gpio_write(RESET, LOW);
 	HAL_GPIO_WritePin(EPD_RST_GPIO_Port, EPD_RST_Pin, RESET);
-	HAL_Delay(10);
+	HAL_Delay(100);
 	HAL_GPIO_WritePin(EPD_RST_GPIO_Port, EPD_RST_Pin, SET);
 	//bcm2835_gpio_write(RESET, HIGH);
 
@@ -752,7 +754,7 @@ uint8_t IT8951_Init()
 
  	//Set to Enable I80 Packed mode
  	IT8951WriteReg(I80CPCR, 0x0001);
- 	EpdDriverLoadTemplate();
+ 	//EpdDriverLoadTemplate();
 	return 0;
 }
 
@@ -872,38 +874,38 @@ void IT8951DisplayExample2()
 	IT8951DisplayArea(0,0, gstI80DevInfo.usPanelW, gstI80DevInfo.usPanelH, 2);
 }
 
-extern const unsigned char kal[];
-void IT8951DisplayExample3()
-{
-	IT8951LdImgInfo stLdImgInfo;
-	IT8951AreaImgInfo stAreaImgInfo;
-	//uint32_t i;
-
-//	for (i = 0;i < 1200*825;i++)
-//	{
-	//gpFrameBuf[i] = pic[i];
-//	}
-
-	IT8951WaitForDisplayReady();
-
-	//Setting Load image information
-	stLdImgInfo.ulStartFBAddr    = (uint32_t)kal;
-	stLdImgInfo.usEndianType     = IT8951_LDIMG_L_ENDIAN;
-	stLdImgInfo.usPixelFormat    = IT8951_8BPP;
-	stLdImgInfo.usRotate         = IT8951_ROTATE_0;
-	stLdImgInfo.ulImgBufBaseAddr = gulImgBufAddr;
-	//Set Load Area
-	stAreaImgInfo.usX      = 0;
-	stAreaImgInfo.usY      = 0;
-	stAreaImgInfo.usWidth  = gstI80DevInfo.usPanelW;
- 	stAreaImgInfo.usHeight = gstI80DevInfo.usPanelH;
-
-	//Load Image from Host to IT8951 Image Buffer
-	IT8951HostAreaPackedPixelWrite(&stLdImgInfo, &stAreaImgInfo);//Display function 2
-	//Display Area ?V (x,y,w,h) with mode 2 for fast gray clear mode - depends on current waveform
-	IT8951DisplayArea(0,0, gstI80DevInfo.usPanelW, gstI80DevInfo.usPanelH, 2);
-	//IT8951Sleep();
-}
+//extern const unsigned char kal[];
+//void IT8951DisplayExample3()
+//{
+//	IT8951LdImgInfo stLdImgInfo;
+//	IT8951AreaImgInfo stAreaImgInfo;
+//	//uint32_t i;
+//
+////	for (i = 0;i < 1200*825;i++)
+////	{
+//	//gpFrameBuf[i] = pic[i];
+////	}
+//
+//	IT8951WaitForDisplayReady();
+//
+//	//Setting Load image information
+//	stLdImgInfo.ulStartFBAddr    = (uint32_t)kal;
+//	stLdImgInfo.usEndianType     = IT8951_LDIMG_L_ENDIAN;
+//	stLdImgInfo.usPixelFormat    = IT8951_8BPP;
+//	stLdImgInfo.usRotate         = IT8951_ROTATE_0;
+//	stLdImgInfo.ulImgBufBaseAddr = gulImgBufAddr;
+//	//Set Load Area
+//	stAreaImgInfo.usX      = 0;
+//	stAreaImgInfo.usY      = 0;
+//	stAreaImgInfo.usWidth  = gstI80DevInfo.usPanelW;
+// 	stAreaImgInfo.usHeight = gstI80DevInfo.usPanelH;
+//
+//	//Load Image from Host to IT8951 Image Buffer
+//	IT8951HostAreaPackedPixelWrite(&stLdImgInfo, &stAreaImgInfo);//Display function 2
+//	//Display Area ?V (x,y,w,h) with mode 2 for fast gray clear mode - depends on current waveform
+//	IT8951DisplayArea(0,0, gstI80DevInfo.usPanelW, gstI80DevInfo.usPanelH, 2);
+//	//IT8951Sleep();
+//}
 //extern const unsigned char kal1[];
 
 
@@ -959,7 +961,7 @@ void EpdDriverLoadTemplate()
 	//Load Image from Host to IT8951 Image Buffer
 	IT8951HostAreaPackedPixelWrite(&stLdImgInfo, &stAreaImgInfo);//Display function 2
 	//Display Area ?V (x,y,w,h) with mode 2 for fast gray clear mode - depends on current waveform
-	IT8951DisplayArea(0,0, gstI80DevInfo.usPanelW, gstI80DevInfo.usPanelH, 2);
+	IT8951DisplayArea(stAreaImgInfo.usX ,stAreaImgInfo.usY, gstI80DevInfo.usPanelW, gstI80DevInfo.usPanelH, 2);
 	//IT8951Sleep();
 }
 
