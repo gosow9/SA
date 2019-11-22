@@ -5,7 +5,11 @@
 \contentsline {chapter}{\numberline {4}Development}{7}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Overview}{7}{section.4.1}% 
 \contentsline {section}{\numberline {4.2}Hardware}{7}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}ADP5090}{7}{subsection.4.2.1}% 
-\contentsline {section}{\numberline {4.3}Software}{7}{section.4.3}% 
-\contentsline {chapter}{\numberline {5}Results}{9}{chapter.5}% 
-\contentsline {chapter}{\numberline {6}Summary}{11}{chapter.6}% 
+\contentsline {subsection}{\numberline {4.2.1}Energy Harvesting}{7}{subsection.4.2.1}% 
+\contentsline {subsubsection}{Solar cell}{8}{section*.2}% 
+\contentsline {subsubsection}{Power management}{8}{section*.3}% 
+\contentsline {subsubsection}{Supercab}{8}{section*.4}% 
+\contentsline {subsubsection}{Combined test}{8}{section*.5}% 
+\contentsline {section}{\numberline {4.3}Software}{8}{section.4.3}% 
+\contentsline {chapter}{\numberline {5}Results}{11}{chapter.5}% 
+\contentsline {chapter}{\numberline {6}Summary}{13}{chapter.6}% 
