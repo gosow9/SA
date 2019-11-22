@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.11.15)  22 NOV 2019 11:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.11.15)  22 NOV 2019 17:48
 entering extended mode
 **./main.tex
 (main.tex
@@ -1085,64 +1085,329 @@ File: pppdftex.def 2019/09/21 v0.5n Pdfpages driver for pdfTeX (AM)
 \AM@toc@title=\toks52
 \c@AM@survey=\count148
 \AM@templatesizebox=\box47
-) (common/linsys.tex)
-\@indexfile=\write5
-\openout5 = `main.idx'.
+)
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblat
+ex.sty"
+Package: biblatex 2019/08/31 v3.13a programmable bibliographies (PK/MW)
+
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolb
+ox.sty"
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count149
+)
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/logreq\logreq.s
+ty"
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count150
+
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/logreq\logreq.d
+ef"
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+\c@tabx@nest=\count151
+\c@listtotal=\count152
+\c@listcount=\count153
+\c@liststart=\count154
+\c@liststop=\count155
+\c@citecount=\count156
+\c@citetotal=\count157
+\c@multicitecount=\count158
+\c@multicitetotal=\count159
+\c@instcount=\count160
+\c@maxnames=\count161
+\c@minnames=\count162
+\c@maxitems=\count163
+\c@minitems=\count164
+\c@citecounter=\count165
+\c@maxcitecounter=\count166
+\c@savedcitecounter=\count167
+\c@uniquelist=\count168
+\c@uniquename=\count169
+\c@refsection=\count170
+\c@refsegment=\count171
+\c@maxextratitle=\count172
+\c@maxextratitleyear=\count173
+\c@maxextraname=\count174
+\c@maxextradate=\count175
+\c@maxextraalpha=\count176
+\c@abbrvpenalty=\count177
+\c@highnamepenalty=\count178
+\c@lownamepenalty=\count179
+\c@maxparens=\count180
+\c@parenlevel=\count181
+\blx@tempcnta=\count182
+\blx@tempcntb=\count183
+\blx@tempcntc=\count184
+\blx@maxsection=\count185
+\blx@maxsegment@0=\count186
+\blx@notetype=\count187
+\blx@parenlevel@text=\count188
+\blx@parenlevel@foot=\count189
+\blx@sectionciteorder@0=\count190
+\blx@entrysetcounter=\count191
+\labelnumberwidth=\skip68
+\labelalphawidth=\skip69
+\biblabelsep=\skip70
+\bibitemsep=\skip71
+\bibnamesep=\skip72
+\bibinitsep=\skip73
+\bibparsep=\skip74
+\bibhang=\skip75
+\blx@bcfin=\read3
+\blx@bcfout=\write5
+\blx@langwohyphens=\language82
+\c@mincomprange=\count192
+\c@maxcomprange=\count193
+\c@mincompwidth=\count194
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\blx-dm
+.def"
+File: blx-dm.def 2019/08/31 v3.13a biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'ieee.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count195
+\c@savedafterword=\count196
+\c@annotator=\count197
+\c@savedannotator=\count198
+\c@author=\count199
+\c@savedauthor=\count266
+\c@bookauthor=\count267
+\c@savedbookauthor=\count268
+\c@commentator=\count269
+\c@savedcommentator=\count270
+\c@editor=\count271
+\c@savededitor=\count272
+\c@editora=\count273
+\c@savededitora=\count274
+\c@editorb=\count275
+\c@savededitorb=\count276
+\c@editorc=\count277
+\c@savededitorc=\count278
+\c@foreword=\count279
+\c@savedforeword=\count280
+\c@holder=\count281
+\c@savedholder=\count282
+\c@introduction=\count283
+\c@savedintroduction=\count284
+\c@namea=\count285
+\c@savednamea=\count286
+\c@nameb=\count287
+\c@savednameb=\count288
+\c@namec=\count289
+\c@savednamec=\count290
+\c@translator=\count291
+\c@savedtranslator=\count292
+\c@shortauthor=\count293
+\c@savedshortauthor=\count294
+\c@shorteditor=\count295
+\c@savedshorteditor=\count296
+\c@labelname=\count297
+\c@savedlabelname=\count298
+\c@institution=\count299
+\c@savedinstitution=\count300
+\c@lista=\count301
+\c@savedlista=\count302
+\c@listb=\count303
+\c@savedlistb=\count304
+\c@listc=\count305
+\c@savedlistc=\count306
+\c@listd=\count307
+\c@savedlistd=\count308
+\c@liste=\count309
+\c@savedliste=\count310
+\c@listf=\count311
+\c@savedlistf=\count312
+\c@location=\count313
+\c@savedlocation=\count314
+\c@organization=\count315
+\c@savedorganization=\count316
+\c@origlocation=\count317
+\c@savedoriglocation=\count318
+\c@origpublisher=\count319
+\c@savedorigpublisher=\count320
+\c@publisher=\count321
+\c@savedpublisher=\count322
+\c@language=\count323
+\c@savedlanguage=\count324
+\c@origlanguage=\count325
+\c@savedoriglanguage=\count326
+\c@pageref=\count327
+\c@savedpageref=\count328
+\shorthandwidth=\skip76
+\shortjournalwidth=\skip77
+\shortserieswidth=\skip78
+\shorttitlewidth=\skip79
+\shortauthorwidth=\skip80
+\shorteditorwidth=\skip81
+\locallabelnumberwidth=\skip82
+\locallabelalphawidth=\skip83
+\localshorthandwidth=\skip84
+\localshortjournalwidth=\skip85
+\localshortserieswidth=\skip86
+\localshorttitlewidth=\skip87
+\localshortauthorwidth=\skip88
+\localshorteditorwidth=\skip89
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\blx-co
+mpat.def"
+File: blx-compat.def 2019/08/31 v3.13a biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblat
+ex.def"
+File: biblatex.def 2019/08/31 v3.13a biblatex compatibility (PK/MW)
+\c@textcitecount=\count329
+\c@textcitetotal=\count330
+\c@textcitemaxnames=\count331
+\c@biburlbigbreakpenalty=\count332
+\c@biburlbreakpenalty=\count333
+\c@biburlnumpenalty=\count334
+\c@biburlucpenalty=\count335
+\c@biburllcpenalty=\count336
+\biburlbigskip=\muskip12
+\biburlnumskip=\muskip13
+\biburlucskip=\muskip14
+\biburllcskip=\muskip15
+\c@smartand=\count337
+)
+Package biblatex Info: Trying to load bibliography style 'ieee'...
+Package biblatex Info: ... file 'ieee.bbx' found.
+
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex-ieee\i
+eee.bbx"
+File: ieee.bbx 2019/06/19 v1.3a biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
+
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/bbx\nu
+meric-comp.bbx"
+File: numeric-comp.bbx 2019/08/31 v3.13a biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/bbx\nu
+meric.bbx"
+File: numeric.bbx 2019/08/31 v3.13a biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/bbx\st
+andard.bbx"
+File: standard.bbx 2019/08/31 v3.13a biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count338
+\c@bbx:relatedtotal=\count339
+))))
+Package biblatex Info: Trying to load citation style 'ieee'...
+Package biblatex Info: ... file 'ieee.cbx' found.
+
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex-ieee\i
+eee.cbx"
+File: ieee.cbx 2019/06/19 v1.3a biblatex citation style
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
+
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/cbx\nu
+meric-comp.cbx"
+File: numeric-comp.cbx 2019/08/31 v3.13a biblatex citation style (PK/MW)
+\c@cbx@tempcnta=\count340
+\c@cbx@tempcntb=\count341
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\cites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblat
+ex.cfg"
+File: biblatex.cfg 
+)) (common/linsys.tex)
+\@indexfile=\write6
+\openout6 = `main.idx'.
 
 
 Writing index file main.idx
-(main.aux)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/lbx\en
+glish.lbx"
+File: english.lbx 2019/08/31 v3.13a biblatex localization (PK/MW)
+)
+\@quotelevel=\count342
+\@quotereset=\count343
+ (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 31.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 31.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 38.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 38.
 
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/txfonts\omltxmi
 .fd"
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 31.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 31.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 38.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 38.
 
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/txfonts\omstxsy
 .fd"
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 31.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 31.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 38.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 38.
 
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/txfonts\omxtxex
 .fd"
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 31.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 31.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 38.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 38.
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/txfonts\utxexa.
 fd"
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 31.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 38.
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Try loading font information for T1+txr on input line 31.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Try loading font information for T1+txr on input line 38.
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/txfonts\t1txr.f
 d"
@@ -1187,16 +1452,16 @@ File: t1txr.fd 2000/12/15 v3.1
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\sup
 p-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count149
+\scratchcounter=\count344
 \scratchdimen=\dimen275
 \scratchbox=\box48
-\nofMPsegments=\count150
-\nofMParguments=\count151
+\nofMPsegments=\count345
+\nofMParguments=\count346
 \everyMPshowfont=\toks53
-\MPscratchCnt=\count152
+\MPscratchCnt=\count347
 \MPscratchDim=\dimen276
-\MPnumerator=\count153
-\makeMPintoPDFobject=\count154
+\MPnumerator=\count348
+\makeMPintoPDFobject=\count349
 \everyMPtoPDFconversion=\toks54
 )
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstop
@@ -1214,39 +1479,39 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 31.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 38.
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/txfonts\ot1txr.
 fd"
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 31.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 38.
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/txfonts\utxsya.
 fd"
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 31.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 38.
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/txfonts\utxsyb.
 fd"
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 31.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 38.
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/txfonts\utxmia.
 fd"
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 31.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 38.
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/txfonts\utxsyc.
 fd"
 File: utxsyc.fd 2000/12/15 v3.1
 )
-Package xypdf Info: Line width: 0.672pt on input line 31.
+Package xypdf Info: Line width: 0.672pt on input line 38.
 \AtBeginShipoutBox=\box49
-Package hyperref Info: Link coloring ON on input line 31.
+Package hyperref Info: Link coloring ON on input line 38.
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\namere
 f.sty"
@@ -1256,14 +1521,14 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 itlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count155
+\c@section@level=\count350
 )
-LaTeX Info: Redefining \ref on input line 31.
-LaTeX Info: Redefining \pageref on input line 31.
-LaTeX Info: Redefining \nameref on input line 31.
+LaTeX Info: Redefining \ref on input line 38.
+LaTeX Info: Redefining \pageref on input line 38.
+LaTeX Info: Redefining \nameref on input line 38.
  (main.out) (main.out)
-\@outlinefile=\write6
-\openout6 = `main.out'.
+\@outlinefile=\write7
+\openout7 = `main.out'.
 
  ABD: EveryShipout initializing macros
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\pdflsc
@@ -1276,11 +1541,22 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout5 = `main.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' found.
+ (main.bbl)
+Package biblatex Info: Reference section=0 on input line 38.
+Package biblatex Info: Reference segment=0 on input line 38.
+
 
 Package hyperref Warning: Option `colorlinks' has already been used,
-(hyperref)                setting the option has no effect on input line 43.
+(hyperref)                setting the option has no effect on input line 51.
 
-\c@satz=\count156
+\c@satz=\count351
 [1
 
 
@@ -1294,8 +1570,8 @@ We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
 [2] (main.toc)
-\tf@toc=\write7
-\openout7 = `main.toc'.
+\tf@toc=\write8
+\openout8 = `main.toc'.
 
  [3
 
@@ -1314,85 +1590,106 @@ Chapter 2.
 
 ]
 Chapter 3.
-) (4-development/4-development.tex [5] [6
+) (4-evaluation/4-evaluation.tex [5] [6
 
 ]
 Chapter 4.
-(4-development/overview/overview.tex
+) (5-development/5-development.tex [7] [8
+
+]
+Chapter 5.
+(5-development/overview/overview.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
 
 
-pdfTeX warning: pdflatex.exe (file ./4-development/overview/graphics/Blockschal
+pdfTeX warning: pdflatex.exe (file ./5-development/overview/graphics/Blockschal
 tbild.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
 llowed
-<4-development/overview/graphics/Blockschaltbild.pdf, id=117, 845.07724pt x 597
+<5-development/overview/graphics/Blockschaltbild.pdf, id=161, 845.07724pt x 597
 .55246pt>
-File: 4-development/overview/graphics/Blockschaltbild.pdf Graphic file (type pd
+File: 5-development/overview/graphics/Blockschaltbild.pdf Graphic file (type pd
 f)
-<use 4-development/overview/graphics/Blockschaltbild.pdf>
-Package pdftex.def Info: 4-development/overview/graphics/Blockschaltbild.pdf  u
+<use 5-development/overview/graphics/Blockschaltbild.pdf>
+Package pdftex.def Info: 5-development/overview/graphics/Blockschaltbild.pdf  u
 sed on input line 5.
 (pdftex.def)             Requested size: 422.53758pt x 298.7755pt.
-) (4-development/hardware/hardware.tex [7 <./4-development/overview/graphics/Bl
+) (5-development/hardware/hardware.tex [9 <./5-development/overview/graphics/Bl
 ockschaltbild.pdf>]
-<4-development/hardware/graphics/laden.pdf, id=140, 462.52798pt x 346.89601pt>
-File: 4-development/hardware/graphics/laden.pdf Graphic file (type pdf)
-<use 4-development/hardware/graphics/laden.pdf>
-Package pdftex.def Info: 4-development/hardware/graphics/laden.pdf  used on inp
-ut line 21.
+Overfull \hbox (46.67995pt too wide) in paragraph at lines 47--53
+\T1/txr/m/n/12 As en-ergy Stor-age, a su-per ca-pac-i-tor from Taiyo Yu-den has
+ proven to be suit-able. The LIC1235RS3R8406
+ []
+
+[10]
+<5-development/hardware/graphics/laden.pdf, id=203, 462.52798pt x 346.89601pt>
+File: 5-development/hardware/graphics/laden.pdf Graphic file (type pdf)
+<use 5-development/hardware/graphics/laden.pdf>
+Package pdftex.def Info: 5-development/hardware/graphics/laden.pdf  used on inp
+ut line 62.
 (pdftex.def)             Requested size: 409.71689pt x 307.30202pt.
-<4-development/hardware/graphics/entladen.pdf, id=141, 462.52798pt x 346.89601p
+<5-development/hardware/graphics/entladen.pdf, id=204, 462.52798pt x 346.89601p
 t>
-File: 4-development/hardware/graphics/entladen.pdf Graphic file (type pdf)
-<use 4-development/hardware/graphics/entladen.pdf>
-Package pdftex.def Info: 4-development/hardware/graphics/entladen.pdf  used on 
-input line 27.
+File: 5-development/hardware/graphics/entladen.pdf Graphic file (type pdf)
+<use 5-development/hardware/graphics/entladen.pdf>
+Package pdftex.def Info: 5-development/hardware/graphics/entladen.pdf  used on 
+input line 68.
 (pdftex.def)             Requested size: 409.71689pt x 307.30202pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (4-development/software/software.tex)) (5-results/5-results.tex [8 <./4-devel
-opment/hardware/graphics/laden.pdf>] [9 <./4-development/hardware/graphics/entl
-aden.pdf>] [10
-
-]
-Chapter 5.
-) (6-summary/6-summary.tex [11] [12
-
-]
+) (5-development/software/software.tex)) (6-results/6-results.tex [11 <./5-deve
+lopment/hardware/graphics/laden.pdf>] [12 <./5-development/hardware/graphics/en
+tladen.pdf>]
 Chapter 6.
-) [13] [14] (main.ind)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
+) (7-summary/7-summary.tex [13
+
+] [14
+
+]
+Chapter 7.
+) [15] [16
+
+] (Appendix/appendix.tex [17] [18
+
+]
+Appendix A.
+) [19] [20] (main.ind)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 143.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 143.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 143.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 143.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 84096710173F86ACF457A9648F7D2AE6;559.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
+(rerunfilecheck)             Checksum: 936822143F0155E5A3BD10DB762F52DB;894.
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
  ) 
 Here is how much of TeX's memory you used:
- 21656 strings out of 492895
- 384001 string characters out of 3122333
- 486756 words of memory out of 3000000
- 25015 multiletter control sequences out of 15000+200000
- 44844 words of font info for 83 fonts, out of 3000000 for 9000
+ 28673 strings out of 492895
+ 520882 string characters out of 3122333
+ 1004939 words of memory out of 3000000
+ 31941 multiletter control sequences out of 15000+200000
+ 49489 words of font info for 89 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,48p,3238b,388s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,11n,48p,3238b,1598s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/mtischha/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.
 enc}<C:/Users/mtischha/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txf
 onts/rtxmi.pfb><C:/Users/mtischha/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/txfonts/rtxr.pfb><C:/Users/mtischha/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/txfonts/txsy.pfb><C:/Users/mtischha/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/mtischha/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (18 pages, 2005170 bytes).
+onts/type1/public/txfonts/txex.pfb><C:/Users/mtischha/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/txfonts/txsy.pfb><C:/Users/mtischha/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/mtischha/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/mtischha/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (24 pages, 2036113 bytes).
 PDF statistics:
- 308 PDF objects out of 1000 (max. 8388607)
- 37 named destinations out of 1000 (max. 500000)
- 116 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 389 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
+ 164 words of extra memory for PDF output out of 10000 (max. 10000000)
 
