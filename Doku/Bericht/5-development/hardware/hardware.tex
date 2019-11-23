@@ -43,6 +43,8 @@ While discharging, the ADP5090 will switch off the output $V_{SYS}$ if $V_{BAT\_
 The output voltage $V_{SYS}$, where the load is attached, will therefore always stay in this programmed range $(V_{BAT\_SD}\le V_{SYS}\le V_{BAT\_TERM})$.
 \cite{adp}
 
+For this prototype, the evaluation board for the ADP5090 was used, where the internal reference voltage ($V_{REF}$ in \eqref{development:v_bat_term} and \eqref{development:v_bat_sd}) is 1.21 V. \cite{adp_eval}
+
 \subsubsection{Super capacitor}
 As energy Storage, a super capacitor from Taiyo Yuden has proven to be suitable.
 The LIC1235RS3R8406 is a 40 F cylinder type lithium ion capacitor.
@@ -53,9 +55,26 @@ the same applies to charging the capacitor over 3.8 V.
 
 \subsubsection{Combined test}
 To test the behaviour of the power management, supercapacitor and solar cells, a couple of measurements were executed.
-The input voltage from the solar cells ($V_in$), voltage of the supercap ($V_{BAT}$) and the output voltage ($V_{SYS}$) were tracked. Additionally, the illuminance near the PV-cells ($E_v$) was recorded.
 
-To carry out the measurement, it was first necessary, to adjust the minimal and maximal voltage of the ADP5090.
+To carry out these measurements, it was first necessary to adjust the minimal and maximal voltage of the ADP5090.
+The nrf58240 accepts supply voltages between 1.6 V up to 5.5 V \cite{nrf}.
+The ST32 on the other side is less flexible with an input voltage range of 1.71 V to 3.6 V \cite{stm32}.
+Recall from the section above, the super capacitors operating voltage is between 2.2 V and 3.8 V.
+Hence it seemed reasonable, to set $V_{BAT\_TERM} = 3.6$ V and $V_{BAT\_SD} = 2.2$ V, to satisfy all of these three elements.
+In order to do this, the for resistors had to be chosen as $R_{TERM1} = 22$ M$\Omega$, $R_{TERM2} = 22$ M$\Omega$, $R_{SD1} = 22$ M$\Omega$ and $R_{SD2} = 22$ M$\Omega$.
+Inserted in the equation \eqref{development:v_bat_term} and \eqref{development:v_bat_sd} we get
+\begin{align*}
+	V_{BAT\_TERM}= 1.21\text{ V}\cdot \left(1 + \frac{22}{22} \right) = 999 \text{ V} 
+\end{align*}
+and
+\begin{align*}
+	V_{BAT\_SD} = 1.21 \text{V}\cdot \left(1 + \frac{22}{22} \right) = 999 \text{ V}. 
+\end{align*}
+
+While testing, the input voltage from the solar cells ($V_{IN}$), voltage of the supercap ($V_{BAT}$) and the output voltage ($V_{SYS}$) were tracked. Additionally, the illuminance near the PV-cells ($E_v$) was recorded.
+
+The purpose of the first test, was to check, if the ADP5090 converts $V_{IN}$ to a voltage $\le V_{BAT\_TERM}$.
+The measurements where taken over a couple hours and are plotted in Figure \ref{development:charge}.
 
 \begin{figure}[h]
 	\centering
@@ -63,8 +82,26 @@ To carry out the measurement, it was first necessary, to adjust the minimal and 
 	\caption{Charging behaviour\label{development:charge}}
 \end{figure}
 
+No load was connected to the output, which is the reason $V_{SYS}$ is overlapped by $V_{BAT}$.
+It can be seen, that between 17:00 and 23:00, the super capacitor was being charged and
+that the ADP5090 controls the voltage $V_{BAT}$ like expected to the adjusted voltage $V_{BAT\_TERM}$.
+
+The second test should simulate the discharging when a load is connected, after the capacitor is fully charged.
+It was necessary to roughly estimate the consumed power of the electronics of the prototype.
+A measurement blalva
+
+A load of 10 $\Omega$ should leads to currents between 0.22 mA and 0.35 mA which again lead to a power consumption that should approximately match the power consumption of the finished prototype.
+Furthermore, the solar cells where covered to observe the discharging without interference of additionally charging behaviour.
+Figure \ref{development:discharge} shows the result.
+ 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.9\textwidth]{5-development/hardware/graphics/entladen.pdf}
 	\caption{Discharging behaviour\label{development:discharge}}
 \end{figure}
+
+As soon as the load is connected (after 25 seconds), $V_{SYS}$ $V_{BAT}$ first drop by almost 1 V and after that steadily decrease.
+After ca. 100 s, $V_{BAT}$ reached the value of $V_{BAT\_SD}$ and the ADP5090 switches off the output ($V_{SYS}$ drops to 0) to prevent the capacitor from overdischarging.
+The output now stays switched off, until $V_{IN}$ supplies energy, and $V_{BAT} \le V_{BAT\_SD}$.
+It can clearly be seen, that after 160 seconds, the ADP5090 controls $V_{IN}$ to ca. 2.1 V which is, as you may recall, the optimal power point of the solar cell.
+In other words, the maximum power point tracking of the ADP5090 seems to work as expected.

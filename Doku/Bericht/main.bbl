@@ -37,13 +37,39 @@
       \field{year}{2017}
       \keyw{manual}
     \endentry
-    \entry{yuden}{manual}{}
+    \entry{adp_eval}{manual}{}
       \field{sortinit}{3}
       \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labeltitlesource}{title}
+      \field{title}{{EVAL-ADP5090 User Guide}}
+      \field{year}{2014}
+      \keyw{manual}
+    \endentry
+    \entry{yuden}{manual}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labeltitlesource}{title}
       \field{month}{08}
       \field{title}{{Cylinder Type Lithium Ion Capacitors }}
       \field{year}{2019}
+      \keyw{manual}
+    \endentry
+    \entry{nrf}{manual}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{{nRF52840 Objective Product Specification v0.5}}
+      \field{year}{2016}
+      \keyw{manual}
+    \endentry
+    \entry{stm32}{manual}{}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labeltitlesource}{title}
+      \field{month}{04}
+      \field{title}{{STM32L4R5xx STM32L4R7xx STM32L4R9xx }}
+      \field{year}{2018}
       \keyw{manual}
     \endentry
   \enddatalist
