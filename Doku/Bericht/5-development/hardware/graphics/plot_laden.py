@@ -61,9 +61,9 @@ fig, ax1 = plt.subplots()
 ax1.set_xlabel('Time')
 ax1.set_ylabel('Voltage (V)')
 ax1.set_ylim([0, 4])
-ax1.plot(t_obj, V_sys, label=r'$V_{sys}$', color='tab:red')
-ax1.plot(t_obj, V_bat, label=r'$V_{bat}$')
-ax1.plot(t_obj, V_in, label='$V_{in}$')
+ax1.plot(t_obj, V_sys, label=r'$V_{SYS}$', color='tab:red')
+ax1.plot(t_obj, V_bat, label=r'$V_{BAT}$')
+ax1.plot(t_obj, V_in, label='$V_{IN}$')
 
 #plot lux
 ax2 = ax1.twinx()
