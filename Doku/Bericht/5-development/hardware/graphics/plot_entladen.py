@@ -45,9 +45,9 @@ fig, ax1 = plt.subplots()
 ax1.set_xlabel(r'Time (s)')
 ax1.set_ylabel(r'Voltage (V)')
 ax1.set_ylim([0, 4])
-ax1.plot(t_rel, V_sys, label=r'$V_{sys}$', color='tab:red')
-ax1.plot(t_rel, V_bat, label='$V_{bat}$')
-ax1.plot(t_rel, V_in, label='$V_{in}$')
+ax1.plot(t_rel, V_sys, label=r'$V_{SYS}$', color='tab:red')
+ax1.plot(t_rel, V_bat, label='$V_{BAT}$')
+ax1.plot(t_rel, V_in, label='$V_{IN}$')
 ax1.set_xlim([t_rel[0], t_rel[len(t_rel)-1]])
 
 
