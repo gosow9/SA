@@ -8,11 +8,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Theory}{5}{chapter.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}E-paper display}{5}{section.3.1}% 
+\contentsline {section}{\numberline {3.1}Microencapsulated Electrophoretic Displays}{5}{section.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}wake up interrupt}{5}{section.3.2}% 
+\contentsline {section}{\numberline {3.2}wake up interrupt}{6}{section.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}software grafik zeichen}{5}{section.3.3}% 
+\contentsline {section}{\numberline {3.3}software grafik zeichen}{6}{section.3.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Evaluation}{7}{chapter.4}% 
 \defcounter {refsection}{0}\relax 
