@@ -99,22 +99,26 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+
+
   MX_LPUART1_UART_Init();
-  MX_USART3_UART_Init();
   MX_USB_OTG_FS_PCD_Init();
   MX_SPI1_Init();
   MX_DMA_Init();
   MX_UART4_Init();
+  HAL_GPIO_WritePin(GPIOB, LD3_Pin, GPIO_PIN_SET);
   /* USER CODE BEGIN 2 */
   IT8951_Init();
+  HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_SET);
   /* USER CODE END 2 */
-
+  EpdDriverLoadTemplate();
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  EpdDriverLoadTemplate();
-	  HAL_Delay(3000);
+
+	 // EpdDriverLoadTemplate();
+	 // HAL_Delay(3000);
 //	  HAL_UART_Receive(&huart4, rxBuf, 20,HAL_MAX_DELAY);
 //	 	 if(rxBuf[0]==0)
 //	 	 {
@@ -207,9 +211,8 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART3|RCC_PERIPHCLK_UART4
-                              |RCC_PERIPHCLK_LPUART1|RCC_PERIPHCLK_USB;
-  PeriphClkInit.Usart3ClockSelection = RCC_USART3CLKSOURCE_PCLK1;
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_UART4|RCC_PERIPHCLK_LPUART1
+                              |RCC_PERIPHCLK_USB;
   PeriphClkInit.Uart4ClockSelection = RCC_UART4CLKSOURCE_PCLK1;
   PeriphClkInit.Lpuart1ClockSelection = RCC_LPUART1CLKSOURCE_PCLK1;
   PeriphClkInit.UsbClockSelection = RCC_USBCLKSOURCE_MSI;
