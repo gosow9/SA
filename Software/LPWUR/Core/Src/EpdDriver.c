@@ -147,7 +147,7 @@ void LCDWriteNData(uint16_t* pwBuf, uint32_t ulSizeWordCnt)
 {
 	//uint32_t i;
 
-	uint8_t dma = 1;
+	//uint8_t dma = 1;
 	uint8_t wPreamble[2] = {0x00, 0x00};
 	//uint8_t wDat[2];
 	LCDWaitForReady();
@@ -155,15 +155,16 @@ void LCDWriteNData(uint16_t* pwBuf, uint32_t ulSizeWordCnt)
 	HAL_GPIO_WritePin(EPD_CS_GPIO_Port, EPD_CS_Pin, RESET);
 	HAL_SPI_Transmit(&hspi1, wPreamble, 1, HAL_MAX_DELAY);
 	LCDWaitForReady();
-	HAL_SPI_Transmit_DMA(&hspi1, Buf, ulSizeWordCnt);
+	//HAL_SPI_Transmit_DMA(&hspi1, Buf, ulSizeWordCnt);
+	HAL_SPI_Transmit(&hspi1, Buf, ulSizeWordCnt, HAL_MAX_DELAY);
 //	for(i=0;i<ulSizeWordCnt;i++)
 //		{
 //		wDat[0]=pwBuf[i];
 //		wDat[1]=pwBuf[i]>>8;
 //		HAL_SPI_Transmit(&hspi1, wDat, 1, HAL_MAX_DELAY);
 //		}
-	while(dma == 1)
-	{}
+//	while(dma == 1)
+//	{}
 	HAL_GPIO_WritePin(EPD_CS_GPIO_Port, EPD_CS_Pin, SET);
 
 	/*
@@ -572,7 +573,7 @@ void IT8951LoadImgEnd(void)
 void GetIT8951SystemInfo(void* pBuf)
 {
 	uint16_t* pusWord = (uint16_t*)pBuf;
-	IT8951DevInfo* pstDevInfo;
+	//IT8951DevInfo* pstDevInfo;
 
 	//Send I80 CMD
 	LCDWriteCmdCode(USDEF_I80_CMD_GET_DEV_INFO);
@@ -581,14 +582,14 @@ void GetIT8951SystemInfo(void* pBuf)
 	LCDReadNData(pusWord, sizeof(IT8951DevInfo)/2);//Polling HRDY for each words(2-bytes) if possible
 
 	//Show Device information of IT8951
-	pstDevInfo = (IT8951DevInfo*)pBuf;
-	printf("Panel(W,H) = (%d,%d)\r\n",
-	pstDevInfo->usPanelW, pstDevInfo->usPanelH );
-	printf("Image Buffer Address = %X\r\n",
-	pstDevInfo->usImgBufAddrL | (pstDevInfo->usImgBufAddrH << 16));
+	//pstDevInfo = (IT8951DevInfo*)pBuf;
+//	printf("Panel(W,H) = (%d,%d)\r\n",
+//	pstDevInfo->usPanelW, pstDevInfo->usPanelH );
+//	printf("Image Buffer Address = %X\r\n",
+//	pstDevInfo->usImgBufAddrL | (pstDevInfo->usImgBufAddrH << 16));
 	//Show Firmware and LUT Version
-	printf("FW Version = %s\r\n", (uint8_t*)pstDevInfo->usFWVersion);
-	printf("LUT Version = %s\r\n", (uint8_t*)pstDevInfo->usLUTVersion);
+//	printf("FW Version = %s\r\n", (uint8_t*)pstDevInfo->usFWVersion);
+//	printf("LUT Version = %s\r\n", (uint8_t*)pstDevInfo->usLUTVersion);
 }
 
 //-----------------------------------------------------------
@@ -631,11 +632,12 @@ void IT8951HostAreaPackedPixelWrite(IT8951LdImgInfo* pstLdImgInfo,IT8951AreaImgI
 	//Send Load Image start Cmd
 	IT8951LoadImgAreaStart(pstLdImgInfo , pstAreaImgInfo);
 	//Host Write Data
-	LCDWriteNData(pusFrameBuf, (pstAreaImgInfo->usHeight*pstAreaImgInfo->usWidth/2));
-	/*
-	for(j=0;j< pstAreaImgInfo->usHeight;j++)
+	//LCDWriteNData(pusFrameBuf, (pstAreaImgInfo->usHeight*pstAreaImgInfo->usWidth/2));
+	LCDWriteNData(pusFrameBuf, (pstAreaImgInfo->usHeight*pstAreaImgInfo->usWidth/4));
+
+	/*for(j=0;j< pstAreaImgInfo->usHeight;j++)
 	{
-		 for(i=0;i< pstAreaImgInfo->usWidth/2;i++)
+		 for(i=0;i< pstAreaImgInfo->usWidth/4;i++)
 			{
 					//Write a Word(2-Bytes) for each time
 					LCDWriteData(*pusFrameBuf);
@@ -732,11 +734,11 @@ uint8_t IT8951_Init()
 	//bcm2835_gpio_write(CS, HIGH);
 	HAL_GPIO_WritePin(EPD_CS_GPIO_Port, EPD_CS_Pin, SET);
 
-	printf("****** IT8951 ******\n");
+	//printf("****** IT8951 ******\n");
 
 	//bcm2835_gpio_write(RESET, LOW);
 	HAL_GPIO_WritePin(EPD_RST_GPIO_Port, EPD_RST_Pin, RESET);
-	HAL_Delay(100);
+	HAL_Delay(1);
 	HAL_GPIO_WritePin(EPD_RST_GPIO_Port, EPD_RST_Pin, SET);
 	//bcm2835_gpio_write(RESET, HIGH);
 
@@ -961,6 +963,7 @@ void EpdDriverLoadTemplate()
 	//Load Image from Host to IT8951 Image Buffer
 	IT8951HostAreaPackedPixelWrite(&stLdImgInfo, &stAreaImgInfo);//Display function 2
 	//Display Area ?V (x,y,w,h) with mode 2 for fast gray clear mode - depends on current waveform
+	HAL_GPIO_WritePin(GPIOB, LD3_Pin, GPIO_PIN_RESET);
 	IT8951DisplayArea(stAreaImgInfo.usX ,stAreaImgInfo.usY, gstI80DevInfo.usPanelW, gstI80DevInfo.usPanelH, 2);
 	//IT8951Sleep();
 }
