@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.11.15)  30 NOV 2019 14:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.11.15)  4 DEC 2019 15:04
 entering extended mode
 **./main.tex
 (main.tex
@@ -1641,10 +1641,6 @@ File: 5-development/hardware/graphics/laden.pdf Graphic file (type pdf)
 Package pdftex.def Info: 5-development/hardware/graphics/laden.pdf  used on inp
 ut line 81.
 (pdftex.def)             Requested size: 409.71689pt x 307.30202pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 <5-development/hardware/graphics/entladen.pdf, id=220, 462.52798pt x 346.89601p
 t>
 File: 5-development/hardware/graphics/entladen.pdf Graphic file (type pdf)
@@ -1652,12 +1648,9 @@ File: 5-development/hardware/graphics/entladen.pdf Graphic file (type pdf)
 Package pdftex.def Info: 5-development/hardware/graphics/entladen.pdf  used on 
 input line 103.
 (pdftex.def)             Requested size: 409.71689pt x 307.30202pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [11] (5-development/software/software.tex)) (6-results/6-results.tex [12 <./5
--development/hardware/graphics/laden.pdf>] [13 <./5-development/hardware/graphi
-cs/entladen.pdf>] [14
+) [11] (5-development/software/software.tex)) (6-results/6-results.tex
+[12 <./5-development/hardware/graphics/laden.pdf>] [13 <./5-development/hardwar
+e/graphics/entladen.pdf>] [14
 
 ]
 Chapter 6.
@@ -1701,7 +1694,7 @@ KTeX 2.9/fonts/type1/public/txfonts/txsy.pfb><C:/Users/mtischha/AppData/Local/P
 rograms/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/mtischha/AppData/
 Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/mtischha/A
 ppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (26 pages, 2141200 bytes).
+Output written on main.pdf (26 pages, 2141263 bytes).
 PDF statistics:
  418 PDF objects out of 1000 (max. 8388607)
  63 named destinations out of 1000 (max. 500000)
