@@ -13,7 +13,7 @@ To keep a reasonable display to panel ratio, four cells where connected in paral
 	P = U\cdot I = 4\cdot 57.8\,\mu\text{A}\cdot 2.1\ \text{V}=485.52\,\mu \text{W},\label{development:cell_power}
 \end{align}
 
-given a 200 lux illumination. \cite{amorton}
+given a 200 lux illumination \cite{amorton}.
 
 \subsubsection{Power management}
 The ADP5090 from Analog Devices was used in the power management.
@@ -40,18 +40,16 @@ The same procedure is applied to set a minimal Voltage:
 \end{align}  
 
 While discharging, the ADP5090 will switch off the output $V_{SYS}$ if $V_{BAT\_SD}$ is reached. This prevents the storage element from overdischarging.
-The output voltage $V_{SYS}$, where the load is attached, will therefore always stay in this programmed range $(V_{BAT\_SD}\le V_{SYS}\le V_{BAT\_TERM})$.
-\cite{adp}
+The output voltage $V_{SYS}$, where the load is attached, will therefore always stay in this programmed range $(V_{BAT\_SD}\le V_{SYS}\le V_{BAT\_TERM})$ \cite{adp}.
 
-For this prototype, the evaluation board for the ADP5090 was used, where the internal reference voltage ($V_{REF}$ in \eqref{development:v_bat_term} and \eqref{development:v_bat_sd}) is $1.21\,\text{V}$. \cite{adp_eval}
+For this prototype, the evaluation board for the ADP5090 was used, where the internal reference voltage ($V_{REF}$ in \eqref{development:v_bat_term} and \eqref{development:v_bat_sd}) is $1.21\,\text{V}$ \cite{adp_eval}.
 
 \subsubsection{Super capacitor}
 As energy Storage, a super capacitor from Taiyo Yuden has proven to be suitable.
 The LIC1235RS3R8406 is a $40\,\text{F}$ cylinder type lithium ion capacitor.
 It's operating voltage range is between $2.2\,\text{V}$ and $3.8\,\text{V}$.
 Discharging the capacitor lower than $2.2\,\text{V}$ causes shorter lifetime and higher leakage.
-The same unwanted behaviour occurs when charging the capacitor over $3.8\,\text{V}$.
-\cites{yuden}
+The same unwanted behaviour occurs when charging the capacitor over $3.8\,\text{V}$ \cites{yuden}.
 
 \subsubsection{Combined test}
 To test the behaviour of the power management, supercapacitor and solar cells, a couple of measurements were executed.
@@ -78,7 +76,7 @@ The measurements where taken over a couple hours and are plotted in Figure \ref{
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.9\textwidth]{5-development/hardware/graphics/laden.pdf}
+	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/laden.pdf}
 	\caption{Charging behaviour\label{development:charge}}
 \end{figure}
 
@@ -100,7 +98,7 @@ Figure \ref{development:discharge} shows the result.
  
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.9\textwidth]{5-development/hardware/graphics/entladen.pdf}
+	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/entladen.pdf}
 	\caption{Discharging behaviour\label{development:discharge}}
 \end{figure}
 

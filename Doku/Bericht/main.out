@@ -1,17 +1,21 @@
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.1.1}{bla}{chapter.1}% 2
-\BOOKMARK [0][-]{chapter.2}{Requirements}{}% 3
-\BOOKMARK [0][-]{chapter.3}{Theory}{}% 4
-\BOOKMARK [1][-]{section.3.1}{Microencapsulated Electrophoretic Displays}{chapter.3}% 5
-\BOOKMARK [1][-]{section.3.2}{wake up interrupt}{chapter.3}% 6
-\BOOKMARK [1][-]{section.3.3}{software grafik zeichen}{chapter.3}% 7
-\BOOKMARK [0][-]{chapter.4}{Evaluation}{}% 8
-\BOOKMARK [0][-]{chapter.5}{Development}{}% 9
-\BOOKMARK [1][-]{section.5.1}{Overview}{chapter.5}% 10
-\BOOKMARK [1][-]{section.5.2}{Hardware}{chapter.5}% 11
-\BOOKMARK [2][-]{subsection.5.2.1}{Energy Harvesting}{section.5.2}% 12
-\BOOKMARK [1][-]{section.5.3}{Software}{chapter.5}% 13
-\BOOKMARK [0][-]{chapter.6}{Results}{}% 14
-\BOOKMARK [0][-]{chapter.7}{Summary}{}% 15
-\BOOKMARK [0][-]{chapter*.6}{Sources}{}% 16
-\BOOKMARK [0][-]{appendix.A}{blabla}{}% 17
+\BOOKMARK [0][-]{chapter.2}{Theory}{}% 3
+\BOOKMARK [1][-]{section.2.1}{Microencapsulated Electrophoretic Displays}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.2}{wake up interrupt}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.3}{software grafik zeichen}{chapter.2}% 6
+\BOOKMARK [0][-]{chapter.3}{Evaluation}{}% 7
+\BOOKMARK [0][-]{chapter.4}{Development}{}% 8
+\BOOKMARK [1][-]{section.4.1}{Overview}{chapter.4}% 9
+\BOOKMARK [1][-]{section.4.2}{Hardware}{chapter.4}% 10
+\BOOKMARK [2][-]{subsection.4.2.1}{Energy Harvesting}{section.4.2}% 11
+\BOOKMARK [1][-]{section.4.3}{Software}{chapter.4}% 12
+\BOOKMARK [0][-]{chapter.5}{Results}{}% 13
+\BOOKMARK [0][-]{chapter.6}{Summary}{}% 14
+\BOOKMARK [0][-]{chapter.6}{List of figures}{}% 15
+\BOOKMARK [0][-]{chapter*.10}{List of tables}{}% 16
+\BOOKMARK [0][-]{chapter*.12}{Sources}{}% 17
+\BOOKMARK [0][-]{chapter*.12}{Statement of Plagiarisms}{}% 18
+\BOOKMARK [0][-]{appendix.A}{Requirements}{}% 19
+\BOOKMARK [1][-]{section.A.1}{Assignment}{appendix.A}% 20
+\BOOKMARK [1][-]{section.A.2}{Requirement Specification}{appendix.A}% 21
