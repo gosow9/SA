@@ -22,13 +22,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.1}Energy Harvesting}{7}{subsection.4.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Solar cell}{8}{section*.2}% 
+\contentsline {subsubsection}{Solar cell}{8}{section*.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Power management}{8}{section*.3}% 
+\contentsline {subsubsection}{Power management}{8}{section*.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Super capacitor}{9}{section*.4}% 
+\contentsline {subsubsection}{Super capacitor}{9}{section*.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Combined test}{9}{section*.5}% 
+\contentsline {subsubsection}{Combined test}{9}{section*.9}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Software}{10}{section.4.3}% 
 \defcounter {refsection}{0}\relax 
@@ -36,10 +36,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Summary}{15}{chapter.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Sources}{17}{chapter*.6}% 
+\contentsline {chapter}{List of figures}{15}{chapter.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Requirements}{19}{appendix.A}% 
+\contentsline {chapter}{List of tables}{17}{chapter*.10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Assignment}{20}{section.A.1}% 
+\contentsline {chapter}{Sources}{21}{chapter*.12}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Requirement Specification}{22}{section.A.2}% 
+\contentsline {chapter}{Statement of Plagiarisms}{21}{chapter*.12}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Requirements}{25}{appendix.A}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Assignment}{26}{section.A.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}Requirement Specification}{28}{section.A.2}% 

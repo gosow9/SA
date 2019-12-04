@@ -117,9 +117,6 @@ HSR Hochschule Für Technik Rapperswil
 \input{0-abstract/0-abstract.tex}
 \tableofcontents
 
-
-
-
 \mainmatter
 
 \input{00-abbreviations/00-abbreviations.tex}
@@ -130,10 +127,22 @@ HSR Hochschule Für Technik Rapperswil
 \input{5-results/5-results.tex}
 \input{6-summary/6-summary.tex}
 
+%Abbildungsverzeichnis
+\addcontentsline{toc}{chapter}{List of figures} 
+\listoffigures\thispagestyle{fancy}
+
+%Tabellenverzeichnis
+\addcontentsline{toc}{chapter}{List of tables} 
+\listoftables\thispagestyle{fancy}
+
+
 %bibliography
 \chapter*{Sources}
 \addcontentsline{toc}{chapter}{Sources} 
 \printbibliography[heading=none]
+
+\addcontentsline{toc}{chapter}{Statement of Plagiarisms} 
+\input{statment_of_plagiarism/statement_of_plagiarism.tex}
 
 \appendix
 \input{Appendix/appendix.tex}
