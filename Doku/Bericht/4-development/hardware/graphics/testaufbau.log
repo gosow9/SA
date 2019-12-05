@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.11.15)  5 DEC 2019 10:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.11.15)  5 DEC 2019 15:06
 entering extended mode
-**./e_ink.tex
-(e_ink.tex
+**./testaufbau.tex
+(testaufbau.tex
 LaTeX2e <2018-12-01>
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone\stan
@@ -429,36 +429,127 @@ File: pgfmodulematrix.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendl
 ayer/tikz/libraries\tikzlibrarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-))) (e_ink.aux)
-\openout1 = `e_ink.aux'.
+)))
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/circuitikz\circ
+uitikz.sty"
+Package: circuitikz 2019/12/01{} The CircuiTikz circuit drawing package version
+ 0.9.7
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendl
+ayer/tikz/libraries\tikzlibrarycalc.code.tex"
+File: tikzlibrarycalc.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+)
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries
+\pgflibraryarrows.meta.code.tex"
+File: pgflibraryarrows.meta.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgfarrowinset=\dimen155
+\pgfarrowlength=\dimen156
+\pgfarrowwidth=\dimen157
+\pgfarrowlinewidth=\dimen158
+)
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendl
+ayer/tikz/libraries\tikzlibrarybending.code.tex"
+File: tikzlibrarybending.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 
-ABD: EveryShipout initializing macros
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\p
+gfmodulebending.code.tex"
+File: pgfmodulebending.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\p
+gfmodulenonlineartransformations.code.tex"
+File: pgfmodulenonlineartransformations.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgftransformnonlinearflatness=\dimen159
+)
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries
+\pgflibrarycurvilinear.code.tex"
+File: pgflibrarycurvilinear.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgf@curvilinear@time@a=\dimen160
+\pgf@curvilinear@length@a=\dimen161
+\pgf@curvilinear@length@b=\dimen162
+\pgf@curvilinear@length@c=\dimen163
+\pgf@curvilinear@length@d=\dimen164
+)
+\pgf@arrows@the@rigidity=\dimen165
+))
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pg
+fcirc.defines.tex"
+\pgf@circ@count@a=\count112
+\pgf@circ@count@b=\count113
+\pgf@circ@count@c=\count114
+\pgf@circ@res@up=\dimen166
+\pgf@circ@res@down=\dimen167
+\pgf@circ@res@zero=\dimen168
+\pgf@circ@res@left=\dimen169
+\pgf@circ@res@right=\dimen170
+\pgf@circ@res@other=\dimen171
+\pgf@circ@res@step=\dimen172
+\pgf@circ@res@temp=\dimen173
+\pgfstartlinewidth=\dimen174
+\pgf@circ@Rlen=\dimen175
+\pgf@circ@scaled@Rlen=\dimen176
+)
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pg
+fcircutils.tex")
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pg
+fcircshapes.tex")
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pg
+fcircmonopoles.tex")
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pg
+fcircbipoles.tex")
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pg
+fcirctripoles.tex"
+\pgf@circ@res@count=\count115
+)
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pg
+fcircquadpoles.tex")
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pg
+fcircmultipoles.tex")
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pg
+fcirclabel.tex")
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pg
+fcircvoltage.tex")
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pg
+fcirccurrent.tex")
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pg
+fcircflow.tex")
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/generic/circuitikz\pg
+fcircpath.tex")
+
+Package circuitikz Warning: You did not specify one of the voltage directions:
+(circuitikz)                  oldvoltagedirection, nooldvoltagedirection, 
+(circuitikz)                  RPvoltages or EFvoltages 
+(circuitikz)                Default directions may have changed, 
+(circuitikz)                please check the manual.
+
+) (testaufbau.aux)
+\openout1 = `testaufbau.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+ ABD: EveryShipout initializing macros
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\sup
 p-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count112
-\scratchdimen=\dimen155
+\scratchcounter=\count116
+\scratchdimen=\dimen177
 \scratchbox=\box39
-\nofMPsegments=\count113
-\nofMParguments=\count114
+\nofMPsegments=\count117
+\nofMParguments=\count118
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count115
-\MPscratchDim=\dimen156
-\MPnumerator=\count116
-\makeMPintoPDFobject=\count117
+\MPscratchCnt=\count119
+\MPscratchDim=\dimen178
+\MPnumerator=\count120
+\makeMPintoPDFobject=\count121
 \everyMPtoPDFconversion=\toks29
 )
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstop
@@ -508,19 +599,24 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-) [1
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 8.
+ [1
 
-] (e_ink.aux) ) 
+] (testaufbau.aux) ) 
 Here is how much of TeX's memory you used:
- 12074 strings out of 492895
- 251274 string characters out of 3122333
- 283148 words of memory out of 3000000
- 15774 multiletter control sequences out of 15000+200000
+ 22598 strings out of 492895
+ 574604 string characters out of 3122333
+ 732956 words of memory out of 3000000
+ 26235 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,5n,56p,389b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,5n,69p,454b,392s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on e_ink.pdf (1 page, 1296 bytes).
+Output written on testaufbau.pdf (1 page, 1174 bytes).
 PDF statistics:
  9 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

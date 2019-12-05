@@ -14,6 +14,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Evaluation}{5}{chapter.3}% 
 \defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Energy harvesting}{5}{section.3.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Wireless interface}{6}{section.3.2}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Development}{7}{chapter.4}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Overview}{7}{section.4.1}% 

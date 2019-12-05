@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.11.15)  4 DEC 2019 20:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.11.15)  5 DEC 2019 15:16
 entering extended mode
 **./main.tex
 (main.tex
@@ -1096,13 +1096,24 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\tabularx.
+sty"
+Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
+\TX@col@width=\dimen275
+\TX@old@table=\dimen276
+\TX@old@col=\dimen277
+\TX@target=\dimen278
+\TX@delta=\dimen279
+\TX@cols=\count149
+\TX@ftn=\toks53
+)
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty
 "
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count149
-\float@exts=\toks53
+\c@float@type=\count150
+\float@exts=\toks54
 \float@box=\box48
-\@float@everytoks=\toks54
+\@float@everytoks=\toks55
 \@floatcapt=\box49
 )
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblat
@@ -1112,58 +1123,58 @@ Package: biblatex 2019/08/31 v3.13a programmable bibliographies (PK/MW)
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolb
 ox.sty"
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count150
+\etb@tempcnta=\count151
 )
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/logreq\logreq.s
 ty"
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count151
+\lrq@indent=\count152
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/logreq\logreq.d
 ef"
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count152
-\c@listtotal=\count153
-\c@listcount=\count154
-\c@liststart=\count155
-\c@liststop=\count156
-\c@citecount=\count157
-\c@citetotal=\count158
-\c@multicitecount=\count159
-\c@multicitetotal=\count160
-\c@instcount=\count161
-\c@maxnames=\count162
-\c@minnames=\count163
-\c@maxitems=\count164
-\c@minitems=\count165
-\c@citecounter=\count166
-\c@maxcitecounter=\count167
-\c@savedcitecounter=\count168
-\c@uniquelist=\count169
-\c@uniquename=\count170
-\c@refsection=\count171
-\c@refsegment=\count172
-\c@maxextratitle=\count173
-\c@maxextratitleyear=\count174
-\c@maxextraname=\count175
-\c@maxextradate=\count176
-\c@maxextraalpha=\count177
-\c@abbrvpenalty=\count178
-\c@highnamepenalty=\count179
-\c@lownamepenalty=\count180
-\c@maxparens=\count181
-\c@parenlevel=\count182
-\blx@tempcnta=\count183
-\blx@tempcntb=\count184
-\blx@tempcntc=\count185
-\blx@maxsection=\count186
-\blx@maxsegment@0=\count187
-\blx@notetype=\count188
-\blx@parenlevel@text=\count189
-\blx@parenlevel@foot=\count190
-\blx@sectionciteorder@0=\count191
-\blx@entrysetcounter=\count192
+\c@tabx@nest=\count153
+\c@listtotal=\count154
+\c@listcount=\count155
+\c@liststart=\count156
+\c@liststop=\count157
+\c@citecount=\count158
+\c@citetotal=\count159
+\c@multicitecount=\count160
+\c@multicitetotal=\count161
+\c@instcount=\count162
+\c@maxnames=\count163
+\c@minnames=\count164
+\c@maxitems=\count165
+\c@minitems=\count166
+\c@citecounter=\count167
+\c@maxcitecounter=\count168
+\c@savedcitecounter=\count169
+\c@uniquelist=\count170
+\c@uniquename=\count171
+\c@refsection=\count172
+\c@refsegment=\count173
+\c@maxextratitle=\count174
+\c@maxextratitleyear=\count175
+\c@maxextraname=\count176
+\c@maxextradate=\count177
+\c@maxextraalpha=\count178
+\c@abbrvpenalty=\count179
+\c@highnamepenalty=\count180
+\c@lownamepenalty=\count181
+\c@maxparens=\count182
+\c@parenlevel=\count183
+\blx@tempcnta=\count184
+\blx@tempcntb=\count185
+\blx@tempcntc=\count186
+\blx@maxsection=\count187
+\blx@maxsegment@0=\count188
+\blx@notetype=\count189
+\blx@parenlevel@text=\count190
+\blx@parenlevel@foot=\count191
+\blx@sectionciteorder@0=\count192
+\blx@entrysetcounter=\count193
 \labelnumberwidth=\skip68
 \labelalphawidth=\skip69
 \biblabelsep=\skip70
@@ -1175,9 +1186,9 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \blx@bcfin=\read3
 \blx@bcfout=\write5
 \blx@langwohyphens=\language82
-\c@mincomprange=\count193
-\c@maxcomprange=\count194
-\c@mincompwidth=\count195
+\c@mincomprange=\count194
+\c@maxcomprange=\count195
+\c@mincompwidth=\count196
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1189,74 +1200,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'ieee.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count196
-\c@savedafterword=\count197
-\c@annotator=\count198
-\c@savedannotator=\count199
-\c@author=\count266
-\c@savedauthor=\count267
-\c@bookauthor=\count268
-\c@savedbookauthor=\count269
-\c@commentator=\count270
-\c@savedcommentator=\count271
-\c@editor=\count272
-\c@savededitor=\count273
-\c@editora=\count274
-\c@savededitora=\count275
-\c@editorb=\count276
-\c@savededitorb=\count277
-\c@editorc=\count278
-\c@savededitorc=\count279
-\c@foreword=\count280
-\c@savedforeword=\count281
-\c@holder=\count282
-\c@savedholder=\count283
-\c@introduction=\count284
-\c@savedintroduction=\count285
-\c@namea=\count286
-\c@savednamea=\count287
-\c@nameb=\count288
-\c@savednameb=\count289
-\c@namec=\count290
-\c@savednamec=\count291
-\c@translator=\count292
-\c@savedtranslator=\count293
-\c@shortauthor=\count294
-\c@savedshortauthor=\count295
-\c@shorteditor=\count296
-\c@savedshorteditor=\count297
-\c@labelname=\count298
-\c@savedlabelname=\count299
-\c@institution=\count300
-\c@savedinstitution=\count301
-\c@lista=\count302
-\c@savedlista=\count303
-\c@listb=\count304
-\c@savedlistb=\count305
-\c@listc=\count306
-\c@savedlistc=\count307
-\c@listd=\count308
-\c@savedlistd=\count309
-\c@liste=\count310
-\c@savedliste=\count311
-\c@listf=\count312
-\c@savedlistf=\count313
-\c@location=\count314
-\c@savedlocation=\count315
-\c@organization=\count316
-\c@savedorganization=\count317
-\c@origlocation=\count318
-\c@savedoriglocation=\count319
-\c@origpublisher=\count320
-\c@savedorigpublisher=\count321
-\c@publisher=\count322
-\c@savedpublisher=\count323
-\c@language=\count324
-\c@savedlanguage=\count325
-\c@origlanguage=\count326
-\c@savedoriglanguage=\count327
-\c@pageref=\count328
-\c@savedpageref=\count329
+\c@afterword=\count197
+\c@savedafterword=\count198
+\c@annotator=\count199
+\c@savedannotator=\count266
+\c@author=\count267
+\c@savedauthor=\count268
+\c@bookauthor=\count269
+\c@savedbookauthor=\count270
+\c@commentator=\count271
+\c@savedcommentator=\count272
+\c@editor=\count273
+\c@savededitor=\count274
+\c@editora=\count275
+\c@savededitora=\count276
+\c@editorb=\count277
+\c@savededitorb=\count278
+\c@editorc=\count279
+\c@savededitorc=\count280
+\c@foreword=\count281
+\c@savedforeword=\count282
+\c@holder=\count283
+\c@savedholder=\count284
+\c@introduction=\count285
+\c@savedintroduction=\count286
+\c@namea=\count287
+\c@savednamea=\count288
+\c@nameb=\count289
+\c@savednameb=\count290
+\c@namec=\count291
+\c@savednamec=\count292
+\c@translator=\count293
+\c@savedtranslator=\count294
+\c@shortauthor=\count295
+\c@savedshortauthor=\count296
+\c@shorteditor=\count297
+\c@savedshorteditor=\count298
+\c@labelname=\count299
+\c@savedlabelname=\count300
+\c@institution=\count301
+\c@savedinstitution=\count302
+\c@lista=\count303
+\c@savedlista=\count304
+\c@listb=\count305
+\c@savedlistb=\count306
+\c@listc=\count307
+\c@savedlistc=\count308
+\c@listd=\count309
+\c@savedlistd=\count310
+\c@liste=\count311
+\c@savedliste=\count312
+\c@listf=\count313
+\c@savedlistf=\count314
+\c@location=\count315
+\c@savedlocation=\count316
+\c@organization=\count317
+\c@savedorganization=\count318
+\c@origlocation=\count319
+\c@savedoriglocation=\count320
+\c@origpublisher=\count321
+\c@savedorigpublisher=\count322
+\c@publisher=\count323
+\c@savedpublisher=\count324
+\c@language=\count325
+\c@savedlanguage=\count326
+\c@origlanguage=\count327
+\c@savedoriglanguage=\count328
+\c@pageref=\count329
+\c@savedpageref=\count330
 \shorthandwidth=\skip76
 \shortjournalwidth=\skip77
 \shortserieswidth=\skip78
@@ -1284,19 +1295,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblat
 ex.def"
 File: biblatex.def 2019/08/31 v3.13a biblatex compatibility (PK/MW)
-\c@textcitecount=\count330
-\c@textcitetotal=\count331
-\c@textcitemaxnames=\count332
-\c@biburlbigbreakpenalty=\count333
-\c@biburlbreakpenalty=\count334
-\c@biburlnumpenalty=\count335
-\c@biburlucpenalty=\count336
-\c@biburllcpenalty=\count337
+\c@textcitecount=\count331
+\c@textcitetotal=\count332
+\c@textcitemaxnames=\count333
+\c@biburlbigbreakpenalty=\count334
+\c@biburlbreakpenalty=\count335
+\c@biburlnumpenalty=\count336
+\c@biburlucpenalty=\count337
+\c@biburllcpenalty=\count338
 \biburlbigskip=\muskip12
 \biburlnumskip=\muskip13
 \biburlucskip=\muskip14
 \biburllcskip=\muskip15
-\c@smartand=\count338
+\c@smartand=\count339
 )
 Package biblatex Info: Trying to load bibliography style 'ieee'...
 Package biblatex Info: ... file 'ieee.bbx' found.
@@ -1322,8 +1333,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/bbx\st
 andard.bbx"
 File: standard.bbx 2019/08/31 v3.13a biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count339
-\c@bbx:relatedtotal=\count340
+\c@bbx:relatedcount=\count340
+\c@bbx:relatedtotal=\count341
 ))))
 Package biblatex Info: Trying to load citation style 'ieee'...
 Package biblatex Info: ... file 'ieee.cbx' found.
@@ -1337,8 +1348,8 @@ Package biblatex Info: ... file 'numeric-comp.cbx' found.
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/cbx\nu
 meric-comp.cbx"
 File: numeric-comp.cbx 2019/08/31 v3.13a biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count341
-\c@cbx@tempcntb=\count342
+\c@cbx@tempcnta=\count342
+\c@cbx@tempcntb=\count343
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -1373,60 +1384,60 @@ Package biblatex Info: ... file 'english.lbx' found.
 glish.lbx"
 File: english.lbx 2019/08/31 v3.13a biblatex localization (PK/MW)
 )
-\@quotelevel=\count343
-\@quotereset=\count344
+\@quotelevel=\count344
+\@quotereset=\count345
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 44.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 44.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 46.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 46.
 
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/txfonts\omltxmi
 .fd"
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 44.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 44.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 46.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 46.
 
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/txfonts\omstxsy
 .fd"
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 44.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 44.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 46.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 46.
 
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/txfonts\omxtxex
 .fd"
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 44.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 44.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 46.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 46.
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/txfonts\utxexa.
 fd"
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 44.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 46.
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Try loading font information for T1+txr on input line 44.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Try loading font information for T1+txr on input line 46.
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/txfonts\t1txr.f
 d"
@@ -1471,17 +1482,17 @@ File: t1txr.fd 2000/12/15 v3.1
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\sup
 p-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count345
-\scratchdimen=\dimen275
+\scratchcounter=\count346
+\scratchdimen=\dimen280
 \scratchbox=\box50
-\nofMPsegments=\count346
-\nofMParguments=\count347
-\everyMPshowfont=\toks55
-\MPscratchCnt=\count348
-\MPscratchDim=\dimen276
-\MPnumerator=\count349
-\makeMPintoPDFobject=\count350
-\everyMPtoPDFconversion=\toks56
+\nofMPsegments=\count347
+\nofMParguments=\count348
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count349
+\MPscratchDim=\dimen281
+\MPnumerator=\count350
+\makeMPintoPDFobject=\count351
+\everyMPtoPDFconversion=\toks57
 )
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstop
 df-base.sty"
@@ -1498,39 +1509,39 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 44.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 46.
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/txfonts\ot1txr.
 fd"
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 44.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 46.
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/txfonts\utxsya.
 fd"
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 44.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 46.
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/txfonts\utxsyb.
 fd"
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 44.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 46.
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/txfonts\utxmia.
 fd"
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 44.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 46.
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/txfonts\utxsyc.
 fd"
 File: utxsyc.fd 2000/12/15 v3.1
 )
-Package xypdf Info: Line width: 0.672pt on input line 44.
+Package xypdf Info: Line width: 0.672pt on input line 46.
 \AtBeginShipoutBox=\box51
-Package hyperref Info: Link coloring ON on input line 44.
+Package hyperref Info: Link coloring ON on input line 46.
 
 ("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\namere
 f.sty"
@@ -1540,11 +1551,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 itlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count351
+\c@section@level=\count352
 )
-LaTeX Info: Redefining \ref on input line 44.
-LaTeX Info: Redefining \pageref on input line 44.
-LaTeX Info: Redefining \nameref on input line 44.
+LaTeX Info: Redefining \ref on input line 46.
+LaTeX Info: Redefining \pageref on input line 46.
+LaTeX Info: Redefining \nameref on input line 46.
  (main.out) (main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
@@ -1559,14 +1570,14 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
 
 (main.bbl)
-Package biblatex Info: Reference section=0 on input line 44.
-Package biblatex Info: Reference segment=0 on input line 44.
+Package biblatex Info: Reference section=0 on input line 46.
+Package biblatex Info: Reference segment=0 on input line 46.
 
 
 Package hyperref Warning: Option `colorlinks' has already been used,
-(hyperref)                setting the option has no effect on input line 57.
+(hyperref)                setting the option has no effect on input line 59.
 
-\c@satz=\count352
+\c@satz=\count353
 [1
 
 
@@ -1599,13 +1610,25 @@ Chapter 1.
 ]
 Chapter 2.
 (2-theory/e-paper-display/e-paper-display.tex
-<2-theory/e-paper-display/graphics/capsules.png, id=171, 532.99126pt x 406.5187
+<2-theory/e-paper-display/graphics/capsules.png, id=183, 532.99126pt x 406.5187
 5pt>
 File: 2-theory/e-paper-display/graphics/capsules.png Graphic file (type png)
 <use 2-theory/e-paper-display/graphics/capsules.png>
 Package pdftex.def Info: 2-theory/e-paper-display/graphics/capsules.png  used o
 n input line 7.
 (pdftex.def)             Requested size: 409.71689pt x 312.50555pt.
+<2-theory/e-paper-display/graphics/epaper_mikroskop.pdf, id=185, 601.42294pt x 
+396.94199pt>
+File: 2-theory/e-paper-display/graphics/epaper_mikroskop.pdf Graphic file (type
+ pdf)
+<use 2-theory/e-paper-display/graphics/epaper_mikroskop.pdf>
+Package pdftex.def Info: 2-theory/e-paper-display/graphics/epaper_mikroskop.pdf
+  used on input line 13.
+(pdftex.def)             Requested size: 409.71689pt x 270.4197pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 )) (3-evaluation/3-evaluation.tex
 Underfull \vbox (badness 3039) has occurred while \output is active []
 
@@ -1616,13 +1639,122 @@ Underfull \vbox (badness 3039) has occurred while \output is active []
                                                   \fi \fi 
 l.1 \chapter
             {Evaluation} <./2-theory/e-paper-display/graphics/capsules.png>]
-[4]
-Chapter 3.
-) (4-development/4-development.tex [5
+[4pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}
+) has been already used, duplicate ignored
 
-] [6
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \chapter
+            {Evaluation} <./2-theory/e-paper-display/graphics/epaper_mikroskop.
+pdf>]
+Chapter 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+[]\T1/txr/m/n/12 Radiation is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+[]\T1/txr/m/n/12 Light for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+\T1/txr/m/n/12 trans-mis-sion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+\T1/txr/m/n/12 can also be
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+[]\T1/txr/m/n/12 Only lit-tle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+\T1/txr/m/n/12 prod-ucts are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+[]\T1/txr/m/n/12 Limited us-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+\T1/txr/m/n/12 abil-ity with
+ []
+
+
+Underfull \hbox (badness 5302) in paragraph at lines 49--49
+\T1/txr/m/n/12 ex-ist-ing light-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+\T1/txr/m/n/12 ning sys-tems,
+ []
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 49--49
+\T1/txr/m/n/12 ad-di-tional eth-
+ []
+
+
+Underfull \hbox (badness 2538) in paragraph at lines 49--49
+[]\T1/txr/m/n/12 Direct ir-ra-di-a-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+[]\T1/txr/m/n/12 Range typ-i-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+\T1/txr/m/n/12 cally around
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 49--49
+\T1/txr/m/n/12 30m, but can
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+\T1/txr/m/n/12 be im-proved
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+\T1/txr/m/n/12 with an-tenna
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+\T1/txr/m/n/12 di-ver-sity and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+\T1/txr/m/n/12 di-rec-tional
+ []
+
+) (4-development/4-development.tex
+Underfull \hbox (badness 10000) in paragraph at lines 49--1
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5
 
 ]
+[6]
 Chapter 4.
 (4-development/overview/overview.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
@@ -1634,7 +1766,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 pdfTeX warning: pdflatex.exe (file ./4-development/overview/graphics/Blockschal
 tbild.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
 llowed
-<4-development/overview/graphics/Blockschaltbild.pdf, id=194, 845.07724pt x 597
+<4-development/overview/graphics/Blockschaltbild.pdf, id=215, 845.07724pt x 597
 .55246pt>
 File: 4-development/overview/graphics/Blockschaltbild.pdf Graphic file (type pd
 f)
@@ -1642,30 +1774,25 @@ f)
 Package pdftex.def Info: 4-development/overview/graphics/Blockschaltbild.pdf  u
 sed on input line 5.
 (pdftex.def)             Requested size: 422.53758pt x 298.7755pt.
-) (4-development/hardware/hardware.tex [7 <./4-development/overview/graphics/Bl
-ockschaltbild.pdf>]
-Overfull \hbox (46.67995pt too wide) in paragraph at lines 48--53
-\T1/txr/m/n/12 As en-ergy Stor-age, a su-per ca-pac-i-tor from Taiyo Yu-den has
- proven to be suit-able. The LIC1235RS3R8406
- []
+) (4-development/hardware/hardware.tex [7
 
-[8]
-<4-development/hardware/graphics/laden.pdf, id=244, 462.52798pt x 346.89601pt>
+ <./4-development/overview/graphics/Blockschaltbild.pdf>] [8]
+<4-development/hardware/graphics/laden.pdf, id=265, 462.52798pt x 346.89601pt>
 File: 4-development/hardware/graphics/laden.pdf Graphic file (type pdf)
 <use 4-development/hardware/graphics/laden.pdf>
 Package pdftex.def Info: 4-development/hardware/graphics/laden.pdf  used on inp
-ut line 79.
+ut line 75.
 (pdftex.def)             Requested size: 409.71689pt x 307.30202pt.
-<4-development/hardware/graphics/entladen.pdf, id=246, 462.52798pt x 346.89601p
+<4-development/hardware/graphics/entladen.pdf, id=267, 462.52798pt x 346.89601p
 t>
 File: 4-development/hardware/graphics/entladen.pdf Graphic file (type pdf)
 <use 4-development/hardware/graphics/entladen.pdf>
 Package pdftex.def Info: 4-development/hardware/graphics/entladen.pdf  used on 
-input line 101.
+input line 97.
 (pdftex.def)             Requested size: 409.71689pt x 307.30202pt.
-) [9] (4-development/software/software.tex)) (5-results/5-results.tex
-[10pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
-}) has been already used, duplicate ignored
+) [9] (4-development/software/software.tex))
+(5-results/5-results.tex [10pdfTeX warning (ext4): destination with the same id
+entifier (name{figure.4.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1714,14 +1841,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--8
 ]
 Appendix A.
 [25]
-<../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, id=433, page=1, 597.55246pt x
+<../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, id=466, page=1, 597.55246pt x
  845.07718pt>
 File: ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf Graphic file (type pdf)
 <use ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, page 1>
 Package pdftex.def Info: ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf , page
 1 used on input line 8.
 (pdftex.def)             Requested size: 455.24408pt x 643.8385pt.
-<../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, id=434, page=2, 597.55246pt x
+<../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, id=467, page=2, 597.55246pt x
  845.07718pt>
 File: ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf Graphic file (type pdf)
 <use ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, page 2>
@@ -1730,26 +1857,26 @@ Package pdftex.def Info: ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf , page
 (pdftex.def)             Requested size: 455.24408pt x 643.8385pt.
  [26 <../Aufgabenstellung/LowPowerWakeupReiceiver.pdf>] [27 <../Aufgabenstellun
 g/LowPowerWakeupReiceiver.pdf>]
-<../Pflichtenheft/HSR_SRS_main.pdf, id=471, page=1, 597.50829pt x 845.0471pt>
+<../Pflichtenheft/HSR_SRS_main.pdf, id=504, page=1, 597.50829pt x 845.0471pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 1>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page1 used on inpu
 t line 19.
 (pdftex.def)             Requested size: 455.24408pt x 643.84138pt.
-<../Pflichtenheft/HSR_SRS_main.pdf, id=472, page=2, 597.50829pt x 845.0471pt>
+<../Pflichtenheft/HSR_SRS_main.pdf, id=505, page=2, 597.50829pt x 845.0471pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 2>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page2 used on inpu
 t line 23.
 (pdftex.def)             Requested size: 455.24408pt x 643.84138pt.
-<../Pflichtenheft/HSR_SRS_main.pdf, id=473, page=3, 597.50829pt x 845.0471pt>
+<../Pflichtenheft/HSR_SRS_main.pdf, id=506, page=3, 597.50829pt x 845.0471pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 3>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page3 used on inpu
 t line 27.
 (pdftex.def)             Requested size: 455.24408pt x 643.84138pt.
  [28 <../Pflichtenheft/HSR_SRS_main.pdf>]
-<../Pflichtenheft/HSR_SRS_main.pdf, id=682, page=4, 597.50829pt x 845.0471pt>
+<../Pflichtenheft/HSR_SRS_main.pdf, id=715, page=4, 597.50829pt x 845.0471pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 4>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page4 used on inpu
@@ -1763,7 +1890,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [30 <../Pflichtenheft/HSR_SRS_main.pdf>] [31 <../Pflichtenheft/HSR_SRS_main.pd
 f>]
-<../Pflichtenheft/HSR_SRS_main.pdf, id=828, page=5, 845.0471pt x 597.50829pt>
+<../Pflichtenheft/HSR_SRS_main.pdf, id=861, page=5, 845.0471pt x 597.50829pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 5>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page5 used on inpu
@@ -1775,39 +1902,41 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [32
 
  <../Pflichtenheft/HSR_SRS_main.pdf, page is rotated 90 degrees>]) (main.ind)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 157.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 157.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 159.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 159.
 
 (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 157.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 157.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 159.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 159.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 75620ACDCDAFD76012BC757B75CD2E07;1180.
+(rerunfilecheck)             Checksum: 87B2F26C349E1960EC89CD4240BEAA47;1311.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 157.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 159.
  ) 
 Here is how much of TeX's memory you used:
- 28827 strings out of 492895
- 524600 string characters out of 3122333
- 1008636 words of memory out of 3000000
- 32045 multiletter control sequences out of 15000+200000
+ 28887 strings out of 492895
+ 525610 string characters out of 3122333
+ 1009828 words of memory out of 3000000
+ 32096 multiletter control sequences out of 15000+200000
  49489 words of font info for 89 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,12n,48p,3238b,1598s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,13n,48p,3238b,1598s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/mtischha/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.
-enc}<C:/Users/mtischha/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txf
-onts/rtxmi.pfb><C:/Users/mtischha/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/txfonts/rtxr.pfb><C:/Users/mtischha/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/txfonts/txex.pfb><C:/Users/mtischha/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/txfonts/txsy.pfb><C:/Users/mtischha/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/mtischha/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/mtischha/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (38 pages, 2776611 bytes).
+enc}<C:/Users/mtischha/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr17.pfb><C:/Users/mtischha/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/txfonts/rtxmi.pfb><C:/Users/mtischha/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/mtischha/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/txfonts/txex.pfb><C:/Users/mtischha/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/txsy.pfb><C:/Users/mtischha/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/mt
+ischha/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/U
+sers/mtischha/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.p
+fb>
+Output written on main.pdf (38 pages, 3044231 bytes).
 PDF statistics:
- 974 PDF objects out of 1000 (max. 8388607)
- 83 named destinations out of 1000 (max. 500000)
- 236 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1009 PDF objects out of 1200 (max. 8388607)
+ 88 named destinations out of 1000 (max. 500000)
+ 257 words of extra memory for PDF output out of 10000 (max. 10000000)
 

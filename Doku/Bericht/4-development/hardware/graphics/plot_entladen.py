@@ -39,15 +39,16 @@ lux = lux[l:org_len-r]
 
 # use LaTeX fonts in the plot
 plt.rcParams['font.family'] = 'STIXGeneral'
+plt.rcParams.update({'font.size': 12})
 
 #plot V_sys, V_bat, Vin
 fig, ax1 = plt.subplots()
 ax1.set_xlabel(r'Time (s)')
 ax1.set_ylabel(r'Voltage (V)')
 ax1.set_ylim([0, 4])
-ax1.plot(t_rel, V_sys, label=r'$V_{SYS}$', color='tab:red')
-ax1.plot(t_rel, V_bat, label='$V_{BAT}$')
-ax1.plot(t_rel, V_in, label='$V_{IN}$')
+ax1.plot(t_rel, V_sys, label=r'$V_{\mathrm{SYS}}$', color='tab:red')
+ax1.plot(t_rel, V_bat, label='$V_{\mathrm{BAT}}$')
+ax1.plot(t_rel, V_in, label='$V_{\mathrm{IN}}$')
 ax1.set_xlim([t_rel[0], t_rel[len(t_rel)-1]])
 
 
@@ -58,9 +59,9 @@ ax2 = ax1.twinx()
 ax2.set_ylabel(r'Illuminance (lux)', color='tab:green')
 ax2.set_ylim([0, 1000])
 ax2.tick_params(axis='y', labelcolor='tab:green')
-ax2.plot(t_rel, lux, label=r'$E_v$', color='tab:green')
+ax2.plot(t_rel, lux, label=r'$E_\mathrm{v}$', color='tab:green')
 
-fig.legend(bbox_to_anchor=(0.3, 0.4))
+fig.legend(bbox_to_anchor=(0.3, 0.45))
 
 plt.tight_layout()
 
