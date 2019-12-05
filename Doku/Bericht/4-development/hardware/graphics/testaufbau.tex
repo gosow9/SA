@@ -1,11 +1,30 @@
 \documentclass{standalone}
 
-\usepackage{tikz}
+
 \usepackage[europeanresistors,americaninductors]{circuitikz}
 
 \begin{document}
 \begin{tikzpicture}
-	\draw[thick] (0,0) -- (4,0) -- (4,4) -- (0,4) -- (0,0);\underline{}
+	%eigenes Voltmeter
+	\newcommand{\mymeter}[2]
+	{
+		\begin{scope}[transform shape, rotate=#2]
+		\draw[thick] (#1)node(){$\mathbf{V}$} circle (11pt);
+		\draw[rotate=45,-latex] (#1) +(-17pt,0) -- +(17pt,0);
+		\end{scope}	
+	};
+
+	\draw (0,0) node[ground]{} to[voltmeter, color=white, name=M, label=$V_{\mathrm{BAT}}$] (0,3) -- (4,3);
+	\mymeter{M}{0}
+	\draw (2,0) node[ground]{} to[C] (2,3);
 	
+	\draw (0,5) node[ground]{} to[voltmeter, color=white, name=M, label=$V_{\mathrm{IN}}$] (0,8) -- (4,8);
+	\mymeter{M}{0}
+	\draw (2,5) node[ground]{} to[pvsource] (2,8);
+	
+	%ADP
+	\draw[thick] (4,2) -- ++(5,0) -- ++(0,7) -- ++(-5,0) -- ++(0,-7);	
+	
+		
 \end{tikzpicture}
 \end{document}
