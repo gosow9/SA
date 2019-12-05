@@ -55,22 +55,23 @@ t_obj = [datetime.strptime(t[i], '%Y-%m-%d %H:%M:%S.%f') for i in range(np.size(
 
 # use LaTeX fonts in the plot
 plt.rcParams['font.family'] = 'STIXGeneral'
+plt.rcParams.update({'font.size': 12})
 
 #plot V_sys, V_bat, Vin
 fig, ax1 = plt.subplots()
 ax1.set_xlabel('Time')
 ax1.set_ylabel('Voltage (V)')
 ax1.set_ylim([0, 4])
-ax1.plot(t_obj, V_sys, label=r'$V_{SYS}$', color='tab:red')
-ax1.plot(t_obj, V_bat, label=r'$V_{BAT}$')
-ax1.plot(t_obj, V_in, label='$V_{IN}$')
+ax1.plot(t_obj, V_sys, label=r'$V_{\mathrm{SYS}}$', color='tab:red')
+ax1.plot(t_obj, V_bat, label=r'$V_{\mathrm{BAT}}$')
+ax1.plot(t_obj, V_in, label='$V_{\mathrm{IN}}$')
 
 #plot lux
 ax2 = ax1.twinx()
 ax2.set_ylabel('Illuminance (lux)', color='tab:green')
 ax2.set_ylim([0, 1000])
 ax2.tick_params(axis='y', labelcolor='tab:green')
-ax2.plot(t_obj, lux, label=r'$E_v$', color='tab:green')
+ax2.plot(t_obj, lux, label=r'$E_\mathrm{v}$', color='tab:green')
 
 #zeitachse
 ax1.xaxis.set_major_locator(md.HourLocator(interval=2))
@@ -79,7 +80,7 @@ ax1.grid(True)
 plt.setp(ax1.xaxis.get_majorticklabels(), rotation=60)
 ax1.set_xlim([t_obj[0], t_obj[len(t_obj)-1]])
 
-fig.legend(bbox_to_anchor=(0.27, 0.42))
+fig.legend(bbox_to_anchor=(0.29, 0.44))
 
 plt.tight_layout()
 

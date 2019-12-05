@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.11.15)  4 DEC 2019 20:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.11.15)  5 DEC 2019 13:32
 entering extended mode
 **./epaper_mikroskop.tex
 (epaper_mikroskop.tex
@@ -512,23 +512,33 @@ G,.JBIG2,.JB2,.eps]
 <b.jpg, id=4, 1104.37593pt x 727.96968pt>
 File: b.jpg Graphic file (type jpg)
 <use b.jpg>
-Package pdftex.def Info: b.jpg  used on input line 6.
-(pdftex.def)             Requested size: 1104.37323pt x 727.96791pt.
- [1
+Package pdftex.def Info: b.jpg  used on input line 11.
+(pdftex.def)             Requested size: 600.0pt x 395.5193pt.
 
- <./b.jpg>] (epaper_mikroskop.aux) ) 
+("C:\Users\mtischha\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries
+\pgflibraryarrows.meta.code.tex"
+File: pgflibraryarrows.meta.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgfarrowinset=\dimen157
+\pgfarrowlength=\dimen158
+\pgfarrowwidth=\dimen159
+\pgfarrowlinewidth=\dimen160
+) [1
+
+{C:/Users/mtischha/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./b.jpg>
+] (epaper_mikroskop.aux) ) 
 Here is how much of TeX's memory you used:
- 12077 strings out of 492895
- 251363 string characters out of 3122333
- 283148 words of memory out of 3000000
- 15775 multiletter control sequences out of 15000+200000
- 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 12485 strings out of 492895
+ 261950 string characters out of 3122333
+ 287401 words of memory out of 3000000
+ 16177 multiletter control sequences out of 15000+200000
+ 3939 words of font info for 15 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,5n,56p,400b,383s stack positions out of 5000i,500n,10000p,200000b,50000s
-
-Output written on epaper_mikroskop.pdf (1 page, 251906 bytes).
+ 55i,7n,65p,400b,1082s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/mtischha/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on epaper_mikroskop.pdf (1 page, 261242 bytes).
 PDF statistics:
- 10 PDF objects out of 1000 (max. 8388607)
+ 14 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
