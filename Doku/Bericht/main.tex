@@ -31,6 +31,7 @@
 
 \usepackage{tabularx}
 
+%\usepackage{acronym}
 
 %figure float
 \usepackage{float}
@@ -129,6 +130,11 @@ HSR Hochschule Für Technik Rapperswil
 \input{5-results/5-results.tex}
 \input{6-summary/6-summary.tex}
 
+%bibliography
+\chapter*{Sources}
+\addcontentsline{toc}{chapter}{Sources} 
+\printbibliography[heading=none]
+
 %Abbildungsverzeichnis
 \addcontentsline{toc}{chapter}{List of figures} 
 \listoffigures\thispagestyle{fancy}
@@ -136,12 +142,6 @@ HSR Hochschule Für Technik Rapperswil
 %Tabellenverzeichnis
 \addcontentsline{toc}{chapter}{List of tables} 
 \listoftables\thispagestyle{fancy}
-
-
-%bibliography
-\chapter*{Sources}
-\addcontentsline{toc}{chapter}{Sources} 
-\printbibliography[heading=none]
 
 \addcontentsline{toc}{chapter}{Statement of Plagiarisms} 
 \input{statment_of_plagiarism/statement_of_plagiarism.tex}
