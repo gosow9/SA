@@ -1,49 +1,45 @@
 \chapter{Evaluation}
-This section lists the pros and cons of available Technologies.
+This chapter lists the pros and cons of available Technologies.
 On this basis was evaluated, which hardware is suitable.
 
-\section{Energy harvesting}
-\begin{tabularx}{\linewidth}{m{3cm}|X|X}
-	\textbf{Technologie}&\textbf{Pro}&\textbf{Contra}\\
-	\hline
-	BLA&
-	\noindent{
-		\begin{itemize}[leftmargin=0.3cm]
-			\item[-] bla
-	\end{itemize}}&
-	\noindent{
-		\begin{itemize}[leftmargin=0.3cm]
-			\item[-] bla
-	\end{itemize}}\\
-	\hline
-\end{tabularx}
+\section{Wakeup Receiver}
+In this semester thesis, two different implementations of the wakeup receiver technology were compared.
+The AS3933 from AMS and the RFicient from the \acf{fraun} which kindly provided an evaluation kit before the actual release of the product.
+This section first introduces both products, before comparing them with a series of tests in a for this application realistic environment.
 
+\subsection{AS3933}
+The AS3933 is a low frequency wakeup receiver, which uses \acs{ask} to modulate a carrier frequency between 15-150\,kHz.
+The transmitter sends a manchester encoded, programmable wakeup pattern of length 16 or 32 bit.
+If this pattern is detected on the receiver end, a wakeup interrupt is generated.
+More important features on receiver end are:
+\begin{itemize}
+	\item[-] Receiver sensitivity $80\,\mu\text{VRMS}$ (equivalent to $-68.93\,\text{dBm}$)
+	\item[-] Current consumption in 3-channel listening mode $2.3\,\mu\text{A}$
+	\item[-] Operating supply range $2.4\,\text{V}-3.6\,\text{V}$
+	\item[-] Three antennas (enables 3D detection)
+	\item[-] Channels  individually selective to reduce power consumption
+\end{itemize}
+The low power consumption makes it possible run the receiver in listening mode below $8.3\,\mu\text{W}$\cite{as3933}.
 
-\section{Wireless interface}
-\begin{tabularx}{\linewidth}{m{3cm}|X|X}
-	\textbf{Technologie}&\textbf{Pro}&\textbf{Contra}\\
-	\hline
-	Visual light communication&
-	\noindent{
-		\begin{itemize}[leftmargin=0.3cm]
-			\item[-] Radiation is proper for any environment
-			\item[-] High data rate (several Gb/s)
-			\item[-] Light for transmission can also be used as energy resource
-	\end{itemize}}&
-	\noindent{
-		\begin{itemize}[leftmargin=0.3cm]
-			\item[-] Only little products are available yet
-			\item[-] Limited usability with existing lightning systems,  additional ethernet cables to lightbulbs may be required
-			\item[-] Direct irradiation is needed
-	\end{itemize}}\\
-	\hline
-	Wake-up radio&
-	\noindent{
-		\begin{itemize}[leftmargin=0.3cm]
-			\item[-] Range typically around 30m, but can be improved with antenna diversity and directional antennas
-	\end{itemize}}&
-	\noindent{
-		\begin{itemize}[leftmargin=0.3cm]
-			\item[-] bla
-	\end{itemize}}\\	
-\end{tabularx}
+The demo kit comes with a \acs{gui}, which enables the user to set the parameters as desired.
+First trials showed, that only one of the  three antennas seemed to work.
+According to the manual, it should have been possible to activate the other two channels as well, but the in the demo kit included \acs{gui} did not provide this option.
+Consulting the technical support of AMS was unfortunately of no use.
+Therefore all test were made with only one channel as good as possible.
+
+\subsection{RFicient}
+The Rficient from the \acs{fraun} uses \acs{ook} to modulate a 868\,MHz signal.
+It can either run in pure wakeup mode, where the receiver generates an interrupt as soon as a code is received or a selective mode, where a 16 bit wakeup preamble needs to match the receiver. 
+After the preamble is detected, the data rate can be changed to transfer more bits which can be sent over an \acs{spi}-bus to a connected device.
+Data rates can be set in a range between $256\,\text{bp/s}-32\,\text{kbp/s}$.
+the most important features are:
+\begin{itemize}
+	\item[-] Receiver sensitivity -80\,dBm
+	\item[-] Energy consumption $3\,\mu\text{A}$ at $1.5\,\text{V}$ (data rate 1 kbit/s)
+	\item[-] Unidirectional data transfer possible	
+\end{itemize}
+The power consumption therefore is in listening mode (data rate = 1 kb/s) $4.5\,\mu\text{W}$.
+
+Just as the AS3933, the RFicient demo kit comes with a \acs{gui}, which enables the user to set the important parameters and even access the register directly \cite{rficient}.
+
+\subsection{Test run in realistic environments}
