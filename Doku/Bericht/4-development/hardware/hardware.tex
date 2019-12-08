@@ -50,6 +50,13 @@ The same unwanted behaviour occurs when charging the capacitor over $3.8\,\text{
 \subsubsection{Combined test}
 To test the behaviour of the power management, supercapacitor and solar cells, a couple of measurements are executed.
 
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/testaufbau.pdf}
+	\caption{Layout\label{development:test}}
+\end{figure}
+
 To carry out these measurements, it is first necessary to adjust the minimal and maximal voltage of the ADP5090.
 The nrf58240 accepts supply voltages between $1.6\,\text{V}$ up to $5.5\,\text{V}$ \cite{nrf}.
 The STM32 on the other side is less flexible with an input voltage range of $1.71\,\text{V}$ to $3.6\,\text{V}$ \cite{stm32}.
