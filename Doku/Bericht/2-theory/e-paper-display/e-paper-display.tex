@@ -1,6 +1,9 @@
 There are several different technologies which are applied in e-paper displays.
-But since the developed prototype uses a screen, which uses a microencapsulated electrophoretic display, this section only describes this specific implementation.
+But since the developed prototype uses a microencapsulated electrophoretic display, this section only describes this specific implementation.
 
+A film, consisting of microscopic capsules, is coated onto a backplane, which basically is a matrix of electrodes.
+On top of that comes a common electrode, called the frontplane.
+This setup is shown in figure \ref{theory:capsules}.
 
 \begin{figure}[h]
 	\centering
@@ -8,11 +11,18 @@ But since the developed prototype uses a screen, which uses a microencapsulated 
 	\caption{filler pic\label{theory:capsules}}
 \end{figure}
 
+Each capsule in the film itself contains a transparent fluid and particles of two opposite charges.
+One type of particle scatters the light while the other one absorbs it.
+The particles now begin to move in opposite directions thought the fluid when exposed two a electrical field. 
+The pixel (defined by the electrode size) appears white if the scattering particles ar near the frontplane and black if otherwise.
+If no voltage is applied to the electrodes, the particles maintain their last position.
+This makes it possible to switch of the power supply when no image update is needed which is the reason why the power consumption is strongly reduced compared to other types of display \cite{amundson}.
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.9\textwidth]{2-theory/e-paper-display/graphics/epaper_mikroskop.pdf}
 	\caption{E-paper display under microscope with 250x magnification\label{theory:micro}}
 \end{figure}
 
-
-\cite{amundson}
+Figure \ref{theory:micro} shows a e-paper display with 250x magnification.
+One electrode is coated by many capsules, which are between 0.02 mm and 0.04 mm in diameter.
