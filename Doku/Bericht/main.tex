@@ -22,18 +22,36 @@
 \usepackage{txfonts}
 \usepackage[all]{xy}
 \usepackage{paralist}
-\usepackage[colorlinks=true]{hyperref}
+%\usepackage[colorlinks=true]{hyperref}
+\usepackage{hyperref}
 \usepackage{array}
 \usepackage{tikz}
 \usepackage{pdfpages}
+
+%für Querformat von zeitplan
+\usepackage{pdflscape}
+
+%für Abbreviations
+\usepackage{acronym}
+
+%figure float
+\usepackage{float}
+
+%bibliography
+\usepackage[hyperref=true,backend=biber,style=ieee,defernumbers=true]{biblatex}
+\addbibresource{references.bib}
+
 \input{common/linsys.tex}
 \makeindex
+
+
 \begin{document}
 \pagestyle{fancy}
 \lhead{}
 \rhead{}
 \frontmatter
 \newcommand\HRule{\noindent\rule{\linewidth}{1.5pt}}
+
 
 
 \hypersetup{
@@ -56,17 +74,13 @@
 %\allowdisplaybreaks
 
 
-
-
-
-
 \begin{titlepage}
 \vspace*{\stretch{1}}
 \HRule
 \vspace*{10pt}
 \begin{flushright}
 {\Huge
-Low Power Wake-Up-Receiver}
+Low Power Wakeup-Receiver}
 
 %\Large{with Rotation, GPS and On-Board-Diagnostics Sensor Data}
 \end{flushright}
@@ -107,21 +121,34 @@ HSR Hochschule Für Technik Rapperswil
 \input{0-abstract/0-abstract.tex}
 \tableofcontents
 
-
-
-
 \mainmatter
 
 \input{00-abbreviations/00-abbreviations.tex}
 \input{1-intro/1-intro.tex}
-\input{2-requirements/2-requirements.tex}
-\input{3-theory/3-theory.tex}
+\input{2-theory/2-theory.tex}
+\input{3-evaluation/3-evaluation.tex}
 \input{4-development/4-development.tex}
 \input{5-results/5-results.tex}
 \input{6-summary/6-summary.tex}
 
-\appendix
+%bibliography
+\chapter*{Sources}
+\addcontentsline{toc}{chapter}{Sources} 
+\printbibliography[heading=none]
 
+%Abbildungsverzeichnis
+\addcontentsline{toc}{chapter}{List of figures} 
+\listoffigures\thispagestyle{fancy}
+
+%Tabellenverzeichnis
+\addcontentsline{toc}{chapter}{List of tables} 
+\listoftables\thispagestyle{fancy}
+
+\addcontentsline{toc}{chapter}{Statement of Plagiarisms} 
+\input{statment_of_plagiarism/statement_of_plagiarism.tex}
+
+\appendix
+\input{Appendix/appendix.tex}
 
 \vfill
 \pagebreak
