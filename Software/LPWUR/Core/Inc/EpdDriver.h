@@ -147,6 +147,8 @@ void EpdDriverDrawBox(uint8_t* buffer, uint16_t usX, uint16_t usY, uint16_t usWi
 void IT8951_GUI_Example(void);
 void IT8951_BMP_Example(void);
 void EpdDriverShowDisp(void);
+void EpdOn(void);
+void EpdOff(void);
 
 
 //temp
