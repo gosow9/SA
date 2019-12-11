@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.7)  10 DEC 2019 19:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.7)  11 DEC 2019 14:17
 entering extended mode
 **./wake_comp.tex
 (wake_comp.tex
@@ -468,16 +468,16 @@ G,.JBIG2,.JB2,.eps]
 {C:/Users/mtischha/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (wake_co
 mp.aux) ) 
 Here is how much of TeX's memory you used:
- 12210 strings out of 492484
- 250311 string characters out of 3130389
- 286879 words of memory out of 3000000
- 16337 multiletter control sequences out of 15000+200000
+ 12237 strings out of 492484
+ 250822 string characters out of 3130389
+ 290879 words of memory out of 3000000
+ 16364 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,7n,60p,393b,568s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,7n,60p,393b,586s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb>
-Output written on wake_comp.pdf (1 page, 21498 bytes).
+Output written on wake_comp.pdf (1 page, 24053 bytes).
 PDF statistics:
  17 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
