@@ -5,7 +5,7 @@
 \begin{document}
 \begin{tikzpicture}
 
-\definecolor{mc}{RGB}{214,39,40}
+\definecolor{mc}{RGB}{217,83,25}
 
 %defs für circle
 \pgftext{\includegraphics[width=600pt]{b.jpg}}
