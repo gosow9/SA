@@ -1,0 +1,119 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{amundson}{book}{}
+      \name{author}{1}{}{%
+        {{hash=89b9b1f484aa20e8ae8bba87ce61a973}{%
+           family={Amundson},
+           familyi={A\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing Switzerland}%
+      }
+      \strng{namehash}{89b9b1f484aa20e8ae8bba87ce61a973}
+      \strng{fullhash}{89b9b1f484aa20e8ae8bba87ce61a973}
+      \strng{bibnamehash}{89b9b1f484aa20e8ae8bba87ce61a973}
+      \strng{authorbibnamehash}{89b9b1f484aa20e8ae8bba87ce61a973}
+      \strng{authornamehash}{89b9b1f484aa20e8ae8bba87ce61a973}
+      \strng{authorfullhash}{89b9b1f484aa20e8ae8bba87ce61a973}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Electrophoretic Displays}}
+      \field{year}{2016}
+    \endentry
+    \entry{as3933}{manual}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labeltitlesource}{title}
+      \field{month}{03}
+      \field{title}{{AS3933 3D Low Frequency Wakeup Receiver}}
+      \field{year}{2015}
+      \keyw{manual}
+    \endentry
+    \entry{rficient}{manual}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labeltitlesource}{title}
+      \field{title}{{RFicient ULTRA-LOW POWER WAKE-UP RECEIVER DATASHEET (preliminary)}}
+      \field{year}{2019}
+      \keyw{manual}
+    \endentry
+    \entry{amorton}{manual}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labeltitlesource}{title}
+      \field{month}{08}
+      \field{title}{{Amorphous Silicon Solar Cells}}
+      \field{year}{2019}
+      \keyw{manual}
+    \endentry
+    \entry{adp}{manual}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labeltitlesource}{title}
+      \field{month}{02}
+      \field{title}{{Ultralow Power Boost Regulator with MPPT and Charge Management }}
+      \field{year}{2017}
+      \keyw{manual}
+    \endentry
+    \entry{adp_eval}{manual}{}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labeltitlesource}{title}
+      \field{title}{{EVAL-ADP5090 User Guide}}
+      \field{year}{2014}
+      \keyw{manual}
+    \endentry
+    \entry{yuden}{manual}{}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labeltitlesource}{title}
+      \field{month}{08}
+      \field{title}{{Cylinder Type Lithium Ion Capacitors }}
+      \field{year}{2019}
+      \keyw{manual}
+    \endentry
+    \entry{nrf}{manual}{}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{{nRF52840 Objective Product Specification v0.5}}
+      \field{year}{2016}
+      \keyw{manual}
+    \endentry
+    \entry{stm32}{manual}{}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labeltitlesource}{title}
+      \field{month}{04}
+      \field{title}{{STM32L4R5xx STM32L4R7xx STM32L4R9xx }}
+      \field{year}{2018}
+      \keyw{manual}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
