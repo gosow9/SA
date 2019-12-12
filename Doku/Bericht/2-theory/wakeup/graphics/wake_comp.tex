@@ -1,63 +1,82 @@
 \documentclass{standalone}
 
 \usepackage{tikz}
+\usetikzlibrary{positioning,arrows}
 
 \begin{document}
 \begin{tikzpicture}
+%arrows
+	\tikzset{
+	state/.style={circle,draw,minimum size=6ex},
+	arrow/.style={-latex, shorten >=1ex, shorten <=1ex}}
+
 %oben
 	%Modes
 	\draw[gray] (0,0.15)--(9.9,0.15);
-	\node[left, gray] at (0,0.15) {\tiny sleep};
+	\node[left, gray] at (0,0.15) {\scriptsize sleep};
 	\draw[gray] (0,3)--(9.9,3);
-	\node[left, gray] at (0,3) {\tiny run};
+	\node[left, gray] at (0,3) {\scriptsize run};
 	
 	
 	%Plot
 	\definecolor{pltred}{RGB}{214,39,40}
 	
 	\foreach \x in {0,0.7,1.4,2.1}
-		\draw[pltred] (\x,0.15)--++(0.6,0)--++(0,2.85)--++(0.1,0)--++(0,-2.85);
+		\draw[thick, pltred] (\x,0.15)--++(0.6,0)--++(0,2.85)--++(0.1,0)--++(0,-2.85);
 	
-	\draw[pltred] (2.8,0.15)--(3.4,0.15)--(3.4,3)--(6.3,3)--(6.3,0.15);
+	\draw[thick, pltred] (2.8,0.15)--(3.4,0.15)--(3.4,3)--(6.3,3)--(6.3,0.15);
 	
 	\foreach \x in {6.3,7,7.7,8.4}
-		\draw[pltred] (\x,0.15)--++(0.6,0)--++(0,2.85)--++(0.1,0)--++(0,-2.85);
+		\draw[thick, pltred] (\x,0.15)--++(0.6,0)--++(0,2.85)--++(0.1,0)--++(0,-2.85);
 		
-	\draw[pltred] (9.1,0.15)--(9.9,0.15);
+	\draw[thick, pltred] (9.1,0.15)--(9.9,0.15);
 	
 	%Koordinantenkreuz + Legende
-	\draw[->, thick] (0,-0.3)--(0,4);
-	\draw[->, thick] (-0.3,0)--(10.5,0);
+	\draw[arrow, thick] (0,-0.3)--(0,4);
+	\draw[arrow, thick] (-0.3,0)--(10.5,0);
 	\node[above] at (-0.3,4) {Power};
 	\node[below] at (9.5,0) {Time};
-	\draw[thick, pltred] (7,3.7)--++(0.1,0);
-	\node[right] at (7.05,3.7) {\tiny microcontroller};
+	\draw[thick, pltred] (7.5,3.9)--++(0.1,0);
+	\node[right] at (7.55,3.9) {\scriptsize microcontroller};
 	
+	%beschriftung
+	\draw [arrow, bend right] (1.5,3.5) to (0.58,2.9);
+	\node[right] at (1.3,3.5) {\scriptsize check for event};	
+	\draw [arrow, bend right] (5,3.5) to (4.1,2.9);
+	\node[right] at (4.8,3.5) {\scriptsize excecute task};
 
 %unten
 	\def\sh{5.2}
 	\definecolor{pltblue}{RGB}{31,119,180}
 	%modes
 	\draw[gray] (0,0.15-\sh)--(9.9,0.15-\sh);
-	\node[left, gray] at (0,0.15-\sh) {\tiny sleep};
+	\node[left, gray] at (0,0.15-\sh) {\scriptsize sleep};
 	\draw[gray] (0,3-\sh)--(9.9,3-\sh);
-	\node[left, gray] at (0,3-\sh) {\tiny run};
+	\node[left, gray] at (0,3-\sh) {\scriptsize run};
 	
 	
 	%Plot
-	\draw[pltblue] (0,0.4-\sh)--(9.9,0.4-\sh);
-	\draw[pltred] (0,0.15-\sh)--(3.4,0.15-\sh)--(3.4,3-\sh)--(6.3,3-\sh)--(6.3,0.15-\sh)--(9.9,0.15-\sh);
+	\draw[thick, pltblue] (0,0.4-\sh)--(9.9,0.4-\sh);
+	\draw[thick, pltred] (0,0.15-\sh)--(3.4,0.15-\sh)--(3.4,3-\sh)--(6.3,3-\sh)--(6.3,0.15-\sh)--(9.9,0.15-\sh);
 	
 	%Koordinantenkreuz + Legende
-	\draw[->, thick] (0,-0.3-\sh)--(0,4-\sh);
-	\draw[->, thick] (-0.3,0-\sh)--(10.5,0-\sh);
+	\draw[arrow, thick] (0,-0.3-\sh)--(0,4-\sh);
+	\draw[arrow, thick] (-0.3,0-\sh)--(10.5,0-\sh);
 	\node[above] at (-0.3,4-\sh) {Power};
 	\node[below] at (9.5,0-\sh) {Time};
-	\draw[thick, pltred] (7,3.7-\sh)--++(0.1,0);
-	\node[right] at (7.05,3.7-\sh) {\tiny microcontroller};
-	\draw[thick, pltblue] (7,3.35-\sh)--++(0.1,0);
-	\node[right] at (7.05,3.35-\sh) {\tiny wakeup receiver};
+	\draw[thick, pltred] (7.5,3.9-\sh)--++(0.1,0);
+	\node[right] at (7.55,3.9-\sh) {\scriptsize microcontroller};
+	\draw[thick, pltblue] (7.5,3.55-\sh)--++(0.1,0);
+	\node[right] at (7.55,3.55-\sh) {\scriptsize wakeup receiver};
 	
+	%beschriftung	
+	\draw [arrow, bend right] (5,3.5-\sh) to (4.1,2.9-\sh);
+	\node[right] at (4.8,3.5-\sh) {\scriptsize excecute task};
+	\draw [arrow, bend left] (1.6,0.9-\sh) to (2.5,0.3-\sh);
+	\node[left] at (1.8,0.9-\sh) {\scriptsize listening};
+	\draw[gray] (3.4,0.4-\sh) circle (2.5pt);
+	\draw [arrow, bend left] (4.1,0.9-\sh) to (3.4,0.4-\sh);
+	\node[right] at (3.9,0.9-\sh) {\scriptsize wake up};
 	
 	
 \end{tikzpicture}		
