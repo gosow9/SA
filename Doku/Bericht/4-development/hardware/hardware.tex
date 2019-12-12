@@ -1,3 +1,42 @@
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/Blockschaltbild.pdf}
+	\caption{not up to date block\label{hardware:block}}
+\end{figure}
+
+\subsection{RFicient}
+The Rficient demo kit comes, as previously statet with a \acs{gui}.
+
+Is the transceiver module connected, simple steps make it possible, to set the preamble and payload data rate and the payload itself which can partly serve as an ID and transmitted data.
+The power of the transmission can also be set between -30\,dBm an 10\,dBm.
+the transceiver-\acs{gui} is shown in figure \ref{development:tx}.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/TXgui.png}
+	\caption{TX GUI\label{development:tx}}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/RXgui.png}
+	\caption{RX GUI\label{development:rx}}
+\end{figure}
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/env1.jpg}
+	\caption{Test environment 1 (filler)\label{development:env1}}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/env2.jpg}
+	\caption{Test environment 2 (filler)\label{development:env2}}
+\end{figure}
+
+
 \subsection{Energy Harvesting}
 The screen should be self-sustaining, thus some sort of energy-harvesting unit is needed.
 It was apparent to choose light as the energy source, since the screen will be used in rooms, that are artificially illuminated most of the time.
@@ -49,13 +88,20 @@ The same unwanted behaviour occurs when charging the capacitor over $3.8\,\text{
 
 \subsubsection{Combined test}
 To test the behaviour of the power management, supercapacitor and solar cells, a couple of measurements are executed.
+Figure \ref{development:test} shows the layout of the test setup.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/testaufbau.pdf}
+	\caption{Schematics of the test setup\label{development:test}}
+\end{figure}
 
 To carry out these measurements, it is first necessary to adjust the minimal and maximal voltage of the ADP5090.
 The nrf58240 accepts supply voltages between $1.6\,\text{V}$ up to $5.5\,\text{V}$ \cite{nrf}.
 The STM32 on the other side is less flexible with an input voltage range of $1.71\,\text{V}$ to $3.6\,\text{V}$ \cite{stm32}.
 As stated in the section above, the super capacitors operating voltage is between $2.2\,\text{V}$ and $3.8\,\text{V}$.
 Hence it seems reasonable, to set $V_{\text{BAT\_TERM}} \le 3.6\,\text{V}$ and $V_{\text{BAT\_SD}} \ge 2.2\,\text{V}$, to satisfy all of these three elements.
-In order to do this, the four resistors have to be chosen as $R_{\text{TERM1}} = 4.3\,\text{M}\Omega$, $R_{\text{TERM2}} = 4.7\,\text{M}\Omega$, $R_{\text{SD1}} = 4.3\,\text{M}\Omega$ and $R_{\text{SD2}} = 5.1\,\text{M}\Omega$.
+In order to do this, the four resistors have to be chosen as $R_3 = 4.3\,\text{M}\Omega$, $R_6 = 4.7\,\text{M}\Omega$, $R_2 = 4.3\,\text{M}\Omega$ and $R_3 = 5.1\,\text{M}\Omega$.
 Inserted in the equation \eqref{development:v_bat_term} and \eqref{development:v_bat_sd} we get
 \begin{align}
 	V_{\text{BAT\_TERM}}= \frac{3}{2} 1.21\,\text{V} \left(1 + \frac{4.3\,\text{M}\Omega}{4.7 \,\text{M}\Omega} \right) \approx 3.48\,\text{V} 
@@ -65,7 +111,7 @@ and
 	V_{\text{BAT\_SD}} = 1.21\,\text{V} \left(1 + \frac{4.3\,\text{M}\Omega}{5.1\,\text{M}\Omega} \right) \approx 2.23\,\text{V}. 
 \end{align}
 
-While testing, the input voltage from the solar cells ($V_{\text{IN}}$), voltage of the supercap ($V_{\text{BAT}}$) and the output voltage ($V_{\text{SYS}}$) are tracked. Additionally, the illuminance ($E_\text{v}$) near the PV-cells  is recorded.
+While testing, the input voltage from the solar cells ($V_{\text{IN}}$), voltage of the supercap ($V_{\text{BAT}}$) and the output voltage ($V_{\text{SYS}}$) are tracked. Additionally, the illuminance ($E_\text{v}$) near the PV-cells  is recorded as indicated in figure \ref{development:test}.
 
 The purpose of the first test is to check, if the ADP5090 converts $V_{\text{IN}}$ to a voltage $\le V_{\text{BAT\_TERM}}$.
 The measurements where taken over a couple hours and are plotted in Figure \ref{development:charge}.
@@ -76,7 +122,7 @@ The measurements where taken over a couple hours and are plotted in Figure \ref{
 	\caption{Charging behaviour\label{development:charge}}
 \end{figure}
 
-No load was connected to the output, which is the reason $V_{\text{SYS}}$ is overlapped by $V_{\text{BAT}}$.
+No load was connected to the output ($Z_\text{LOAD} \to \infty$), which is the reason $V_{\text{SYS}}$ is overlapped by $V_{\text{BAT}}$.
 It can be seen, that between 17:00 and 23:00, the super capacitor was being charged and
 that the ADP5090 controls the voltage $V_{\text{BAT}}$ like expected to the adjusted maximum voltage $V_{\text{BAT\_TERM}}$.
 
@@ -88,7 +134,7 @@ A rough measurement with a power analyser showed, that the microcontroller and t
 \end{align}
   
 
-A load of $10\,\Omega$ should lead to currents between $0.223\,\text{A}$ and $0.348\,\text{A}$ which again lead to a power consumption that should approximately match the power consumption of the finished prototype.
+If $Z_{\text{LOAD}}=10\,\Omega$ the load draws currents between $0.223\,\text{A}$ and $0.348\,\text{A}$ which again lead to a power consumption that should approximately match the power consumption of the finished prototype.
 Furthermore, the solar cells where covered to observe the discharging without interference of additionally charging behaviour.
 Figure \ref{development:discharge} shows the result.
  
