@@ -1,0 +1,11 @@
+\babel@toc {ngerman}{}
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Einleitung}{3}{section.1}% 
+\contentsline {section}{\numberline {2}Auftrag}{3}{section.2}% 
+\contentsline {section}{\numberline {3}Produktanforderungen}{3}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Hardware}{4}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Software}{4}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Varianten/Optionen}{4}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {3.4}Dokumentation}{4}{subsection.3.4}% 
+\contentsline {section}{\numberline {4}Zeitplan}{5}{section.4}% 
+\contentsfinish 
