@@ -73,7 +73,7 @@ int main(void)
 {
   /* USER CODE BEGIN 1 */
 	 // char tex[]={'H','A','L','L','O','\0'};
-	  char  fach[]={'W','S','C','o','m','\0'};
+	  char  fach[]={'W','S','C','o','m'};
 	  char  doz[]={'M','A','T','\0'};
 //	  char* tempLoad = "Template Loaded";
 //	  //char end[1] = {'\N'};
@@ -99,23 +99,29 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  EpdOn();
   MX_LPUART1_UART_Init();
   MX_USB_OTG_FS_PCD_Init();
   MX_SPI1_Init();
   MX_DMA_Init();
   MX_UART4_Init();
   /* USER CODE BEGIN 2 */
+  EpdOn();
+  HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_SET);
+  HAL_Delay(1000);
+  HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_RESET);
   IT8951_Init();
+
   HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_SET);
   EpdDriverLoadTemplate();
+  HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_RESET);
   for(int i = 0; i<20;i++){
 	  DrawCalenderField(i, fach, doz);
   	  }
   EpdDriverShowDisp();
-  HAL_Delay(2000);
+  HAL_Delay(1000);
   EpdOff();
 
+  HAL_GPIO_WritePin(Kill_GPIO_Port, Kill_Pin, SET);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -123,6 +129,10 @@ int main(void)
   while (1)
   {
 
+	  HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_RESET);
+	  HAL_Delay(500);
+	  HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_SET);
+	  HAL_Delay(500);
 	 // EpdDriverLoadTemplate();
 	 // HAL_Delay(3000);
 //	  HAL_UART_Receive(&huart4, rxBuf, 20,HAL_MAX_DELAY);

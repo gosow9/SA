@@ -40,7 +40,7 @@ void EpdOff(void)
 {
 	HAL_GPIO_WritePin(EPD_ON_GPIO_Port, EPD_ON_Pin, RESET);
 	HAL_GPIO_WritePin(EPD_OFF_GPIO_Port, EPD_OFF_Pin, SET);
-	HAL_Delay(1);
+	HAL_Delay(100);
 	HAL_GPIO_WritePin(EPD_OFF_GPIO_Port, EPD_OFF_Pin, RESET);
 }
 
