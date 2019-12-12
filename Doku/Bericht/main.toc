@@ -14,7 +14,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Wakeup Receiver}{6}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}software grafik zeichen}{7}{section.2.3}%
+\contentsline {section}{\numberline {2.3}software grafik zeichen}{6}{section.2.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Evaluation}{9}{chapter.3}%
 \defcounter {refsection}{0}\relax 
