@@ -60,12 +60,6 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define B1_Pin GPIO_PIN_13
 #define B1_GPIO_Port GPIOC
-#define EPD_ON_Pin GPIO_PIN_0
-#define EPD_ON_GPIO_Port GPIOC
-#define EPD_OFF_Pin GPIO_PIN_1
-#define EPD_OFF_GPIO_Port GPIOC
-#define Kill_Pin GPIO_PIN_2
-#define Kill_GPIO_Port GPIOC
 #define EPD_CS_Pin GPIO_PIN_0
 #define EPD_CS_GPIO_Port GPIOA
 #define EPD_RST_Pin GPIO_PIN_4

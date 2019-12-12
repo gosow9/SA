@@ -73,8 +73,8 @@ int main(void)
 {
   /* USER CODE BEGIN 1 */
 	 // char tex[]={'H','A','L','L','O','\0'};
-	  char  fach[]={'W','S','C','o','m','\0'};
-	  char  doz[]={'M','A','T','\0'};
+//	  char  fach[11];
+//	  char  doz[4];
 //	  char* tempLoad = "Template Loaded";
 //	  //char end[1] = {'\N'};
 //	  uint8_t rxBuf[50]={0};
@@ -99,25 +99,19 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  EpdOn();
+
+
   MX_LPUART1_UART_Init();
   MX_USB_OTG_FS_PCD_Init();
   MX_SPI1_Init();
   MX_DMA_Init();
   MX_UART4_Init();
+  HAL_GPIO_WritePin(GPIOB, LD3_Pin, GPIO_PIN_SET);
   /* USER CODE BEGIN 2 */
   IT8951_Init();
   HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_SET);
-  EpdDriverLoadTemplate();
-  for(int i = 0; i<20;i++){
-	  DrawCalenderField(i, fach, doz);
-  	  }
-  EpdDriverShowDisp();
-  HAL_Delay(2000);
-  EpdOff();
-
   /* USER CODE END 2 */
-
+  EpdDriverLoadTemplate();
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -141,7 +135,7 @@ int main(void)
 //	 		 for(int i=1; i<11;i++)
 //	 		 	 {fach[i-1]=rxBuf[i];}
 //	 		 doz[3]='\0';
-// 		 DrawCalenderField(rxBuf[0], fach, doz);
+//	 		 DrawCalenderField(rxBuf[0], fach, doz);
 //	 		 EpdDriverShowDisp();
 //	 		 for(int i=0; i<50;i++)
 //	 		 	 {rxBuf[i]=0;}
