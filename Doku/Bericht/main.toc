@@ -36,21 +36,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Tests in a realistic environment}{12}{section*.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Energy Harvesting}{12}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.2}Energy Harvesting}{13}{subsection.4.1.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Solar cell}{13}{section*.12}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Power management}{13}{section*.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Super capacitor}{14}{section*.14}%
+\contentsline {subsubsection}{Super capacitor}{15}{section*.14}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Combined test}{15}{section*.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Software}{17}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Software}{18}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Receiver}{17}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.1}Receiver}{18}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Transceiver}{17}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.2}Transceiver}{18}{subsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Results}{21}{chapter.5}%
 \defcounter {refsection}{0}\relax 
