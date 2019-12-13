@@ -1,20 +1,14 @@
 \chapter*{Abstract}
 
 \section*{Introduction}
-In company buildings, universities and other similar facilities, it is usual to attach occupancy schedules next to room entrances.
-These schedules are mostly printed on paper, or in more modern buildings, displayed on a screen.
-Using paper, it is impracticable to take short-term changes into account, since every adjustment needs to be made by printing a new schedule.
-Screens on the other hand need either to be connected to a power supply, which entails extensive installation work, or are powered by a battery, which needs to be replaced from time to time.
-All these disadvantages could be avoided by using a screen which harvests its energy from the indoor light, and is updated via a wireless interface.
-The screen should therefore be completely wireless, which simplifies the installation.
+In company buildings, universities and other similar facilities, it is usual to attach occupancy schedules next to room entrances. These schedules are most of the time printed on paper, or in more modern buildings, displayed on a screen. Using paper, it is impracticable to take short-term changes into account, since every adjustment needs to be made by printing a new schedule. Screens on the other hand need either to be connected to the power grid, which entails extensive installation work, or powered by a battery, which needs to be replaced from time to time. All these disadvantages could be avoided by using a screen which harvests its energy from the indoor light, and is updated via a wireless interface. The screen should therefore be completely wireless.
 
 \section*{Approach}
-Solar cells should harvest the required energy which can be store in a super-capacitor.
+Energy is harvested with solar cells and is stored in a super-capacitor.
 Because this harvesting unit cannot provide unlimited energy, the whole system with display, microcontroller and wireless interface should consume as little energy as possible.
-To achieve this, a e-paper display is used, which only needs energy to update the screen, but not to maintain the displayed data.
-By using a wake up receiver, it is now possible to disconnect the energy storage from the system, since it can be reconnected again when needed if a wake up interrupt is detected.
-In a nutshell, the display, microcontroller and interface can be completely disconnected from the power supply when not used.
-In this state, only the leakage of the super-capacitor and the wakeup receiver in listening mode consume power.
-This consumption is in the micro watt range.
+To achieve this, an e-paper display is used, which only needs energy to update the screen, but not to maintain the displayed image.
+A constantly listening wakeup receiver can generate an wakeup interrupt and makes a periodic wake up of the microcontroller to check for incoming events redundant while maintaining a reasonable response time.
+A lot of energy can be saved this way, since updating the screen usually doesn't happen more than a few times a week.
 
 \section*{Conclusion}
+Energy harvesting provides enough energy if updating of the schedule does not occur to frequently. This semester thesis shows, that a wakeup receiver is suitable for this kind of problem. By implementing a self-holding circuit, it is even possible to switch off the whole system (except wakeup receiver) when unused. The wakeup receiver consumes in this listening mode $4.5\,\mu\text{W}$ at most.
