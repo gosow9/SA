@@ -14,7 +14,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Wakeup Receiver}{6}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}software grafik zeichen}{6}{section.2.3}%
+\contentsline {section}{\numberline {2.3}software grafik zeichen}{7}{section.2.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Evaluation}{9}{chapter.3}%
 \defcounter {refsection}{0}\relax 
@@ -30,15 +30,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.1}RFicient}{11}{subsection.4.1.1}%
 \defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Transmitter}{11}{section*.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Receiver}{12}{section*.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Tests in a realistic environment}{12}{section*.10}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.2}Energy Harvesting}{12}{subsection.4.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Solar cell}{12}{section*.8}%
+\contentsline {subsubsection}{Solar cell}{13}{section*.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Power management}{12}{section*.9}%
+\contentsline {subsubsection}{Power management}{13}{section*.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Super capacitor}{13}{section*.10}%
+\contentsline {subsubsection}{Super capacitor}{14}{section*.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Combined test}{14}{section*.11}%
+\contentsline {subsubsection}{Combined test}{15}{section*.15}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Software}{17}{section.4.2}%
 \defcounter {refsection}{0}\relax 
@@ -50,13 +56,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Summary}{23}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Sources}{25}{chapter*.12}%
+\contentsline {chapter}{Sources}{25}{chapter*.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of figures}{25}{chapter*.12}%
+\contentsline {chapter}{List of figures}{25}{chapter*.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of tables}{27}{chapter*.13}%
+\contentsline {chapter}{List of tables}{27}{chapter*.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Statement of Plagiarisms}{29}{chapter*.14}%
+\contentsline {chapter}{Statement of Plagiarisms}{29}{chapter*.18}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}Requirements}{33}{appendix.A}%
 \defcounter {refsection}{0}\relax 

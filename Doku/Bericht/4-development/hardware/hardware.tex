@@ -5,35 +5,55 @@
 \end{figure}
 
 \subsection{RFicient}
-The Rficient demo kit comes, as previously statet with a \acs{gui}.
 
-Is the transceiver module connected, simple steps make it possible, to set the preamble and payload data rate and the payload itself which can partly serve as an ID and transmitted data.
-The power of the transmission can also be set between -30\,dBm an 10\,dBm.
-the transceiver-\acs{gui} is shown in figure \ref{development:tx}.
-
+\subsubsection{Transmitter}
+The Rficient demo kit comes, as previously stated with a \acs{gui}.
+Is the transmitter module connected, simple steps make it possible to set the preamble and payload data rate. 
+The payload itself can partly serve as an ID and as additional transmitted data.
+The power of the transmission can also be set between -30\,dBm and 10\,dBm.
+The transmitter-\acs{gui} is shown in figure \ref{development:tx}.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/TXgui.png}
-	\caption{TX GUI\label{development:tx}}
+	\caption{Transmitter GUI\label{development:tx}}
 \end{figure}
+To test, if any data is received, it is helpful to activate the infinite loop (top right in figure \ref{development:tx}).
+The defined data is in this case sent repeatedly with an adjustable period.
 
+\subsubsection{Receiver}
+To receive the data, the setting of the receiver module need to be matched to the transmitter.
+The provided receiver-\acs{gui} makes this step very simple.
+As visible in figure \ref{development:rx}, one can enable the four possible interrupt sources: CodeA/B, ID, FIFO length and FIFO overflow.
+In the finished product, it should be possible to wake up the receivers individually.
+For this reason, only the ID as interrupt source is of interest.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/RXgui.png}
-	\caption{RX GUI\label{development:rx}}
+	\caption{Receiver GUI\label{development:rx}}
 \end{figure}
+If an interrupt is generated, the RFicient sets a \acs{gpio}-pin to high, and transfers the received data to a \acs{fifo}-buffer.
+This data can be passed to a microcontroller over an \acs{spi}-bus.
 
+\subsubsection{Tests in a realistic environment}
+To test the RFicient in more detail, some indoor measurements were made.
+As test environment served several buildings of the \acf{hsr}, since this type of facility represents a realistic condition for the developed schedule.
 
+Purpose of the first test was to measure the achievable range.
+Figure \ref{development:env1} shows the hallway where this test was executed.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/env1.jpg}
-	\caption{Test environment 1 (filler)\label{development:env1}}
+	\caption{Test environment 1 (\acs{hsr} building 1)\label{development:env1}}
 \end{figure}
+With a transmission power of 0\,dBm (1\,mW) it is possible to receive interrupt over a 50\,m distance (line of sight).
+Is the transmission power increased to 10\,dBm (10\,mW), interrupts can be sent over a distance up to 80\,m.
+
+
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/env2.jpg}
-	\caption{Test environment 2 (filler)\label{development:env2}}
+	\caption{Test environment 2 (\acs{hsr} building 8)\label{development:env2}}
 \end{figure}
 
 
