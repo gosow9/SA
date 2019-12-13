@@ -1,0 +1,25 @@
+\documentclass{standalone}
+
+
+\usepackage[europeanresistors,americaninductors]{circuitikz}
+
+\begin{document}
+\begin{tikzpicture}
+	%\large (schrift nodes)
+	
+	\def\bg{blue!20!white}
+	\def\ed{0.7}
+	
+	%Display
+	\fill[\bg, draw=black, thick] (-\ed,\ed) rectangle (6+\ed,-8.5-\ed);
+	\node[above] at (\ed,\ed) {\Huge Display};
+		
+	\fill[white, draw=black] (0,0) rectangle (6,-4);
+	\node at (3,-2) {\pgftext{\includegraphics[width=4.5cm]{EpaperDisplay.jpg}}};
+	\node[right] at (0,-0.4) {\Large EPD};
+	
+	\fill[white, draw=black] (0,-4.5) rectangle (6,-8.5);
+	\node[right] at (0, -4.9) {\Large EPD Driver};
+				
+\end{tikzpicture}
+\end{document}
