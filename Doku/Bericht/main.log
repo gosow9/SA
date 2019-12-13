@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.7)  13 DEC 2019 13:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.7)  13 DEC 2019 16:49
 entering extended mode
 **./main.tex
 (main.tex
@@ -1569,14 +1569,14 @@ Chapter 1.
 ]
 Chapter 2.
 (2-theory/e-paper-display/e-paper-display.tex
-<2-theory/e-paper-display/graphics/capsules.pdf, id=229, 599.99959pt x 227.9526
+<2-theory/e-paper-display/graphics/capsules.pdf, id=233, 599.99959pt x 227.9526
 2pt>
 File: 2-theory/e-paper-display/graphics/capsules.pdf Graphic file (type pdf)
 <use 2-theory/e-paper-display/graphics/capsules.pdf>
 Package pdftex.def Info: 2-theory/e-paper-display/graphics/capsules.pdf  used o
 n input line 10.
 (pdftex.def)             Requested size: 409.71689pt x 155.6666pt.
-<2-theory/e-paper-display/graphics/epaper_mikroskop.pdf, id=231, 601.42294pt x 
+<2-theory/e-paper-display/graphics/epaper_mikroskop.pdf, id=235, 601.42294pt x 
 396.94199pt>
 File: 2-theory/e-paper-display/graphics/epaper_mikroskop.pdf Graphic file (type
  pdf)
@@ -1585,35 +1585,35 @@ Package pdftex.def Info: 2-theory/e-paper-display/graphics/epaper_mikroskop.pdf
   used on input line 23.
 (pdftex.def)             Requested size: 409.71689pt x 270.4197pt.
 
+Underfull \vbox (badness 3439) has occurred while \output is active []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (2-theory/wakeup/wakeup.tex
-<2-theory/wakeup/graphics/wake_comp.pdf, id=234, 324.30057pt x 289.16331pt>
-File: 2-theory/wakeup/graphics/wake_comp.pdf Graphic file (type pdf)
-<use 2-theory/wakeup/graphics/wake_comp.pdf>
-Package pdftex.def Info: 2-theory/wakeup/graphics/wake_comp.pdf  used on input 
-line 14.
-(pdftex.def)             Requested size: 409.71689pt x 365.34486pt.
  [5pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.17 
-      <./2-theory/e-paper-display/graphics/capsules.pdf>]
+l.26 
+      <./2-theory/e-paper-display/graphics/capsules.pdf>])
+(2-theory/wakeup/wakeup.tex
+<2-theory/wakeup/graphics/wake_comp.pdf, id=424, 324.30057pt x 289.16331pt>
+File: 2-theory/wakeup/graphics/wake_comp.pdf Graphic file (type pdf)
+<use 2-theory/wakeup/graphics/wake_comp.pdf>
+Package pdftex.def Info: 2-theory/wakeup/graphics/wake_comp.pdf  used on input 
+line 14.
+(pdftex.def)             Requested size: 409.71689pt x 365.34486pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-)) (3-evaluation/3-evaluation.tex [6pdfTeX warning (ext4): destination with the
- same identifier (name{figure.2.2}) has been already used, duplicate ignored
+ [6pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1 \chapter
-            {Evaluation} <./2-theory/e-paper-display/graphics/epaper_mikroskop.
-pdf>] [7pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.2.3}) has been already used, duplicate ignored
+l.17 O
+      ne can argue, that the wakeup receiver module consumes in general more...
+ <./2-theory/e-paper-display/graphics/epaper_mikroskop.pdf>]))
+(3-evaluation/3-evaluation.tex [7pdfTeX warning (ext4): destination with the sa
+me identifier (name{figure.2.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1635,7 +1635,7 @@ r in lis-ten-ing mode be-low $\OT1/txr/m/n/12 8\OML/txmi/m/it/12 :\OT1/txr/m/n/
 [9]) (4-development/4-development.tex [10]
 Chapter 4.
 (4-development/hardware/hardware.tex
-<4-development/hardware/graphics/top/top_schematics.pdf, id=474, 792.63927pt x 
+<4-development/hardware/graphics/top/top_schematics.pdf, id=477, 792.63927pt x 
 506.45813pt>
 File: 4-development/hardware/graphics/top/top_schematics.pdf Graphic file (type
  pdf)
@@ -1643,30 +1643,18 @@ File: 4-development/hardware/graphics/top/top_schematics.pdf Graphic file (type
 Package pdftex.def Info: 4-development/hardware/graphics/top/top_schematics.pdf
   used on input line 3.
 (pdftex.def)             Requested size: 409.71689pt x 261.79097pt.
-<4-development/hardware/graphics/TXgui.png, id=478, 575.90157pt x 298.86656pt>
+<4-development/hardware/graphics/TXgui.png, id=481, 575.90157pt x 298.86656pt>
 File: 4-development/hardware/graphics/TXgui.png Graphic file (type png)
 <use 4-development/hardware/graphics/TXgui.png>
 Package pdftex.def Info: 4-development/hardware/graphics/TXgui.png  used on inp
-ut line 16.
+ut line 17.
 (pdftex.def)             Requested size: 409.71689pt x 212.62996pt.
-<4-development/hardware/graphics/RXgui.png, id=480, 912.40875pt x 654.19406pt>
+<4-development/hardware/graphics/RXgui.png, id=486, 912.40875pt x 654.19406pt>
 File: 4-development/hardware/graphics/RXgui.png Graphic file (type png)
 <use 4-development/hardware/graphics/RXgui.png>
 Package pdftex.def Info: 4-development/hardware/graphics/RXgui.png  used on inp
-ut line 22.
+ut line 31.
 (pdftex.def)             Requested size: 409.71689pt x 293.7657pt.
-<4-development/hardware/graphics/env1.jpg, id=481, 4143.48pt x 3107.61pt>
-File: 4-development/hardware/graphics/env1.jpg Graphic file (type jpg)
-<use 4-development/hardware/graphics/env1.jpg>
-Package pdftex.def Info: 4-development/hardware/graphics/env1.jpg  used on inpu
-t line 29.
-(pdftex.def)             Requested size: 409.71689pt x 307.27025pt.
-<4-development/hardware/graphics/env2.jpg, id=482, 4143.48pt x 3107.61pt>
-File: 4-development/hardware/graphics/env2.jpg Graphic file (type jpg)
-<use 4-development/hardware/graphics/env2.jpg>
-Package pdftex.def Info: 4-development/hardware/graphics/env2.jpg  used on inpu
-t line 35.
-(pdftex.def)             Requested size: 409.71689pt x 307.27025pt.
  [11
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) 
@@ -1674,73 +1662,87 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.45 
-      <./4-development/hardware/graphics/top/top_schematics.pdf>] [12pdfTeX war
-ning (ext4): destination with the same identifier (name{figure.4.2}) has been a
+l.36 
+      <./4-development/hardware/graphics/top/top_schematics.pdf>]
+Package acronym Info: Label `acro:hsr' newly defined as it shall be overridden
+although it is yet undefined on input line 39.
+<4-development/hardware/graphics/env1.jpg, id=525, 4143.48pt x 3107.61pt>
+File: 4-development/hardware/graphics/env1.jpg Graphic file (type jpg)
+<use 4-development/hardware/graphics/env1.jpg>
+Package pdftex.def Info: 4-development/hardware/graphics/env1.jpg  used on inpu
+t line 45.
+(pdftex.def)             Requested size: 409.71689pt x 307.27025pt.
+<4-development/hardware/graphics/env2.jpg, id=527, 4143.48pt x 3107.61pt>
+File: 4-development/hardware/graphics/env2.jpg Graphic file (type jpg)
+<use 4-development/hardware/graphics/env2.jpg>
+Package pdftex.def Info: 4-development/hardware/graphics/env2.jpg  used on inpu
+t line 55.
+(pdftex.def)             Requested size: 409.71689pt x 307.27025pt.
+ [12pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.70 
+      <./4-development/hardware/graphics/TXgui.png>] [13pdfTeX warning (ext4): 
+destination with the same identifier (name{figure.4.3}) has been already used, 
+duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.88 \begin{align}
+                   <./4-development/hardware/graphics/RXgui.png>] [14pdfTeX war
+ning (ext4): destination with the same identifier (name{figure.4.4}) has been a
 lready used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.65 \end{itemize}
-                   <./4-development/hardware/graphics/TXgui.png>] [13pdfTeX war
-ning (ext4): destination with the same identifier (name{figure.4.3}) has been a
-lready used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.89 \subsubsection
-                   {Combined test} <./4-development/hardware/graphics/RXgui.png
+l.109 \subsubsection
+                    {Combined test} <./4-development/hardware/graphics/env1.jpg
 >]
-<4-development/hardware/graphics/testaufbau.pdf, id=545, 1140.48079pt x 656.413
+<4-development/hardware/graphics/testaufbau.pdf, id=567, 1140.48079pt x 656.413
 35pt>
 File: 4-development/hardware/graphics/testaufbau.pdf Graphic file (type pdf)
 <use 4-development/hardware/graphics/testaufbau.pdf>
 Package pdftex.def Info: 4-development/hardware/graphics/testaufbau.pdf  used o
-n input line 95.
+n input line 115.
 (pdftex.def)             Requested size: 409.71689pt x 235.81784pt.
- [14pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
-4}) has been already used, duplicate ignored
+ [15pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.116 T
+l.136 T
        he purpose of the first test is to check, if the ADP5090 converts $V_...
- <./4-development/hardware/graphics/env1.jpg>]
-<4-development/hardware/graphics/laden.pdf, id=564, 462.52798pt x 346.89601pt>
+ <./4-development/hardware/graphics/env2.jpg>]
+<4-development/hardware/graphics/laden.pdf, id=586, 462.52798pt x 346.89601pt>
 File: 4-development/hardware/graphics/laden.pdf Graphic file (type pdf)
 <use 4-development/hardware/graphics/laden.pdf>
 Package pdftex.def Info: 4-development/hardware/graphics/laden.pdf  used on inp
-ut line 121.
+ut line 141.
 (pdftex.def)             Requested size: 409.71689pt x 307.30202pt.
-<4-development/hardware/graphics/entladen.pdf, id=566, 462.52798pt x 346.89601p
+<4-development/hardware/graphics/entladen.pdf, id=588, 462.52798pt x 346.89601p
 t>
 File: 4-development/hardware/graphics/entladen.pdf Graphic file (type pdf)
 <use 4-development/hardware/graphics/entladen.pdf>
 Package pdftex.def Info: 4-development/hardware/graphics/entladen.pdf  used on 
-input line 143.
+input line 163.
 (pdftex.def)             Requested size: 409.71689pt x 307.30202pt.
-) [15pdfTeX warning (ext4): destination with the same identifier (name{figure.4
-.5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.5 
-     <./4-development/hardware/graphics/env2.jpg>] [16pdfTeX warning (ext4): de
-stination with the same identifier (name{figure.4.6}) has been already used, du
-plicate ignored
+) [16pdfTeX warning (ext4): destination with the same identifier (name{figure.4
+.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.6 \newpage
              <./4-development/hardware/graphics/testaufbau.pdf>]
 (4-development/software/software.tex
-<4-development/software/graphics/1.png, id=596, 566.86781pt x 460.72125pt>
+<4-development/software/graphics/1.png, id=613, 566.86781pt x 460.72125pt>
 File: 4-development/software/graphics/1.png Graphic file (type png)
 <use 4-development/software/graphics/1.png>
 Package pdftex.def Info: 4-development/software/graphics/1.png  used on input l
 ine 3.
 (pdftex.def)             Requested size: 409.71689pt x 333.00554pt.
-<4-development/software/graphics/font12.pdf, id=597, 263.7574pt x 364.03703pt>
+<4-development/software/graphics/font12.pdf, id=614, 263.7574pt x 364.03703pt>
 File: 4-development/software/graphics/font12.pdf Graphic file (type pdf)
 <use 4-development/software/graphics/font12.pdf>
 Package pdftex.def Info: 4-development/software/graphics/font12.pdf  used on in
@@ -1803,14 +1805,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--8
 ]
 Appendix A.
 [33]
-<../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, id=808, page=1, 597.55246pt x
+<../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, id=827, page=1, 597.55246pt x
  845.07718pt>
 File: ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf Graphic file (type pdf)
 <use ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, page 1>
 Package pdftex.def Info: ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf , page
 1 used on input line 8.
 (pdftex.def)             Requested size: 455.24408pt x 643.8385pt.
-<../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, id=809, page=2, 597.55246pt x
+<../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, id=828, page=2, 597.55246pt x
  845.07718pt>
 File: ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf Graphic file (type pdf)
 <use ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, page 2>
@@ -1819,26 +1821,26 @@ Package pdftex.def Info: ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf , page
 (pdftex.def)             Requested size: 455.24408pt x 643.8385pt.
  [34 <../Aufgabenstellung/LowPowerWakeupReiceiver.pdf>] [35 <../Aufgabenstellun
 g/LowPowerWakeupReiceiver.pdf>]
-<../Pflichtenheft/HSR_SRS_main.pdf, id=846, page=1, 597.50829pt x 845.0471pt>
+<../Pflichtenheft/HSR_SRS_main.pdf, id=865, page=1, 597.50829pt x 845.0471pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 1>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page1 used on inpu
 t line 19.
 (pdftex.def)             Requested size: 455.24408pt x 643.84138pt.
-<../Pflichtenheft/HSR_SRS_main.pdf, id=847, page=2, 597.50829pt x 845.0471pt>
+<../Pflichtenheft/HSR_SRS_main.pdf, id=866, page=2, 597.50829pt x 845.0471pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 2>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page2 used on inpu
 t line 23.
 (pdftex.def)             Requested size: 455.24408pt x 643.84138pt.
-<../Pflichtenheft/HSR_SRS_main.pdf, id=848, page=3, 597.50829pt x 845.0471pt>
+<../Pflichtenheft/HSR_SRS_main.pdf, id=867, page=3, 597.50829pt x 845.0471pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 3>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page3 used on inpu
 t line 27.
 (pdftex.def)             Requested size: 455.24408pt x 643.84138pt.
  [36 <../Pflichtenheft/HSR_SRS_main.pdf>]
-<../Pflichtenheft/HSR_SRS_main.pdf, id=1057, page=4, 597.50829pt x 845.0471pt>
+<../Pflichtenheft/HSR_SRS_main.pdf, id=1076, page=4, 597.50829pt x 845.0471pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 4>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page4 used on inpu
@@ -1852,7 +1854,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [38 <../Pflichtenheft/HSR_SRS_main.pdf>] [39 <../Pflichtenheft/HSR_SRS_main.pd
 f>]
-<../Pflichtenheft/HSR_SRS_main.pdf, id=1203, page=5, 845.0471pt x 597.50829pt>
+<../Pflichtenheft/HSR_SRS_main.pdf, id=1222, page=5, 845.0471pt x 597.50829pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 5>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page5 used on inpu
@@ -1871,17 +1873,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 160.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 160.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 10F66F0B07CA0BC5550263A0477BE889;1565.
+(rerunfilecheck)             Checksum: F40282529DEE00089845E404300AECF7;1565.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 160.
  ) 
 Here is how much of TeX's memory you used:
- 30202 strings out of 492484
- 539467 string characters out of 3130389
- 1019344 words of memory out of 3000000
- 33735 multiletter control sequences out of 15000+200000
+ 30218 strings out of 492484
+ 539600 string characters out of 3130389
+ 1019578 words of memory out of 3000000
+ 33744 multiletter control sequences out of 15000+200000
  54453 words of font info for 100 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,13n,54p,3238b,1588s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1901,9 +1903,9 @@ ers/mtischha/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/txex.pfb><C:
 <C:/Users/mtischha/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/times/utmr8a.pfb>
 <C:/Users/mtischha/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/times/utmri8a.pfb
 >
-Output written on main.pdf (46 pages, 9622017 bytes).
+Output written on main.pdf (46 pages, 9626487 bytes).
 PDF statistics:
- 1364 PDF objects out of 1440 (max. 8388607)
- 117 named destinations out of 1000 (max. 500000)
+ 1384 PDF objects out of 1440 (max. 8388607)
+ 124 named destinations out of 1000 (max. 500000)
  337 words of extra memory for PDF output out of 10000 (max. 10000000)
 
