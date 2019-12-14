@@ -4,9 +4,11 @@
 	\caption{Receiver schematics\label{hardware:block}}
 \end{figure}
 
-\subsection{RFicient}
+\subsection{Communication}
 
-\subsubsection{Transmitter}
+\subsubsection{RFicient}
+
+\paragraph{Transmitter}
 The Rficient demo kit comes, as previously stated with a \acs{gui}.
 Is the transmitter module connected, simple steps make it possible to set the preamble and payload data rate. 
 The payload itself can partly serve as an ID and as additional transmitted data.
@@ -20,7 +22,7 @@ The transmitter-\acs{gui} is shown in figure \ref{development:tx}.
 To test, if any data is received, it is helpful to activate the infinite loop (top right in figure \ref{development:tx}).
 The defined data is in this case sent repeatedly with an adjustable period.
 
-\subsubsection{Receiver}
+\paragraph{Receiver}
 To receive the data, the setting of the receiver module need to be matched to the transmitter.
 The provided receiver-\acs{gui} makes this step very simple.
 As visible in figure \ref{development:rx}, one can enable the four possible interrupt sources: CodeA/B, ID, FIFO length and FIFO overflow.
@@ -35,7 +37,7 @@ If an interrupt is generated, the RFicient sets a \acs{gpio}-pin to high, and tr
 This data can be passed to a microcontroller over an \acs{spi}-bus.
 For the purpose of this thesis, only the \acs{gpio} high level is used as a on switch of a self-holding circuit.
 
-\subsubsection{Tests in a realistic environment}
+\paragraph{Tests in a realistic environment}
 To test the RFicient in more detail, some indoor measurements were made.
 As test environment served several buildings of the \acf{hsr}, since this type of facility represents a realistic condition for the developed schedule.
 
@@ -65,7 +67,19 @@ Is the power again increased to 10\,dBm, the signal reached through three ceilin
 
 These measurements further confirmed, that the RFicient is suitable for the use-case of this semester thesis.
 
-\subsection{Energy Harvesting}
+\subsubsection{nRF52480}
+A nRF52580 from nordic semiconductor serves as the wireless module.
+It is used because it supports multiple protocols like Bluetooth 5 which includes \acf{ble}, Thread and Zigbee\cite{nrfpb}.
+Since \acs{ble} allows mesh networking and is applied in many existing devices, such as smartphones, the connection to transmit data is established over this protocol.
+This way, the developed prototype could later be extended to a mesh network.
+
+Two nRF52480 development kits are used, one on transmitter and one on receiver end.
+Data can be transferred from a computer with a \acs{usb}-\acs{ttl}-adapter to the \acs{uart}-interface of the transmitter development kit.
+This data is then sent over \acs{ble} to the receiver kit and passed to the microcontroller again over \acs{uart}.
+In the same way, data can be transferred from the receiver to the transmitter kit.
+The data channel is therefore bi-directional. 
+
+\subsection{Power Management}
 The screen should be self-sustaining, thus some sort of energy-harvesting unit is needed.
 It was apparent to choose light as the energy source, since the screen will be used in rooms, that are artificially illuminated most of the time.
 The energy  obtained by solar cells is converted to a suitable voltage, using a ADP5090 chip.
@@ -82,8 +96,8 @@ To keep a reasonable display to panel ratio, four cells where connected in paral
 
 given a 200 lux illuminance \cite{amorton}.
 
-\subsubsection{Power management}
-The ADP5090 from Analog Devices is used on the power management.
+\subsubsection{ADP5090}
+The ADP5090 from Analog Devices is used to manage the energy harvesting process.
 This boost regulator makes it possible to charge storage elements, such as rechargeable batteries and super capacitors with the input dc-power provided by the PV-cell. Utilized features are:
 \begin{itemize}
 	\item[-] Maximum power point tracking
@@ -176,3 +190,7 @@ As soon as the load is connected (after 25\,), $V_{\text{SYS}}$ and $V_{\text{BA
 After ca. 100 s, $V_{\text{BAT}}$ reached the value of $V_{\text{BAT\_SD}}$ and the ADP5090 switches the output off ($V_{\text{SYS}}$ drops to 0) to prevent the capacitor from overdischarging.
 The output now stays switched off, until $V_{\text{IN}}$ again supplies energy, and $V_{\text{BAT}} \le V_{\text{BAT\_SD}}$.
 It can also clearly be seen, that after 160 seconds, the ADP5090 controls $V_{\text{IN}}$ to ca. $2.1\,\text{V}$. Recall that this is the optimal power point of the solar cell.
+
+\subsection{Microcontroller}
+
+\subsection{Display}
