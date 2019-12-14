@@ -11,10 +11,22 @@ The software of the ULPWUR is separated in three different parts.
 \subsection{Receiver}
 
 \subsubsection{Python-script}
-A short python script enables the user to send the data over an USB-port to the nRF52840.
-\lstset{language=Python, showstringspaces=false}
-%\lstinputlisting{4-development/software/code/WriteSection.py}
+\lstset{basicstyle=\footnotesize}
+\lstdefinestyle{mystyle}{
+	language=Python,
+	basicstyle=\footnotesize\ttfamily,
+	morekeywords={as},
+	keywordstyle=\color{blue!50!black},
+	stringstyle=\color{green!50!black},
+	numberstyle=\color{red},
+	emph={int,char,double,float,range, len},
+	emphstyle=\color{violet}
+}
+\lstset{style=mystyle}
 
+A short python script enables the user to send the data over an USB-port to the nRF52840.
+
+%\lstinputlisting{4-development/software/code/WriteSection.py}
 
 \subsubsection{nRF52840}
 
