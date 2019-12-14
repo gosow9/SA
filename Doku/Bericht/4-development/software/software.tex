@@ -37,6 +37,13 @@ After the receiver is woken up with the RFicient, the peripheral starts advertis
 Advertising basically means sending data packets periodically with information for the central device.
 The central is scanning for the this advertisement and can based on this information decide, if it wants to connect.
 Is the connection established, it is now possible to exchange data through this channel.
+This process is illustrated in figure \ref{software:ble}.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\textwidth]{4-development/software/graphics/ble.pdf}
+	\caption{\acs{ble}-communication with the nRF52480\label{software:ble}}
+\end{figure}
+
 The central serves after connection as the client.
 It can make read and write requests to access the data on the peripheral, which acts as the server.
 The server on the other hand can only send notifications to the client if new data is ready.
