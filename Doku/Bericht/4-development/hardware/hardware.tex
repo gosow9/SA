@@ -4,6 +4,8 @@
 	\caption{Receiver schematics\label{hardware:block}}
 \end{figure}
 
+\subsection{Microcontroller}
+
 \subsection{Communication}
 
 \subsubsection{RFicient}
@@ -190,7 +192,5 @@ As soon as the load is connected (after 25\,), $V_{\text{SYS}}$ and $V_{\text{BA
 After ca. 100 s, $V_{\text{BAT}}$ reached the value of $V_{\text{BAT\_SD}}$ and the ADP5090 switches the output off ($V_{\text{SYS}}$ drops to 0) to prevent the capacitor from overdischarging.
 The output now stays switched off, until $V_{\text{IN}}$ again supplies energy, and $V_{\text{BAT}} \le V_{\text{BAT\_SD}}$.
 It can also clearly be seen, that after 160 seconds, the ADP5090 controls $V_{\text{IN}}$ to ca. $2.1\,\text{V}$. Recall that this is the optimal power point of the solar cell.
-
-\subsection{Microcontroller}
 
 \subsection{Display}
