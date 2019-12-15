@@ -148,8 +148,6 @@ void IT8951_GUI_Example(void);
 void IT8951_BMP_Example(void);
 void IT8951_Power(void);
 void EpdDriverShowDisp(void);
-void EpdOn(void);
-void EpdOff(void);
 
 
 //temp

@@ -72,9 +72,15 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
+<<<<<<< HEAD
 //	 char tex[]={'H','A','L','L','O','\0'};
 //	  char  fach[]={'W','S','C','o','m'};
 //	  char  doz[]={'M','A','T','\0'};
+=======
+	 // char tex[]={'H','A','L','L','O','\0'};
+//	  char  fach[11];
+//	  char  doz[4];
+>>>>>>> master
 //	  char* tempLoad = "Template Loaded";
 //	  //char end[1] = {'\N'};
 //	  uint8_t rxBuf[50]={0};
@@ -99,11 +105,19 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+<<<<<<< HEAD
   //MX_LPUART1_UART_Init();
   //MX_USB_OTG_FS_PCD_Init();
+=======
+
+
+  MX_LPUART1_UART_Init();
+  MX_USB_OTG_FS_PCD_Init();
+>>>>>>> master
   MX_SPI1_Init();
   MX_DMA_Init();
   MX_UART4_Init();
+  HAL_GPIO_WritePin(GPIOB, LD3_Pin, GPIO_PIN_SET);
   /* USER CODE BEGIN 2 */
   HAL_GPIO_WritePin(Kill_GPIO_Port, Kill_Pin, SET);
   EpdOff();
@@ -115,6 +129,7 @@ int main(void)
 //  HAL_Delay(1000);
 //  HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_RESET);
   IT8951_Init();
+<<<<<<< HEAD
 
   //HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_SET);
   EpdDriverLoadTemplate();
@@ -129,17 +144,56 @@ int main(void)
   HAL_GPIO_WritePin(PwrKill_GPIO_Port, PwrKill_Pin, RESET);
   HAL_GPIO_WritePin(Kill_GPIO_Port, Kill_Pin, RESET);
 
+=======
+  HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_SET);
+>>>>>>> master
   /* USER CODE END 2 */
-
+  EpdDriverLoadTemplate();
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
 
+<<<<<<< HEAD
 //	  HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_RESET);
 //	  HAL_Delay(500);
 //	  HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_SET);
 //	  HAL_Delay(500);
+=======
+	 // EpdDriverLoadTemplate();
+	 // HAL_Delay(3000);
+//	  HAL_UART_Receive(&huart4, rxBuf, 20,HAL_MAX_DELAY);
+//	 	 if(rxBuf[0]==0)
+//	 	 {
+//	 		 EpdDriverLoadTemplate();
+//	 		 for(int i=0; i<50;i++)
+//	 		 {rxBuf[i]=0;}
+//	 		 //HAL_UART_Transmit(&huart4, (uint8_t*)tempLoad, 16, HAL_MAX_DELAY);
+//	 		// HAL_UART_Transmit(&huart4, end, 1, HAL_MAX_DELAY);
+//	 	 }
+//	 	 if((0<rxBuf[0]) & (rxBuf[0] <=35))
+//	 	 {
+//	 		 for(int i=15; i<18;i++)
+//	 			 {doz[i-15]=rxBuf[i];}
+//	 		 for(int i=1; i<11;i++)
+//	 		 	 {fach[i-1]=rxBuf[i];}
+//	 		 doz[3]='\0';
+//	 		 DrawCalenderField(rxBuf[0], fach, doz);
+//	 		 EpdDriverShowDisp();
+//	 		 for(int i=0; i<50;i++)
+//	 		 	 {rxBuf[i]=0;}
+//
+//	 		 //HAL_UART_Transmit(&huart4, (uint8_t*)tempLoad, 16, HAL_MAX_DELAY);
+//	 		 //HAL_UART_Transmit(&huart4, trans, 6, HAL_MAX_DELAY);
+//	 		 //HAL_UART_Receive(&huart4, rxBuf, 2,HAL_MAX_DELAY);
+//
+//	 	 }
+//	 	 if(37 == rxBuf[0])
+//	 	 	 {
+//	 		 EpdDriverShowDisp();
+//	 	 	 }
+	 		  //HAL_UART_
+>>>>>>> master
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

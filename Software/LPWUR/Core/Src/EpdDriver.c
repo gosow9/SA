@@ -26,6 +26,7 @@ uint8_t* gpFrameBuf; //Host Source Frame buffer
 uint32_t gulImgBufAddr; //IT8951 Image buffer address
 
 
+<<<<<<< HEAD
 
 void EpdOn(void)
 {
@@ -49,6 +50,8 @@ void EpdOff(void)
 	HAL_GPIO_WritePin(EPD_OFF_GPIO_Port, EPD_OFF_Pin, RESET);
 }
 
+=======
+>>>>>>> master
 //-----------------------------------------------------------
 //Host controller function 1---Wait for host data Bus Ready
 //-----------------------------------------------------------
@@ -962,8 +965,13 @@ void EpdDriverLoadTemplate()
 	//Load Image from Host to IT8951 Image Buffer
 	IT8951HostAreaPackedPixelWrite(&stLdImgInfo, &stAreaImgInfo);//Display function 2
 	//Display Area ?V (x,y,w,h) with mode 2 for fast gray clear mode - depends on current waveform
+<<<<<<< HEAD
 	//HAL_GPIO_WritePin(GPIOB, LD3_Pin, GPIO_PIN_RESET);
 	//IT8951DisplayArea(stAreaImgInfo.usX ,stAreaImgInfo.usY, gstI80DevInfo.usPanelW, gstI80DevInfo.usPanelH, 2);
+=======
+	HAL_GPIO_WritePin(GPIOB, LD3_Pin, GPIO_PIN_RESET);
+	IT8951DisplayArea(stAreaImgInfo.usX ,stAreaImgInfo.usY, gstI80DevInfo.usPanelW, gstI80DevInfo.usPanelH, 2);
+>>>>>>> master
 	//IT8951Sleep();
 }
 
