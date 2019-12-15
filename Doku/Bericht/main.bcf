@@ -2133,12 +2133,13 @@
     <bcf:citekey order="1">amundson</bcf:citekey>
     <bcf:citekey order="2">as3933</bcf:citekey>
     <bcf:citekey order="3">rficient</bcf:citekey>
-    <bcf:citekey order="4">amorton</bcf:citekey>
-    <bcf:citekey order="5">adp</bcf:citekey>
-    <bcf:citekey order="6">adp_eval</bcf:citekey>
-    <bcf:citekey order="7">yuden</bcf:citekey>
-    <bcf:citekey order="8">nrf</bcf:citekey>
-    <bcf:citekey order="9">stm32</bcf:citekey>
+    <bcf:citekey order="4">nrfpb</bcf:citekey>
+    <bcf:citekey order="5">amorton</bcf:citekey>
+    <bcf:citekey order="6">adp</bcf:citekey>
+    <bcf:citekey order="7">adp_eval</bcf:citekey>
+    <bcf:citekey order="8">yuden</bcf:citekey>
+    <bcf:citekey order="9">nrf</bcf:citekey>
+    <bcf:citekey order="10">stm32</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

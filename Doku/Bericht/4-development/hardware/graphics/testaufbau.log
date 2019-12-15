@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.7)  9 DEC 2019 11:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.7)  12 DEC 2019 14:11
 entering extended mode
 **./testaufbau.tex
 (testaufbau.tex
@@ -596,7 +596,7 @@ Missing character: There is no ; in font nullfont!
 bau.aux) ) 
 Here is how much of TeX's memory you used:
  23849 strings out of 492484
- 601920 string characters out of 3130389
+ 601892 string characters out of 3130389
  825224 words of memory out of 3000000
  27906 multiletter control sequences out of 15000+200000
  8527 words of font info for 30 fonts, out of 3000000 for 9000

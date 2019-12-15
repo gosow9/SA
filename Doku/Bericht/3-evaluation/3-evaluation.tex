@@ -1,17 +1,14 @@
 \chapter{Evaluation}
-This chapter lists the pros and cons of available Technologies.
-On this basis was evaluated, which hardware is suitable.
 
 \section{Wakeup Receiver}
 In this semester thesis, two different implementations of the wakeup receiver technology were compared.
 The AS3933 from AMS and the RFicient from the \acf{fraun} which kindly provided an evaluation kit before the actual release of the product.
-This section first introduces both products, before comparing them with a series of tests in a for this application realistic environment.
 
 \subsection{AS3933}
 The AS3933 is a low frequency wakeup receiver, which uses \acs{ask} to modulate a carrier frequency between 15-150\,kHz.
 The transmitter sends a manchester encoded, programmable wakeup pattern of length 16 or 32 bit.
 If this pattern is detected on the receiver end, a wakeup interrupt is generated.
-It is also possible to disable the the pattern decoder to run the chip in a frequency detection mode, where a wakeup interrupt is generated as soon as any pattern on the specified frequency is received.
+It is also possible to disable the the pattern decoder to run the chip in a frequency detection mode, where a wakeup interrupt is generated as soon as the specified frequency is received.
 More important features on the receiver end are:
 \begin{itemize}
 	\item[-] Receiver sensitivity $80\,\mu\text{V$_{\text{RMS}}$}$
@@ -22,7 +19,12 @@ More important features on the receiver end are:
 \end{itemize}
 The low power consumption makes it possible run the receiver in listening mode below $8.3\,\mu\text{W}$\cite{as3933}.
 
-The demo kit comes with a \acs{gui}, which enables the user to set the parameters as desired.
+The demo kit comes with a \acs{gui}, which enables the user to set the parameters as desired and address the registers directly.
+The range of the receiver of about 6\,m as first measurement turns out to be very limited.
+Even with a 3db sensitivity boost on the receiver side, it is only possible to detect wakeup events from a distance of 9\,m.
+The environment (indoor, outdoor) seems to make no huge difference.
+
+As a result, the limited range makes the AS3933 unusable for the prototype. 
 
 \subsection{RFicient}
 The Rficient from the \acs{fraun} uses \acs{ook} to modulate a 868\,MHz signal.
@@ -38,19 +40,16 @@ The most important features are:
 \end{itemize}
 The power consumption therefore is in listening mode (data rate = 1 kb/s) $4.5\,\mu\text{W}$.
 
-Just as the AS3933, the RFicient demo kit comes with a \acs{gui}, which enables the user to set the important parameters and even access the register directly \cite{rficient}.
+Just as the AS3933, the RFicient demo kit comes with a \acs{gui}, which enables the user to set the important parameters and access the register \cite{rficient}.
+First measurements showed that the range of the RFicient is far higher than the range of the AS3933.
+It is therefore used in the prototype.
 
-\subsection{Test run in realistic environments}
-It is not easy to compare the two wakeup receivers directly, since one operates in the 
+\section{Microcontroller}
+To handle incoming data and write it to the display driver, some kind of microcontroller is needed.
+A derivate of the MSP430 and one of the STM32 were looked at more closely.
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.9\textwidth]{3-evaluation/graphics/env1.jpg}
-	\caption{Test environment 1 (filler)\label{evaluation:env1}}
-\end{figure}
+\subsection{MSP430}
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.9\textwidth]{3-evaluation/graphics/env2.jpg}
-	\caption{Test environment 2 (filler)\label{evaluation:env2}}
-\end{figure}
+
+
+\subsection{STM32}
