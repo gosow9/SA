@@ -530,10 +530,9 @@ void uart_event_handle(app_uart_evt_t * p_event)
             UNUSED_VARIABLE(app_uart_get(&data_array[index]));
             index++;
 
-            /*if ((data_array[index - 1] == '\n') ||
+            if ((data_array[index - 1] == '\n') ||
                 (data_array[index - 1] == '\r') ||
-                (index >= m_ble_nus_max_data_len))*/
-            if((data_array[index - 1] == '\0') || (index >= m_ble_nus_max_data_len))
+                (index >= m_ble_nus_max_data_len))
             {
                 if (index > 1)
                 {
@@ -713,7 +712,7 @@ int main(void)
     conn_params_init();
 
     // Start execution.
-    //printf("\r\nUART started.\r\n");
+    printf("\r\nUART started.\r\n");
     NRF_LOG_INFO("Debug logging for UART over RTT started.");
     advertising_start();
 

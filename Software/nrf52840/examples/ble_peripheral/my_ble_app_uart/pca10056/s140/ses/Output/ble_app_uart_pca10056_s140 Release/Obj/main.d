@@ -1,5 +1,5 @@
 Output/ble_app_uart_pca10056_s140\ Release/Obj/main.o: \
- C:\SDK\examples\ble_peripheral\my_ble_app_uart\main.c \
+ C:\SDK\examples\ble_peripheral\ble_app_uart\main.c \
  C:/Program\ Files\ (x86)/SEGGER/arm_segger_embedded_studio_v420a_win_x86_nordic/include/stdint.h \
  C:/Program\ Files\ (x86)/SEGGER/arm_segger_embedded_studio_v420a_win_x86_nordic/include/string.h \
  C:/Program\ Files\ (x86)/SEGGER/arm_segger_embedded_studio_v420a_win_x86_nordic/include/__crossworks.h \
