@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
+I found no \citation commands---while reading file main.aux
+I found no \bibdata command---while reading file main.aux
+I found no \bibstyle command---while reading file main.aux
+(There were 3 error messages)
+=======
 [0] Config.pm:304> INFO - This is Biber 2.13
 [0] Config.pm:307> INFO - Logfile is 'main.blg'
 [27] biber-MSWIN64:315> INFO - === 
@@ -15,3 +22,4 @@
 [184] Biber.pm:4030> INFO - No sort tailoring available for locale 'en-US'
 [187] bbl.pm:648> INFO - Writing 'main.bbl' with encoding 'UTF-8'
 [189] bbl.pm:751> INFO - Output to main.bbl
+>>>>>>> master
