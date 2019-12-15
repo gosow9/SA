@@ -1,0 +1,14 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [PowerLatchV2.PrjPcb]
+   Generated File[PowerLatch.TXT]
+   Generated File[PowerLatch.DRL]
+   Generated File[PowerLatch-BoardEdgeRout.TXT]
+   Generated File[PowerLatch.LDP]
+   Generated File[PowerLatch.DRR]
+
+
+Files Generated   : 5
+Documents Printed : 0
+
+Finished Output Generation At 01:15:07 On 11.12.2019
