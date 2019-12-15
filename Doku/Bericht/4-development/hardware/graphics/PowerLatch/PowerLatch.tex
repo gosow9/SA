@@ -11,10 +11,10 @@
 	
 	% PMOS Transistor
 	\draw(0,0) node[pigfete] (pigfete) {}
-	(pigfete.G) node[anchor=east] {G}
-	(pigfete.D) node[anchor=north] {D}
-	(pigfete.S) node[anchor=south] {S}
-	(pigfete.bulk) node[anchor=west] {Bulk};
+(pigfete.G) node[anchor=east] {G}
+(pigfete.D) node[anchor=north] {D}
+(pigfete.S) node[anchor=south] {S}
+(pigfete.bulk) node[anchor=west] {Bulk};
 	
 	
 	
@@ -32,6 +32,16 @@
 		\draw[rotate=45,-latex] (#1) +(-17pt,0) -- +(17pt,0);
 		\end{scope}	
 	};
+
+	\newcommand{\PMOS}[2]
+{
+	\draw(0,0) node[pigfete] (pigfete) {}
+	(pigfete.G) node[anchor=east] {G}
+	(pigfete.D) node[anchor=north] {D}
+	(pigfete.S) node[anchor=south] {S};
+	%(pigfete.bulk) node[anchor=west] {Bulk};
+};
+
 	\draw (19, -2) --(26,-2) to[voltmeter, color=white, name=M, label=\huge $V_{\mathrm{IN}}$] (26,-5) node[ground]{};
 	\mymeter{M}{0};
 
@@ -44,15 +54,6 @@
 	\mymeter{M}{0}
 
 		
-	%bel=$V_{\mathrm{BAT}}$] (0,3) -- (4,3);
-	%\mymeter{M}{0}
-	%\draw (2,0) node[ground]{} to[C] (2,3);
 	
-	%\draw (0,5) node[ground]{} to[voltmeter, color=white, name=M, label=$V_{\mathrm{IN}}$] (0,8) -- (4,8);
-	%\mymeter{M}{0}
-	%\draw (2,5) node[ground]{} to[pvsource] (2,8);
-	
-	%ADP
-	%\draw[thick] (4,2) -- ++(5,0) -- ++(0,7) -- ++(-5,0) -- ++(0,-7);		
 \end{tikzpicture}
 \end{document}
