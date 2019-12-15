@@ -66,6 +66,8 @@ void Error_Handler(void);
 #define EPD_OFF_GPIO_Port GPIOC
 #define Kill_Pin GPIO_PIN_2
 #define Kill_GPIO_Port GPIOC
+#define PwrKill_Pin GPIO_PIN_3
+#define PwrKill_GPIO_Port GPIOC
 #define EPD_CS_Pin GPIO_PIN_0
 #define EPD_CS_GPIO_Port GPIOA
 #define EPD_RST_Pin GPIO_PIN_4
