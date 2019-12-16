@@ -7,8 +7,8 @@ com_port = 'COM14'
 device = serial.Serial(com_port, baudrate, writeTimeout=0)
 
 #[location, fach(13 lang + \0), dozent (3 lang +\0)]
-data = [[0, chr(4), '\0\0\0\0'],[10 , 'WsComm1\0', 'MAH\0'], [20 , 'WsComm1\0', 'MAH\0'],
-        [30 , 'WsComm1\0', 'MAH\0'],[35 , 'WsComm1\0', 'MAH\0']]
+data = [[0, chr(3), '\0\0\0\0'],[11 , 'WsComm1\0', 'MAH\0'],
+        [3 , 'WsComm1\0', 'MAH\0'], [22 , 'WsComm1\0', 'MAH\0']]
 
 #mit \0 auffüllen
 for i in range(len(data)):
@@ -26,7 +26,6 @@ for i in range(len(data)):
     device.write(bytes(data[i][1], 'utf-8'))       
     device.write(bytes(data[i][2]+'\n', 'utf-8'))
     device.flush()
-    #time.sleep(1)
 
 print('elapsed time: {:.3f}'.format(time.time() - t_start))
 
