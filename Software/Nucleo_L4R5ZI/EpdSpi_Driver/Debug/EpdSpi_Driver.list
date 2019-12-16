@@ -2305,8 +2305,8 @@ void DrawCalenderField(uint8_t place, char* fach, char* dozent)
  800108a:	466b      	mov	r3, sp
  800108c:	461d      	mov	r5, r3
 	CalCellInfo cal;
-	cal.imBufsize= 17336;
- 800108e:	f244 33b8 	movw	r3, #17336	; 0x43b8
+	cal.imBufsize= 17336*2;
+ 800108e:	f248 7370 	movw	r3, #34672	; 0x8770
  8001092:	61fb      	str	r3, [r7, #28]
 	uint8_t frameBuf[cal.imBufsize];
  8001094:	69f8      	ldr	r0, [r7, #28]
