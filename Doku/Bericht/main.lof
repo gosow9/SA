@@ -4,35 +4,35 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces filler pic}}{5}{figure.2.1}% 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces filler pic}}{5}{figure.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces E-paper display under microscope with 250x magnification}}{6}{figure.2.2}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces E-paper display under microscope with 250x magnification}}{6}{figure.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Microcontroller checks periodically for incoming data (top), additional, constantly listening wakeup receiver (bottom)}}{7}{figure.2.3}% 
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Microcontroller checks periodically for incoming data (top), additional, constantly listening wakeup receiver (bottom)}}{7}{figure.2.3}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Receiver schematics}}{11}{figure.4.1}% 
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Transmitter GUI}}{12}{figure.4.2}% 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Receiver schematics}}{11}{figure.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Receiver GUI}}{13}{figure.4.3}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Transmitter GUI}}{12}{figure.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Test environment 1 (\acs {hsr} building 1)}}{14}{figure.4.4}% 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Receiver GUI}}{13}{figure.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Test environment 2 (\acs {hsr} building 8)}}{15}{figure.4.5}% 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Test environment 1 (\acs {hsr} building 1)}}{14}{figure.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Schematics of the test setup}}{16}{figure.4.6}% 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Test environment 2 (\acs {hsr} building 8)}}{15}{figure.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Charging behaviour}}{17}{figure.4.7}% 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Schematics of the test setup}}{16}{figure.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Discharging behaviour}}{18}{figure.4.8}% 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Charging behaviour}}{17}{figure.4.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces not up to date sequence}}{19}{figure.4.9}% 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Discharging behaviour}}{18}{figure.4.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces \acs {ble}-communication with the nRF52480}}{20}{figure.4.10}% 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces not up to date sequence}}{19}{figure.4.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.10}{\ignorespaces \acs {ble}-communication with the nRF52480}}{21}{figure.4.10}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
