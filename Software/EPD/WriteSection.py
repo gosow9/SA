@@ -8,7 +8,7 @@ device = serial.Serial(com_port, baudrate, writeTimeout=0)
 
 #[location, fach(13 lang + \0), dozent (3 lang +\0)]
 data = [[0, chr(3), '\0\0\0\0'],[11 , 'WsComm1\0', 'MAH\0'],
-        [3 , 'WsComm1\0', 'MAH\0'], [22 , 'WsComm1\0', 'MAH\0']]
+        [3 , 'WsComm1\0', 'MAH\0'], [10 , 'WsComm1\0', 'MAH\0']]
 
 #mit \0 auffüllen
 for i in range(len(data)):
@@ -17,9 +17,11 @@ for i in range(len(data)):
         data[i][1] = data[i][1]+'\0'*t
             
 #print(device.read(1))
-              
+        
 #data senden
 t_start = time.time()
+#wait for display driver
+time.sleep(2)  
 
 for i in range(len(data)):
     device.write([data[i][0]]) 
