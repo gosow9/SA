@@ -26,6 +26,29 @@ uint8_t* gpFrameBuf; //Host Source Frame buffer
 uint32_t gulImgBufAddr; //IT8951 Image buffer address
 
 
+
+void EpdOn(void)
+{
+
+	HAL_GPIO_WritePin(EPD_OFF_GPIO_Port, EPD_OFF_Pin, RESET);
+	HAL_GPIO_WritePin(EPD_ON_GPIO_Port, EPD_ON_Pin, SET);
+	HAL_GPIO_WritePin(EPD_CS_GPIO_Port, EPD_CS_Pin, SET);
+	HAL_GPIO_WritePin(EPD_RST_GPIO_Port, EPD_RST_Pin, SET);
+	HAL_Delay(1);
+	HAL_GPIO_WritePin(EPD_ON_GPIO_Port, EPD_ON_Pin, RESET);
+}
+
+void EpdOff(void)
+{
+
+	HAL_GPIO_WritePin(EPD_CS_GPIO_Port, EPD_CS_Pin, RESET);
+	HAL_GPIO_WritePin(EPD_RST_GPIO_Port, EPD_RST_Pin, RESET);
+	HAL_GPIO_WritePin(EPD_ON_GPIO_Port, EPD_ON_Pin, RESET);
+	HAL_GPIO_WritePin(EPD_OFF_GPIO_Port, EPD_OFF_Pin, SET);
+	HAL_Delay(300);
+	HAL_GPIO_WritePin(EPD_OFF_GPIO_Port, EPD_OFF_Pin, RESET);
+}
+
 //-----------------------------------------------------------
 //Host controller function 1---Wait for host data Bus Ready
 //-----------------------------------------------------------
@@ -710,48 +733,24 @@ void IT8951DisplayAreaBuf(uint16_t usX, uint16_t usY, uint16_t usW, uint16_t usH
     LCDWriteData((uint16_t)(ulDpyBufAddr>>16)); //Display Buffer Base address[26:16]
 }
 
-
+//-----------------------------------------------------------
+//Powerup the controller
+//-----------------------------------------------------------
+void IT8951_Power()
+{
+	// Set chip select and reset controller
+	HAL_GPIO_WritePin(EPD_CS_GPIO_Port, EPD_CS_Pin, SET);
+	HAL_GPIO_WritePin(EPD_RST_GPIO_Port, EPD_RST_Pin, RESET);
+	HAL_Delay(1);
+	HAL_GPIO_WritePin(EPD_RST_GPIO_Port, EPD_RST_Pin, SET);
+}
 //-----------------------------------------------------------
 //Test function 1---Software Initial
 //-----------------------------------------------------------
 uint8_t IT8951_Init()
 {
-	//if (!bcm2835_init())
-	//{
-	//	printf("bcm2835_init error \n");
-	//	return 1;
-	//}
-
-	//bcm2835_spi_begin();
-	//bcm2835_spi_setBitOrder(BCM2835_SPI_BIT_ORDER_MSBFIRST);   	//default
-	//bcm2835_spi_setDataMode(BCM2835_SPI_MODE0);               		//default
-	//bcm2835_spi_setClockDivider(BCM2835_SPI_CLOCK_DIVIDER_32);		//default
-
-	//bcm2835_gpio_fsel(CS, BCM2835_GPIO_FSEL_OUTP);
-	//bcm2835_gpio_fsel(HRDY, BCM2835_GPIO_FSEL_INPT);
-	//bcm2835_gpio_fsel(RESET, BCM2835_GPIO_FSEL_OUTP);
-
-	//bcm2835_gpio_write(CS, HIGH);
-	HAL_GPIO_WritePin(EPD_CS_GPIO_Port, EPD_CS_Pin, SET);
-
-	//printf("****** IT8951 ******\n");
-
-	//bcm2835_gpio_write(RESET, LOW);
-	HAL_GPIO_WritePin(EPD_RST_GPIO_Port, EPD_RST_Pin, RESET);
-	HAL_Delay(1);
-	HAL_GPIO_WritePin(EPD_RST_GPIO_Port, EPD_RST_Pin, SET);
-	//bcm2835_gpio_write(RESET, HIGH);
-
 	//Get Device Info
 	GetIT8951SystemInfo(&gstI80DevInfo);
-
-//	gpFrameBuf = malloc(gstI80DevInfo.usPanelW * gstI80DevInfo.usPanelH);
-//	if (!gpFrameBuf)
-//	{
-//		perror("malloc error!\n");
-//		return 1;
-//	}
-
  	gulImgBufAddr = gstI80DevInfo.usImgBufAddrL | (gstI80DevInfo.usImgBufAddrH << 16);
 
  	//Set to Enable I80 Packed mode
@@ -963,8 +962,8 @@ void EpdDriverLoadTemplate()
 	//Load Image from Host to IT8951 Image Buffer
 	IT8951HostAreaPackedPixelWrite(&stLdImgInfo, &stAreaImgInfo);//Display function 2
 	//Display Area ?V (x,y,w,h) with mode 2 for fast gray clear mode - depends on current waveform
-	HAL_GPIO_WritePin(GPIOB, LD3_Pin, GPIO_PIN_RESET);
-	IT8951DisplayArea(stAreaImgInfo.usX ,stAreaImgInfo.usY, gstI80DevInfo.usPanelW, gstI80DevInfo.usPanelH, 2);
+	//HAL_GPIO_WritePin(GPIOB, LD3_Pin, GPIO_PIN_RESET);
+	//IT8951DisplayArea(stAreaImgInfo.usX ,stAreaImgInfo.usY, gstI80DevInfo.usPanelW, gstI80DevInfo.usPanelH, 2);
 	//IT8951Sleep();
 }
 

@@ -8,6 +8,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}Approach}{3}{section.1.2}%
 \defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Transmitter}{3}{section*.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Receiver}{4}{section*.8}%
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Theory}{5}{chapter.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}E-Paper Display}{5}{section.2.1}%
@@ -24,52 +28,66 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.2}RFicient}{10}{subsection.3.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Development}{11}{chapter.4}%
+\contentsline {section}{\numberline {3.2}Microcontroller}{10}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Hardware}{11}{section.4.1}%
+\contentsline {subsection}{\numberline {3.2.1}MSP430}{10}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}RFicient}{11}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {3.2.2}STM32}{11}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Transmitter}{11}{section*.8}%
+\contentsline {chapter}{\numberline {4}Development}{13}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Receiver}{12}{section*.9}%
+\contentsline {section}{\numberline {4.1}Hardware}{13}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Tests in a realistic environment}{12}{section*.10}%
+\contentsline {subsection}{\numberline {4.1.1}Microcontroller}{13}{subsection.4.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Energy Harvesting}{13}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.2}Communication}{13}{subsection.4.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Solar cell}{13}{section*.12}%
+\contentsline {subsubsection}{RFicient}{13}{section*.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Power management}{13}{section*.13}%
+\contentsline {paragraph}{Transmitter}{13}{section*.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Super capacitor}{15}{section*.14}%
+\contentsline {paragraph}{Receiver}{14}{section*.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Combined test}{15}{section*.15}%
+\contentsline {paragraph}{Tests in a realistic environment}{14}{section*.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Software}{18}{section.4.2}%
+\contentsline {subsubsection}{nRF52480}{15}{section*.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Receiver}{18}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.1.3}Power Management}{15}{subsection.4.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Python-script}{18}{section*.16}%
+\contentsline {subsubsection}{Solar cell}{16}{section*.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{nRF52840}{18}{section*.17}%
+\contentsline {subsubsection}{ADP5090}{16}{section*.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Transceiver}{18}{subsection.4.2.2}%
+\contentsline {subsubsection}{Super capacitor}{18}{section*.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Results}{21}{chapter.5}%
+\contentsline {subsubsection}{Combined test}{18}{section*.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Summary}{23}{chapter.6}%
+\contentsline {subsection}{\numberline {4.1.4}Display}{20}{subsection.4.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Sources}{25}{chapter*.18}%
+\contentsline {section}{\numberline {4.2}Software}{21}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of figures}{25}{chapter*.18}%
+\contentsline {subsection}{\numberline {4.2.1}Receiver}{21}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of tables}{27}{chapter*.19}%
+\contentsline {subsubsection}{nRF52840}{21}{section*.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Statement of Plagiarisms}{29}{chapter*.20}%
+\contentsline {subsection}{\numberline {4.2.2}Transmitter}{22}{subsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Requirements}{33}{appendix.A}%
+\contentsline {subsubsection}{Python-Script}{22}{section*.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Assignment}{34}{section.A.1}%
+\contentsline {chapter}{\numberline {5}Results}{25}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Requirement Specification}{36}{section.A.2}%
+\contentsline {chapter}{\numberline {6}Summary}{27}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Sources}{29}{chapter*.24}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of figures}{29}{chapter*.24}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of tables}{31}{chapter*.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Statement of Plagiarisms}{33}{chapter*.26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Requirements}{37}{appendix.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Assignment}{38}{section.A.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}Requirement Specification}{40}{section.A.2}%

@@ -5,6 +5,7 @@ Using paper, it is impracticable to take short-term changes into account, since 
 Screens on the other hand need either to be connected to a power supply, which entails extensive installation work, or are powered by a battery, which needs to be replaced from time to time.
 All these disadvantages could be avoided by using a screen which can be updated wireless and is in itself autarkic.
 The goal of this semester thesis is to develop a functional prototype of such a schedule.
+To keep the energy consumption at a minimum, a low-power wakeup receiver is used.
 
 \section{Task analysis}
 The prototype should combine both the advantages of the paper method and the screen.
@@ -13,4 +14,24 @@ The screen should therefore be placed on the desired location  just like a paper
 To consume as low power as possible, the microcontroller, display and interface should be switched off when not needed.
 
 \section{Approach}
+To simplify the description, from now on the display with all its components is called the receiver, while the other end, a computer with additional hardware is called the transmitter.
+This does not mean, that the communication is uni-directional, since both ends should be able receive and transmit data, but more that the general data transfer happens from the computer to the screen.
 
+\paragraph{Transmitter}
+This end only consists of a computer, a wireless interface for the main communication and the transmitter module of the wakeup receiver.
+A short python script enables the user to define which data the receiver should print over a fixed template.
+Information is transferred to a wireless interface which transmits it to the receiver end after the receiver is woken up.
+
+\paragraph{Receiver}
+This part of the prototype should consume as low power as possible.
+An e-paper display is used, because it is bi-directional, which means it can maintain its image even when disconnected of the power supply.
+A wireless module receives information from the transmitter and, if needed, sends back feedback about the status.
+This connection should therefore be bi-directional.
+To process the incoming data and display it correctly on the screen, a microcontroller is needed.
+All these components are completely disconnected from the power supply when not used.
+The power is provided by a super capacitor which is charged by solar cells.
+When switched off, the only component which actively consumes power is a wakeup receiver.
+This module is constantly in listening mode and waits for a wakeup event.
+Is such an event received, it activates a self-holding circuit which connects the power supply to the other components.
+Data can now be exchanged over a different channel, established by the wireless module.
+After the data is processed and the display is refreshed, the microcontroller deactivates the self-holding circuit and disconnects in this step itself and all other components except the wakeup receiver from the power source. 
