@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.7)  15 DEC 2019 09:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.7)  16 DEC 2019 10:25
 entering extended mode
 **./main.tex
 (main.tex
@@ -1791,36 +1791,43 @@ put line 9.
 (C:\Users\mtischha\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
+LaTeX Font Info:    Trying to load font information for T1+txtt on input line 3
+2.
+
+(C:\Users\mtischha\AppData\Roaming\MiKTeX\2.9\tex/latex/txfonts\t1txtt.fd
+File: t1txtt.fd 2000/12/15 v3.1
+)
 [19pdfTeX warning (ext4): destination with the same identifier (name{figure.4.9
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.35 B
-      efore a connection is established, the module on the receiver side is ...
- <./4-development/software/graphics/1.png> <./4-development/software/graphics/f
-ont12.pdf>]
-<4-development/software/graphics/ble.pdf, id=796, 247.5388pt x 182.85114pt>
+l.39 		device 
+              = serial.Serial(com_port, baudrate, writeTimeout=0) <./4-developm
+ent/software/graphics/1.png> <./4-development/software/graphics/font12.pdf>]
+<4-development/software/graphics/ble.pdf, id=800, 247.5388pt x 182.85114pt>
 File: 4-development/software/graphics/ble.pdf Graphic file (type pdf)
 <use 4-development/software/graphics/ble.pdf>
 Package pdftex.def Info: 4-development/software/graphics/ble.pdf  used on input
- line 43.
+ line 57.
 (pdftex.def)             Requested size: 409.71689pt x 302.65671pt.
-)) (5-results/5-results.tex [20pdfTeX warning (ext4): destination with the same
- identifier (name{figure.4.10}) has been already used, duplicate ignored
+))
+(5-results/5-results.tex [20pdfTeX warning (ext4): destination with the same id
+entifier (name{figure.4.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 \chapter
-            {Results} <./4-development/software/graphics/ble.pdf>]
-Chapter 5.
-) (6-summary/6-summary.tex [21
+            {Results} <./4-development/software/graphics/ble.pdf>] [21]
+[22
 
-] [22
+]
+Chapter 5.
+) (6-summary/6-summary.tex [23] [24
 
 ]
 Chapter 6.
-) [23] [24
+) [25] [26
 
 ]
 Overfull \hbox (5.13994pt too wide) in paragraph at lines 140--140
@@ -1828,68 +1835,68 @@ Overfull \hbox (5.13994pt too wide) in paragraph at lines 140--140
 -i-nary)\T1/txr/m/n/12 , 2019. 
  []
 
-[25] [26
+[27] [28
 
 ] (main.lof)
 \tf@lof=\write9
 \openout9 = `main.lof'.
 
- [27] [28
+ [29] [30
 
 ] (main.lot)
 \tf@lot=\write10
 \openout10 = `main.lot'.
 
 
-(statment_of_plagiarism/statement_of_plagiarism.tex [29] [30
+(statment_of_plagiarism/statement_of_plagiarism.tex [31] [32
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 3--8
 
  []
 
-[31]) (Appendix/appendix.tex [32
+[33]) (Appendix/appendix.tex [34
 
 
 ]
 Appendix A.
-[33]
-<../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, id=895, page=1, 597.55246pt x
+[35]
+<../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, id=912, page=1, 597.55246pt x
  845.07718pt>
 File: ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf Graphic file (type pdf)
 <use ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, page 1>
 Package pdftex.def Info: ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf , page
 1 used on input line 8.
 (pdftex.def)             Requested size: 455.24408pt x 643.8385pt.
-<../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, id=896, page=2, 597.55246pt x
+<../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, id=913, page=2, 597.55246pt x
  845.07718pt>
 File: ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf Graphic file (type pdf)
 <use ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, page 2>
 Package pdftex.def Info: ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf , page
 2 used on input line 12.
 (pdftex.def)             Requested size: 455.24408pt x 643.8385pt.
- [34 <../Aufgabenstellung/LowPowerWakeupReiceiver.pdf>] [35 <../Aufgabenstellun
+ [36 <../Aufgabenstellung/LowPowerWakeupReiceiver.pdf>] [37 <../Aufgabenstellun
 g/LowPowerWakeupReiceiver.pdf>]
-<../Pflichtenheft/HSR_SRS_main.pdf, id=933, page=1, 597.50829pt x 845.0471pt>
+<../Pflichtenheft/HSR_SRS_main.pdf, id=951, page=1, 597.50829pt x 845.0471pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 1>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page1 used on inpu
 t line 19.
 (pdftex.def)             Requested size: 455.24408pt x 643.84138pt.
-<../Pflichtenheft/HSR_SRS_main.pdf, id=934, page=2, 597.50829pt x 845.0471pt>
+<../Pflichtenheft/HSR_SRS_main.pdf, id=952, page=2, 597.50829pt x 845.0471pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 2>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page2 used on inpu
 t line 23.
 (pdftex.def)             Requested size: 455.24408pt x 643.84138pt.
-<../Pflichtenheft/HSR_SRS_main.pdf, id=935, page=3, 597.50829pt x 845.0471pt>
+<../Pflichtenheft/HSR_SRS_main.pdf, id=953, page=3, 597.50829pt x 845.0471pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 3>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page3 used on inpu
 t line 27.
 (pdftex.def)             Requested size: 455.24408pt x 643.84138pt.
- [36 <../Pflichtenheft/HSR_SRS_main.pdf>]
-<../Pflichtenheft/HSR_SRS_main.pdf, id=1144, page=4, 597.50829pt x 845.0471pt>
+ [38 <../Pflichtenheft/HSR_SRS_main.pdf>]
+<../Pflichtenheft/HSR_SRS_main.pdf, id=1162, page=4, 597.50829pt x 845.0471pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 4>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page4 used on inpu
@@ -1898,12 +1905,12 @@ t line 31.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37 <../Pflichtenheft/HSR_SRS_main.pdf>]
+ [39 <../Pflichtenheft/HSR_SRS_main.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38 <../Pflichtenheft/HSR_SRS_main.pdf>] [39 <../Pflichtenheft/HSR_SRS_main.pd
+ [40 <../Pflichtenheft/HSR_SRS_main.pdf>] [41 <../Pflichtenheft/HSR_SRS_main.pd
 f>]
-<../Pflichtenheft/HSR_SRS_main.pdf, id=1290, page=5, 845.0471pt x 597.50829pt>
+<../Pflichtenheft/HSR_SRS_main.pdf, id=1307, page=5, 845.0471pt x 597.50829pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 5>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page5 used on inpu
@@ -1912,7 +1919,7 @@ t line 37.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40
+ [42
 
  <../Pflichtenheft/HSR_SRS_main.pdf, page is rotated 90 degrees>]) (main.ind)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
@@ -1929,13 +1936,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
  ) 
 Here is how much of TeX's memory you used:
- 31622 strings out of 492484
- 559859 string characters out of 3130389
- 1040971 words of memory out of 3000000
- 35114 multiletter control sequences out of 15000+200000
- 54453 words of font info for 100 fonts, out of 3000000 for 9000
+ 32088 strings out of 492484
+ 564107 string characters out of 3130389
+ 1041024 words of memory out of 3000000
+ 35566 multiletter control sequences out of 15000+200000
+ 56430 words of font info for 102 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,13n,54p,3238b,1588s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,13n,54p,3238b,2018s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
@@ -1946,15 +1953,16 @@ ts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/mti
 schha/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users
 /mtischha/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Us
-ers/mtischha/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/txex.pfb><C:
-/Users/mtischha/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/txsy.pfb>
-<C:/Users/mtischha/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/times/utmb8a.pfb>
-<C:/Users/mtischha/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/times/utmr8a.pfb>
-<C:/Users/mtischha/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/times/utmri8a.pfb
->
-Output written on main.pdf (46 pages, 9646231 bytes).
+ers/mtischha/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/t1xtt.pfb><C
+:/Users/mtischha/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/txex.pfb
+><C:/Users/mtischha/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/txsy.
+pfb><C:/Users/mtischha/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/times/utmb8a.
+pfb><C:/Users/mtischha/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/times/utmr8a.
+pfb><C:/Users/mtischha/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/times/utmri8a
+.pfb>
+Output written on main.pdf (48 pages, 9654825 bytes).
 PDF statistics:
- 1455 PDF objects out of 1728 (max. 8388607)
- 142 named destinations out of 1000 (max. 500000)
+ 1478 PDF objects out of 1728 (max. 8388607)
+ 152 named destinations out of 1000 (max. 500000)
  382 words of extra memory for PDF output out of 10000 (max. 10000000)
 

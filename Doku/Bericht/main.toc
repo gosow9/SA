@@ -66,24 +66,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Python-script}{19}{section*.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{nRF52840}{19}{section*.20}%
+\contentsline {subsubsection}{nRF52840}{20}{section*.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Transmitter}{20}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.2}Transmitter}{21}{subsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Results}{21}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Results}{23}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Summary}{23}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Summary}{25}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Sources}{25}{chapter*.21}%
+\contentsline {chapter}{Sources}{27}{chapter*.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of figures}{25}{chapter*.21}%
+\contentsline {chapter}{List of figures}{27}{chapter*.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of tables}{27}{chapter*.22}%
+\contentsline {chapter}{List of tables}{29}{chapter*.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Statement of Plagiarisms}{29}{chapter*.23}%
+\contentsline {chapter}{Statement of Plagiarisms}{31}{chapter*.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Requirements}{33}{appendix.A}%
+\contentsline {chapter}{\numberline {A}Requirements}{35}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Assignment}{34}{section.A.1}%
+\contentsline {section}{\numberline {A.1}Assignment}{36}{section.A.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Requirement Specification}{36}{section.A.2}%
+\contentsline {section}{\numberline {A.2}Requirement Specification}{38}{section.A.2}%
