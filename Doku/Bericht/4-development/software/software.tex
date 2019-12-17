@@ -10,24 +10,6 @@ The software of the ULPWUR is separated in three different parts.
 
 \subsection{Receiver}
 
-\subsubsection{Python-script}
-\lstset{basicstyle=\footnotesize}
-\lstdefinestyle{mystyle}{
-	language=Python,
-	basicstyle=\footnotesize\ttfamily,
-	morekeywords={as},
-	keywordstyle=\color{blue!50!black},
-	stringstyle=\color{green!50!black},
-	numberstyle=\color{red},
-	emph={int,char,double,float,range, len},
-	emphstyle=\color{violet}
-}
-\lstset{style=mystyle}
-
-A short python script enables the user to send the data over an USB-port to the nRF52840.
-
-%\lstinputlisting{4-development/software/code/WriteSection.py}
-
 \subsubsection{nRF52840}
 The software on both sides of the bluetooth channel is very similar, thus it is explained in this section.
 A \acs{ble} example project, which was provided by nordic, was only slightly changed to fit the purpose of this prototype.
@@ -47,6 +29,74 @@ This process is illustrated in figure \ref{software:ble}.
 The central serves after connection as the client.
 It can make read and write requests to access the data on the peripheral, which acts as the server.
 The server on the other hand can only send notifications to the client if new data is ready.
-It should be noted, that the roles of client and server do not in any case have to be assigned to the central and peripheral, but also the other way around. 
+It should be noted, that the roles of client and server do not in any case have to be assigned to central and peripheral, but also the other way around. 
 
 \subsection{Transmitter}
+
+\subsubsection{Python-Script}
+\lstset{basicstyle=\footnotesize}
+\lstdefinestyle{mystyle}{
+	language=Python,
+	tabsize=4,
+	showstringspaces=false,
+	backgroundcolor = \color{gray!15!white},
+	basicstyle=\footnotesize\ttfamily,
+	morekeywords={as},
+	keywordstyle=\color{blue!50!black},
+	stringstyle=\color{green!50!black},
+	numberstyle=\color{red},
+	emph={int,char,double,float,range, len, bytes},
+	emphstyle=\color{violet}
+}
+\lstset{style=mystyle}
+
+A short python script enables the user to send the data to the display.
+This script is looked at here step by step.
+
+\begin{enumerate}
+	\item Include of the used packages, time and serial.
+	\begin{lstlisting}
+	import serial
+	import time
+	\end{lstlisting}	
+	\item Set desired baudrate, select which COM-port windows assigned to the development kit and open the port.
+	\begin{lstlisting}
+	baudrate = 115200
+	com_port = 'COM14'
+	
+	device = serial.Serial(com_port, baudrate, writeTimeout=0)
+	\end{lstlisting}
+	\item Create a list of list with the desired data.
+	The first list contains information about how many packages are about to follow.
+	The following list contain the location on the template, the subject and the lecturer.
+	\begin{lstlisting}
+	data = [[0, chr(3), '\0\0\0\0'],[11 , 'WsComm\0', 'MAH\0'],
+			[3 , 'DigPro\0', 'SCU\0'], [22 , 'EmbSW\0', 'BON\0']]
+	\end{lstlisting}
+	\item Fill the list with \lstinline|'\0'| so every package is 20 bytes long.
+	\begin{lstlisting}
+	for i in range(len(data)):
+		if len(data[i][1])<16:
+			t = 14-len(data[i][1])
+			data[i][1] = data[i][1]+'\0'*t
+	\end{lstlisting}
+	\item Store time when data transfer is started.
+	\begin{lstlisting}
+	t_start = time.time()
+	\end{lstlisting}
+	\item Transfer data to the nRF52480 transmitter
+	\begin{lstlisting}
+	for i in range(len(data)):
+		device.write([data[i][0]]) 
+		device.write(bytes(data[i][1], 'utf-8'))       
+		device.write(bytes(data[i][2]+'\n', 'utf-8'))
+		device.flush()
+	\end{lstlisting}	
+	\item Print elapsed time on console and close COM-port.
+	\begin{lstlisting}
+	print('elapsed time: {:.3f}'.format(time.time() - t_start))
+	
+	device.close()
+	\end{lstlisting}
+	
+\end{enumerate}

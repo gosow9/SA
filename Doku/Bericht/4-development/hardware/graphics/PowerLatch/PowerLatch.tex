@@ -1,0 +1,59 @@
+\documentclass{standalone}
+
+
+\usepackage[europeanresistors,americaninductors]{circuitikz}
+
+\begin{document}
+\begin{tikzpicture}
+	%ADP
+
+	\tikzset{fontscale/.style = {font=\Huge}};
+	
+	% PMOS Transistor
+	\draw(0,0) node[pigfete] (pigfete) {}
+(pigfete.G) node[anchor=east] {G}
+(pigfete.D) node[anchor=north] {D}
+(pigfete.S) node[anchor=south] {S}
+(pigfete.bulk) node[anchor=west] {Bulk};
+	
+	
+	
+	
+	%umranden
+	\draw[line width=2pt] (-12,-10)--(19,-10)--(19,13)--(-12,13)--(-12,-10);
+	\node[above] at (-7.8,-9.5) {\Huge ADP5090 EvalBoard};
+
+	%Schaltung rundherum
+	%eigenes Voltmeter
+	\newcommand{\mymeter}[2]
+	{
+		\begin{scope}[transform shape, rotate=#2]
+		\draw[thick] (#1)node(){$\mathbf{V}$} circle (11pt);
+		\draw[rotate=45,-latex] (#1) +(-17pt,0) -- +(17pt,0);
+		\end{scope}	
+	};
+
+	\newcommand{\PMOS}[2]
+{
+	\draw(0,0) node[pigfete] (pigfete) {}
+	(pigfete.G) node[anchor=east] {G}
+	(pigfete.D) node[anchor=north] {D}
+	(pigfete.S) node[anchor=south] {S};
+	%(pigfete.bulk) node[anchor=west] {Bulk};
+};
+
+	\draw (19, -2) --(26,-2) to[voltmeter, color=white, name=M, label=\huge $V_{\mathrm{IN}}$] (26,-5) node[ground]{};
+	\mymeter{M}{0};
+
+		
+	\draw (19, 3.25)--(26,3.25) to[voltmeter, color=white, name=M, label=\huge $V_{\mathrm{BAT}}$] (26,3.25-3) node[ground]{};
+	\mymeter{M}{0};	
+
+	
+	\draw (19, 7.25)--(26,7.25) to[voltmeter, color=white, name=M, label=\huge $V_{\mathrm{SYS}}$] (26,7.25-2.6) node[ground]{};
+	\mymeter{M}{0}
+
+		
+	
+\end{tikzpicture}
+\end{document}

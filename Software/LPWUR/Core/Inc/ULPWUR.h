@@ -38,7 +38,7 @@ typedef struct CalCellInfo
 
 void UpdateCalender(void);
 void DrawCalenderField(uint8_t place, char* fach, char* dozent);
-
+void receiveData(void);
 
 
 #endif /* INC_ULPWUR_H_ */

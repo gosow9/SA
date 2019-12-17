@@ -49,7 +49,36 @@ To handle incoming data and write it to the display driver, some kind of microco
 A derivate of the MSP430 and one of the STM32 were looked at more closely.
 
 \subsection{MSP430}
+The MSP430FR6989 was up for selection because it is specifically developed for ultra-low-power applications.
+It's main features are:
+\begin{itemize}
+	\item[-] 16-bit architecture with up to 16\,MHz clock
+	\item[-] Supply voltage range form 1.8\,V to 3.6\,V
+	\item[-] Approximately  $100\,\mu\text{A}/\text{MHz}$ current consumption in active mode
+	\item[-] 128\,KB \acf{fram}
+\end{itemize}
+The display driver chip can be controlled over \acs{spi}  \cite{msp430}.
 
-
+During development, it turned out to be very useful to store a complete image.
+The required memory to do this assuming 16 grey levels and a $1200\times 825$ size display is:
+$$M = 1200\cdot 825\cdot4\,\text{bit}=495'000\,\text{B} < 484\,\text{kB}.$$
+the \acs{fram} is therefore not sufficient.
+This is the main reason, why a different microcontroller is needed.
 
 \subsection{STM32}
+The STM32L4R5ZI by STMircoelectronics is just like the MSP430 developed for low-power applications.
+Most important features are:
+\begin{itemize}
+	\item[-] 32-bit Cortex-M4 \acs{cpu}
+	\item[-] Several clock sources between 4 and 48\,MHz
+	\item[-] 1.71\,V - 3.6\,V input voltage supply
+	\item[-] $110\,\mu \text{A}/\text{MHz}$ current consumption in run mode
+	\item[-] 2\,MB Flash and 640\,KB \acs{sram}
+\end{itemize}
+The display driver can again be controlled over \acs{spi} \cite{stm32}.
+
+The STM32 is in general more flexible and most important has enough memory for a complete picture.
+That it consumes slightly more power than the MSP430 should not be to much of a problem, since it is only in run mode a few seconds, before being completely switched off again.
+The standby mode of the controller is not used and therefore of no interest.
+
+

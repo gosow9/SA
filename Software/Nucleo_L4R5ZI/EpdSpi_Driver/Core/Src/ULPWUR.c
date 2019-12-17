@@ -27,7 +27,7 @@
 void DrawCalenderField(uint8_t place, char* fach, char* dozent)
 {
 	CalCellInfo cal;
-	cal.imBufsize= 17336;
+	cal.imBufsize= 17336*2;
 	uint8_t frameBuf[cal.imBufsize];
 	cal.place = place;
 	if(cal.place%5!=0)
