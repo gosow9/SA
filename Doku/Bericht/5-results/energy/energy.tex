@@ -1,3 +1,4 @@
+\subsection{Power measurement}
 To look at the energy consumption in detail, the N6705B power analyzer from keysight was used as the power supply.
 To carry out measurements, the ADP5090 with the solar cells and super cap was disconnected and the remaining components connected to the power analyser with a fixed voltage of 3.3\,V.
 This way, the voltage and current over one write-cycle could be tracked.
@@ -31,3 +32,21 @@ Considering the Rficient which consumes $4.5\mu \text{W}$, it is possible to est
 	t_{\text{E}}=\frac{2.7504\,\text{J}}{485.52\,\mu \text{W}-4.5\mu \text{W}}=5717.85\,\text{s}\approx 1\,\text{h } 35\,\text{min}.
 \end{align}
 Not taken into account is the leakage of the super capacitor and losses in the ADP5090.
+
+\subsection{Energy storage}
+The stored energy in a capacitor is
+\begin{align*}
+	E =\frac{1}{2}CU^2.
+\end{align*}
+since the capacitor operates between 2.2\,V and 3.6\,V, the total stored energy is
+\begin{align}
+	E_{\text{ges}} = \frac{1}{2}C(U_{\text{max}}^2-U_{\text{min}}^2)=\frac{1}{2}\cdot 40\,\text {F}\cdot((3.6\,\text{V})^2-(2.2\,\text{V})^2)=162.4\,\text{J}.
+\end{align}
+If again the loss in the ADP5090 and the leakage of the super cap is neglected, it is possible to estimate the time
+\begin{align}
+	t_{\text{func}}=\frac{162.4\,\text{J}-2.7504\,\text{J}}{4.5\,\mu\text{W}}=3.54877\cdot 10^{-7}\,\text{s}\approx 411\,\text{d}
+\end{align} 
+in which the prototype is fully functional when no energy is harvested.
+The 2.7504\,J are subtracted, because on should be able to refresh the display after this time.
+This result should be taken with caution, because it neglects losses and does not consider the tolerance of the capacitor ($\pm20\%$ corresponds to $\pm8\,\text{F}$ with a 40\,F capacitor \cite{yuden}).
+The order of magnitude tough should be correct.
