@@ -4,7 +4,12 @@ If an matrix style display is used with a microcontroller, there are a lot of di
 \subsubsection{Matrix displays}
 
 Since most displays produced have an rectangular shape the amount of pixel they hold is calculated like the surface of an rectangular. The number of pixels on both axis are multiplied and we get the total amount of pixels we have to manipulate. So it is obvious that the memory size of an picture explodes with its resolution. As an example we take a display with a pixel ratio of 1200 x 825 and a colour depth of 24 bit. We get $1200\cdot825=990'000$ pixel and $1200\cdot825\cdot24=23'760'000$ bits we have to handle. This is a huge amount of data to process with a microcontroller.\\
-If an display is rectangular the information of the pixels can be ordered in a matrix. The matrix is normally one or two dimensions.  
+If an display is rectangular the information of the pixels can be ordered in a matrix. The matrix is normally one or two dimensions. 
+
+\begin{displayquote}
+"\textbf{alignment} requirement that objects of a particular type be located on storage boundaries with
+addresses that are particular multiples of a byte address"	
+\end{displayquote}\cite{ISO/IEC9899}
 
 \begin{figure}[H]
 	\centering
