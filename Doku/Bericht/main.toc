@@ -76,6 +76,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Results}{25}{chapter.5}%
 \defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Power consumption}{25}{section.5.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Summary}{27}{chapter.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Sources}{29}{chapter*.24}%
