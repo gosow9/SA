@@ -76,5 +76,6 @@ plt.xlim([0,8])
 plt.ylim([0, 1.4])
 
 plt.grid(True)
+fig2.legend(bbox_to_anchor=(0.32, 0.76))
 
 fig2.savefig('p.pdf')

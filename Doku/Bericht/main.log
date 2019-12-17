@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.7)  17 DEC 2019 11:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.7)  17 DEC 2019 13:34
 entering extended mode
 **./main.tex
 (main.tex
@@ -1827,15 +1827,15 @@ l.65 	com_port
 ]
 Chapter 5.
 (5-results/energy/energy.tex
-<5-results/energy/logger/ui.pdf, id=884, 462.52798pt x 346.89601pt>
+<5-results/energy/logger/ui.pdf, id=885, 462.52798pt x 346.89601pt>
 File: 5-results/energy/logger/ui.pdf Graphic file (type pdf)
 <use 5-results/energy/logger/ui.pdf>
-Package pdftex.def Info: 5-results/energy/logger/ui.pdf  used on input line 6.
+Package pdftex.def Info: 5-results/energy/logger/ui.pdf  used on input line 7.
 (pdftex.def)             Requested size: 409.71689pt x 307.30202pt.
-<5-results/energy/logger/p.pdf, id=885, 462.52798pt x 346.89601pt>
+<5-results/energy/logger/p.pdf, id=886, 462.52798pt x 346.89601pt>
 File: 5-results/energy/logger/p.pdf Graphic file (type pdf)
 <use 5-results/energy/logger/p.pdf>
-Package pdftex.def Info: 5-results/energy/logger/p.pdf  used on input line 12.
+Package pdftex.def Info: 5-results/energy/logger/p.pdf  used on input line 19.
 (pdftex.def)             Requested size: 409.71689pt x 307.30202pt.
 )) (6-summary/6-summary.tex [25pdfTeX warning (ext4): destination with the same
  identifier (name{figure.5.1}) has been already used, duplicate ignored
@@ -1888,14 +1888,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--8
 ]
 Appendix A.
 [37]
-<../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, id=1056, page=1, 597.55246pt 
+<../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, id=1058, page=1, 597.55246pt 
 x 845.07718pt>
 File: ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf Graphic file (type pdf)
 <use ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, page 1>
 Package pdftex.def Info: ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf , page
 1 used on input line 8.
 (pdftex.def)             Requested size: 455.24408pt x 643.8385pt.
-<../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, id=1057, page=2, 597.55246pt 
+<../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, id=1059, page=2, 597.55246pt 
 x 845.07718pt>
 File: ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf Graphic file (type pdf)
 <use ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, page 2>
@@ -1904,26 +1904,26 @@ Package pdftex.def Info: ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf , page
 (pdftex.def)             Requested size: 455.24408pt x 643.8385pt.
  [38 <../Aufgabenstellung/LowPowerWakeupReiceiver.pdf>] [39 <../Aufgabenstellun
 g/LowPowerWakeupReiceiver.pdf>]
-<../Pflichtenheft/HSR_SRS_main.pdf, id=1094, page=1, 597.50829pt x 845.0471pt>
+<../Pflichtenheft/HSR_SRS_main.pdf, id=1096, page=1, 597.50829pt x 845.0471pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 1>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page1 used on inpu
 t line 19.
 (pdftex.def)             Requested size: 455.24408pt x 643.84138pt.
-<../Pflichtenheft/HSR_SRS_main.pdf, id=1095, page=2, 597.50829pt x 845.0471pt>
+<../Pflichtenheft/HSR_SRS_main.pdf, id=1097, page=2, 597.50829pt x 845.0471pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 2>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page2 used on inpu
 t line 23.
 (pdftex.def)             Requested size: 455.24408pt x 643.84138pt.
-<../Pflichtenheft/HSR_SRS_main.pdf, id=1096, page=3, 597.50829pt x 845.0471pt>
+<../Pflichtenheft/HSR_SRS_main.pdf, id=1098, page=3, 597.50829pt x 845.0471pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 3>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page3 used on inpu
 t line 27.
 (pdftex.def)             Requested size: 455.24408pt x 643.84138pt.
  [40 <../Pflichtenheft/HSR_SRS_main.pdf>]
-<../Pflichtenheft/HSR_SRS_main.pdf, id=1305, page=4, 597.50829pt x 845.0471pt>
+<../Pflichtenheft/HSR_SRS_main.pdf, id=1307, page=4, 597.50829pt x 845.0471pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 4>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page4 used on inpu
@@ -1937,7 +1937,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [42 <../Pflichtenheft/HSR_SRS_main.pdf>] [43 <../Pflichtenheft/HSR_SRS_main.pd
 f>]
-<../Pflichtenheft/HSR_SRS_main.pdf, id=1451, page=5, 845.0471pt x 597.50829pt>
+<../Pflichtenheft/HSR_SRS_main.pdf, id=1453, page=5, 845.0471pt x 597.50829pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 5>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page5 used on inpu
@@ -1965,7 +1965,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
 Here is how much of TeX's memory you used:
  32182 strings out of 492484
  565572 string characters out of 3130389
- 1052402 words of memory out of 3000000
+ 1052403 words of memory out of 3000000
  35614 multiletter control sequences out of 15000+200000
  56430 words of font info for 102 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1987,9 +1987,9 @@ pfb><C:/Users/mtischha/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/times/utmb8a.
 pfb><C:/Users/mtischha/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/times/utmr8a.
 pfb><C:/Users/mtischha/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/times/utmri8a
 .pfb>
-Output written on main.pdf (50 pages, 9764205 bytes).
+Output written on main.pdf (50 pages, 9765347 bytes).
 PDF statistics:
- 1629 PDF objects out of 1728 (max. 8388607)
+ 1631 PDF objects out of 1728 (max. 8388607)
  190 named destinations out of 1000 (max. 500000)
  400 words of extra memory for PDF output out of 10000 (max. 10000000)
 
