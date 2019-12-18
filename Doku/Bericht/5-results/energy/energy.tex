@@ -24,7 +24,7 @@ The power follows obviously the same course like the current since the voltage i
 \end{figure}
 The energy needed for one write-cycle is given with the integral of the power over time:
 \begin{align}
-	E = \int_{0}^{8\,\text{s}}P(t)\text{dt}\approx 2.7504\,\text{J}.
+	E = \int_{0}^{8\,\text{s}}P(t)\text{dt}\approx 2.7504\,\text{J}\label{result:energy}.
 \end{align}
 Like stated in \eqref{development:cell_power} the solar cells provide $485.52\,\mu \text{W}$ at 200\,lux.
 Considering the Rficient which consumes $4.5\mu \text{W}$, it is possible to estimate the time needed, to harvest the power for one write cycle:
@@ -40,7 +40,7 @@ The stored energy in a capacitor is
 \end{align*}
 since the capacitor operates between 2.2\,V and 3.6\,V, the total stored energy is
 \begin{align}
-	E_{\text{ges}} = \frac{1}{2}C(U_{\text{max}}^2-U_{\text{min}}^2)=\frac{1}{2}\cdot 40\,\text {F}\cdot((3.6\,\text{V})^2-(2.2\,\text{V})^2)=162.4\,\text{J}.
+	E_{\text{ges}} = \frac{1}{2}C(U_{\text{max}}^2-U_{\text{min}}^2)=\frac{1}{2}\cdot 40\,\text {F}\cdot((3.6\,\text{V})^2-(2.2\,\text{V})^2)=162.4\,\text{J}\label{result:store}.
 \end{align}
 If again the loss in the ADP5090 and the leakage of the super cap is neglected, it is possible to estimate the time
 \begin{align}
@@ -50,3 +50,13 @@ in which the prototype is fully functional when no energy is harvested.
 The 2.7504\,J are subtracted, because on should be able to refresh the display after this time.
 This result should be taken with caution, because it neglects losses and does not consider the tolerance of the capacitor ($\pm20\%$ corresponds to $\pm8\,\text{F}$ with a 40\,F capacitor \cite{yuden}).
 The order of magnitude tough should be correct.
+
+\subsection{Amount of display refreshes}
+With the results from the Equations \eqref{result:energy} and \eqref{result:store}, the amount of display refreshes can be calculated:
+\begin{align}
+	n = \left\lfloor\frac{162.4\,\text{J}}{2.7504\,\text{J}}\right\rfloor=59.
+\end{align}
+Not that in this calculation, additional charging is neglected and the super capacitor is fully charged.
+
+To verify this value, the super cap was charged to 3.5\,V and the whole refresh sequence was repeated until the voltage reached 2.2\,V.
+Under this conditions, the display could be refreshed 46 times.
