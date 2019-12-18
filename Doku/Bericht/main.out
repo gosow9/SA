@@ -24,16 +24,19 @@
 \BOOKMARK [2][-]{subsection.4.2.1}{Receiver}{section.4.2}% 24
 \BOOKMARK [2][-]{subsection.4.2.2}{Transmitter}{section.4.2}% 25
 \BOOKMARK [0][-]{chapter.5}{Results}{}% 26
-\BOOKMARK [1][-]{section.5.1}{Power consumption}{chapter.5}% 27
-\BOOKMARK [2][-]{subsection.5.1.1}{Power measurement}{section.5.1}% 28
-\BOOKMARK [2][-]{subsection.5.1.2}{Energy storage}{section.5.1}% 29
-\BOOKMARK [0][-]{chapter.6}{Summary}{}% 30
-\BOOKMARK [1][-]{section.6.1}{Conclusion}{chapter.6}% 31
-\BOOKMARK [1][-]{section.6.2}{Future work}{chapter.6}% 32
-\BOOKMARK [0][-]{chapter*.27}{Sources}{}% 33
-\BOOKMARK [0][-]{chapter*.27}{List of figures}{}% 34
-\BOOKMARK [0][-]{chapter*.28}{List of tables}{}% 35
-\BOOKMARK [0][-]{chapter*.29}{Statement of Plagiarisms}{}% 36
-\BOOKMARK [0][-]{appendix.A}{Requirements}{}% 37
-\BOOKMARK [1][-]{section.A.1}{Assignment}{appendix.A}% 38
-\BOOKMARK [1][-]{section.A.2}{Requirement Specification}{appendix.A}% 39
+\BOOKMARK [1][-]{section.5.1}{Power supply}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.2}{Power consumption}{chapter.5}% 28
+\BOOKMARK [2][-]{subsection.5.2.1}{Power measurement}{section.5.2}% 29
+\BOOKMARK [2][-]{subsection.5.2.2}{Energy storage}{section.5.2}% 30
+\BOOKMARK [2][-]{subsection.5.2.3}{Amount of display refreshes}{section.5.2}% 31
+\BOOKMARK [0][-]{chapter.6}{Summary}{}% 32
+\BOOKMARK [1][-]{section.6.1}{Conclusion}{chapter.6}% 33
+\BOOKMARK [1][-]{section.6.2}{Future work}{chapter.6}% 34
+\BOOKMARK [2][-]{subsection.6.2.1}{Power management}{section.6.2}% 35
+\BOOKMARK [0][-]{chapter*.28}{Sources}{}% 36
+\BOOKMARK [0][-]{chapter*.28}{List of figures}{}% 37
+\BOOKMARK [0][-]{chapter*.29}{List of tables}{}% 38
+\BOOKMARK [0][-]{chapter*.30}{Statement of Plagiarisms}{}% 39
+\BOOKMARK [0][-]{appendix.A}{Requirements}{}% 40
+\BOOKMARK [1][-]{section.A.1}{Assignment}{appendix.A}% 41
+\BOOKMARK [1][-]{section.A.2}{Requirement Specification}{appendix.A}% 42

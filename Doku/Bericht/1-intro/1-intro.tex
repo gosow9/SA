@@ -1,37 +1,17 @@
 \chapter{Introduction}
-In company buildings, universities and other similar facilities, it is usual to attach occupancy schedules next to room entrances.
-These schedules are mostly printed on paper, or in more modern buildings, displayed on a screen.
-Using paper, it is impracticable to take short-term changes into account, since every adjustment needs to be made by printing a new schedule.
-Screens on the other hand need either to be connected to a power supply, which entails extensive installation work, or are powered by a battery, which needs to be replaced from time to time.
-All these disadvantages could be avoided by using a screen which can be updated wireless and is in itself autarkic.
-The goal of this semester thesis is to develop a functional prototype of such a schedule.
-To keep the energy consumption at a minimum, a low-power wakeup receiver is used.
+\textbf{Sicher ned eifach 2x mal s gliche schriebe?}
+Today, companies, universities and similar facilities, are using a simple sign next to the entrance of a room to display its occupancy schedule. In more modern buildings, the schedule is presented on a screen; however, most of the buildings still use schedules printed on paper. This approach creates the infeasibility to take spontaneous changes into account, as every minor modifications leads to a newly printed schedule. Additionally, buildings that already use displays have the obstacle of the initial installation of the device, which entails extensive installation work by connecting it to the power grid. One solution could be to replace the power grid by batteries, which would lead to additional costs of the batteries (due to frequent replacement) plus the human labour costs (as employers have to change the batteries). The disadvantages outlined above could be avoided by using a screen (following named “E-Paper Display” or EPD) that harvests its energy from indoor lightening. Additional to this self-sufficient method, the screen would also up-date via a wireless interface, providing the opportunity to take short-term changes into consideration and display a timely room schedule.  
+
 
 \section{Task analysis}
-The prototype should combine both the advantages of the paper method and the screen.
-Updating should happen via a wireless interface while a expensive installation should be avoided.
-The screen should therefore be placed on the desired location  just like a paper schedule.
-To consume as low power as possible, the microcontroller, display and interface should be switched off when not needed.
+The primary goal of this semester thesis was to create a prototype by combining both benefits of the paper method used and the screen powered by battery. Moreover, the aim was to avoid an expensive initial installation by introducing a method that makes it possible to up-date the room schedule via a wireless interface. However, it should still be possible to place the new screen in the desired location equal to the paper schedule. Finally, to guarantee the device would consume the smallest amount power possible, the microcontroller, display and interface should be switched off when not in usage.  
+
 
 \section{Approach}
-To simplify the description, from now on the display with all its components is called the receiver, while the other end, a computer with additional hardware is called the transmitter.
-This does not mean, that the communication is uni-directional, since both ends should be able receive and transmit data, but more that the general data transfer happens from the computer to the screen.
+In order to clarify the application of the terms in the following sections, the term “receiver” is used for the display including all its components. Additionally, the term “transmitter” is used for the computer and its additional hardware. Henceforth, it has to be stated that this does not imply that the communication is uni-directional. The receiver as well as the transmitter should be able to receive and transmit data. It should rather suggest that the general data transfer appears from the computer to the screen. 
 
 \paragraph{Transmitter}
-This end only consists of a computer, a wireless interface for the main communication and the transmitter module of the wakeup receiver.
-A short python script enables the user to define which data the receiver should print over a fixed template.
-Information is transferred to a wireless interface which transmits it to the receiver end after the receiver is woken up.
+This end solely consists of a computer, a wireless interface (for the main communication) and the transmitter module (for the wakeup receiver). A short python script enables the user to define which data the receiver should display over a fixed template. The information is transferred to a wireless interface, which transmits it to the receiver end after the receiver is woken up.
 
 \paragraph{Receiver}
-This part of the prototype should consume as low power as possible.
-An e-paper display is used, because it is bi-directional, which means it can maintain its image even when disconnected of the power supply.
-A wireless module receives information from the transmitter and, if needed, sends back feedback about the status.
-This connection should therefore be bi-directional.
-To process the incoming data and display it correctly on the screen, a microcontroller is needed.
-All these components are completely disconnected from the power supply when not used.
-The power is provided by a super capacitor which is charged by solar cells.
-When switched off, the only component which actively consumes power is a wakeup receiver.
-This module is constantly in listening mode and waits for a wakeup event.
-Is such an event received, it activates a self-holding circuit which connects the power supply to the other components.
-Data can now be exchanged over a different channel, established by the wireless module.
-After the data is processed and the display is refreshed, the microcontroller deactivates the self-holding circuit and disconnects in this step itself and all other components except the wakeup receiver from the power source. 
+This part of the prototype has been designed to reduce the power consumption as far as possible. Therefore, a EPD is used, which has the advantage of being a static display (it maintains its screen image even when disconnected from the power supply). In combination with the EPD a wireless module receives information from the transmitter. It could also, if needed, send back a feedback about the status. This connection should be bi-directional.  In order to process the incoming data and displaying it correctly on the screen, a microcontroller is used. It has to be mentioned, that all the above mentioned components  are completely disconnected from the power supply when not in usage. The power is provided by a super capacitor which is charged by solar cells. When the device  is switched off the only component, which actively consumes power, is the wakeup receiver. This module is constantly in listening mode and waits for a wakeup event. If the wakeup receiver is given such an event , it activates a self-holding circuit resulting in the connection to the power supply of all other components. Now data can be exchanged through a different channel , established by the wireless module. After the data is processed and the display is refreshed,  
