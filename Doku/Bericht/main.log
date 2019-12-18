@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.1)  18 DEC 2019 06:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.1)  18 DEC 2019 07:13
 entering extended mode
 **./main.tex
 (main.tex
@@ -2081,53 +2081,65 @@ File: 4-development/software/graphics/1.png Graphic file (type png)
 Package pdftex.def Info: 4-development/software/graphics/1.png  used on input l
 ine 3.
 (pdftex.def)             Requested size: 409.71689pt x 333.00554pt.
-<4-development/software/graphics/ble.pdf, id=929, 247.5388pt x 182.85114pt>
+<4-development/software/graphics/main.pdf, id=927, 293.99736pt x 575.22906pt>
+File: 4-development/software/graphics/main.pdf Graphic file (type pdf)
+<use 4-development/software/graphics/main.pdf>
+Package pdftex.def Info: 4-development/software/graphics/main.pdf  used on inpu
+t line 14.
+(pdftex.def)             Requested size: 314.12544pt x 614.57535pt.
+<4-development/software/graphics/ble.pdf, id=931, 247.5388pt x 182.85114pt>
 File: 4-development/software/graphics/ble.pdf Graphic file (type pdf)
 <use 4-development/software/graphics/ble.pdf>
 Package pdftex.def Info: 4-development/software/graphics/ble.pdf  used on input
- line 24.
-(pdftex.def)             Requested size: 409.71689pt x 302.65671pt.
+ line 31.
+(pdftex.def)             Requested size: 364.19664pt x 269.03065pt.
  [27pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.32 
+l.39 
       <./4-development/software/graphics/1.png>]
 ("C:\Users\Cedric\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1
 .sty"
 File: lstlang1.sty 2019/02/27 1.8b listings language file
 )
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 57.
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 64.
 
 ("C:\Users\Cedric\AppData\Local\Programs\MiKTeX 2.9\tex/latex/txfonts\t1txtt.fd
 "
 File: t1txtt.fd 2000/12/15 v3.1
-) [28pdfTeX warning (ext4): destination with the same identifier (name{figure.4
-.10}) has been already used, duplicate ignored
+))) (5-results/5-results.tex [28] [29pdfTeX warning (ext4): destination with th
+e same identifier (name{figure.4.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.74 	\end{lstlisting}
-                       <./4-development/software/graphics/ble.pdf>]))
-(5-results/5-results.tex [29] [30
+l.1 \chapter
+            {Results} <./4-development/software/graphics/main.pdf>] [30pdfTeX w
+arning (ext4): destination with the same identifier (name{figure.4.11}) has bee
+n already used, duplicate ignored
 
-]
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \chapter
+            {Results} <./4-development/software/graphics/ble.pdf>]
 Chapter 5.
 (5-results/energy/energy.tex
-<5-results/energy/logger/ui.pdf, id=996, 462.52798pt x 346.89601pt>
+<5-results/energy/logger/ui.pdf, id=1008, 462.52798pt x 346.89601pt>
 File: 5-results/energy/logger/ui.pdf Graphic file (type pdf)
 <use 5-results/energy/logger/ui.pdf>
 Package pdftex.def Info: 5-results/energy/logger/ui.pdf  used on input line 8.
 (pdftex.def)             Requested size: 409.71689pt x 307.30202pt.
- [31pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
-1}) has been already used, duplicate ignored
+ [31
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.16 
       <./5-results/energy/logger/ui.pdf>]
-<5-results/energy/logger/p.pdf, id=1052, 462.52798pt x 346.89601pt>
+<5-results/energy/logger/p.pdf, id=1064, 462.52798pt x 346.89601pt>
 File: 5-results/energy/logger/p.pdf Graphic file (type pdf)
 <use 5-results/energy/logger/p.pdf>
 Package pdftex.def Info: 5-results/energy/logger/p.pdf  used on input line 22.
@@ -2181,14 +2193,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--8
 ]
 Appendix A.
 [45]
-<../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, id=1198, page=1, 597.55246pt 
+<../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, id=1213, page=1, 597.55246pt 
 x 845.07718pt>
 File: ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf Graphic file (type pdf)
 <use ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, page 1>
 Package pdftex.def Info: ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf , page
 1 used on input line 8.
 (pdftex.def)             Requested size: 455.24408pt x 643.8385pt.
-<../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, id=1199, page=2, 597.55246pt 
+<../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, id=1214, page=2, 597.55246pt 
 x 845.07718pt>
 File: ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf Graphic file (type pdf)
 <use ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf, page 2>
@@ -2197,26 +2209,26 @@ Package pdftex.def Info: ../Aufgabenstellung/LowPowerWakeupReiceiver.pdf , page
 (pdftex.def)             Requested size: 455.24408pt x 643.8385pt.
  [46 <../Aufgabenstellung/LowPowerWakeupReiceiver.pdf>] [47 <../Aufgabenstellun
 g/LowPowerWakeupReiceiver.pdf>]
-<../Pflichtenheft/HSR_SRS_main.pdf, id=1236, page=1, 597.50829pt x 845.0471pt>
+<../Pflichtenheft/HSR_SRS_main.pdf, id=1251, page=1, 597.50829pt x 845.0471pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 1>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page1 used on inpu
 t line 19.
 (pdftex.def)             Requested size: 455.24408pt x 643.84138pt.
-<../Pflichtenheft/HSR_SRS_main.pdf, id=1237, page=2, 597.50829pt x 845.0471pt>
+<../Pflichtenheft/HSR_SRS_main.pdf, id=1252, page=2, 597.50829pt x 845.0471pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 2>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page2 used on inpu
 t line 23.
 (pdftex.def)             Requested size: 455.24408pt x 643.84138pt.
-<../Pflichtenheft/HSR_SRS_main.pdf, id=1238, page=3, 597.50829pt x 845.0471pt>
+<../Pflichtenheft/HSR_SRS_main.pdf, id=1253, page=3, 597.50829pt x 845.0471pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 3>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page3 used on inpu
 t line 27.
 (pdftex.def)             Requested size: 455.24408pt x 643.84138pt.
  [48 <../Pflichtenheft/HSR_SRS_main.pdf>]
-<../Pflichtenheft/HSR_SRS_main.pdf, id=1447, page=4, 597.50829pt x 845.0471pt>
+<../Pflichtenheft/HSR_SRS_main.pdf, id=1462, page=4, 597.50829pt x 845.0471pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 4>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page4 used on inpu
@@ -2230,7 +2242,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [50 <../Pflichtenheft/HSR_SRS_main.pdf>] [51 <../Pflichtenheft/HSR_SRS_main.pd
 f>]
-<../Pflichtenheft/HSR_SRS_main.pdf, id=1593, page=5, 845.0471pt x 597.50829pt>
+<../Pflichtenheft/HSR_SRS_main.pdf, id=1608, page=5, 845.0471pt x 597.50829pt>
 File: ../Pflichtenheft/HSR_SRS_main.pdf Graphic file (type pdf)
 <use ../Pflichtenheft/HSR_SRS_main.pdf, page 5>
 Package pdftex.def Info: ../Pflichtenheft/HSR_SRS_main.pdf , page5 used on inpu
@@ -2267,10 +2279,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31623 strings out of 492895
- 560990 string characters out of 3123269
- 1038683 words of memory out of 3000000
- 34638 multiletter control sequences out of 15000+200000
+ 31629 strings out of 492895
+ 561223 string characters out of 3123269
+ 1045191 words of memory out of 3000000
+ 34643 multiletter control sequences out of 15000+200000
  54477 words of font info for 100 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,13n,48p,3238b,1593s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2287,19 +2299,20 @@ ts/cm/cmr5.pfb><C:/Users/Cedric/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmr7.pfb><C:/Users/Cedric/AppData/Local/Programs/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Cedric/AppData/Local/Programs/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/Cedric/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/rtxb.pfb><C:/Users/Cedric/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users
-/Cedric/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/rtxr.pfb><
-C:/Users/Cedric/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/t1
-xtt.pfb><C:/Users/Cedric/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/t
-xfonts/txex.pfb><C:/Users/Cedric/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/txfonts/txsy.pfb><C:/Users/Cedric/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/urw/times/utmb8a.pfb><C:/Users/Cedric/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Cedric/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (58 pages, 10566963 bytes).
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Ce
+dric/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/rtxb.pfb><C:/
+Users/Cedric/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/rtxmi
+.pfb><C:/Users/Cedric/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfo
+nts/rtxr.pfb><C:/Users/Cedric/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/txfonts/t1xtt.pfb><C:/Users/Cedric/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/txfonts/txex.pfb><C:/Users/Cedric/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/txfonts/txsy.pfb><C:/Users/Cedric/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Cedric/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Cedric/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (58 pages, 10588589 bytes).
 PDF statistics:
- 1779 PDF objects out of 2073 (max. 8388607)
- 207 named destinations out of 1000 (max. 500000)
- 475 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1795 PDF objects out of 2073 (max. 8388607)
+ 208 named destinations out of 1000 (max. 500000)
+ 480 words of extra memory for PDF output out of 10000 (max. 10000000)
 
