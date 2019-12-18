@@ -6,9 +6,15 @@
 
 The software of the ULPWUR is separated in three different parts. 
 
-\includegraphics[scale=0.3]{4-development/software/graphics/font12.pdf}
 
 \subsection{Receiver}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[height=0.9\textheight]{4-development/software/graphics/main.pdf}
+	\caption{\acs{ble}-communication with the nRF52480.\label{software:main}}
+\end{figure}
+
 
 \subsubsection{nRF52840}
 The software on both sides of the bluetooth channel is very similar, thus it is explained in this section.
@@ -22,7 +28,7 @@ Is the connection established, it is now possible to exchange data through this 
 This process is illustrated in Figure \ref{software:ble}.
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.9\textwidth]{4-development/software/graphics/ble.pdf}
+	\includegraphics[width=0.8\textwidth]{4-development/software/graphics/ble.pdf}
 	\caption{\acs{ble}-communication with the nRF52480.\label{software:ble}}
 \end{figure}
 
