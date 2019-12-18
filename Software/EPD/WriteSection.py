@@ -7,8 +7,9 @@ com_port = 'COM14'
 device = serial.Serial(com_port, baudrate, writeTimeout=0)
 
 #[location, fach(13 lang + \0), dozent (3 lang +\0)]
-data = [[0, chr(3), '\0\0\0\0'],[11 , 'WsComm1\0', 'MAH\0'],
-        [3 , 'WsComm1\0', 'MAH\0'], [10 , 'WsComm1\0', 'MAH\0']]
+data = [[0, chr(5), '\0\0\0\0'],[7 , 'Phys1-u\0', 'HUG\0'],
+        [17 , 'Ph1Mech-u\0', 'HUG\0'], [8 , 'Ph3SWO-u\0', 'BUC\0'],
+        [9, 'Ph3SWO-u', 'BUC\0'], [20, 'Ph1Mech-u','MUM\0']]
 
 #mit \0 auffüllen
 for i in range(len(data)):
