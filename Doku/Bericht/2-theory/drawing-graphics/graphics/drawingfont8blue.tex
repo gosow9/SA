@@ -7,7 +7,7 @@
 	
 	\begin{tikzpicture}[scale=.5,every node/.style={minimum size=1cm},on grid]
 	\begin{scope}%
-	\draw[very thick] (-14,-10) rectangle (14,10);
+	%\draw[very thick] (-14,-10) rectangle (14,10);
 	
 	%slanting: production of a set of n 'laminae' to be piled up. N=number of grids.
 	\begin{scope}[
@@ -103,10 +103,10 @@
 	\end{scope}
 	
 	%putting arrows and labels:
-	\draw[-latex,thick] (7,7) node[right]{Compressed font}
+	\draw[-latex,thick] (7,7) node[right]{\Large Compressed font}
 	to[out=180,in=90] (6,3.5);
 	
-	\draw[<->,>=stealth](7.1,3.6)--(7.1,-4.5) node[midway,right] {8bit color depth};
+	\draw[<->,>=stealth, very thick](7.3,3.5)--(7.3,-4.5) node[midway,right] {\Large 8bit color depth};
 	
 	%\draw[-latex-,thick] (-3+14,2.5-9)to(-1.2+14,1-9);
 	
