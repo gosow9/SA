@@ -46,9 +46,9 @@ plt.rcParams['font.family'] = 'STIXGeneral'
 plt.rcParams.update({'font.size': 12})
 
 #plot
-plt.plot(t, v_bat, label='$V_{\mathbf{BAT}}$')
-plt.plot(t, v_step, label='$V_{\mathbf{BOOT}}$')
-plt.plot(t, v_ldo, label='$V_{\mathbf{LDO}}$', color='tab:red')
+plt.plot(t, v_bat, label='$V_{\mathrm{BAT}}$')
+plt.plot(t, v_step, label='$V_{\mathrm{BOOT}}$')
+plt.plot(t, v_ldo, label='$V_{\mathrm{LDO}}$', color='tab:red')
 #plt.plot(t, v_disp, label='$V_{\mathbf{DISP}}$', color='tab:red')
 plt.xlim([0, 12])
 plt.ylim([0, 4])
