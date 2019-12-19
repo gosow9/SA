@@ -4,77 +4,77 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Capsules between to electrodes (taken from \cite {amundson} with adjustments).}}{5}{figure.2.1}% 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Capsules between to electrodes (taken from \cite {amundson} with adjustments).}}{5}{figure.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces E-paper display under microscope with 250x magnification.}}{6}{figure.2.2}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces \acl {epd} under microscope with 250x magnification.}}{6}{figure.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Microcontroller checks periodically for incoming data (top), additional, constantly listening wakeup receiver (bottom).}}{7}{figure.2.3}% 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Top: Microcontroller checks periodically for incoming data. Bottom: Constantly listening wakeup receiver.}}{7}{figure.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces $16\times 11$ pixel display with a flat matrix }}{9}{figure.2.4}% 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Double buffering.}}{8}{figure.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces $16\times 11$ display with a two dimensional matrix}}{10}{figure.2.5}% 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Creation of a simple seven to twelve pixel sized font.}}{9}{figure.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Double buffer example while writing different images to screen}}{11}{figure.2.6}% 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces $12 \times 7$ pixel font mask displayed with $1$- and $8$bit colour depth}}{9}{figure.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Creation of a simple seven to twelve pixel sized font}}{11}{figure.2.7}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {1 bit colour font}}}{9}{figure.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces $12 \times 7$ pixel font mask displayed with $1$- and $8$bit colour depth}}{12}{figure.2.8}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {8 bit colour font (value for blue)}}}{9}{figure.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Font mask displayed in one bit color depth}}}{12}{figure.2.8}% 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {8 bit colour font (value for green) }}}{9}{figure.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Font mask displayed in eight bit color depth with the value for blue }}}{12}{figure.2.8}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Font mask displayed in eight bit color depth with the value for green }}}{12}{figure.2.8}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Font mask displayed in eight bit color depth with the value for red }}}{12}{figure.2.8}% 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {8 bit colour font (value for red) }}}{9}{figure.2.6}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Receiver schematics.}}{17}{figure.4.1}% 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Receiver schematics.}}{15}{figure.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Transmitter GUI.}}{18}{figure.4.2}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Transmitter GUI.}}{16}{figure.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Receiver GUI.}}{19}{figure.4.3}% 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Receiver GUI.}}{17}{figure.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Test environment 1 (\acs {hsr} building 1).}}{20}{figure.4.4}% 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Test environment 1 (\acs {hsr} building 1).}}{18}{figure.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Test environment 2 (\acs {hsr} building 8).}}{21}{figure.4.5}% 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Test environment 2 (\acs {hsr} building 8).}}{19}{figure.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Schematics of the test setup.}}{22}{figure.4.6}% 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Schematics of the test setup.}}{20}{figure.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Charging behaviour.}}{23}{figure.4.7}% 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Charging behaviour.}}{21}{figure.4.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Discharging behaviour.}}{24}{figure.4.8}% 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Discharging behaviour.}}{22}{figure.4.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Comparison between the first and second version of the power latch to show their difference of the layout and components}}{25}{figure.4.9}% 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Comparison between the first and second version of the power latch to show their difference of the layout and components}}{23}{figure.4.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {3D picture of version one of the power latch }}}{25}{figure.4.9}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {3D picture of version one of the power latch }}}{23}{figure.4.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {3D picture of version two of the power latch }}}{25}{figure.4.9}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {3D picture of version two of the power latch }}}{23}{figure.4.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Top layer of the version one powerlatch }}}{25}{figure.4.9}% 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Top layer of the version one powerlatch }}}{23}{figure.4.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Top layer of the version two powerlatch }}}{25}{figure.4.9}% 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Top layer of the version two powerlatch }}}{23}{figure.4.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Bottom layer of the version one powerlatch }}}{25}{figure.4.9}% 
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Bottom layer of the version one powerlatch }}}{23}{figure.4.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Bottom layer of the version two powerlatch }}}{25}{figure.4.9}% 
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Bottom layer of the version two powerlatch }}}{23}{figure.4.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces not up to date sequence}}{26}{figure.4.10}% 
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Refresh sequence.}}{24}{figure.4.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.11}{\ignorespaces \acs {ble}-communication with the nRF52480.}}{28}{figure.4.11}% 
+\contentsline {figure}{\numberline {4.11}{\ignorespaces STM32 program flow chart.}}{28}{figure.4.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.12}{\ignorespaces \acs {ble}-communication with the nRF52480.}}{29}{figure.4.12}% 
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Example schedule used as an template.}}{29}{figure.4.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Write characters to image buffer.}}{30}{figure.4.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.14}{\ignorespaces \acs {ble}-communication with the nRF52480.}}{31}{figure.4.14}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Power consumption during one write cycle.}}{31}{figure.5.1}% 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Power consumption during one write cycle.}}{33}{figure.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Current and Voltage during one write-cycle.}}{32}{figure.5.2}% 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Current and Voltage during one write-cycle.}}{34}{figure.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Power consumption during one write cycle.}}{33}{figure.5.3}% 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Power consumption during one write cycle.}}{35}{figure.5.3}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
