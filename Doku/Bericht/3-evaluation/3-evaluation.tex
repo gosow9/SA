@@ -2,13 +2,13 @@
 
 \section{Wakeup Receiver}
 In this semester thesis, two different implementations of the wakeup receiver technology were compared.
-The AS3933 from AMS and the RFicient from the \acf{fraun} which kindly provided an evaluation kit before the actual release of the product.
+The AS3933 from AMS and the RFicient from the \acf{fraun}, which kindly provided an evaluation kit before the actual release of the product.
 
 \subsection{AS3933}
 The AS3933 is a low frequency wakeup receiver, which uses \acs{ask} to modulate a carrier frequency between 15-150\,kHz.
 The transmitter sends a manchester encoded, programmable wakeup pattern of length 16 or 32 bit.
 If this pattern is detected on the receiver end, a wakeup interrupt is generated.
-It is also possible to disable the the pattern decoder to run the chip in a frequency detection mode, where a wakeup interrupt is generated as soon as the specified frequency is received.
+It is also possible to disable the pattern decoder to run the chip in a frequency detection mode, where a wakeup interrupt is generated as soon as the specified frequency is received.
 More important features on the receiver end are:
 \begin{itemize}
 	\item[-] Receiver sensitivity $80\,\mu\text{V$_{\text{RMS}}$}$
@@ -17,7 +17,7 @@ More important features on the receiver end are:
 	\item[-] Three antennas (enables 3D detection)
 	\item[-] Channels  individually selective to reduce power consumption
 \end{itemize}
-The low power consumption makes it possible run the receiver in listening mode below $8.3\,\mu\text{W}$\cite{as3933}.
+The low power consumption makes it possible to run the receiver in listening mode below $8.3\,\mu\text{W}$\cite{as3933}.
 
 The demo kit comes with a \acs{gui}, which enables the user to set the parameters as desired and address the registers directly.
 The range of the receiver of about 6\,m as first measurement turns out to be very limited.
@@ -28,9 +28,9 @@ As a result, the limited range makes the AS3933 unusable for the prototype.
 
 \subsection{RFicient}
 The Rficient from the \acs{fraun} uses \acs{ook} to modulate a 868\,MHz signal.
-It can either run in pure wakeup mode, where the receiver generates an interrupt as soon as a code is received or a selective mode, where a 16 bit wakeup preamble needs to match the receiver. 
-After the preamble is detected, the data rate can be changed to transfer more bits which can be sent over an \acs{spi}-bus to a connected device.
-This way, it is possible to transmit data bits after the actual wakeup.
+It can either run in pure wakeup mode, where the receiver generates an interrupt as soon as a code is received or in a selective mode, where a 16 bit wakeup preamble needs to match the receiver. 
+After the preamble is detected, the data rate can be changed to transfer more bits, which can be sent over an \acs{spi}-bus to a connected device.
+It is possible to transmit data bits after the actual wakeup in this way.
 Data rates can be set in a range between $256\,\text{bp/s}-32\,\text{kbp/s}$.
 The most important features are:
 \begin{itemize}
@@ -45,7 +45,7 @@ First measurements showed that the range of the RFicient is far higher than the 
 It is therefore used in the prototype.
 
 \section{Microcontroller}
-To handle incoming data and write it to the display driver, some kind of microcontroller is needed.
+To the handle incoming data and write it to the display driver, some kind of microcontroller is needed.
 A derivate of the MSP430 and one of the STM32 were looked at more closely.
 
 \subsection{MSP430}
@@ -62,12 +62,12 @@ The display driver chip can be controlled over \acs{spi}  \cite{msp430}.
 During development, it turned out to be very useful to store a complete image.
 The required memory to do this assuming 16 grey levels and a $1200\times 825$ size display is:
 $$M = 1200\cdot 825\cdot4\,\text{bit}=495'000\,\text{B} < 484\,\text{kB}.$$
-the \acs{fram} is therefore not sufficient.
+Therefore is the \acs{fram} not sufficient.
 This is the main reason, why a different microcontroller is needed.
 
 \subsection{STM32}
 The STM32L4R5ZI by STMircoelectronics is just like the MSP430 developed for low-power applications.
-Most important features are:
+The most important features are:
 \begin{itemize}
 	\item[-] 32-bit Cortex-M4 \acs{cpu}
 	\item[-] Several clock sources between 4 and 48\,MHz
@@ -77,8 +77,8 @@ Most important features are:
 \end{itemize}
 The display driver can again be controlled over \acs{spi} \cite{stm32}.
 
-The STM32 is in general more flexible and most important has enough memory for a complete picture.
-That it consumes slightly more power than the MSP430 should not be to much of a problem, since it is only in run mode a few seconds, before being completely switched off again.
+The STM32 is in general more flexible and, most importantly, has enough memory for a complete picture.
+That it consumes slightly more power than the MSP430 should not be to much of a problem, since it is only in run mode for a few seconds, before being completely switched off again.
 The standby mode of the controller is not used and therefore of no interest.
 
 
