@@ -7,6 +7,11 @@ Every component is described in more detail in this section.
 	\caption{Receiver schematics.\label{hardware:block}}
 \end{figure}
 
+\subsection{Display}
+An 9.7\,inch (202.8\,mm $\times$ 139.425\,mm) e-paper display from waveshare is used which adopts the microencapsulated electrophoretic display technology just as described in Chapter \ref{theory}.
+It has a $1200\times 825$ resolution with 16 grey scales.
+The display driver can be accessed from a microcontroller with a \acs{spi}-bus \cite{waveshare}.
+
 \subsection{Microcontroller}
 
 \subsection{Communication}
@@ -212,10 +217,6 @@ To enable and disable the power supply of everything but the ADP5090 and Wakeup 
 	\caption{Comparison between the first and second version of the power latch to show their difference of the layout and components}
 	\label{fig:pwr_layout}
 \end{figure}
-
-\subsection{Display}
-
-
 
 
 
