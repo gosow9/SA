@@ -15,6 +15,97 @@ The software of the ULPWUR is separated in three different parts.
 	\caption{\acs{ble}-communication with the nRF52480.\label{software:main}}
 \end{figure}
 
+\subsubsection{Microcontroller}
+\lstdefinestyle{mystyle}{
+	language=c,
+	tabsize=4,
+	showstringspaces=false,
+	backgroundcolor = \color{gray!15!white},
+	basicstyle=\footnotesize\ttfamily,
+	morekeywords={as},
+	keywordstyle=\color{red!80!black},
+	stringstyle=\color{green!50!black},
+	numberstyle=\color{red},
+	emph={int,char,double,float, uint8_t, uint16_t},
+	emphstyle=\color{green!50!black}
+}
+\lstset{style=mystyle}
+\begin{lstlisting}
+	void Paint_DrawString_EN(uint16_t Xstart, uint16_t Ystart,
+						 	 const char * pString, sFONT* Font,
+							 uint8_t Color_Background,
+							 uint8_t Color_Foreground) {
+		uint16_t Xpoint = Xstart;
+		uint16_t Ypoint = Ystart;
+	
+		if (Xstart > Paint.Width || Ystart > Paint.Height) {
+			return;
+		}
+	
+		while (* pString != '\0') {
+			if ((Xpoint + Font->Width ) > Paint.Width ) {
+				Xpoint = Xstart;
+				Ypoint += Font->Height;
+			}
+	
+			if ((Ypoint  + Font->Height ) > Paint.Height ) {
+				Xpoint = Xstart;
+				Ypoint = Ystart;
+			}
+		
+			Paint_DrawChar(Xpoint, Ypoint, * pString, Font, Color_Background, Color_Foreground);
+	
+			pString ++;
+	
+			Xpoint += Font->Width;
+		}
+	}
+	
+\end{lstlisting}
+
+\begin{figure}[ht!]
+\begin{lstlisting}
+
+void Paint_DrawChar(uint16_t Xpoint, uint16_t Ypoint, const char Acsii_Char,
+					sFONT* Font, uint8_t Color_Background, 
+					uint8_t Color_Foreground){
+uint16_t Page, Column;
+
+if (Xpoint > Paint.Width || Ypoint > Paint.Height) {
+return;
+}
+
+uint32_t Char_Offset = (Acsii_Char - ' ') * Font->Height * (Font->Width / 8 + (Font->Width % 8 ? 1 : 0));
+const unsigned char *ptr = &Font->table[Char_Offset];
+
+for (Page = 0; Page < Font->Height; Page ++ ) {
+for (Column = 0; Column < Font->Width; Column ++ ) {
+
+//To determine whether the font background color and screen background color is consistent
+if (FONT_BACKGROUND == Color_Background) { //this process is to speed up the scan
+//if (*ptr & (0x80 >> (Column % 8)))
+if (*ptr & (0x80 >> (Column % 8)))
+Paint_SetPixel(Xpoint + Column, Ypoint + Page, Color_Foreground);
+// Paint_DrawPoint(Xpoint + Column, Ypoint + Page, Color_Foreground, DOT_PIXEL_DFT, DOT_STYLE_DFT);
+} else {
+if (*ptr & (0x80 >> (Column%8))) {
+Paint_SetPixel(Xpoint + Column, Ypoint + Page, Color_Foreground);
+// Paint_DrawPoint(Xpoint + Column, Ypoint + Page, Color_Foreground, DOT_PIXEL_DFT, DOT_STYLE_DFT);
+} else {
+Paint_SetPixel(Xpoint + Column, Ypoint + Page, Color_Background);
+// Paint_DrawPoint(Xpoint + Column, Ypoint + Page, Color_Background, DOT_PIXEL_DFT, DOT_STYLE_DFT);
+}
+}
+//One pixel is 8 bits
+if (Column % 8 == 7)
+ptr++;
+}// Write a line
+if (Font->Width % 8 != 0)
+ptr++;
+}// Write all
+}
+\end{lstlisting}
+\end{figure}
 
 \subsubsection{nRF52840}
 The software on both sides of the bluetooth channel is very similar, thus it is explained in this section.
