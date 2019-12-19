@@ -55,16 +55,16 @@ void DrawCalenderField(uint8_t place, char* fach, char* dozent)
 					cal.color = KALBRIGHT;
 	}
 
-	Paint_NewImage(frameBuf, 196, 88, 0, 0xff);
-	Paint_Clear(cal.color);
-	//Paint_Clear(cal.color);
-	Paint_DrawString_EN(5, 20, fach, &Font24, cal.color, 0x44 );
+	setNewImage(frameBuf, 196, 88, 0, 0xff);
+	clear_Image(cal.color);
+	//clear_Image(cal.color);
+	drawString(5, 20, fach, &Font24, cal.color, 0x44 );
 	EpdDriverDrawBox(frameBuf, cal.posX, cal.posY, 196, 88);
 
 
-	Paint_NewImage(frameBuf, 196, 88, 0, 0xff);
-	Paint_Clear(cal.color);
-	Paint_DrawString_EN(5, 15, dozent, &Font24, cal.color, 0x44 );
+	setNewImage(frameBuf, 196, 88, 0, 0xff);
+	clear_Image(cal.color);
+	drawString(5, 15, dozent, &Font24, cal.color, 0x44 );
 	//EpdDriverDrawBox(frameBuf, 202, 195, 196, 88);
 	EpdDriverDrawBox(frameBuf, cal.posX, cal.posY+44, 196, 88);
 }
