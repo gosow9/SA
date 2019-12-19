@@ -112,29 +112,20 @@ typedef struct {
 extern PAINT_TIME sPaint_time;
 
 //init and Clear
-void Paint_NewImage(uint8_t *image, uint16_t Width, uint16_t Height, uint16_t Rotate, uint16_t Color);
-void Paint_SelectImage(uint8_t *image);
-void Paint_SetRotate(uint16_t Rotate);
-void Paint_SetMirroring(uint8_t mirror);
-void Paint_SetPixel(uint16_t Xpoint, uint16_t Ypoint, uint16_t Color);
-
-void Paint_Clear(uint8_t Color);
-void Paint_ClearWindows(uint16_t Xstart, uint16_t Ystart, uint16_t Xend, uint16_t Yend, uint16_t Color);
+void setNewImage(uint8_t *image, uint16_t Width, uint16_t Height, uint16_t Rotate, uint16_t Color);
+void selectImage(uint8_t *image);
+void setRotateImage(uint16_t Rotate);
+void setMirroringImage(uint8_t mirror);
+void setPixel(uint16_t Xpt, uint16_t Ypt, uint16_t Color);
+void clear_Image(uint8_t Color);
 
 //Drawing
-void Paint_DrawPoint(uint16_t Xpoint, uint16_t Ypoint, uint16_t Color, DOT_PIXEL Dot_Pixel, DOT_STYLE Dot_FillWay);
-void Paint_DrawLine(uint16_t Xstart, uint16_t Ystart, uint16_t Xend, uint16_t Yend, uint16_t Color, LINE_STYLE Line_Style, DOT_PIXEL Dot_Pixel);
-void Paint_DrawRectangle(uint16_t Xstart, uint16_t Ystart, uint16_t Xend, uint16_t Yend, uint16_t Color, DRAW_FILL Filled , DOT_PIXEL Dot_Pixel);
-void Paint_DrawCircle(uint16_t X_Center, uint16_t Y_Center, uint16_t Radius, uint16_t Color, DRAW_FILL Draw_Fill , DOT_PIXEL Dot_Pixel);
+void Paint_DrawPoint(uint16_t Xpt, uint16_t Ypt, uint16_t Color, DOT_PIXEL Dot_Pixel, DOT_STYLE Dot_FillWay);
+void Paint_DrawLine(uint16_t xStart, uint16_t yStart, uint16_t Xend, uint16_t Yend, uint16_t Color, LINE_STYLE Line_Style, DOT_PIXEL Dot_Pixel);
 
 //Display string
-void Paint_DrawChar(uint16_t Xstart, uint16_t Ystart, const char Acsii_Char, sFONT* Font, uint8_t Color_Background, uint8_t Color_Foreground);
-void Paint_DrawString_EN(uint16_t Xstart, uint16_t Ystart, const char * pString, sFONT* Font, uint8_t Color_Background, uint8_t Color_Foreground);
-void Paint_DrawNum(uint16_t Xpoint, uint16_t Ypoint, int32_t Nummber, sFONT* Font, uint16_t Color_Background, uint16_t Color_Foreground);
-void Paint_DrawTime(uint16_t Xstart, uint16_t Ystart, PAINT_TIME *pTime, sFONT* Font, uint16_t Color_Background, uint16_t Color_Foreground);
-
-//pic
-void Paint_DrawBitMap(const unsigned char* image_buffer);
+void drawChar(uint16_t xStart, uint16_t yStart, const char Acsii_Char, sFONT* Font, uint8_t cBackground, uint8_t cForeground);
+void drawString(uint16_t xStart, uint16_t yStart, const char * pString, sFONT* Font, uint8_t cBackground, uint8_t cForeground);
 
 
 #endif

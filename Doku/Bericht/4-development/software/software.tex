@@ -1,27 +1,57 @@
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{4-development/software/graphics/sequence.pdf}
 	\caption{not up to date sequence\label{software:sequence}}
 \end{figure}
 
-The software of the ULPWUR is separated in three different parts. 
-
 
 \subsection{Receiver}
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[height=0.9\textheight]{4-development/software/graphics/main.pdf}
-	\caption{\acs{ble}-communication with the nRF52480.\label{software:main}}
-\end{figure}
 
 \subsubsection{Microcontroller}
+The main controller of the receiver is the STM32. To develop firmware for the microcontroller the Hardware abstractions layer provided by STMicroelectronics is used. The firmware running on the STM32 is responsible for the following tasks:
+\begin{itemize}[H]
+	\item[-] Initialize the IT8951 display driver chip
+	\item[-] Receive data via UART from the BLE module
+	\item[-] Generating the displayed image data from a template
+	\item[-] Writing received text strings to the EPD
+	\item[-] Writing the image data to the display driver via SPI
+	\item[-] Control the power supply of all the different components
+\end{itemize}
+\paragraph{Configurations}
+
+\begin{center}
+	\begin{tabular}{ |c|c|c|c|c| } 
+		\hline
+		Description & Function &Pin number & Speed& Properties \\
+		\hline
+		\multirow{4}{4em}{SPI} 	& Chip select & PA0& &No Pull-up/-down \\ 
+								& Clock& PA1 & 14.0 MBits/s&No Pull-up/-down \\ 
+								& MISO & PA6&14.0 MBits/s & No Pull-up/-down  \\ 
+								& MOSI & PA7& 14.0 MBits/s&No Pull-up/-down  \\ 
+		\hline
+		\multirow{2}{4em}{UART} & TX & PC10 & 115.2 kBits/s & Pull-up   \\ 
+								& RX & PC11 & 115.2 kBits/s & Pull-up \\ 
+	\hline
+	\end{tabular}
+\end{center}
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.8\textheight]{4-development/software/graphics/main.pdf}
+	\caption{STM32 program flow chart\label{software:main}}
+\end{figure}
+In the flowchart\ref{software:main} it is visible that the controller itself never enters a deep sleep mode in the end of an program cycle. Instead the controller runs trough a power kill sequence which disables the own power supply. As a result of this the controller and remaining hardware consume no power instead of their deep sleep power consumption. 
+
+\paragraph{Template}
+The calendar template is getting preloaded in the flash of the STM32. To save memory, the file is converted into an $1200 \times 825$ PNG with the colour depth of 4 bit. The PNG then is used to create a .c file which holds an one dimensional array with all the pixel data in it.
+
+\paragraph{Writing characters}
 \lstdefinestyle{mystyle}{
 	language=c,
 	tabsize=4,
 	showstringspaces=false,
 	backgroundcolor = \color{gray!15!white},
-	basicstyle=\footnotesize\ttfamily,
+	basicstyle=\scriptsize\ttfamily,
 	morekeywords={as},
 	keywordstyle=\color{red!80!black},
 	stringstyle=\color{green!50!black},
@@ -30,84 +60,85 @@ The software of the ULPWUR is separated in three different parts.
 	emphstyle=\color{green!50!black}
 }
 \lstset{style=mystyle}
-\begin{lstlisting}
-	void Paint_DrawString_EN(uint16_t Xstart, uint16_t Ystart,
-						 	 const char * pString, sFONT* Font,
-							 uint8_t Color_Background,
-							 uint8_t Color_Foreground) {
-		uint16_t Xpoint = Xstart;
-		uint16_t Ypoint = Ystart;
-	
-		if (Xstart > Paint.Width || Ystart > Paint.Height) {
-			return;
-		}
-	
-		while (* pString != '\0') {
-			if ((Xpoint + Font->Width ) > Paint.Width ) {
-				Xpoint = Xstart;
-				Ypoint += Font->Height;
-			}
-	
-			if ((Ypoint  + Font->Height ) > Paint.Height ) {
-				Xpoint = Xstart;
-				Ypoint = Ystart;
-			}
-		
-			Paint_DrawChar(Xpoint, Ypoint, * pString, Font, Color_Background, Color_Foreground);
-	
-			pString ++;
-	
-			Xpoint += Font->Width;
-		}
-	}
-	
-\end{lstlisting}
 
 \begin{figure}[ht!]
+	\begin{lstlisting}
+void drawChar(uint16_t Xpt, uint16_t Ypt, const char Acsii_Char,
+					sFONT* Font, uint8_t cBackground, uint8_t cForeground)
+	{
+		uint16_t Page, Column;
+		if (Xpt > Paint.Width || Ypt > Paint.Height) 
+		{
+			return;
+		}
+	uint32_t Char_Offset = (Acsii_Char - ' ') * Font->Height * 
+							(Font->Width / 8 + (Font->Width % 8 ? 1 : 0));
+	const unsigned char *ptr = &Font->table[Char_Offset];
+	
+	for (Page = 0; Page < Font->Height; Page ++ ) 
+	{
+		for (Column = 0; Column < Font->Width; Column ++ ) 
+		{
+			if (FONT_BACKGROUND == cBackground) 
+			{ 
+				if (*ptr & (0x80 >> (Column % 8)))
+					Paint_SetPixel(Xpt+Column, Ypt+Page, cForeground);
+			} 
+			else 
+			{
+				if (*ptr & (0x80 >> (Column%8))) 
+				{
+					Paint_SetPixel(Xpt + Column, Ypt + Page, cForeground);					
+				} 
+				else 
+				{
+					Paint_SetPixel(Xpt + Column, Ypt + Page, cBackground);
+				}
+			}
+			//One pixel is 8 bits
+			if (Column % 8 == 7)
+				ptr++;
+		}
+		if (Font->Width % 8 != 0)
+			ptr++;
+	}
+}
+	\end{lstlisting}
+\end{figure}
+\begin{figure}[ht!]
 \begin{lstlisting}
-
-void Paint_DrawChar(uint16_t Xpoint, uint16_t Ypoint, const char Acsii_Char,
-					sFONT* Font, uint8_t Color_Background, 
-					uint8_t Color_Foreground){
-uint16_t Page, Column;
-
-if (Xpoint > Paint.Width || Ypoint > Paint.Height) {
-return;
-}
-
-uint32_t Char_Offset = (Acsii_Char - ' ') * Font->Height * (Font->Width / 8 + (Font->Width % 8 ? 1 : 0));
-const unsigned char *ptr = &Font->table[Char_Offset];
-
-for (Page = 0; Page < Font->Height; Page ++ ) {
-for (Column = 0; Column < Font->Width; Column ++ ) {
-
-//To determine whether the font background color and screen background color is consistent
-if (FONT_BACKGROUND == Color_Background) { //this process is to speed up the scan
-//if (*ptr & (0x80 >> (Column % 8)))
-if (*ptr & (0x80 >> (Column % 8)))
-Paint_SetPixel(Xpoint + Column, Ypoint + Page, Color_Foreground);
-// Paint_DrawPoint(Xpoint + Column, Ypoint + Page, Color_Foreground, DOT_PIXEL_DFT, DOT_STYLE_DFT);
-} else {
-if (*ptr & (0x80 >> (Column%8))) {
-Paint_SetPixel(Xpoint + Column, Ypoint + Page, Color_Foreground);
-// Paint_DrawPoint(Xpoint + Column, Ypoint + Page, Color_Foreground, DOT_PIXEL_DFT, DOT_STYLE_DFT);
-} else {
-Paint_SetPixel(Xpoint + Column, Ypoint + Page, Color_Background);
-// Paint_DrawPoint(Xpoint + Column, Ypoint + Page, Color_Background, DOT_PIXEL_DFT, DOT_STYLE_DFT);
-}
-}
-//One pixel is 8 bits
-if (Column % 8 == 7)
-ptr++;
-}// Write a line
-if (Font->Width % 8 != 0)
-ptr++;
-}// Write all
-}
+void drawString(uint16_t xStart, uint16_t yStart,const char * pString, sFONT* Font,
+							 uint8_t cBackground,uint8_t cForeground) 
+{
+	uint16_t Ypt = yStart;
+	uint16_t Xpt = xStart;
+	
+	if (xStart > Paint.Width || yStart > Paint.Height)
+	{
+		return;
+	}
+	while (* pString != '\0') 
+	{
+		if ((Xpt + Font->Width ) > Paint.Width ) 
+		{
+			Xpt = xStart;
+			Ypt += Font->Height;
+		}
+		if ((Ypt  + Font->Height ) > Paint.Height ) 
+		{
+			Xpt = xStart;
+			Ypt = yStart;
+		}
+		Paint_DrawChar(Xpt, Ypt, * pString, Font, cBackground, cForeground);
+		pString ++;
+		Xpt += Font->Width;
+	}
+}	
 \end{lstlisting}
 \end{figure}
 
-\subsubsection{nRF52840}
+
+\subsubsection{Communication}
 The software on both sides of the bluetooth channel is very similar, thus it is explained in this section.
 A \acs{ble} example project, which was provided by nordic, was only slightly changed to fit the purpose of this prototype.
 
@@ -137,7 +168,7 @@ It should be noted, that the roles of client and server do not in any case have 
 	tabsize=4,
 	showstringspaces=false,
 	backgroundcolor = \color{gray!15!white},
-	basicstyle=\footnotesize\ttfamily,
+	basicstyle=\scriptsize\ttfamily,
 	morekeywords={as},
 	keywordstyle=\color{blue!50!black},
 	stringstyle=\color{green!50!black},

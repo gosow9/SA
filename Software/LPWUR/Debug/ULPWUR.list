@@ -27,23 +27,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000030  00000000  00000000  000a0014  2**0
                   CONTENTS, READONLY
- 12 .debug_info   000142c6  00000000  00000000  000a0044  2**0
+ 12 .debug_info   00013f0a  00000000  00000000  000a0044  2**0
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_abbrev 00002908  00000000  00000000  000b430a  2**0
+ 13 .debug_abbrev 0000290c  00000000  00000000  000b3f4e  2**0
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_aranges 00000ef0  00000000  00000000  000b6c18  2**3
+ 14 .debug_aranges 00000ec0  00000000  00000000  000b6860  2**3
                   CONTENTS, READONLY, DEBUGGING
- 15 .debug_ranges 00000d68  00000000  00000000  000b7b08  2**3
+ 15 .debug_ranges 00000d38  00000000  00000000  000b7720  2**3
                   CONTENTS, READONLY, DEBUGGING
- 16 .debug_macro  0002c24a  00000000  00000000  000b8870  2**0
+ 16 .debug_macro  0002c243  00000000  00000000  000b8458  2**0
                   CONTENTS, READONLY, DEBUGGING
- 17 .debug_line   0000fd24  00000000  00000000  000e4aba  2**0
+ 17 .debug_line   0000fbb3  00000000  00000000  000e469b  2**0
                   CONTENTS, READONLY, DEBUGGING
- 18 .debug_str    001032ab  00000000  00000000  000f47de  2**0
+ 18 .debug_str    00103155  00000000  00000000  000f424e  2**0
                   CONTENTS, READONLY, DEBUGGING
- 19 .comment      0000007b  00000000  00000000  001f7a89  2**0
+ 19 .comment      0000007b  00000000  00000000  001f73a3  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00003ac0  00000000  00000000  001f7b04  2**2
+ 20 .debug_frame  000039cc  00000000  00000000  001f7420  2**2
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -1517,12 +1517,12 @@ void EpdDriverShowDisp()
  8000b88:	46bd      	mov	sp, r7
  8000b8a:	bd80      	pop	{r7, pc}
 
-08000b8c <Paint_NewImage>:
+08000b8c <setNewImage>:
 //    width   :   The width of the picture
 //    Height  :   The height of the picture
 //    Color   :   Whether the picture is inverted
 ******************************************************************************/
-void Paint_NewImage(uint8_t *image, uint16_t Width, uint16_t Height, uint16_t Rotate, uint16_t Color)
+void setNewImage(uint8_t *image, uint16_t Width, uint16_t Height, uint16_t Rotate, uint16_t Color)
 {
  8000b8c:	b480      	push	{r7}
  8000b8e:	b085      	sub	sp, #20
@@ -1538,70 +1538,70 @@ void Paint_NewImage(uint8_t *image, uint16_t Width, uint16_t Height, uint16_t Ro
  8000ba2:	4613      	mov	r3, r2
  8000ba4:	80fb      	strh	r3, [r7, #6]
     Paint.Image = NULL;
- 8000ba6:	4b1a      	ldr	r3, [pc, #104]	; (8000c10 <Paint_NewImage+0x84>)
+ 8000ba6:	4b1a      	ldr	r3, [pc, #104]	; (8000c10 <setNewImage+0x84>)
  8000ba8:	2200      	movs	r2, #0
  8000baa:	601a      	str	r2, [r3, #0]
     Paint.Image = image;
- 8000bac:	4a18      	ldr	r2, [pc, #96]	; (8000c10 <Paint_NewImage+0x84>)
+ 8000bac:	4a18      	ldr	r2, [pc, #96]	; (8000c10 <setNewImage+0x84>)
  8000bae:	68fb      	ldr	r3, [r7, #12]
  8000bb0:	6013      	str	r3, [r2, #0]
 
     Paint.WidthMemory = Width;
- 8000bb2:	4a17      	ldr	r2, [pc, #92]	; (8000c10 <Paint_NewImage+0x84>)
+ 8000bb2:	4a17      	ldr	r2, [pc, #92]	; (8000c10 <setNewImage+0x84>)
  8000bb4:	897b      	ldrh	r3, [r7, #10]
  8000bb6:	8113      	strh	r3, [r2, #8]
     Paint.HeightMemory = Height;
- 8000bb8:	4a15      	ldr	r2, [pc, #84]	; (8000c10 <Paint_NewImage+0x84>)
+ 8000bb8:	4a15      	ldr	r2, [pc, #84]	; (8000c10 <setNewImage+0x84>)
  8000bba:	893b      	ldrh	r3, [r7, #8]
  8000bbc:	8153      	strh	r3, [r2, #10]
     Paint.Color = Color;    
- 8000bbe:	4a14      	ldr	r2, [pc, #80]	; (8000c10 <Paint_NewImage+0x84>)
+ 8000bbe:	4a14      	ldr	r2, [pc, #80]	; (8000c10 <setNewImage+0x84>)
  8000bc0:	8b3b      	ldrh	r3, [r7, #24]
  8000bc2:	8193      	strh	r3, [r2, #12]
     //Paint.WidthByte = (Width % 8 == 0)? (Width / 8 ): (Width / 8 + 1);
     Paint.WidthByte = Width;
- 8000bc4:	4a12      	ldr	r2, [pc, #72]	; (8000c10 <Paint_NewImage+0x84>)
+ 8000bc4:	4a12      	ldr	r2, [pc, #72]	; (8000c10 <setNewImage+0x84>)
  8000bc6:	897b      	ldrh	r3, [r7, #10]
  8000bc8:	8253      	strh	r3, [r2, #18]
     Paint.HeightByte = Height;    
- 8000bca:	4a11      	ldr	r2, [pc, #68]	; (8000c10 <Paint_NewImage+0x84>)
+ 8000bca:	4a11      	ldr	r2, [pc, #68]	; (8000c10 <setNewImage+0x84>)
  8000bcc:	893b      	ldrh	r3, [r7, #8]
  8000bce:	8293      	strh	r3, [r2, #20]
     //printf("WidthByte = %d, HeightByte = %d\r\n", Paint.WidthByte, Paint.HeightByte);
     //printf(" EPD_WIDTH / 8 = %d\r\n",  122 / 8);
    
     Paint.Rotate = Rotate;
- 8000bd0:	4a0f      	ldr	r2, [pc, #60]	; (8000c10 <Paint_NewImage+0x84>)
+ 8000bd0:	4a0f      	ldr	r2, [pc, #60]	; (8000c10 <setNewImage+0x84>)
  8000bd2:	88fb      	ldrh	r3, [r7, #6]
  8000bd4:	81d3      	strh	r3, [r2, #14]
     Paint.Mirror = MIRROR_NONE;
- 8000bd6:	4b0e      	ldr	r3, [pc, #56]	; (8000c10 <Paint_NewImage+0x84>)
+ 8000bd6:	4b0e      	ldr	r3, [pc, #56]	; (8000c10 <setNewImage+0x84>)
  8000bd8:	2200      	movs	r2, #0
  8000bda:	821a      	strh	r2, [r3, #16]
     
     if(Rotate == ROTATE_0 || Rotate == ROTATE_180) {
  8000bdc:	88fb      	ldrh	r3, [r7, #6]
  8000bde:	2b00      	cmp	r3, #0
- 8000be0:	d002      	beq.n	8000be8 <Paint_NewImage+0x5c>
+ 8000be0:	d002      	beq.n	8000be8 <setNewImage+0x5c>
  8000be2:	88fb      	ldrh	r3, [r7, #6]
  8000be4:	2bb4      	cmp	r3, #180	; 0xb4
- 8000be6:	d106      	bne.n	8000bf6 <Paint_NewImage+0x6a>
+ 8000be6:	d106      	bne.n	8000bf6 <setNewImage+0x6a>
         Paint.Width = Width;
- 8000be8:	4a09      	ldr	r2, [pc, #36]	; (8000c10 <Paint_NewImage+0x84>)
+ 8000be8:	4a09      	ldr	r2, [pc, #36]	; (8000c10 <setNewImage+0x84>)
  8000bea:	897b      	ldrh	r3, [r7, #10]
  8000bec:	8093      	strh	r3, [r2, #4]
         Paint.Height = Height;
- 8000bee:	4a08      	ldr	r2, [pc, #32]	; (8000c10 <Paint_NewImage+0x84>)
+ 8000bee:	4a08      	ldr	r2, [pc, #32]	; (8000c10 <setNewImage+0x84>)
  8000bf0:	893b      	ldrh	r3, [r7, #8]
  8000bf2:	80d3      	strh	r3, [r2, #6]
- 8000bf4:	e005      	b.n	8000c02 <Paint_NewImage+0x76>
+ 8000bf4:	e005      	b.n	8000c02 <setNewImage+0x76>
     } else {
         Paint.Width = Height;
- 8000bf6:	4a06      	ldr	r2, [pc, #24]	; (8000c10 <Paint_NewImage+0x84>)
+ 8000bf6:	4a06      	ldr	r2, [pc, #24]	; (8000c10 <setNewImage+0x84>)
  8000bf8:	893b      	ldrh	r3, [r7, #8]
  8000bfa:	8093      	strh	r3, [r2, #4]
         Paint.Height = Width;
- 8000bfc:	4a04      	ldr	r2, [pc, #16]	; (8000c10 <Paint_NewImage+0x84>)
+ 8000bfc:	4a04      	ldr	r2, [pc, #16]	; (8000c10 <setNewImage+0x84>)
  8000bfe:	897b      	ldrh	r3, [r7, #10]
  8000c00:	80d3      	strh	r3, [r2, #6]
     }
@@ -1614,12 +1614,12 @@ void Paint_NewImage(uint8_t *image, uint16_t Width, uint16_t Height, uint16_t Ro
  8000c0e:	bf00      	nop
  8000c10:	20000060 	.word	0x20000060
 
-08000c14 <Paint_SetPixel>:
-//    Xpoint  :   At point X
-//    Ypoint  :   At point Y
+08000c14 <setPixel>:
+//    Xpt  :   At point X
+//    Ypt  :   At point Y
 //    Color   :   Painted colors
 ******************************************************************************/
-void Paint_SetPixel(uint16_t Xpoint, uint16_t Ypoint, uint16_t Color)
+void setPixel(uint16_t Xpt, uint16_t Ypt, uint16_t Color)
 {
  8000c14:	b480      	push	{r7}
  8000c16:	b085      	sub	sp, #20
@@ -1630,76 +1630,76 @@ void Paint_SetPixel(uint16_t Xpoint, uint16_t Ypoint, uint16_t Color)
  8000c20:	80bb      	strh	r3, [r7, #4]
  8000c22:	4613      	mov	r3, r2
  8000c24:	807b      	strh	r3, [r7, #2]
-    if(Xpoint > Paint.Width || Ypoint > Paint.Height){
- 8000c26:	4b50      	ldr	r3, [pc, #320]	; (8000d68 <Paint_SetPixel+0x154>)
+    if(Xpt > Paint.Width || Ypt > Paint.Height){
+ 8000c26:	4b50      	ldr	r3, [pc, #320]	; (8000d68 <setPixel+0x154>)
  8000c28:	889b      	ldrh	r3, [r3, #4]
  8000c2a:	88fa      	ldrh	r2, [r7, #6]
  8000c2c:	429a      	cmp	r2, r3
- 8000c2e:	f200 8091 	bhi.w	8000d54 <Paint_SetPixel+0x140>
- 8000c32:	4b4d      	ldr	r3, [pc, #308]	; (8000d68 <Paint_SetPixel+0x154>)
+ 8000c2e:	f200 8091 	bhi.w	8000d54 <setPixel+0x140>
+ 8000c32:	4b4d      	ldr	r3, [pc, #308]	; (8000d68 <setPixel+0x154>)
  8000c34:	88db      	ldrh	r3, [r3, #6]
  8000c36:	88ba      	ldrh	r2, [r7, #4]
  8000c38:	429a      	cmp	r2, r3
- 8000c3a:	f200 808b 	bhi.w	8000d54 <Paint_SetPixel+0x140>
+ 8000c3a:	f200 808b 	bhi.w	8000d54 <setPixel+0x140>
 //        Debug("Exceeding display boundaries\r\n");
         return;
     }      
     uint16_t X, Y;
 
     switch(Paint.Rotate) {
- 8000c3e:	4b4a      	ldr	r3, [pc, #296]	; (8000d68 <Paint_SetPixel+0x154>)
+ 8000c3e:	4b4a      	ldr	r3, [pc, #296]	; (8000d68 <setPixel+0x154>)
  8000c40:	89db      	ldrh	r3, [r3, #14]
  8000c42:	2b5a      	cmp	r3, #90	; 0x5a
- 8000c44:	d00f      	beq.n	8000c66 <Paint_SetPixel+0x52>
+ 8000c44:	d00f      	beq.n	8000c66 <setPixel+0x52>
  8000c46:	2b5a      	cmp	r3, #90	; 0x5a
- 8000c48:	dc02      	bgt.n	8000c50 <Paint_SetPixel+0x3c>
+ 8000c48:	dc02      	bgt.n	8000c50 <setPixel+0x3c>
  8000c4a:	2b00      	cmp	r3, #0
- 8000c4c:	d006      	beq.n	8000c5c <Paint_SetPixel+0x48>
-        X = Ypoint;
-        Y = Paint.HeightMemory - Xpoint - 1;
+ 8000c4c:	d006      	beq.n	8000c5c <setPixel+0x48>
+        X = Ypt;
+        Y = Paint.HeightMemory - Xpt - 1;
         break;
 		
     default:
         return;
- 8000c4e:	e086      	b.n	8000d5e <Paint_SetPixel+0x14a>
+ 8000c4e:	e086      	b.n	8000d5e <setPixel+0x14a>
     switch(Paint.Rotate) {
  8000c50:	2bb4      	cmp	r3, #180	; 0xb4
- 8000c52:	d012      	beq.n	8000c7a <Paint_SetPixel+0x66>
+ 8000c52:	d012      	beq.n	8000c7a <setPixel+0x66>
  8000c54:	f5b3 7f87 	cmp.w	r3, #270	; 0x10e
- 8000c58:	d01e      	beq.n	8000c98 <Paint_SetPixel+0x84>
+ 8000c58:	d01e      	beq.n	8000c98 <setPixel+0x84>
         return;
- 8000c5a:	e080      	b.n	8000d5e <Paint_SetPixel+0x14a>
-        X = Xpoint;
+ 8000c5a:	e080      	b.n	8000d5e <setPixel+0x14a>
+        X = Xpt;
  8000c5c:	88fb      	ldrh	r3, [r7, #6]
  8000c5e:	81fb      	strh	r3, [r7, #14]
-        Y = Ypoint;  
+        Y = Ypt;
  8000c60:	88bb      	ldrh	r3, [r7, #4]
  8000c62:	81bb      	strh	r3, [r7, #12]
         break;
- 8000c64:	e022      	b.n	8000cac <Paint_SetPixel+0x98>
-        X = Paint.WidthMemory - Ypoint - 1;
- 8000c66:	4b40      	ldr	r3, [pc, #256]	; (8000d68 <Paint_SetPixel+0x154>)
+ 8000c64:	e022      	b.n	8000cac <setPixel+0x98>
+        X = Paint.WidthMemory - Ypt - 1;
+ 8000c66:	4b40      	ldr	r3, [pc, #256]	; (8000d68 <setPixel+0x154>)
  8000c68:	891a      	ldrh	r2, [r3, #8]
  8000c6a:	88bb      	ldrh	r3, [r7, #4]
  8000c6c:	1ad3      	subs	r3, r2, r3
  8000c6e:	b29b      	uxth	r3, r3
  8000c70:	3b01      	subs	r3, #1
  8000c72:	81fb      	strh	r3, [r7, #14]
-        Y = Xpoint;
+        Y = Xpt;
  8000c74:	88fb      	ldrh	r3, [r7, #6]
  8000c76:	81bb      	strh	r3, [r7, #12]
         break;
- 8000c78:	e018      	b.n	8000cac <Paint_SetPixel+0x98>
-        X = Paint.WidthMemory - Xpoint - 1;
- 8000c7a:	4b3b      	ldr	r3, [pc, #236]	; (8000d68 <Paint_SetPixel+0x154>)
+ 8000c78:	e018      	b.n	8000cac <setPixel+0x98>
+        X = Paint.WidthMemory - Xpt - 1;
+ 8000c7a:	4b3b      	ldr	r3, [pc, #236]	; (8000d68 <setPixel+0x154>)
  8000c7c:	891a      	ldrh	r2, [r3, #8]
  8000c7e:	88fb      	ldrh	r3, [r7, #6]
  8000c80:	1ad3      	subs	r3, r2, r3
  8000c82:	b29b      	uxth	r3, r3
  8000c84:	3b01      	subs	r3, #1
  8000c86:	81fb      	strh	r3, [r7, #14]
-        Y = Paint.HeightMemory - Ypoint - 1;
- 8000c88:	4b37      	ldr	r3, [pc, #220]	; (8000d68 <Paint_SetPixel+0x154>)
+        Y = Paint.HeightMemory - Ypt - 1;
+ 8000c88:	4b37      	ldr	r3, [pc, #220]	; (8000d68 <setPixel+0x154>)
  8000c8a:	895a      	ldrh	r2, [r3, #10]
  8000c8c:	88bb      	ldrh	r3, [r7, #4]
  8000c8e:	1ad3      	subs	r3, r2, r3
@@ -1707,12 +1707,12 @@ void Paint_SetPixel(uint16_t Xpoint, uint16_t Ypoint, uint16_t Color)
  8000c92:	3b01      	subs	r3, #1
  8000c94:	81bb      	strh	r3, [r7, #12]
         break;
- 8000c96:	e009      	b.n	8000cac <Paint_SetPixel+0x98>
-        X = Ypoint;
+ 8000c96:	e009      	b.n	8000cac <setPixel+0x98>
+        X = Ypt;
  8000c98:	88bb      	ldrh	r3, [r7, #4]
  8000c9a:	81fb      	strh	r3, [r7, #14]
-        Y = Paint.HeightMemory - Xpoint - 1;
- 8000c9c:	4b32      	ldr	r3, [pc, #200]	; (8000d68 <Paint_SetPixel+0x154>)
+        Y = Paint.HeightMemory - Xpt - 1;
+ 8000c9c:	4b32      	ldr	r3, [pc, #200]	; (8000d68 <setPixel+0x154>)
  8000c9e:	895a      	ldrh	r2, [r3, #10]
  8000ca0:	88fb      	ldrh	r3, [r7, #6]
  8000ca2:	1ad3      	subs	r3, r2, r3
@@ -1724,11 +1724,11 @@ void Paint_SetPixel(uint16_t Xpoint, uint16_t Ypoint, uint16_t Color)
     }
     
     switch(Paint.Mirror) {
- 8000cac:	4b2e      	ldr	r3, [pc, #184]	; (8000d68 <Paint_SetPixel+0x154>)
+ 8000cac:	4b2e      	ldr	r3, [pc, #184]	; (8000d68 <setPixel+0x154>)
  8000cae:	8a1b      	ldrh	r3, [r3, #16]
  8000cb0:	2b03      	cmp	r3, #3
- 8000cb2:	d851      	bhi.n	8000d58 <Paint_SetPixel+0x144>
- 8000cb4:	a201      	add	r2, pc, #4	; (adr r2, 8000cbc <Paint_SetPixel+0xa8>)
+ 8000cb2:	d851      	bhi.n	8000d58 <setPixel+0x144>
+ 8000cb4:	a201      	add	r2, pc, #4	; (adr r2, 8000cbc <setPixel+0xa8>)
  8000cb6:	f852 f023 	ldr.w	pc, [r2, r3, lsl #2]
  8000cba:	bf00      	nop
  8000cbc:	08000d0b 	.word	0x08000d0b
@@ -1739,7 +1739,7 @@ void Paint_SetPixel(uint16_t Xpoint, uint16_t Ypoint, uint16_t Color)
         break;
     case MIRROR_HORIZONTAL:
         X = Paint.WidthMemory - X - 1;
- 8000ccc:	4b26      	ldr	r3, [pc, #152]	; (8000d68 <Paint_SetPixel+0x154>)
+ 8000ccc:	4b26      	ldr	r3, [pc, #152]	; (8000d68 <setPixel+0x154>)
  8000cce:	891a      	ldrh	r2, [r3, #8]
  8000cd0:	89fb      	ldrh	r3, [r7, #14]
  8000cd2:	1ad3      	subs	r3, r2, r3
@@ -1747,10 +1747,10 @@ void Paint_SetPixel(uint16_t Xpoint, uint16_t Ypoint, uint16_t Color)
  8000cd6:	3b01      	subs	r3, #1
  8000cd8:	81fb      	strh	r3, [r7, #14]
         break;
- 8000cda:	e017      	b.n	8000d0c <Paint_SetPixel+0xf8>
+ 8000cda:	e017      	b.n	8000d0c <setPixel+0xf8>
     case MIRROR_VERTICAL:
         Y = Paint.HeightMemory - Y - 1;
- 8000cdc:	4b22      	ldr	r3, [pc, #136]	; (8000d68 <Paint_SetPixel+0x154>)
+ 8000cdc:	4b22      	ldr	r3, [pc, #136]	; (8000d68 <setPixel+0x154>)
  8000cde:	895a      	ldrh	r2, [r3, #10]
  8000ce0:	89bb      	ldrh	r3, [r7, #12]
  8000ce2:	1ad3      	subs	r3, r2, r3
@@ -1758,10 +1758,10 @@ void Paint_SetPixel(uint16_t Xpoint, uint16_t Ypoint, uint16_t Color)
  8000ce6:	3b01      	subs	r3, #1
  8000ce8:	81bb      	strh	r3, [r7, #12]
         break;
- 8000cea:	e00f      	b.n	8000d0c <Paint_SetPixel+0xf8>
+ 8000cea:	e00f      	b.n	8000d0c <setPixel+0xf8>
     case MIRROR_ORIGIN:
         X = Paint.WidthMemory - X - 1;
- 8000cec:	4b1e      	ldr	r3, [pc, #120]	; (8000d68 <Paint_SetPixel+0x154>)
+ 8000cec:	4b1e      	ldr	r3, [pc, #120]	; (8000d68 <setPixel+0x154>)
  8000cee:	891a      	ldrh	r2, [r3, #8]
  8000cf0:	89fb      	ldrh	r3, [r7, #14]
  8000cf2:	1ad3      	subs	r3, r2, r3
@@ -1769,7 +1769,7 @@ void Paint_SetPixel(uint16_t Xpoint, uint16_t Ypoint, uint16_t Color)
  8000cf6:	3b01      	subs	r3, #1
  8000cf8:	81fb      	strh	r3, [r7, #14]
         Y = Paint.HeightMemory - Y - 1;
- 8000cfa:	4b1b      	ldr	r3, [pc, #108]	; (8000d68 <Paint_SetPixel+0x154>)
+ 8000cfa:	4b1b      	ldr	r3, [pc, #108]	; (8000d68 <setPixel+0x154>)
  8000cfc:	895a      	ldrh	r2, [r3, #10]
  8000cfe:	89bb      	ldrh	r3, [r7, #12]
  8000d00:	1ad3      	subs	r3, r2, r3
@@ -1777,7 +1777,7 @@ void Paint_SetPixel(uint16_t Xpoint, uint16_t Ypoint, uint16_t Color)
  8000d04:	3b01      	subs	r3, #1
  8000d06:	81bb      	strh	r3, [r7, #12]
         break;
- 8000d08:	e000      	b.n	8000d0c <Paint_SetPixel+0xf8>
+ 8000d08:	e000      	b.n	8000d0c <setPixel+0xf8>
         break;
  8000d0a:	bf00      	nop
     default:
@@ -1785,16 +1785,16 @@ void Paint_SetPixel(uint16_t Xpoint, uint16_t Ypoint, uint16_t Color)
     }
 
     if(X > Paint.WidthMemory || Y > Paint.HeightMemory){
- 8000d0c:	4b16      	ldr	r3, [pc, #88]	; (8000d68 <Paint_SetPixel+0x154>)
+ 8000d0c:	4b16      	ldr	r3, [pc, #88]	; (8000d68 <setPixel+0x154>)
  8000d0e:	891b      	ldrh	r3, [r3, #8]
  8000d10:	89fa      	ldrh	r2, [r7, #14]
  8000d12:	429a      	cmp	r2, r3
- 8000d14:	d822      	bhi.n	8000d5c <Paint_SetPixel+0x148>
- 8000d16:	4b14      	ldr	r3, [pc, #80]	; (8000d68 <Paint_SetPixel+0x154>)
+ 8000d14:	d822      	bhi.n	8000d5c <setPixel+0x148>
+ 8000d16:	4b14      	ldr	r3, [pc, #80]	; (8000d68 <setPixel+0x154>)
  8000d18:	895b      	ldrh	r3, [r3, #10]
  8000d1a:	89ba      	ldrh	r2, [r7, #12]
  8000d1c:	429a      	cmp	r2, r3
- 8000d1e:	d81d      	bhi.n	8000d5c <Paint_SetPixel+0x148>
+ 8000d1e:	d81d      	bhi.n	8000d5c <setPixel+0x148>
 //        Debug("Exceeding display boundaries\r\n");
         return;
     }
@@ -1803,7 +1803,7 @@ void Paint_SetPixel(uint16_t Xpoint, uint16_t Ypoint, uint16_t Color)
     uint32_t Addr = X + Y * Paint.WidthByte;
  8000d20:	89fa      	ldrh	r2, [r7, #14]
  8000d22:	89bb      	ldrh	r3, [r7, #12]
- 8000d24:	4910      	ldr	r1, [pc, #64]	; (8000d68 <Paint_SetPixel+0x154>)
+ 8000d24:	4910      	ldr	r1, [pc, #64]	; (8000d68 <setPixel+0x154>)
  8000d26:	8a49      	ldrh	r1, [r1, #18]
  8000d28:	fb01 f303 	mul.w	r3, r1, r3
  8000d2c:	4413      	add	r3, r2
@@ -1812,33 +1812,33 @@ void Paint_SetPixel(uint16_t Xpoint, uint16_t Ypoint, uint16_t Color)
     if(Color == BLACK)
  8000d30:	887b      	ldrh	r3, [r7, #2]
  8000d32:	2b00      	cmp	r3, #0
- 8000d34:	d106      	bne.n	8000d44 <Paint_SetPixel+0x130>
+ 8000d34:	d106      	bne.n	8000d44 <setPixel+0x130>
         //Paint.Image[Addr] = Rdata & ~(0x80 >> (X % 8));
     	Paint.Image[Addr] = BLACK;
- 8000d36:	4b0c      	ldr	r3, [pc, #48]	; (8000d68 <Paint_SetPixel+0x154>)
+ 8000d36:	4b0c      	ldr	r3, [pc, #48]	; (8000d68 <setPixel+0x154>)
  8000d38:	681a      	ldr	r2, [r3, #0]
  8000d3a:	68bb      	ldr	r3, [r7, #8]
  8000d3c:	4413      	add	r3, r2
  8000d3e:	2200      	movs	r2, #0
  8000d40:	701a      	strb	r2, [r3, #0]
- 8000d42:	e00c      	b.n	8000d5e <Paint_SetPixel+0x14a>
+ 8000d42:	e00c      	b.n	8000d5e <setPixel+0x14a>
     else
         //Paint.Image[Addr] = Rdata | (0x80 >> (X % 8));
     	Paint.Image[Addr] = Color;
- 8000d44:	4b08      	ldr	r3, [pc, #32]	; (8000d68 <Paint_SetPixel+0x154>)
+ 8000d44:	4b08      	ldr	r3, [pc, #32]	; (8000d68 <setPixel+0x154>)
  8000d46:	681a      	ldr	r2, [r3, #0]
  8000d48:	68bb      	ldr	r3, [r7, #8]
  8000d4a:	4413      	add	r3, r2
  8000d4c:	887a      	ldrh	r2, [r7, #2]
  8000d4e:	b2d2      	uxtb	r2, r2
  8000d50:	701a      	strb	r2, [r3, #0]
- 8000d52:	e004      	b.n	8000d5e <Paint_SetPixel+0x14a>
+ 8000d52:	e004      	b.n	8000d5e <setPixel+0x14a>
         return;
  8000d54:	bf00      	nop
- 8000d56:	e002      	b.n	8000d5e <Paint_SetPixel+0x14a>
+ 8000d56:	e002      	b.n	8000d5e <setPixel+0x14a>
         return;
  8000d58:	bf00      	nop
- 8000d5a:	e000      	b.n	8000d5e <Paint_SetPixel+0x14a>
+ 8000d5a:	e000      	b.n	8000d5e <setPixel+0x14a>
         return;
  8000d5c:	bf00      	nop
 }
@@ -1848,12 +1848,12 @@ void Paint_SetPixel(uint16_t Xpoint, uint16_t Ypoint, uint16_t Color)
  8000d66:	4770      	bx	lr
  8000d68:	20000060 	.word	0x20000060
 
-08000d6c <Paint_Clear>:
+08000d6c <clear_Image>:
 //function:	Clear the color of the picture
 //parameter:
 //    Color   :   Painted colors
 ******************************************************************************/
-void Paint_Clear(uint8_t Color)
+void clear_Image(uint8_t Color)
 {
  8000d6c:	b480      	push	{r7}
  8000d6e:	b085      	sub	sp, #20
@@ -1863,21 +1863,21 @@ void Paint_Clear(uint8_t Color)
     for (uint16_t Y = 0; Y < Paint.HeightByte; Y++) {
  8000d76:	2300      	movs	r3, #0
  8000d78:	81fb      	strh	r3, [r7, #14]
- 8000d7a:	e01b      	b.n	8000db4 <Paint_Clear+0x48>
+ 8000d7a:	e01b      	b.n	8000db4 <clear_Image+0x48>
         for (uint16_t X = 0; X < Paint.WidthByte; X++ ) {//8 pixel =  1 byte
  8000d7c:	2300      	movs	r3, #0
  8000d7e:	81bb      	strh	r3, [r7, #12]
- 8000d80:	e010      	b.n	8000da4 <Paint_Clear+0x38>
+ 8000d80:	e010      	b.n	8000da4 <clear_Image+0x38>
             uint32_t Addr = X + Y*Paint.WidthByte;
  8000d82:	89ba      	ldrh	r2, [r7, #12]
  8000d84:	89fb      	ldrh	r3, [r7, #14]
- 8000d86:	4911      	ldr	r1, [pc, #68]	; (8000dcc <Paint_Clear+0x60>)
+ 8000d86:	4911      	ldr	r1, [pc, #68]	; (8000dcc <clear_Image+0x60>)
  8000d88:	8a49      	ldrh	r1, [r1, #18]
  8000d8a:	fb01 f303 	mul.w	r3, r1, r3
  8000d8e:	4413      	add	r3, r2
  8000d90:	60bb      	str	r3, [r7, #8]
             Paint.Image[Addr] = Color;
- 8000d92:	4b0e      	ldr	r3, [pc, #56]	; (8000dcc <Paint_Clear+0x60>)
+ 8000d92:	4b0e      	ldr	r3, [pc, #56]	; (8000dcc <clear_Image+0x60>)
  8000d94:	681a      	ldr	r2, [r3, #0]
  8000d96:	68bb      	ldr	r3, [r7, #8]
  8000d98:	4413      	add	r3, r2
@@ -1887,20 +1887,20 @@ void Paint_Clear(uint8_t Color)
  8000d9e:	89bb      	ldrh	r3, [r7, #12]
  8000da0:	3301      	adds	r3, #1
  8000da2:	81bb      	strh	r3, [r7, #12]
- 8000da4:	4b09      	ldr	r3, [pc, #36]	; (8000dcc <Paint_Clear+0x60>)
+ 8000da4:	4b09      	ldr	r3, [pc, #36]	; (8000dcc <clear_Image+0x60>)
  8000da6:	8a5b      	ldrh	r3, [r3, #18]
  8000da8:	89ba      	ldrh	r2, [r7, #12]
  8000daa:	429a      	cmp	r2, r3
- 8000dac:	d3e9      	bcc.n	8000d82 <Paint_Clear+0x16>
+ 8000dac:	d3e9      	bcc.n	8000d82 <clear_Image+0x16>
     for (uint16_t Y = 0; Y < Paint.HeightByte; Y++) {
  8000dae:	89fb      	ldrh	r3, [r7, #14]
  8000db0:	3301      	adds	r3, #1
  8000db2:	81fb      	strh	r3, [r7, #14]
- 8000db4:	4b05      	ldr	r3, [pc, #20]	; (8000dcc <Paint_Clear+0x60>)
+ 8000db4:	4b05      	ldr	r3, [pc, #20]	; (8000dcc <clear_Image+0x60>)
  8000db6:	8a9b      	ldrh	r3, [r3, #20]
  8000db8:	89fa      	ldrh	r2, [r7, #14]
  8000dba:	429a      	cmp	r2, r3
- 8000dbc:	d3de      	bcc.n	8000d7c <Paint_Clear+0x10>
+ 8000dbc:	d3de      	bcc.n	8000d7c <clear_Image+0x10>
         }
     }
 }
@@ -1912,12 +1912,12 @@ void Paint_Clear(uint8_t Color)
  8000dca:	bf00      	nop
  8000dcc:	20000060 	.word	0x20000060
 
-08000dd0 <Paint_DrawChar>:
-//    Color_Background : Select the background color of the English character
-//    Color_Foreground : Select the foreground color of the English character
+08000dd0 <drawChar>:
+//    cBackground : Select the background color of the English character
+//    cForeground : Select the foreground color of the English character
 ******************************************************************************/
-void Paint_DrawChar(uint16_t Xpoint, uint16_t Ypoint, const char Acsii_Char,
-                    sFONT* Font, uint8_t Color_Background, uint8_t Color_Foreground)
+void drawChar(uint16_t Xpt, uint16_t Ypt, const char Acsii_Char,
+                    sFONT* Font, uint8_t cBackground, uint8_t cForeground)
 {
  8000dd0:	b580      	push	{r7, lr}
  8000dd2:	b088      	sub	sp, #32
@@ -1931,17 +1931,17 @@ void Paint_DrawChar(uint16_t Xpoint, uint16_t Ypoint, const char Acsii_Char,
  8000de2:	72fb      	strb	r3, [r7, #11]
     uint16_t Page, Column;
 
-    if (Xpoint > Paint.Width || Ypoint > Paint.Height) {
- 8000de4:	4b4f      	ldr	r3, [pc, #316]	; (8000f24 <Paint_DrawChar+0x154>)
+    if (Xpt > Paint.Width || Ypt > Paint.Height) {
+ 8000de4:	4b4f      	ldr	r3, [pc, #316]	; (8000f24 <drawChar+0x154>)
  8000de6:	889b      	ldrh	r3, [r3, #4]
  8000de8:	89fa      	ldrh	r2, [r7, #14]
  8000dea:	429a      	cmp	r2, r3
- 8000dec:	f200 8096 	bhi.w	8000f1c <Paint_DrawChar+0x14c>
- 8000df0:	4b4c      	ldr	r3, [pc, #304]	; (8000f24 <Paint_DrawChar+0x154>)
+ 8000dec:	f200 8096 	bhi.w	8000f1c <drawChar+0x14c>
+ 8000df0:	4b4c      	ldr	r3, [pc, #304]	; (8000f24 <drawChar+0x154>)
  8000df2:	88db      	ldrh	r3, [r3, #6]
  8000df4:	89ba      	ldrh	r2, [r7, #12]
  8000df6:	429a      	cmp	r2, r3
- 8000df8:	f200 8090 	bhi.w	8000f1c <Paint_DrawChar+0x14c>
+ 8000df8:	f200 8090 	bhi.w	8000f1c <drawChar+0x14c>
         return;
     }
 
@@ -1978,17 +1978,17 @@ void Paint_DrawChar(uint16_t Xpoint, uint16_t Ypoint, const char Acsii_Char,
     for (Page = 0; Page < Font->Height; Page ++ ) {
  8000e38:	2300      	movs	r3, #0
  8000e3a:	83fb      	strh	r3, [r7, #30]
- 8000e3c:	e068      	b.n	8000f10 <Paint_DrawChar+0x140>
+ 8000e3c:	e068      	b.n	8000f10 <drawChar+0x140>
         for (Column = 0; Column < Font->Width; Column ++ ) {
  8000e3e:	2300      	movs	r3, #0
  8000e40:	83bb      	strh	r3, [r7, #28]
- 8000e42:	e053      	b.n	8000eec <Paint_DrawChar+0x11c>
+ 8000e42:	e053      	b.n	8000eec <drawChar+0x11c>
 
             //To determine whether the font background color and screen background color is consistent
-            if (FONT_BACKGROUND == Color_Background) { //this process is to speed up the scan
+            if (FONT_BACKGROUND == cBackground) { //this process is to speed up the scan
  8000e44:	f897 3028 	ldrb.w	r3, [r7, #40]	; 0x28
  8000e48:	2bff      	cmp	r3, #255	; 0xff
- 8000e4a:	d11a      	bne.n	8000e82 <Paint_DrawChar+0xb2>
+ 8000e4a:	d11a      	bne.n	8000e82 <drawChar+0xb2>
                 //if (*ptr & (0x80 >> (Column % 8)))
                 if (*ptr & (0x80 >> (Column % 8)))
  8000e4c:	69bb      	ldr	r3, [r7, #24]
@@ -2000,8 +2000,8 @@ void Paint_DrawChar(uint16_t Xpoint, uint16_t Ypoint, const char Acsii_Char,
  8000e5a:	fa42 f303 	asr.w	r3, r2, r3
  8000e5e:	400b      	ands	r3, r1
  8000e60:	2b00      	cmp	r3, #0
- 8000e62:	d037      	beq.n	8000ed4 <Paint_DrawChar+0x104>
-                    Paint_SetPixel(Xpoint + Column, Ypoint + Page, Color_Foreground);
+ 8000e62:	d037      	beq.n	8000ed4 <drawChar+0x104>
+                    setPixel(Xpt + Column, Ypt + Page, cForeground);
  8000e64:	89fa      	ldrh	r2, [r7, #14]
  8000e66:	8bbb      	ldrh	r3, [r7, #28]
  8000e68:	4413      	add	r3, r2
@@ -2013,9 +2013,9 @@ void Paint_DrawChar(uint16_t Xpoint, uint16_t Ypoint, const char Acsii_Char,
  8000e74:	f897 202c 	ldrb.w	r2, [r7, #44]	; 0x2c
  8000e78:	b292      	uxth	r2, r2
  8000e7a:	4619      	mov	r1, r3
- 8000e7c:	f7ff feca 	bl	8000c14 <Paint_SetPixel>
- 8000e80:	e028      	b.n	8000ed4 <Paint_DrawChar+0x104>
-                    // Paint_DrawPoint(Xpoint + Column, Ypoint + Page, Color_Foreground, DOT_PIXEL_DFT, DOT_STYLE_DFT);
+ 8000e7c:	f7ff feca 	bl	8000c14 <setPixel>
+ 8000e80:	e028      	b.n	8000ed4 <drawChar+0x104>
+                    // Paint_DrawPoint(Xpt + Column, Ypt + Page, cForeground, DOT_PIXEL_DFT, DOT_STYLE_DFT);
             } else {
                 if (*ptr & (0x80 >> (Column%8))) {
  8000e82:	69bb      	ldr	r3, [r7, #24]
@@ -2027,8 +2027,8 @@ void Paint_DrawChar(uint16_t Xpoint, uint16_t Ypoint, const char Acsii_Char,
  8000e90:	fa42 f303 	asr.w	r3, r2, r3
  8000e94:	400b      	ands	r3, r1
  8000e96:	2b00      	cmp	r3, #0
- 8000e98:	d00e      	beq.n	8000eb8 <Paint_DrawChar+0xe8>
-                    Paint_SetPixel(Xpoint + Column, Ypoint + Page, Color_Foreground);
+ 8000e98:	d00e      	beq.n	8000eb8 <drawChar+0xe8>
+                    setPixel(Xpt + Column, Ypt + Page, cForeground);
  8000e9a:	89fa      	ldrh	r2, [r7, #14]
  8000e9c:	8bbb      	ldrh	r3, [r7, #28]
  8000e9e:	4413      	add	r3, r2
@@ -2040,11 +2040,11 @@ void Paint_DrawChar(uint16_t Xpoint, uint16_t Ypoint, const char Acsii_Char,
  8000eaa:	f897 202c 	ldrb.w	r2, [r7, #44]	; 0x2c
  8000eae:	b292      	uxth	r2, r2
  8000eb0:	4619      	mov	r1, r3
- 8000eb2:	f7ff feaf 	bl	8000c14 <Paint_SetPixel>
- 8000eb6:	e00d      	b.n	8000ed4 <Paint_DrawChar+0x104>
-                    // Paint_DrawPoint(Xpoint + Column, Ypoint + Page, Color_Foreground, DOT_PIXEL_DFT, DOT_STYLE_DFT);
+ 8000eb2:	f7ff feaf 	bl	8000c14 <setPixel>
+ 8000eb6:	e00d      	b.n	8000ed4 <drawChar+0x104>
+                    // Paint_DrawPoint(Xpt + Column, Ypt + Page, cForeground, DOT_PIXEL_DFT, DOT_STYLE_DFT);
                 } else {
-                    Paint_SetPixel(Xpoint + Column, Ypoint + Page, Color_Background);
+                    setPixel(Xpt + Column, Ypt + Page, cBackground);
  8000eb8:	89fa      	ldrh	r2, [r7, #14]
  8000eba:	8bbb      	ldrh	r3, [r7, #28]
  8000ebc:	4413      	add	r3, r2
@@ -2056,8 +2056,8 @@ void Paint_DrawChar(uint16_t Xpoint, uint16_t Ypoint, const char Acsii_Char,
  8000ec8:	f897 2028 	ldrb.w	r2, [r7, #40]	; 0x28
  8000ecc:	b292      	uxth	r2, r2
  8000ece:	4619      	mov	r1, r3
- 8000ed0:	f7ff fea0 	bl	8000c14 <Paint_SetPixel>
-                    // Paint_DrawPoint(Xpoint + Column, Ypoint + Page, Color_Background, DOT_PIXEL_DFT, DOT_STYLE_DFT);
+ 8000ed0:	f7ff fea0 	bl	8000c14 <setPixel>
+                    // Paint_DrawPoint(Xpt + Column, Ypt + Page, cBackground, DOT_PIXEL_DFT, DOT_STYLE_DFT);
                 }
             }
             //One pixel is 8 bits
@@ -2066,7 +2066,7 @@ void Paint_DrawChar(uint16_t Xpoint, uint16_t Ypoint, const char Acsii_Char,
  8000ed6:	f003 0307 	and.w	r3, r3, #7
  8000eda:	b29b      	uxth	r3, r3
  8000edc:	2b07      	cmp	r3, #7
- 8000ede:	d102      	bne.n	8000ee6 <Paint_DrawChar+0x116>
+ 8000ede:	d102      	bne.n	8000ee6 <drawChar+0x116>
                 ptr++;
  8000ee0:	69bb      	ldr	r3, [r7, #24]
  8000ee2:	3301      	adds	r3, #1
@@ -2079,7 +2079,7 @@ void Paint_DrawChar(uint16_t Xpoint, uint16_t Ypoint, const char Acsii_Char,
  8000eee:	889b      	ldrh	r3, [r3, #4]
  8000ef0:	8bba      	ldrh	r2, [r7, #28]
  8000ef2:	429a      	cmp	r2, r3
- 8000ef4:	d3a6      	bcc.n	8000e44 <Paint_DrawChar+0x74>
+ 8000ef4:	d3a6      	bcc.n	8000e44 <drawChar+0x74>
         }// Write a line
         if (Font->Width % 8 != 0)
  8000ef6:	687b      	ldr	r3, [r7, #4]
@@ -2087,7 +2087,7 @@ void Paint_DrawChar(uint16_t Xpoint, uint16_t Ypoint, const char Acsii_Char,
  8000efa:	f003 0307 	and.w	r3, r3, #7
  8000efe:	b29b      	uxth	r3, r3
  8000f00:	2b00      	cmp	r3, #0
- 8000f02:	d002      	beq.n	8000f0a <Paint_DrawChar+0x13a>
+ 8000f02:	d002      	beq.n	8000f0a <drawChar+0x13a>
             ptr++;
  8000f04:	69bb      	ldr	r3, [r7, #24]
  8000f06:	3301      	adds	r3, #1
@@ -2100,8 +2100,8 @@ void Paint_DrawChar(uint16_t Xpoint, uint16_t Ypoint, const char Acsii_Char,
  8000f12:	88db      	ldrh	r3, [r3, #6]
  8000f14:	8bfa      	ldrh	r2, [r7, #30]
  8000f16:	429a      	cmp	r2, r3
- 8000f18:	d391      	bcc.n	8000e3e <Paint_DrawChar+0x6e>
- 8000f1a:	e000      	b.n	8000f1e <Paint_DrawChar+0x14e>
+ 8000f18:	d391      	bcc.n	8000e3e <drawChar+0x6e>
+ 8000f1a:	e000      	b.n	8000f1e <drawChar+0x14e>
         return;
  8000f1c:	bf00      	nop
     }// Write all
@@ -2111,12 +2111,12 @@ void Paint_DrawChar(uint16_t Xpoint, uint16_t Ypoint, const char Acsii_Char,
  8000f22:	bd80      	pop	{r7, pc}
  8000f24:	20000060 	.word	0x20000060
 
-08000f28 <Paint_DrawString_EN>:
-//    Color_Background : Select the background color of the English character
-//    Color_Foreground : Select the foreground color of the English character
+08000f28 <drawString>:
+//    cBackground : Select the background color of the English character
+//    cForeground : Select the foreground color of the English character
 ******************************************************************************/
-void Paint_DrawString_EN(uint16_t Xstart, uint16_t Ystart, const char * pString,
-                         sFONT* Font, uint8_t Color_Background, uint8_t Color_Foreground )
+void drawString(uint16_t xStart, uint16_t Ystart, const char * pString,
+                         sFONT* Font, uint8_t cBackground, uint8_t cForeground )
 {
  8000f28:	b580      	push	{r7, lr}
  8000f2a:	b088      	sub	sp, #32
@@ -2127,44 +2127,44 @@ void Paint_DrawString_EN(uint16_t Xstart, uint16_t Ystart, const char * pString,
  8000f34:	81fb      	strh	r3, [r7, #14]
  8000f36:	460b      	mov	r3, r1
  8000f38:	81bb      	strh	r3, [r7, #12]
-    uint16_t Xpoint = Xstart;
+    uint16_t Xpt = xStart;
  8000f3a:	89fb      	ldrh	r3, [r7, #14]
  8000f3c:	82fb      	strh	r3, [r7, #22]
-    uint16_t Ypoint = Ystart;
+    uint16_t Ypt = Ystart;
  8000f3e:	89bb      	ldrh	r3, [r7, #12]
  8000f40:	82bb      	strh	r3, [r7, #20]
 
-    if (Xstart > Paint.Width || Ystart > Paint.Height) {
- 8000f42:	4b22      	ldr	r3, [pc, #136]	; (8000fcc <Paint_DrawString_EN+0xa4>)
+    if (xStart > Paint.Width || Ystart > Paint.Height) {
+ 8000f42:	4b22      	ldr	r3, [pc, #136]	; (8000fcc <drawString+0xa4>)
  8000f44:	889b      	ldrh	r3, [r3, #4]
  8000f46:	89fa      	ldrh	r2, [r7, #14]
  8000f48:	429a      	cmp	r2, r3
- 8000f4a:	d83a      	bhi.n	8000fc2 <Paint_DrawString_EN+0x9a>
- 8000f4c:	4b1f      	ldr	r3, [pc, #124]	; (8000fcc <Paint_DrawString_EN+0xa4>)
+ 8000f4a:	d83a      	bhi.n	8000fc2 <drawString+0x9a>
+ 8000f4c:	4b1f      	ldr	r3, [pc, #124]	; (8000fcc <drawString+0xa4>)
  8000f4e:	88db      	ldrh	r3, [r3, #6]
  8000f50:	89ba      	ldrh	r2, [r7, #12]
  8000f52:	429a      	cmp	r2, r3
- 8000f54:	d835      	bhi.n	8000fc2 <Paint_DrawString_EN+0x9a>
-//        Debug("Paint_DrawString_EN Input exceeds the normal display range\r\n");
+ 8000f54:	d835      	bhi.n	8000fc2 <drawString+0x9a>
+//        Debug("drawString Input exceeds the normal display range\r\n");
         return;
     }
 
     while (* pString != '\0') {
- 8000f56:	e02f      	b.n	8000fb8 <Paint_DrawString_EN+0x90>
-        //if X direction filled , reposition to(Xstart,Ypoint),Ypoint is Y direction plus the Height of the character
-        if ((Xpoint + Font->Width ) > Paint.Width ) {
+ 8000f56:	e02f      	b.n	8000fb8 <drawString+0x90>
+        //if X direction filled , reposition to(xStart,Ypt),Ypt is Y direction plus the Height of the character
+        if ((Xpt + Font->Width ) > Paint.Width ) {
  8000f58:	8afb      	ldrh	r3, [r7, #22]
  8000f5a:	687a      	ldr	r2, [r7, #4]
  8000f5c:	8892      	ldrh	r2, [r2, #4]
  8000f5e:	4413      	add	r3, r2
- 8000f60:	4a1a      	ldr	r2, [pc, #104]	; (8000fcc <Paint_DrawString_EN+0xa4>)
+ 8000f60:	4a1a      	ldr	r2, [pc, #104]	; (8000fcc <drawString+0xa4>)
  8000f62:	8892      	ldrh	r2, [r2, #4]
  8000f64:	4293      	cmp	r3, r2
- 8000f66:	dd06      	ble.n	8000f76 <Paint_DrawString_EN+0x4e>
-            Xpoint = Xstart;
+ 8000f66:	dd06      	ble.n	8000f76 <drawString+0x4e>
+            Xpt = xStart;
  8000f68:	89fb      	ldrh	r3, [r7, #14]
  8000f6a:	82fb      	strh	r3, [r7, #22]
-            Ypoint += Font->Height;
+            Ypt += Font->Height;
  8000f6c:	687b      	ldr	r3, [r7, #4]
  8000f6e:	88da      	ldrh	r2, [r3, #6]
  8000f70:	8abb      	ldrh	r3, [r7, #20]
@@ -2172,24 +2172,24 @@ void Paint_DrawString_EN(uint16_t Xstart, uint16_t Ystart, const char * pString,
  8000f74:	82bb      	strh	r3, [r7, #20]
         }
 
-        // If the Y direction is full, reposition to(Xstart, Ystart)
-        if ((Ypoint  + Font->Height ) > Paint.Height ) {
+        // If the Y direction is full, reposition to(xStart, Ystart)
+        if ((Ypt  + Font->Height ) > Paint.Height ) {
  8000f76:	8abb      	ldrh	r3, [r7, #20]
  8000f78:	687a      	ldr	r2, [r7, #4]
  8000f7a:	88d2      	ldrh	r2, [r2, #6]
  8000f7c:	4413      	add	r3, r2
- 8000f7e:	4a13      	ldr	r2, [pc, #76]	; (8000fcc <Paint_DrawString_EN+0xa4>)
+ 8000f7e:	4a13      	ldr	r2, [pc, #76]	; (8000fcc <drawString+0xa4>)
  8000f80:	88d2      	ldrh	r2, [r2, #6]
  8000f82:	4293      	cmp	r3, r2
- 8000f84:	dd03      	ble.n	8000f8e <Paint_DrawString_EN+0x66>
-            Xpoint = Xstart;
+ 8000f84:	dd03      	ble.n	8000f8e <drawString+0x66>
+            Xpt = xStart;
  8000f86:	89fb      	ldrh	r3, [r7, #14]
  8000f88:	82fb      	strh	r3, [r7, #22]
-            Ypoint = Ystart;
+            Ypt = Ystart;
  8000f8a:	89bb      	ldrh	r3, [r7, #12]
  8000f8c:	82bb      	strh	r3, [r7, #20]
         }
-        Paint_DrawChar(Xpoint, Ypoint, * pString, Font, Color_Background, Color_Foreground);
+        drawChar(Xpt, Ypt, * pString, Font, cBackground, cForeground);
  8000f8e:	68bb      	ldr	r3, [r7, #8]
  8000f90:	781a      	ldrb	r2, [r3, #0]
  8000f92:	8ab9      	ldrh	r1, [r7, #20]
@@ -2199,7 +2199,7 @@ void Paint_DrawString_EN(uint16_t Xstart, uint16_t Ystart, const char * pString,
  8000f9c:	f897 3020 	ldrb.w	r3, [r7, #32]
  8000fa0:	9300      	str	r3, [sp, #0]
  8000fa2:	687b      	ldr	r3, [r7, #4]
- 8000fa4:	f7ff ff14 	bl	8000dd0 <Paint_DrawChar>
+ 8000fa4:	f7ff ff14 	bl	8000dd0 <drawChar>
 
         //The next character of the address
         pString ++;
@@ -2208,7 +2208,7 @@ void Paint_DrawString_EN(uint16_t Xstart, uint16_t Ystart, const char * pString,
  8000fac:	60bb      	str	r3, [r7, #8]
 
         //The next word of the abscissa increases the font of the broadband
-        Xpoint += Font->Width;
+        Xpt += Font->Width;
  8000fae:	687b      	ldr	r3, [r7, #4]
  8000fb0:	889a      	ldrh	r2, [r3, #4]
  8000fb2:	8afb      	ldrh	r3, [r7, #22]
@@ -2218,8 +2218,8 @@ void Paint_DrawString_EN(uint16_t Xstart, uint16_t Ystart, const char * pString,
  8000fb8:	68bb      	ldr	r3, [r7, #8]
  8000fba:	781b      	ldrb	r3, [r3, #0]
  8000fbc:	2b00      	cmp	r3, #0
- 8000fbe:	d1cb      	bne.n	8000f58 <Paint_DrawString_EN+0x30>
- 8000fc0:	e000      	b.n	8000fc4 <Paint_DrawString_EN+0x9c>
+ 8000fbe:	d1cb      	bne.n	8000f58 <drawString+0x30>
+ 8000fc0:	e000      	b.n	8000fc4 <drawString+0x9c>
         return;
  8000fc2:	bf00      	nop
     }
@@ -2429,20 +2429,20 @@ void DrawCalenderField(uint8_t place, char* fach, char* dozent)
  800113e:	747b      	strb	r3, [r7, #17]
 	}
 
-	Paint_NewImage(frameBuf, 196, 88, 0, 0xff);
+	setNewImage(frameBuf, 196, 88, 0, 0xff);
  8001140:	6a38      	ldr	r0, [r7, #32]
  8001142:	23ff      	movs	r3, #255	; 0xff
  8001144:	9300      	str	r3, [sp, #0]
  8001146:	2300      	movs	r3, #0
  8001148:	2258      	movs	r2, #88	; 0x58
  800114a:	21c4      	movs	r1, #196	; 0xc4
- 800114c:	f7ff fd1e 	bl	8000b8c <Paint_NewImage>
-	Paint_Clear(cal.color);
+ 800114c:	f7ff fd1e 	bl	8000b8c <setNewImage>
+	clear_Image(cal.color);
  8001150:	7c7b      	ldrb	r3, [r7, #17]
  8001152:	4618      	mov	r0, r3
- 8001154:	f7ff fe0a 	bl	8000d6c <Paint_Clear>
-	//Paint_Clear(cal.color);
-	Paint_DrawString_EN(5, 20, fach, &Font24, cal.color, 0x44 );
+ 8001154:	f7ff fe0a 	bl	8000d6c <clear_Image>
+	//clear_Image(cal.color);
+	drawString(5, 20, fach, &Font24, cal.color, 0x44 );
  8001158:	7c7b      	ldrb	r3, [r7, #17]
  800115a:	2244      	movs	r2, #68	; 0x44
  800115c:	9201      	str	r2, [sp, #4]
@@ -2451,7 +2451,7 @@ void DrawCalenderField(uint8_t place, char* fach, char* dozent)
  8001162:	68ba      	ldr	r2, [r7, #8]
  8001164:	2114      	movs	r1, #20
  8001166:	2005      	movs	r0, #5
- 8001168:	f7ff fede 	bl	8000f28 <Paint_DrawString_EN>
+ 8001168:	f7ff fede 	bl	8000f28 <drawString>
 	EpdDriverDrawBox(frameBuf, cal.posX, cal.posY, 196, 88);
  800116c:	6a38      	ldr	r0, [r7, #32]
  800116e:	8a79      	ldrh	r1, [r7, #18]
@@ -2462,19 +2462,19 @@ void DrawCalenderField(uint8_t place, char* fach, char* dozent)
  8001178:	f7ff fcc8 	bl	8000b0c <EpdDriverDrawBox>
 
 
-	Paint_NewImage(frameBuf, 196, 88, 0, 0xff);
+	setNewImage(frameBuf, 196, 88, 0, 0xff);
  800117c:	6a38      	ldr	r0, [r7, #32]
  800117e:	23ff      	movs	r3, #255	; 0xff
  8001180:	9300      	str	r3, [sp, #0]
  8001182:	2300      	movs	r3, #0
  8001184:	2258      	movs	r2, #88	; 0x58
  8001186:	21c4      	movs	r1, #196	; 0xc4
- 8001188:	f7ff fd00 	bl	8000b8c <Paint_NewImage>
-	Paint_Clear(cal.color);
+ 8001188:	f7ff fd00 	bl	8000b8c <setNewImage>
+	clear_Image(cal.color);
  800118c:	7c7b      	ldrb	r3, [r7, #17]
  800118e:	4618      	mov	r0, r3
- 8001190:	f7ff fdec 	bl	8000d6c <Paint_Clear>
-	Paint_DrawString_EN(5, 15, dozent, &Font24, cal.color, 0x44 );
+ 8001190:	f7ff fdec 	bl	8000d6c <clear_Image>
+	drawString(5, 15, dozent, &Font24, cal.color, 0x44 );
  8001194:	7c7b      	ldrb	r3, [r7, #17]
  8001196:	2244      	movs	r2, #68	; 0x44
  8001198:	9201      	str	r2, [sp, #4]
@@ -2483,7 +2483,7 @@ void DrawCalenderField(uint8_t place, char* fach, char* dozent)
  800119e:	687a      	ldr	r2, [r7, #4]
  80011a0:	210f      	movs	r1, #15
  80011a2:	2005      	movs	r0, #5
- 80011a4:	f7ff fec0 	bl	8000f28 <Paint_DrawString_EN>
+ 80011a4:	f7ff fec0 	bl	8000f28 <drawString>
 	//EpdDriverDrawBox(frameBuf, 202, 195, 196, 88);
 	EpdDriverDrawBox(frameBuf, cal.posX, cal.posY+44, 196, 88);
  80011a8:	6a38      	ldr	r0, [r7, #32]
