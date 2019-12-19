@@ -2133,19 +2133,19 @@
     <bcf:citekey order="1">amundson</bcf:citekey>
     <bcf:citekey order="2">amundson</bcf:citekey>
     <bcf:citekey order="3">ISO/IEC9899</bcf:citekey>
-    <bcf:citekey order="4">ISO/IEC9899</bcf:citekey>
-    <bcf:citekey order="5">ISO/IEC9899</bcf:citekey>
-    <bcf:citekey order="6">as3933</bcf:citekey>
-    <bcf:citekey order="7">rficient</bcf:citekey>
-    <bcf:citekey order="8">msp430</bcf:citekey>
-    <bcf:citekey order="9">stm32</bcf:citekey>
-    <bcf:citekey order="10">nrfpb</bcf:citekey>
-    <bcf:citekey order="11">amorton</bcf:citekey>
-    <bcf:citekey order="12">adp</bcf:citekey>
-    <bcf:citekey order="13">adp_eval</bcf:citekey>
-    <bcf:citekey order="14">yuden</bcf:citekey>
-    <bcf:citekey order="15">nrf</bcf:citekey>
-    <bcf:citekey order="16">stm32</bcf:citekey>
+    <bcf:citekey order="4">as3933</bcf:citekey>
+    <bcf:citekey order="5">rficient</bcf:citekey>
+    <bcf:citekey order="6">msp430</bcf:citekey>
+    <bcf:citekey order="7">stm32</bcf:citekey>
+    <bcf:citekey order="8">waveshare</bcf:citekey>
+    <bcf:citekey order="9">nrfpb</bcf:citekey>
+    <bcf:citekey order="10">amorton</bcf:citekey>
+    <bcf:citekey order="11">adp</bcf:citekey>
+    <bcf:citekey order="12">adp_eval</bcf:citekey>
+    <bcf:citekey order="13">yuden</bcf:citekey>
+    <bcf:citekey order="14">nrf</bcf:citekey>
+    <bcf:citekey order="15">stm32</bcf:citekey>
+    <bcf:citekey order="16">IT8951</bcf:citekey>
     <bcf:citekey order="17">yuden</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
