@@ -202,7 +202,43 @@ The output now stays switched off, until $V_{\text{IN}}$ again supplies energy, 
 It can also clearly be seen, that after 160 seconds, the ADP5090 controls $V_{\text{IN}}$ to ca. $2.1\,\text{V}$. Recall that this is the optimal power point of the solar cell.
 
 \subsubsection{Power Latch}
-Considering the usage of an wakeup receiver, implementing a latch circuit to en-/disable the power supply is a suitable option. The first version of latch circuit designed has two control inputs. A short voltage impulse on one of these inputs en-/disables the power supply for everything except the wakeup receiver and the ADP5090. 
+Considering the usage of an wakeup receiver, implementing a latch circuit to en-/disable the power supply is a suitable option. The first version of latch circuit designed has two control inputs. A short voltage impulse on one of these inputs en-/disables the power supply for everything except the wakeup receiver and the ADP5090. Since the driver board of the \acs{epd} requires a stable input voltage to run reliable, a DC-DC converter is needed to convert the minimum input voltage of $2.2\,V$ to $3.3\,V$. The latch circuit and the DC-DC converter schematic displayed in the Figure\ref{development:scematicV1}. As DC-DC converter the LMR61428 from Texas Instruments was chosen since its data sheet promised a high efficiency.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[clip, trim=4cm 5cm 2cm 6cm, width=1\textwidth]{4-development/hardware/graphics/PowerLatch/PwrLatch_V1_sch.pdf}
+	\caption{Power latch schematic first version .\label{development:scematicV1}}
+\end{figure}
+The desired output voltage can be adjusted with the resistors $R8$ and $R9$.
+\begin{align}
+V_{\text{out}}= 1.24\,\text{V} \left(1 + \frac{R8+R9}{R9} \right)= 1.24\,\text{V} \left(1 + \frac{110k+68k}{68k} \right) \approx 3.245\,\text{V} 
+\end{align}
+The layout from the first schematic\ref{development:scematicV1} (LMR61428) did not work properly on the first PCB due to some design flaws. The output voltage showed a relatively big 
+hysteresis of the boost converter as shown in the Figure\ref{development:rippel}.  
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/scope/rippel.pdf}
+	\caption{Discharging behaviour.\label{development:rippel}}
+\end{figure}
+Because of this ripple in the output voltage the charge pumps on the display driver board could not work properly. This resulted in unpredictable behaviour during a display write cycle. For example the voltage dropped under $2.5$\,V and a whistle noise appeared during usage. The origin of the whistle noise remained unknown since many prevention actions did not help to isolate the effect. The assumption lies with a interaction of the low resistance of our capacitors used at the output and the low resistance of the used coil. The ceramic capacitors at the output probably expanded with the voltage change and the supplied energy trough the coil. Transferring their vibration to the PCB leading to an audible noise. 
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/scope/Vdrop.pdf}
+	\caption{Discharging behaviour.\label{development:vdrop}}
+\end{figure}
+To encounter these problems a new layout of the DC-DC converter was the only option. The difference between the first and second layout is visible in the top layers displayed in the Figure \ref{fig:pwr_layout}. To prevent another big ripple at the output voltage a low  dropout regulator (LDO) was included in the design. To use the LDO right the DC-DC output voltage got adjusted.
+\begin{align}
+V_{\text{out}}= 1.24\,\text{V} \left(1 + \frac{R8+R9}{R9} \right)= 1.24\,\text{V} \left(1 + \frac{130k+75k}{75k} \right) \approx 3.39\,\text{V} 
+\end{align}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[clip, trim=4cm 5cm 1cm 3cm, width=1\textwidth]{4-development/hardware/graphics/PowerLatch/PwrLatch_V2_sch.pdf}
+	\caption{Power latch schematic second version .\label{development:scematicV2}}
+\end{figure}
+The new schematic displayed in Figure \ref{development:scematicV2} received a wider conductor tracks in the power relevant parts. Also the footprints got a direct connection style to the surrounding copper. The results of the new layout is displayed in the Figure \ref{fig:pwrtopV2}.
+
 \begin{figure}[!ht]
 	\centering
 	\subfigure[3D picture of version one of the power latch \label{fig:pwr3dV1}]{\includegraphics[width=0.49\linewidth]{4-development/hardware/graphics/PowerLatch/PwrLatch_V1_3d.PNG}}
@@ -216,5 +252,12 @@ Considering the usage of an wakeup receiver, implementing a latch circuit to en-
 	\label{fig:pwr_layout}
 \end{figure}
 
-Since the driver board of the \acs{epd} requires a stable input voltage to run reliable, a DC-DC converter is needed to convert the minimum input voltage of $2.2\,V$ to $3.3\,V$. The used component (LMR61428) did not work properly on the first PCB due to some design flaws. Because of this a second version correcting these flaws was designed produced. 
+The result of the second layout 
+
+ \begin{figure}[ht]
+ 	\centering
+ 	\includegraphics[clip, trim=4cm 5cm 1cm 3cm, width=1\textwidth]{4-development/hardware/graphics/PowerLatch/PwrLatch_V3_sch.pdf}
+ 	\caption{Power latch schematic second version .\label{development:scematicV3}}
+ \end{figure}
+
 
