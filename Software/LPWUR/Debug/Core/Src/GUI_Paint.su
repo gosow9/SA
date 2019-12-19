@@ -4,7 +4,7 @@ GUI_Paint.c:65:6:setRotateImage	16	static
 GUI_Paint.c:80:6:setMirroringImage	16	static
 GUI_Paint.c:99:6:setPixel	24	static
 GUI_Paint.c:167:6:clear_Image	24	static
-GUI_Paint.c:186:6:Paint_DrawPoint	32	static
-GUI_Paint.c:221:6:Paint_DrawLine	64	static
+GUI_Paint.c:186:6:Image_DrawPoint	32	static
+GUI_Paint.c:221:6:Image_DrawLine	64	static
 GUI_Paint.c:279:6:drawChar	40	static
 GUI_Paint.c:328:6:drawString	40	static
