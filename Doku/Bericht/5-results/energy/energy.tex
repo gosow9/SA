@@ -1,5 +1,5 @@
 \subsection{Power measurement}
-To look at the energy consumption in detail, the N6705B power analyzer from keysight was used as the power supply.
+The N6705B power analyzer from keysight was used as the power supply, to look at the energy consumption in detail.
 To carry out measurements, the ADP5090 with the solar cells and super cap was disconnected and the remaining components connected to the power analyser with a fixed voltage of 3.3\,V.
 This way, the voltage and current over one write-cycle could be tracked.
 The result is plotted in Figure \ref{results:ui}.
@@ -10,13 +10,13 @@ The result is plotted in Figure \ref{results:ui}.
 \end{figure}
 One write-cycle takes about 5.8 seconds.
 In this interval, the STM32, nRF52480 and display driver are active.
-Clearly visible is the current peak which occurs when the system is woken up.
+Clearly visible is the current peak, which occurs when the system is woken up.
 Short after the 5 seconds mark, initializing and data receiving is finished and the display is refreshed.
 The current peaks there are due to the charge pumps on the display driver.
 
 With voltage and current given, the power over time can be calculated.
 This curve is plotted in Figure \ref{results:p}.
-The power follows obviously the same course like the current since the voltage is constant.
+obviously, the power follows the same course like the current since the voltage is constant.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.9\textwidth]{5-results/energy/logger/p.pdf}
@@ -26,8 +26,8 @@ The energy needed for one write-cycle is given with the integral of the power ov
 \begin{align}
 	E = \int_{0}^{8\,\text{s}}P(t)\text{dt}\approx 2.7504\,\text{J}\label{result:energy}.
 \end{align}
-Like stated in \eqref{development:cell_power} the solar cells provide $485.52\,\mu \text{W}$ at 200\,lux.
-Considering the Rficient which consumes $4.5\mu \text{W}$, it is possible to estimate the time needed, to harvest the power for one write cycle:
+Like mentioned in \eqref{development:cell_power} the solar cells provide $485.52\,\mu \text{W}$ at 200\,lux.
+Considering the Rficient which consumes $4.5\mu \text{W}$, it is possible to estimate the time necessary to harvest the power for one write cycle:
 \begin{align}
 	t_{\text{E}}=\frac{2.7504\,\text{J}}{485.52\,\mu \text{W}-4.5\mu \text{W}}=5717.85\,\text{s}\approx 1\,\text{h } 35\,\text{min}.
 \end{align}
@@ -42,21 +42,21 @@ since the capacitor operates between 2.2\,V and 3.6\,V, the total stored energy 
 \begin{align}
 	E_{\text{ges}} = \frac{1}{2}C(U_{\text{max}}^2-U_{\text{min}}^2)=\frac{1}{2}\cdot 40\,\text {F}\cdot((3.6\,\text{V})^2-(2.2\,\text{V})^2)=162.4\,\text{J}\label{result:store}.
 \end{align}
-If again the loss in the ADP5090 and the leakage of the super cap is neglected, it is possible to estimate the time
+By again neglecting the loss in the ADP5090 and the leakage of the cap, it is possible to estimate the time
 \begin{align}
 	t_{\text{func}}=\frac{162.4\,\text{J}-2.7504\,\text{J}}{4.5\,\mu\text{W}}=3.54877\cdot 10^{-7}\,\text{s}\approx 411\,\text{d}
 \end{align} 
 in which the prototype is fully functional when no energy is harvested.
-The 2.7504\,J are subtracted, because on should be able to refresh the display after this time.
-This result should be taken with caution, because it neglects losses and does not consider the tolerance of the capacitor ($\pm20\%$ corresponds to $\pm8\,\text{F}$ with a 40\,F capacitor \cite{yuden}).
-The order of magnitude tough should be correct.
+The 2.7504\,J are subtracted because on should be able to refresh the display after this time.
+This result should be taken with caution because it neglects losses and does not consider the tolerance of the capacitor ($\pm20\%$ corresponds to $\pm8\,\text{F}$ with a 40\,F capacitor \cite{yuden}).
+The order of magnitude, however, should be correct.
 
 \subsection{Amount of display refreshes}
 With the results from the Equations \eqref{result:energy} and \eqref{result:store}, the amount of display refreshes can be calculated:
 \begin{align}
 	n = \left\lfloor\frac{162.4\,\text{J}}{2.7504\,\text{J}}\right\rfloor=59.
 \end{align}
-Not that in this calculation, additional charging is neglected and the super capacitor is fully charged.
+Note that additional charging is neglected and the super capacitor is assumed fully charged in this calculation.
 
-To verify this value, the super cap was charged to 3.5\,V and the whole refresh sequence was repeated until the voltage reached 2.2\,V.
+To verify this value, the super capacitor was charged to 3.5\,V and the whole refresh sequence was repeated until the voltage reached 2.2\,V.
 Under this conditions, the display could be refreshed 46 times.
