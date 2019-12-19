@@ -62,60 +62,57 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+void initController()
+{
+	HAL_Init();
+	SystemClock_Config();
+	MX_GPIO_Init();
+	MX_SPI1_Init();
+	MX_DMA_Init();
+	MX_UART4_Init();
+}
+void disablePwrKill()
+{
+HAL_GPIO_WritePin(Kill_GPIO_Port, Kill_Pin, SET);
+EpdOff();
+//HAL_Delay(20);
+HAL_GPIO_WritePin(PwrKill_GPIO_Port, PwrKill_Pin, SET);
+}
 /* USER CODE END 0 */
 
 /**
   * @brief  The application entry point.
   * @retval int
   */
+
+
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-//	 char tex[]={'H','A','L','L','O','\0'};
-//	  char  fach[]={'W','S','C','o','m'};
-//	  char  doz[]={'M','A','T','\0'};
-//	  char* tempLoad = "Template Loaded";
-//	  //char end[1] = {'\N'};
-//	  uint8_t rxBuf[50]={0};
   /* USER CODE END 1 */
   
 
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
 
   /* USER CODE BEGIN Init */
-
+	initController();
+	disablePwrKill();
   /* USER CODE END Init */
-
   /* Configure the system clock */
-  SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
 
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
-  MX_GPIO_Init();
+
   //MX_LPUART1_UART_Init();
   //MX_USB_OTG_FS_PCD_Init();
-  MX_SPI1_Init();
-  MX_DMA_Init();
-  MX_UART4_Init();
-  /* USER CODE BEGIN 2 */
-  HAL_GPIO_WritePin(Kill_GPIO_Port, Kill_Pin, SET);
-  EpdOff();
-  //HAL_Delay(20);
-  HAL_GPIO_WritePin(PwrKill_GPIO_Port, PwrKill_Pin, SET);
-  EpdOn();
-  IT8951_Power();
-//  HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_SET);
-//  HAL_Delay(1000);
-//  HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_RESET);
-  IT8951_Init();
 
+  /* USER CODE BEGIN 2 */
+  EpdOn();
   //HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_SET);
   EpdDriverLoadTemplate();
   receiveData();
@@ -135,11 +132,6 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
-//	  HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_RESET);
-//	  HAL_Delay(500);
-//	  HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_SET);
-//	  HAL_Delay(500);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
