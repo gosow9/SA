@@ -1,16 +1,12 @@
-
-
-
-
-\begin{figure}[H]
+This section describes the software, which was developed for the different components.
+Figure \ref{software:sequence} shows the general sequence diagram of one display refresh cycle.
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.9\textwidth]{4-development/software/graphics/sequence.pdf}
-	\caption{not up to date sequence\label{software:sequence}}
+	\caption{Refresh sequence.\label{software:sequence}}
 \end{figure}
 
-
 \subsection{Receiver}
-
 % C Style configuration
 \lstdefinestyle{mystyle}{
 	language=c,
@@ -27,23 +23,21 @@
 }
 \lstset{style=mystyle}
 
-
 \subsubsection{Microcontroller}
-The main controller of the receiver is the STM32. To develop firmware for the microcontroller the Hardware abstractions layer provided by STMicroelectronics is used. The firmware running on the STM32 is responsible for the following tasks:
-\begin{itemize}[H]
+To develop firmware for the STM32, the Hardware abstractions layer provided by STMicroelectronics is used. The firmware running on the microcontroller is responsible for the following tasks:
+\begin{itemize}[ht]
 	\item[-] Initialize the IT8951 display driver chip
-	\item[-] Receive data via UART from the BLE module
-	\item[-] Generating the displayed image data from a template
-	\item[-] Writing received text strings to the EPD
-	\item[-] Writing the image data to the display driver via SPI
+	\item[-] Receive data via UART from the \acs{ble}-module
+	\item[-] Generate the displayed image data from a template
+	\item[-] Write received text strings to the \acs{epd}
+	\item[-] Write the image data to the display driver via \acs{spi}
 	\item[-] Control the power supply of all the different components
 \end{itemize}
-%\vfill
 
 \paragraph{Configurations}
-The STM32 uses two bus interfaces and some extra GPIO's to communicate and control the EPD, nRF52480 and power supply. All used pins in these interfaces are listed in the table\ref{table:stm32}.  
+The STM32 uses two bus interfaces and some extra \acs{gpio}'s to communicate and control the \acs{epd}, nRF52480 and power supply. All used pins in these interfaces are listed in Table \ref{table:stm32}.  
 
-\begin{table}[!ht]
+\begin{table}[ht]
 	\begin{tabular}{ |c|c|c|c|c|c| } 
 		\hline
 	Description & Function &Pin number & Speed& Properties& mode \\
@@ -66,128 +60,137 @@ The STM32 uses two bus interfaces and some extra GPIO's to communicate and contr
 	\hline
 
 	\end{tabular}
-	\caption{Table of the STM32 pin configuration\label{table:stm32}}
+	\caption{Table of the STM32 pin configuration.\label{table:stm32}}
 \end{table}
 
-%\clearpage
-
-
-\begin{figure}[H]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[height=0.8\textheight]{4-development/software/graphics/main.pdf}
-	\caption{STM32 program flow chart\label{software:main}}
+	\caption{STM32 program flow chart.\label{software:main}}
 \end{figure}
-In the flowchart\ref{software:main} it is visible that the controller itself never enters a deep sleep mode in the end of an program cycle. Instead the controller runs trough a power kill sequence which disables the own power supply. As a result of this the controller and remaining hardware consume no power instead of their deep sleep power consumption. 
+In the flowchart in Figure \ref{software:main} is visible, that the controller itself never enters a deep sleep mode in the end of an program cycle. Instead the controller runs trough a power kill sequence which disables it's own power supply. As a result, the controller repeats the initializing process at the begin o every wakeup.
 
 \paragraph{IT8951 Driver}
-To program the communication interface of the STM32 with the IT8951 chip, a programming guide given by the manufacturer ITE Tech. Inc. was used. The interface is based on a 16-bit SPI bus with three additional control pins. Since the IT8951 requires a Big-endian format the STM32 has to reformat all the bytes. From the manufacturer an SPI clock rate of 12\,MHz is suggested, while the maximum given in the data sheet is 24\,MHz. This leads to an optimal maximum transfer rate of 3\,MBytes/s. Concluding that writing an image to our EPD needs roughly 0.165 seconds to write a full image. There measured time for one writing cycle, including initialisation and fetching the buffer registers, resulted in 0.168\,second. It is also possible to overclock the IT8951 a little bit. With 28\,MHz it was still possible to read and write the display controller. Over 30\,MHz some errors can appear \cite{IT8951}.      
+To program the communication between the STM32 with the IT8951, a programming guide by the manufacturer ITE Tech. Inc. was used.
+The interface is based on a 16-bit \acs{spi}-bus with three additional control pins. Since the IT8951 requires a big-endian format, the STM32 has to reformat all the bytes. 
+The manufacturer recommends a SPI clock rate of 12\,MHz, while the maximum given in the data sheet is 24\,MHz.
+This leads to a maximum transfer rate of 3\,MBytes/s  \cite{IT8951}. 
+Writing an image to the \acs{epd} needs  
+\begin{align}
+	t_{\text{write}}=\frac{(1200\cdot 825)/2\,\text{bits}}{3\,\text{MBytes}/s}=0.165\,\text{s}.
+\end{align}
+Note that this calculation assumes 4 bits (for the 16 grey scales) per pixel.
 
-   
+The measured time for one writing cycle, including initialisation and fetching of the buffer registers, resulted in 0.168\,seconds. It is also possible to overclock the IT8951.
+With 28\,MHz, it was still possible to read and write the display controller.      
+
 \paragraph{Template}
-The calendar template is getting preloaded in the flash of the STM32. To save memory, the file is converted into an $1200 \times 825$ PNG with the colour depth of 4 bit. The PNG then is used to create a .c file which holds an one dimensional array with all the pixel data in it. The pixel location is mapped to the memory as shown in figure\ref{theory:matrix}. 
+The schedule template is preloaded to the flash of the STM32. To save memory, the file is converted into an $1200 \times 825$ PNG with the colour depth of 4 bit. The PNG then is used to create a c-file which holds an one dimensional array with all the pixel data in it. The pixel location is mapped to the memory as shown in figure\ref{theory:matrix}. 
 
 \begin{figure}[H]
 	\begin{lstlisting}
-const unsigned char Kalender[]={0xff,0xff,0xff,0xff,0xff,0xff,0xff,...
-								0xff,0xff,0xff,0xff,0xff,0xff,0xff,...
-								.
-								.
-								.
-								0xdd,0xdd,0xdd,0xdd,0xdd,0xdd,0xdd};
+	const unsigned char schedule[]={0xff,0xff,0xff,0xff,0xff,0xff,0xff,...
+									0xff,0xff,0xff,0xff,0xff,0xff,0xff,...
+									.
+									.
+									.
+									0xdd,0xdd,0xdd,0xdd,0xdd,0xdd,0xdd};
 	\end{lstlisting}
 \end{figure}
-Each Hex number in the array resembles two pixels of each four bit. The template used is an example calender over one day. In the template shown in image\ref{software:kalender}, there are already some information given like the calendar week and weekdays. Storing the template like this uses 495000-bits of flash memory. 
-\begin{figure}[H]
+Each Hex number in the array resembles two pixels of each four bit. In the template shown in image\ref{software:kalender}, there are already some information given like the calendar week and weekdays. Storing the template like this uses 495000\,bits of flash memory. 
+\begin{figure}[ht]
 	\centering
 	\includegraphics[height=0.6\textwidth]{4-development/software/graphics/Kalender.png}
-	\caption{Example calender used as an template\label{software:kalender}}
+	\caption{Example schedule used as an template.\label{software:kalender}}
 \end{figure}
 
 
 \paragraph{Fonts}
-All fonts used are generated .c files which are holding two arrays. First one holds all different ASCII characters, while the second array holds the font information. Important informations stored are the width and height of each font. All characters have the compressed layout as described in the theory part\ref{theory:CompressedFonts} in the beginning.
-\begin{figure}[H]
+All fonts are c-files which hold two arrays. the first one contains all different ASCII characters, while the second array holds the font information like with and height. All characters have the compressed layout as described in Section \ref{theory:CompressedFonts}.
+\begin{figure}[ht]
 	\begin{lstlisting}
-const uint8_t Font12_Table[] = 
-{
-	.
-	.
-	.,
-	// @396 'A' (7 pixels wide)
-	0x00, //        
-	0x30, //   ##   
-	0x10, //    #   
-	0x28, //   # #  
-	0x28, //   # #  
-	0x28, //   # #  
-	0x7C, //  ##### 
-	0x44, //  #   # 
-	0xEE, // ### ###
-	0x00, //        
-	0x00, //        
-	0x00, // 
-	.
-	.
-	. 
-	};
-	
-	sFONT Font12 = {
-	Font12_Table,
-	7, /* Width */
-	12, /* Height */
-	};
+	const uint8_t Font12_Table[] = 
+	{
+		.
+		.
+		.,
+		// @396 'A' (7 pixels wide)
+		0x00, //        
+		0x30, //   ##   
+		0x10, //    #   
+		0x28, //   # #  
+		0x28, //   # #  
+		0x28, //   # #  
+		0x7C, //  ##### 
+		0x44, //  #   # 
+		0xEE, // ### ###
+		0x00, //        
+		0x00, //        
+		0x00, // 
+		.
+		.
+		. 
+		};
+		
+		sFONT Font12 = {
+		Font12_Table,
+		7, /* Width */
+		12, /* Height */
+		};
 	\end{lstlisting}
 \end{figure}
 
 \paragraph{Writing characters}
-To write the desired characters to a image buffer the pixel data needs to be converted and placed in the right spot of the image buffer. Following code part\ref{software:drawchar} shows the implemented algorithm to handle this task. If a pixel value of the font is one a the foreground colour value is set in the right memory place. The pixel depth used in the code example is 8-bits. 
-\begin{figure}[H]
+To write the desired characters to a image buffer, the pixel data needs to be converted and placed into the right spot. 
+The code in Figure \ref{software:drawchar} shows the implemented algorithm to handle this task.
+The pixel depth used in the code example is 8-bits. 
+\begin{figure}[ht]
 	\begin{lstlisting}
-void drawChar(uint16_t Xpt, uint16_t Ypt, const char Acsii_Char,
-					sFONT* Font, uint8_t cBackground, uint8_t cForeground)
-	{
-		uint16_t Page, Column;
-		if (Xpt > Image.Width || Ypt > Image.Height) 
+	void drawChar(uint16_t Xpt, uint16_t Ypt, const char Acsii_Char,
+						sFONT* Font, uint8_t cBackground, uint8_t cForeground)
 		{
-			return;
-		}
-	uint32_t Char_Offset = (Acsii_Char - ' ') * Font->Height * 
-							(Font->Width / 8 + (Font->Width % 8 ? 1 : 0));
-	const unsigned char *ptr = &Font->table[Char_Offset];
-	
-	for (Page = 0; Page < Font->Height; Page ++ ) 
-	{
-		for (Column = 0; Column < Font->Width; Column ++ ) 
-		{
-			if (FONT_BACKGROUND == cBackground) 
-			{ 
-				if (*ptr & (0x80 >> (Column % 8)))
-					setPixel(Xpt+Column, Ypt+Page, cForeground);
-			} 
-			else 
+			uint16_t Page, Column;
+			if (Xpt > Image.Width || Ypt > Image.Height) 
 			{
-				if (*ptr & (0x80 >> (Column%8))) 
-				{
-					setPixel(Xpt + Column, Ypt + Page, cForeground);					
+				return;
+			}
+		uint32_t Char_Offset = (Acsii_Char - ' ') * Font->Height * 
+								(Font->Width / 8 + (Font->Width % 8 ? 1 : 0));
+		const unsigned char *ptr = &Font->table[Char_Offset];
+		
+		for (Page = 0; Page < Font->Height; Page ++ ) 
+		{
+			for (Column = 0; Column < Font->Width; Column ++ ) 
+			{
+				if (FONT_BACKGROUND == cBackground) 
+				{ 
+					if (*ptr & (0x80 >> (Column % 8)))
+						setPixel(Xpt+Column, Ypt+Page, cForeground);
 				} 
 				else 
 				{
-					setPixel(Xpt + Column, Ypt + Page, cBackground);
+					if (*ptr & (0x80 >> (Column%8))) 
+					{
+						setPixel(Xpt + Column, Ypt + Page, cForeground);					
+					} 
+					else 
+					{
+						setPixel(Xpt + Column, Ypt + Page, cBackground);
+					}
 				}
+				//One pixel is 8 bits
+				if (Column % 8 == 7)
+					ptr++;
 			}
-			//One pixel is 8 bits
-			if (Column % 8 == 7)
+			if (Font->Width % 8 != 0)
 				ptr++;
 		}
-		if (Font->Width % 8 != 0)
-			ptr++;
 	}
-}
 	\end{lstlisting}
-	\label{software:drawchar}
+	\caption{Write characters to image buffer.\label{software:drawchar}}
 \end{figure}
 
-All other graphical functions implemented are using the \texttt{setpixel()} and \texttt{drawChar()} functions to access and write information into a given display buffer. 
+All other graphical functions implemented use the \texttt{drawChar()} function to access and write information into a given display buffer. 
 
 
 %\begin{figure}[ht!]
@@ -224,13 +227,13 @@ All other graphical functions implemented are using the \texttt{setpixel()} and 
 
 
 \subsubsection{Communication}
-The software on both sides of the bluetooth channel is very similar, thus it is explained in this section.
+Due to the fact that the software on both sides of the bluetooth channel is very similar it is explained in this section.
 A \acs{ble} example project, which was provided by nordic, was only slightly changed to fit the purpose of this prototype.
 
 Before a connection is established, the module on the receiver side is known as peripheral, and the module on transmitter end as the central device.
 After the receiver is woken up with the RFicient, the peripheral starts advertising.
 Advertising basically means sending data packets periodically with information for the central device.
-The central is scanning for the this advertisement and can based on this information decide, if it wants to connect.
+The central device is scanning for the this advertisement and can decide, whether it wants to connect based on this information.
 Is the connection established, it is now possible to exchange data through this channel.
 This process is illustrated in Figure \ref{software:ble}.
 \begin{figure}[ht]
@@ -239,9 +242,9 @@ This process is illustrated in Figure \ref{software:ble}.
 	\caption{\acs{ble}-communication with the nRF52480.\label{software:ble}}
 \end{figure}
 
-The central serves after connection as the client.
+The central device serves after connection as the client.
 It can make read and write requests to access the data on the peripheral, which acts as the server.
-The server on the other hand can only send notifications to the client if new data is ready.
+The server on the other, hand can only send notifications to the client if new data is ready.
 It should be noted, that the roles of client and server do not in any case have to be assigned to central and peripheral, but also the other way around. 
 
 \subsection{Transmitter}
@@ -264,7 +267,7 @@ It should be noted, that the roles of client and server do not in any case have 
 \lstset{style=mystyle}
 
 A short python script enables the user to send the data to the display.
-This script is looked at here step by step.
+This script is presented step by step.
 
 \begin{enumerate}
 	\item Include of the used packages, time and serial.
@@ -279,9 +282,9 @@ This script is looked at here step by step.
 	
 	device = serial.Serial(com_port, baudrate, writeTimeout=0)
 	\end{lstlisting}
-	\item Create a list of list with the desired data.
+	\item Create a list of lists with the desired data.
 	The first list contains information about how many packages are about to follow.
-	The following list contain the location on the template, the subject and the lecturer.
+	The following list contains the location on the template, the subject and the lecturer.
 	\begin{lstlisting}
 	data = [[0, chr(3), '\0\0\0\0'],[11 , 'WsComm\0', 'MAH\0'],
 			[3 , 'DigPro\0', 'SCU\0'], [22 , 'EmbSW\0', 'BON\0']]
