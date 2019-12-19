@@ -1,6 +1,11 @@
 \subsection{nRF52480}
 The data transfer with the nRF52480 programmed as described is very simple.
-The connection seems stable
-
+The connection is stable in a similar range like the RFicient, and connecting the two devise after wakeup happens instantaneously.
 
 \subsection{RFicient}
+The development kit is a preliminary version which has to be sent back to the \acs{fraun} after evaluating.
+Out of this reason, it was not possible to supply it directly from the super capacitor, because this would have involved soldering.
+The kit was therefore supplied over \acs{usb} and it's power consumption assumed to be $4.5\,\mu \text{W}$ as stated in the datasheet.
+Because the Rficient had to be controlled over the \acs{gui}, it was not possible to synchronize the wakeup event with the data transmission.
+To ensure functionality, enough delay time (2\,s) between these two events was inserted.
+With a fully synchronized transmitter, it should be possible to reduce the time, in which the microcontroller is in wakeup mode.
