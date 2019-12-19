@@ -48,21 +48,21 @@ The STM32 uses two bus interfaces and some extra GPIO's to communicate and contr
 		\hline
 	Description & Function &Pin number & Speed& Properties& mode \\
 		\hline
-	\multirow{4}{4em}{SPI} 	& Chip select & PA0&14.0 MBits/s &No Pull-up/-down& Output \\ 
-								& Clock& PA1 & 14.0 MBits/s&No Pull-up/-down& Push Pull \\ 
-								& MISO & PA6&14.0 MBits/s & No Pull-up/-down& Push Pull  \\ 
-								& MOSI & PA7& 14.0 MBits/s&No Pull-up/-down& Push Pull  \\ 
+	\multirow{4}{4em}{SPI} 	& Chip select & PA0&14.0\,MBits/s &No Pull-up/-down& Output \\ 
+								& Clock& PA1 & 14.0\,MBits/s&No Pull-up/-down& Push Pull \\ 
+								& MISO & PA6&14.0\,MBits/s & No Pull-up/-down& Push Pull  \\ 
+								& MOSI & PA7& 14.0\,MBits/s&No Pull-up/-down& Push Pull  \\ 
 		\hline
-	\multirow{2}{4em}{UART} & TX & PC10 & 115.2 kBits/s & Pull-up& Push Pull   \\ 
-								& RX & PC11 & 115.2 kBits/s & Pull-up& Push Pull \\ 
+	\multirow{2}{4em}{UART} & TX & PC10 & 115.2\,kBits/s & Pull-up& Push Pull   \\ 
+								& RX & PC11 & 115.2\,kBits/s & Pull-up& Push Pull \\ 
 	\hline
 	
-	\multirow{2}{4em}{Power kill} & Enable & PC3 & 112MHz &No Pull-up/-down& Output   \\ 
-										  & Disable& PC0 & 122MHz &No Pull-up/-down& Output \\ 
+	\multirow{2}{4em}{Power kill} & Enable & PC3 & 112\,MHz &No Pull-up/-down& Output   \\ 
+										  & Disable& PC0 & 122\,MHz &No Pull-up/-down& Output \\ 
 	\hline
 	
-	\multirow{2}{4em}{EPD interface} & Reset & PA4 & 112MHz &No Pull-up/-down& Output   \\ 
-									& HARDY& PA5 & 122MHz &No Pull-up/-down& Output \\ 
+	\multirow{2}{4em}{EPD interface} & Reset & PA4 & 112\,MHz &No Pull-up/-down& Output   \\ 
+									& HARDY& PA5 & 122\,MHz &No Pull-up/-down& Output \\ 
 	\hline
 
 	\end{tabular}
@@ -79,6 +79,10 @@ The STM32 uses two bus interfaces and some extra GPIO's to communicate and contr
 \end{figure}
 In the flowchart\ref{software:main} it is visible that the controller itself never enters a deep sleep mode in the end of an program cycle. Instead the controller runs trough a power kill sequence which disables the own power supply. As a result of this the controller and remaining hardware consume no power instead of their deep sleep power consumption. 
 
+\paragraph{IT8951 Driver}
+To program the communication interface of the STM32 with the IT8951 chip, a programming guide given by the manufacturer ITE Tech. Inc. was used. The interface is based on a 16-bit SPI bus with three additional control pins. Since the IT8951 requires a Big-endian format the STM32 has to reformat all the bytes. From the manufacturer an SPI clock rate of 12\,MHz is suggested, while the maximum given in the data sheet is 24\,MHz. This leads to an optimal maximum transfer rate of 3\,MBytes/s. Concluding that writing an image to our EPD needs roughly 0.165 seconds to write a full image. There measured time for one writing cycle, including initialisation and fetching the buffer registers, resulted in 0.168\,second. It is also possible to overclock the IT8951 a little bit. With 28\,MHz it was still possible to read and write the display controller. Over 30\,MHz some errors can appear \cite{IT8951}.      
+
+   
 \paragraph{Template}
 The calendar template is getting preloaded in the flash of the STM32. To save memory, the file is converted into an $1200 \times 825$ PNG with the colour depth of 4 bit. The PNG then is used to create a .c file which holds an one dimensional array with all the pixel data in it. The pixel location is mapped to the memory as shown in figure\ref{theory:matrix}. 
 
@@ -136,14 +140,14 @@ const uint8_t Font12_Table[] =
 \end{figure}
 
 \paragraph{Writing characters}
-To write the desired characters to a image buffer the pixel data needs to be converted and placed in the right spot of the image buffer. Following code part\ref{software:drawchar} shows the implemented algorithm to handle this task. If a pixel value of the font is a one a given value is written to the 
-\begin{figure}[ht!]
+To write the desired characters to a image buffer the pixel data needs to be converted and placed in the right spot of the image buffer. Following code part\ref{software:drawchar} shows the implemented algorithm to handle this task. If a pixel value of the font is one a the foreground colour value is set in the right memory place. The pixel depth used in the code example is 8-bits. 
+\begin{figure}[H]
 	\begin{lstlisting}
 void drawChar(uint16_t Xpt, uint16_t Ypt, const char Acsii_Char,
 					sFONT* Font, uint8_t cBackground, uint8_t cForeground)
 	{
 		uint16_t Page, Column;
-		if (Xpt > Imaget.Width || Ypt > Image.Height) 
+		if (Xpt > Image.Width || Ypt > Image.Height) 
 		{
 			return;
 		}
@@ -158,7 +162,7 @@ void drawChar(uint16_t Xpt, uint16_t Ypt, const char Acsii_Char,
 			if (FONT_BACKGROUND == cBackground) 
 			{ 
 				if (*ptr & (0x80 >> (Column % 8)))
-					Paint_SetPixel(Xpt+Column, Ypt+Page, cForeground);
+					setPixel(Xpt+Column, Ypt+Page, cForeground);
 			} 
 			else 
 			{
@@ -183,40 +187,40 @@ void drawChar(uint16_t Xpt, uint16_t Ypt, const char Acsii_Char,
 	\label{software:drawchar}
 \end{figure}
 
-\paragraph{Writing strings}
-The character can be put together 
+All other graphical functions implemented are using the \texttt{setpixel()} and \texttt{drawChar()} functions to access and write information into a given display buffer. 
 
-\begin{figure}[ht!]
-\begin{lstlisting}
-void drawString(uint16_t xStart, uint16_t yStart,const char * pString, sFONT* Font,
-							 uint8_t cBackground,uint8_t cForeground) 
-{
-	uint16_t Ypt = yStart;
-	uint16_t Xpt = xStart;
-	
-	if (xStart > Image.Width || yStart > Image.Height)
-	{
-		return;
-	}
-	while (* pString != '\0') 
-	{
-		if ((Xpt + Font->Width ) > Image.Width ) 
-		{
-			Xpt = xStart;
-			Ypt += Font->Height;
-		}
-		if ((Ypt  + Font->Height ) > Image.Height ) 
-		{
-			Xpt = xStart;
-			Ypt = yStart;
-		}
-		drawChar(Xpt, Ypt, * pString, Font, cBackground, cForeground);
-		pString ++;
-		Xpt += Font->Width;
-	}
-}	
-\end{lstlisting}
-\end{figure}
+
+%\begin{figure}[ht!]
+%\begin{lstlisting}
+%void drawString(uint16_t xStart, uint16_t yStart,const char * pString, sFONT* Font,
+%							 uint8_t cBackground,uint8_t cForeground) 
+%{
+%	uint16_t Ypt = yStart;
+%	uint16_t Xpt = xStart;
+%	
+%	if (xStart > Image.Width || yStart > Image.Height)
+%	{
+%		return;
+%	}
+%	while (* pString != '\0') 
+%	{
+%		if ((Xpt + Font->Width ) > Image.Width ) 
+%		{
+%			Xpt = xStart;
+%			Ypt += Font->Height;
+%		}
+%		if ((Ypt  + Font->Height ) > Image.Height ) 
+%		{
+%			Xpt = xStart;
+%			Ypt = yStart;
+%		}
+%		drawChar(Xpt, Ypt, * pString, Font, cBackground, cForeground);
+%		pString ++;
+%		Xpt += Font->Width;
+%	}
+%}	
+%\end{lstlisting}
+%\end{figure}
 
 
 \subsubsection{Communication}
