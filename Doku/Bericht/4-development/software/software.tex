@@ -92,7 +92,7 @@ const unsigned char Kalender[]={0xff,0xff,0xff,0xff,0xff,0xff,0xff,...
 								0xdd,0xdd,0xdd,0xdd,0xdd,0xdd,0xdd};
 	\end{lstlisting}
 \end{figure}
-Each Hex number resembles two pixels of each four bit. The template used is an example calender over one day. In the template shown in image\ref{software:kalender}, there are already some information given like the calendar week and weekdays.
+Each Hex number in the array resembles two pixels of each four bit. The template used is an example calender over one day. In the template shown in image\ref{software:kalender}, there are already some information given like the calendar week and weekdays. Storing the template like this uses 495000-bits of flash memory. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=0.6\textwidth]{4-development/software/graphics/Kalender.png}
@@ -136,14 +136,14 @@ const uint8_t Font12_Table[] =
 \end{figure}
 
 \paragraph{Writing characters}
-To write the desired characters to a image buffer the pixel data needs to be converted and placed in the right spot of the image buffer. Following code part\ref{software:drawchar} shows the implemented algorithm to handle this task.  
+To write the desired characters to a image buffer the pixel data needs to be converted and placed in the right spot of the image buffer. Following code part\ref{software:drawchar} shows the implemented algorithm to handle this task. If a pixel value of the font is a one a given value is written to the 
 \begin{figure}[ht!]
 	\begin{lstlisting}
 void drawChar(uint16_t Xpt, uint16_t Ypt, const char Acsii_Char,
 					sFONT* Font, uint8_t cBackground, uint8_t cForeground)
 	{
 		uint16_t Page, Column;
-		if (Xpt > Paint.Width || Ypt > Paint.Height) 
+		if (Xpt > Imaget.Width || Ypt > Image.Height) 
 		{
 			return;
 		}
@@ -164,11 +164,11 @@ void drawChar(uint16_t Xpt, uint16_t Ypt, const char Acsii_Char,
 			{
 				if (*ptr & (0x80 >> (Column%8))) 
 				{
-					Paint_SetPixel(Xpt + Column, Ypt + Page, cForeground);					
+					setPixel(Xpt + Column, Ypt + Page, cForeground);					
 				} 
 				else 
 				{
-					Paint_SetPixel(Xpt + Column, Ypt + Page, cBackground);
+					setPixel(Xpt + Column, Ypt + Page, cBackground);
 				}
 			}
 			//One pixel is 8 bits
@@ -182,6 +182,10 @@ void drawChar(uint16_t Xpt, uint16_t Ypt, const char Acsii_Char,
 	\end{lstlisting}
 	\label{software:drawchar}
 \end{figure}
+
+\paragraph{Writing strings}
+The character can be put together 
+
 \begin{figure}[ht!]
 \begin{lstlisting}
 void drawString(uint16_t xStart, uint16_t yStart,const char * pString, sFONT* Font,
@@ -190,23 +194,23 @@ void drawString(uint16_t xStart, uint16_t yStart,const char * pString, sFONT* Fo
 	uint16_t Ypt = yStart;
 	uint16_t Xpt = xStart;
 	
-	if (xStart > Paint.Width || yStart > Paint.Height)
+	if (xStart > Image.Width || yStart > Image.Height)
 	{
 		return;
 	}
 	while (* pString != '\0') 
 	{
-		if ((Xpt + Font->Width ) > Paint.Width ) 
+		if ((Xpt + Font->Width ) > Image.Width ) 
 		{
 			Xpt = xStart;
 			Ypt += Font->Height;
 		}
-		if ((Ypt  + Font->Height ) > Paint.Height ) 
+		if ((Ypt  + Font->Height ) > Image.Height ) 
 		{
 			Xpt = xStart;
 			Ypt = yStart;
 		}
-		Paint_DrawChar(Xpt, Ypt, * pString, Font, cBackground, cForeground);
+		drawChar(Xpt, Ypt, * pString, Font, cBackground, cForeground);
 		pString ++;
 		Xpt += Font->Width;
 	}
