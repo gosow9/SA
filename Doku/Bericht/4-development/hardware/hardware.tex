@@ -10,7 +10,7 @@ Every component is described in more detail in this section.
 \subsection{Display}
 An 9.7\,inch (202.8\,mm $\times$ 139.425\,mm) e-paper display from waveshare is used which adopts the microencapsulated electrophoretic display technology just as described in Chapter \ref{theory}.
 It has a $1200\times 825$ resolution with 16 grey scales.
-The display driver can be accessed from a microcontroller with a \acs{spi}-bus \cite{waveshare}.
+The IT8951, which is the display driver used on the evaluation board needed to drive an \acs{epd}, can be accessed from a microcontroller with a \acs{spi}-bus \cite{waveshare}. 
 
 \subsection{Microcontroller}
 
@@ -202,9 +202,7 @@ The output now stays switched off, until $V_{\text{IN}}$ again supplies energy, 
 It can also clearly be seen, that after 160 seconds, the ADP5090 controls $V_{\text{IN}}$ to ca. $2.1\,\text{V}$. Recall that this is the optimal power point of the solar cell.
 
 \subsubsection{Power Latch}
-Considered 
-To enable and disable the power supply of everything but the ADP5090 and Wakeup receiver, the usage of a latch circuit was the most suited option.  
-
+Considering the usage of an wakeup receiver, implementing a latch circuit to en-/disable the power supply is a suitable option. The first version of latch circuit designed has two control inputs. A short voltage impulse on one of these inputs en-/disables the power supply for everything except the wakeup receiver and the ADP5090. 
 \begin{figure}[!ht]
 	\centering
 	\subfigure[3D picture of version one of the power latch \label{fig:pwr3dV1}]{\includegraphics[width=0.49\linewidth]{4-development/hardware/graphics/PowerLatch/PwrLatch_V1_3d.PNG}}
@@ -218,5 +216,5 @@ To enable and disable the power supply of everything but the ADP5090 and Wakeup 
 	\label{fig:pwr_layout}
 \end{figure}
 
-
+Since the driver board of the \acs{epd} requires a stable input voltage to run reliable, a DC-DC converter is needed to convert the minimum input voltage of $2.2\,V$ to $3.3\,V$. The used component (LMR61428) did not work properly on the first PCB due to some design flaws. Because of this a second version correcting these flaws was designed produced. 
 
