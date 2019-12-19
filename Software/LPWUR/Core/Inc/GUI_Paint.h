@@ -16,7 +16,7 @@
  * Image attributes
 **/
 typedef struct {
-    uint8_t *Image;
+    uint8_t *add;
     uint16_t Width;
     uint16_t Height;
     uint16_t WidthMemory;
@@ -26,8 +26,8 @@ typedef struct {
     uint16_t Mirror;
     uint16_t WidthByte;
     uint16_t HeightByte;
-} PAINT;
-extern PAINT Paint;
+} IMAGE;
+extern IMAGE Image;
 
 /**
  * Display rotate
@@ -98,18 +98,6 @@ typedef enum {
     DRAW_FILL_FULL,
 } DRAW_FILL;
 
-/**
- * Custom structure of a time attribute
-**/
-typedef struct {
-    uint16_t Year;  //0000
-    uint8_t  Month; //1 - 12
-    uint8_t  Day;   //1 - 30
-    uint8_t  Hour;  //0 - 23
-    uint8_t  Min;   //0 - 59
-    uint8_t  Sec;   //0 - 59
-} PAINT_TIME;
-extern PAINT_TIME sPaint_time;
 
 //init and Clear
 void setNewImage(uint8_t *image, uint16_t Width, uint16_t Height, uint16_t Rotate, uint16_t Color);

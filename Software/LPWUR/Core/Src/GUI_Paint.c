@@ -1,5 +1,5 @@
 /*
- * GUI_Paint.c
+ * GUI_Image.c
  *
  *  Created on: Nov 17, 2019
  *      Author: crenda
@@ -12,7 +12,7 @@
 #include <string.h> //memset()
 #include <math.h>
 
-PAINT Paint;
+IMAGE Image;
 /******************************************************************************
 //function:	Create Image
 //parameter:
@@ -23,27 +23,27 @@ PAINT Paint;
 ******************************************************************************/
 void setNewImage(uint8_t *image, uint16_t Width, uint16_t Height, uint16_t Rotate, uint16_t Color)
 {
-    Paint.Image = NULL;
-    Paint.Image = image;
+    Image.add = NULL;
+    Image.add = image;
 
-    Paint.WidthMemory = Width;
-    Paint.HeightMemory = Height;
-    Paint.Color = Color;    
-    //Paint.WidthByte = (Width % 8 == 0)? (Width / 8 ): (Width / 8 + 1);
-    Paint.WidthByte = Width;
-    Paint.HeightByte = Height;    
-    //printf("WidthByte = %d, HeightByte = %d\r\n", Paint.WidthByte, Paint.HeightByte);
+    Image.WidthMemory = Width;
+    Image.HeightMemory = Height;
+    Image.Color = Color;
+    //Image.WidthByte = (Width % 8 == 0)? (Width / 8 ): (Width / 8 + 1);
+    Image.WidthByte = Width;
+    Image.HeightByte = Height;
+    //printf("WidthByte = %d, HeightByte = %d\r\n", Image.WidthByte, Image.HeightByte);
     //printf(" EPD_WIDTH / 8 = %d\r\n",  122 / 8);
    
-    Paint.Rotate = Rotate;
-    Paint.Mirror = MIRROR_NONE;
+    Image.Rotate = Rotate;
+    Image.Mirror = MIRROR_NONE;
     
     if(Rotate == ROTATE_0 || Rotate == ROTATE_180) {
-        Paint.Width = Width;
-        Paint.Height = Height;
+        Image.Width = Width;
+        Image.Height = Height;
     } else {
-        Paint.Width = Height;
-        Paint.Height = Width;
+        Image.Width = Height;
+        Image.Height = Width;
     }
 }
 
@@ -54,7 +54,7 @@ void setNewImage(uint8_t *image, uint16_t Width, uint16_t Height, uint16_t Rotat
 ******************************************************************************/
 void selectImage(uint8_t *image)
 {
-    Paint.Image = image;
+    Image.add = image;
 }
 
 /******************************************************************************
@@ -66,7 +66,7 @@ void setRotateImage(uint16_t Rotate)
 {
     if(Rotate == ROTATE_0 || Rotate == ROTATE_90 || Rotate == ROTATE_180 || Rotate == ROTATE_270) {
         //Debug("Set image Rotate %d\r\n", Rotate);
-        Paint.Rotate = Rotate;
+        Image.Rotate = Rotate;
     } else {
         //Debug("rotate = 0, 90, 180, 270\r\n");
     }
@@ -82,7 +82,7 @@ void setMirroringImage(uint8_t mirror)
     if(mirror == MIRROR_NONE || mirror == MIRROR_HORIZONTAL || 
         mirror == MIRROR_VERTICAL || mirror == MIRROR_ORIGIN) {
 //        Debug("mirror image x:%s, y:%s\r\n",(mirror & 0x01)? "mirror":"none", ((mirror >> 1) & 0x01)? "mirror":"none");
-        Paint.Mirror = mirror;
+        Image.Mirror = mirror;
 //    } else {
 ////        Debug("mirror should be MIRROR_NONE, MIRROR_HORIZONTAL,
 //       // MIRROR_VERTICAL or MIRROR_ORIGIN\r\n");
@@ -94,82 +94,82 @@ void setMirroringImage(uint8_t mirror)
 //parameter:
 //    Xpt  :   At point X
 //    Ypt  :   At point Y
-//    Color   :   Painted colors
+//    Color   :   Imageed colors
 ******************************************************************************/
 void setPixel(uint16_t Xpt, uint16_t Ypt, uint16_t Color)
 {
-    if(Xpt > Paint.Width || Ypt > Paint.Height){
+    if(Xpt > Image.Width || Ypt > Image.Height){
 //        Debug("Exceeding display boundaries\r\n");
         return;
     }      
     uint16_t X, Y;
 
-    switch(Paint.Rotate) {
+    switch(Image.Rotate) {
     case 0:
         X = Xpt;
         Y = Ypt;
         break;
     case 90:
-        X = Paint.WidthMemory - Ypt - 1;
+        X = Image.WidthMemory - Ypt - 1;
         Y = Xpt;
         break;
     case 180:
-        X = Paint.WidthMemory - Xpt - 1;
-        Y = Paint.HeightMemory - Ypt - 1;
+        X = Image.WidthMemory - Xpt - 1;
+        Y = Image.HeightMemory - Ypt - 1;
         break;
     case 270:
         X = Ypt;
-        Y = Paint.HeightMemory - Xpt - 1;
+        Y = Image.HeightMemory - Xpt - 1;
         break;
 		
     default:
         return;
     }
     
-    switch(Paint.Mirror) {
+    switch(Image.Mirror) {
     case MIRROR_NONE:
         break;
     case MIRROR_HORIZONTAL:
-        X = Paint.WidthMemory - X - 1;
+        X = Image.WidthMemory - X - 1;
         break;
     case MIRROR_VERTICAL:
-        Y = Paint.HeightMemory - Y - 1;
+        Y = Image.HeightMemory - Y - 1;
         break;
     case MIRROR_ORIGIN:
-        X = Paint.WidthMemory - X - 1;
-        Y = Paint.HeightMemory - Y - 1;
+        X = Image.WidthMemory - X - 1;
+        Y = Image.HeightMemory - Y - 1;
         break;
     default:
         return;
     }
 
-    if(X > Paint.WidthMemory || Y > Paint.HeightMemory){
+    if(X > Image.WidthMemory || Y > Image.HeightMemory){
 //        Debug("Exceeding display boundaries\r\n");
         return;
     }
     
-   // uint32_t Addr = X / 8 + Y * Paint.WidthByte;
-    uint32_t Addr = X + Y * Paint.WidthByte;
-   // uint8_t Rdata = Paint.Image[Addr];
+   // uint32_t Addr = X / 8 + Y * Image.WidthByte;
+    uint32_t Addr = X + Y * Image.WidthByte;
+   // uint8_t Rdata = Image.Image[Addr];
     if(Color == BLACK)
-        //Paint.Image[Addr] = Rdata & ~(0x80 >> (X % 8));
-    	Paint.Image[Addr] = BLACK;
+        //Image.Image[Addr] = Rdata & ~(0x80 >> (X % 8));
+    	Image.add[Addr] = BLACK;
     else
-        //Paint.Image[Addr] = Rdata | (0x80 >> (X % 8));
-    	Paint.Image[Addr] = Color;
+        //Image.Image[Addr] = Rdata | (0x80 >> (X % 8));
+    	Image.add[Addr] = Color;
 }
 
 /******************************************************************************
 //function:	Clear the color of the picture
 //parameter:
-//    Color   :   Painted colors
+//    Color   :   Imageed colors
 ******************************************************************************/
 void clear_Image(uint8_t Color)
 {
-    for (uint16_t Y = 0; Y < Paint.HeightByte; Y++) {
-        for (uint16_t X = 0; X < Paint.WidthByte; X++ ) {//8 pixel =  1 byte
-            uint32_t Addr = X + Y*Paint.WidthByte;
-            Paint.Image[Addr] = Color;
+    for (uint16_t Y = 0; Y < Image.HeightByte; Y++) {
+        for (uint16_t X = 0; X < Image.WidthByte; X++ ) {//8 pixel =  1 byte
+            uint32_t Addr = X + Y*Image.WidthByte;
+            Image.add[Addr] = Color;
         }
     }
 }
@@ -183,11 +183,11 @@ void clear_Image(uint8_t Color)
 //    Color		:   Set color
 //    Dot_Pixel	:	point size
 ******************************************************************************/
-void Paint_DrawPoint(uint16_t Xpt, uint16_t Ypt, uint16_t Color,
+void Image_DrawPoint(uint16_t Xpt, uint16_t Ypt, uint16_t Color,
                      DOT_PIXEL Dot_Pixel, DOT_STYLE DOT_STYLE)
 {
-    if (Xpt > Paint.Width || Ypt > Paint.Height) {
-//        Debug("Paint_DrawPoint Input exceeds the normal display range\r\n");
+    if (Xpt > Image.Width || Ypt > Image.Height) {
+//        Debug("Image_DrawPoint Input exceeds the normal display range\r\n");
         return;
     }
 
@@ -218,12 +218,12 @@ void Paint_DrawPoint(uint16_t Xpt, uint16_t Ypt, uint16_t Color,
 //    Yend   ：End point Ypt coordinate
 //    Color  ：The color of the line segment
 ******************************************************************************/
-void Paint_DrawLine(uint16_t xStart, uint16_t yStart, uint16_t Xend, uint16_t Yend,
+void Image_DrawLine(uint16_t xStart, uint16_t yStart, uint16_t Xend, uint16_t Yend,
                     uint16_t Color, LINE_STYLE Line_Style, DOT_PIXEL Dot_Pixel)
 {
-    if (xStart > Paint.Width || yStart > Paint.Height ||
-        Xend > Paint.Width || Yend > Paint.Height) {
-//        Debug("Paint_DrawLine Input exceeds the normal display range\r\n");
+    if (xStart > Image.Width || yStart > Image.Height ||
+        Xend > Image.Width || Yend > Image.Height) {
+//        Debug("Image_DrawLine Input exceeds the normal display range\r\n");
         return;
     }
 
@@ -242,13 +242,13 @@ void Paint_DrawLine(uint16_t xStart, uint16_t yStart, uint16_t Xend, uint16_t Ye
 
     for (;;) {
         Dotted_Len++;
-        //Painted dotted line, 2 point is really virtual
+        //Imageed dotted line, 2 point is really virtual
         if (Line_Style == LINE_STYLE_DOTTED && Dotted_Len % 3 == 0) {
             //Debug("LINE_DOTTED\r\n");
-            Paint_DrawPoint(Xpt, Ypt, IMAGE_BACKGROUND, Dot_Pixel, DOT_STYLE_DFT);
+            Image_DrawPoint(Xpt, Ypt, IMAGE_BACKGROUND, Dot_Pixel, DOT_STYLE_DFT);
             Dotted_Len = 0;
         } else {
-            Paint_DrawPoint(Xpt, Ypt, Color, Dot_Pixel, DOT_STYLE_DFT);
+            Image_DrawPoint(Xpt, Ypt, Color, Dot_Pixel, DOT_STYLE_DFT);
         }
         if (2 * Esp >= dy) {
             if (Xpt == Xend)
@@ -281,7 +281,7 @@ void drawChar(uint16_t Xpt, uint16_t Ypt, const char Acsii_Char,
 {
     uint16_t Page, Column;
 
-    if (Xpt > Paint.Width || Ypt > Paint.Height) {
+    if (Xpt > Image.Width || Ypt > Image.Height) {
         return;
     }
 
@@ -296,14 +296,14 @@ void drawChar(uint16_t Xpt, uint16_t Ypt, const char Acsii_Char,
                 //if (*ptr & (0x80 >> (Column % 8)))
                 if (*ptr & (0x80 >> (Column % 8)))
                     setPixel(Xpt + Column, Ypt + Page, cForeground);
-                    // Paint_DrawPoint(Xpt + Column, Ypt + Page, cForeground, DOT_PIXEL_DFT, DOT_STYLE_DFT);
+                    // Image_DrawPoint(Xpt + Column, Ypt + Page, cForeground, DOT_PIXEL_DFT, DOT_STYLE_DFT);
             } else {
                 if (*ptr & (0x80 >> (Column%8))) {
                     setPixel(Xpt + Column, Ypt + Page, cForeground);
-                    // Paint_DrawPoint(Xpt + Column, Ypt + Page, cForeground, DOT_PIXEL_DFT, DOT_STYLE_DFT);
+                    // Image_DrawPoint(Xpt + Column, Ypt + Page, cForeground, DOT_PIXEL_DFT, DOT_STYLE_DFT);
                 } else {
                     setPixel(Xpt + Column, Ypt + Page, cBackground);
-                    // Paint_DrawPoint(Xpt + Column, Ypt + Page, cBackground, DOT_PIXEL_DFT, DOT_STYLE_DFT);
+                    // Image_DrawPoint(Xpt + Column, Ypt + Page, cBackground, DOT_PIXEL_DFT, DOT_STYLE_DFT);
                 }
             }
             //One pixel is 8 bits
@@ -331,20 +331,20 @@ void drawString(uint16_t xStart, uint16_t yStart, const char * pString,
     uint16_t Xpt = xStart;
     uint16_t Ypt = yStart;
 
-    if (xStart > Paint.Width || yStart > Paint.Height) {
+    if (xStart > Image.Width || yStart > Image.Height) {
 //        Debug("drawString Input exceeds the normal display range\r\n");
         return;
     }
 
     while (* pString != '\0') {
         //if X direction filled , reposition to(xStart,Ypt),Ypt is Y direction plus the Height of the character
-        if ((Xpt + Font->Width ) > Paint.Width ) {
+        if ((Xpt + Font->Width ) > Image.Width ) {
             Xpt = xStart;
             Ypt += Font->Height;
         }
 
         // If the Y direction is full, reposition to(xStart, yStart)
-        if ((Ypt  + Font->Height ) > Paint.Height ) {
+        if ((Ypt  + Font->Height ) > Image.Height ) {
             Xpt = xStart;
             Ypt = yStart;
         }
