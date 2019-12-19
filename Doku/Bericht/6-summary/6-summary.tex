@@ -1,7 +1,21 @@
-\chapter{Summary}
+\chapter{Conclusion}
 
-\section{Conclusion}
-\input{6-summary/conclusion.tex}
+Over the course of this thesis, a working prototype of an occupancy schedule was developed.
+As components served several development kits and simple prints.
+With a self-holding circuit, it was possible to turn off parts of the receiver completely and switch them back on with the a wakeup interrupt.
+This central part makes it possible to use more power consuming hardware, since it only is connected to the power supply for intervals of 5-6 seconds.
+Using a low power wakeup receiver turned out to be the right approach, since the power consumption during standby mode could be reduced to a minimum of $4.5\,\mu\text{W}$ that way.
+This power loss is easily compensated by the solar cells which deliver $485.52\,\mu\text{W}$ given an illuminance of 200\,lux.
+If no light reaches the solar cells and no wakeups occur, it is assumed that the prototype stays functional for over one year, under the condition that the super capacitor was charged fully beforehand.
 
-\section{Future work}
-\input{6-summary/furure_work.tex}
+\paragraph{Future work}
+Following improvements on the prototype have to be made, before developing a complete layout of the receiver:
+\begin{itemize}
+	\item[-] Developing a power management which protects the super capacitor from over discharging
+	\item[-] Changing the microcontroller to display driver connection from \acs{spi} to a parallel bus (for ex. I80)
+	\item[-] Synchronising of the refresh sequence on transmitter end
+	\item[-] Measure the leakage of the super cap to better estimate long term functionality
+\end{itemize}
+These adjustments should ensure functionality and reduce power consumption of the prototype.
+
+Further it may be useful, to extend the \acs{ble}-communication to a mesh network, or even change to a different protocol with more range.
