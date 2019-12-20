@@ -220,7 +220,7 @@ hysteresis of the boost converter as shown in the Figure\ref{development:rippel}
 	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/scope/rippel.pdf}
 	\caption{Discharging behaviour.\label{development:rippel}}
 \end{figure}
-Because of this ripple in the output voltage the charge pumps on the display driver board could not work properly. This resulted in unpredictable behaviour during a display write cycle. For example the voltage dropped under $2.5$\,V and a whistle noise appeared during usage. The origin of the whistle noise remained unknown since many prevention actions did not help to isolate the effect. The assumption lies with a interaction of the low resistance of our capacitors used at the output and the low resistance of the used coil. The ceramic capacitors at the output probably expanded with the voltage change and the supplied energy trough the coil. Transferring their vibration to the PCB leading to an audible noise. 
+Because of this ripple in the output voltage, the charge pumps on the display driver board could not work properly. This resulted in unpredictable behaviour during a display write cycle. For example the voltage dropped under $2.5$\,V and a whistle noise appeared during usage. The origin of the whistle noise remained unknown since many prevention actions did not help to isolate the effect. The assumption lies with a interaction of the low resistance of our capacitors used at the output and the low resistance of the used coil. The ceramic capacitors at the output probably expanded with the voltage change. Causing a vibration and transferring this frequency to the PCB leading to an audible high pitched noise. 
 
 \begin{figure}[ht]
 	\centering
@@ -252,12 +252,20 @@ The new schematic displayed in Figure \ref{development:scematicV2} received a wi
 	\label{fig:pwr_layout}
 \end{figure}
 
-The result of the second layout 
+The output voltage of the second layout remains quite stable with a peak to peak voltage fluctuation under 40mV. Leading to a stable refreshing cycle of the display and no audible noise. During the testing a unexpected behaviour stand out. The controller could not turn itself off. The controller disabled the power supply but the charge left in the capacitors enabled the power supply again. And since the micro controller has an higher minimum voltage to run as the MOSFET disabling the power supply the circuit remained in a self resetting loop. The solution to this problem was to expand the power latch with a self holding circuit. This circuit ensures the power supply keeps shut down for a minimum amount of time. In the Figure\ref{development:kill} the self holding circuit is displayed. 
 
  \begin{figure}[ht]
+	\centering
+	\includegraphics[clip, trim=10.5cm 4cm 12cm 13cm, width=0.6\textwidth]{4-development/hardware/graphics/PowerLatch/PwrLatch_V3_sch.pdf}
+	\caption{Power kill .\label{development:kill}}
+\end{figure}
+
+To run this properly the controller needs follow a specific pattern. The kill switch have to be first enabled to block the MOSFET Q7 in the schematic \ref{development:kill} by setting the Kill pin high. After this the Kill\_Charge pin needs to be set high to open the MOSFET Q8. This is leading to a charging of the $Cin2$ Capacitor. If the display writing sequence is finished the Kill\_Charge pin can be set low. If now the Kill pin is released the power supply gets shut down. The capacitor $Cin2$ is keeping the threshold voltage long enough to guarantee a reliable shutdown. The self holding shut down time can be adjusted trough $Cin2$ and $R12$ in the schematic \ref{development:scematicV3}.   
+
+\begin{figure}[ht]
  	\centering
- 	\includegraphics[clip, trim=4cm 5cm 1cm 3cm, width=1\textwidth]{4-development/hardware/graphics/PowerLatch/PwrLatch_V3_sch.pdf}
- 	\caption{Power latch schematic second version .\label{development:scematicV3}}
- \end{figure}
+ 	\includegraphics[clip, trim=4cm 4cm 1cm 5cm, width=1\textwidth]{4-development/hardware/graphics/PowerLatch/PwrLatch_V3_sch.pdf}
+ 	\caption{Power latch schematic third version .\label{development:scematicV3}}
+\end{figure}
 
 
