@@ -56,7 +56,7 @@ The character is stored this way into the memory and can be accessed just like a
 If fonts are stored with a $12\times 7$ pixel mask, every character occupies 12 bytes memory.
 
 To display characters in color, 8 more bits for the color depth are needed.
-this is visualized in Figure \ref{fig:ganzes_fig}  
+this is visualized in Figure \ref{fig:ganzes_fig}. During the mapping of the font mask to the buffer memory the desired colour value is chosen and put in every place the mask has a set pixel. With using this method save fonts and writing characters in a buffer instead of using the full depth is the font size multiplied with the colour depth.  
 
 \begin{figure}[ht]
 	\centering
@@ -68,6 +68,5 @@ this is visualized in Figure \ref{fig:ganzes_fig}
 	\label{fig:ganzes_fig}
 \end{figure}
 
-%Fig.\,\ref{fig:ganzes_fig}, Fig.\,\ref{fig:a}, Fig.\,\ref{fig:b}, Fig.\,\ref{fig:c}, Fig.\,\ref{fig:d}
 
 
