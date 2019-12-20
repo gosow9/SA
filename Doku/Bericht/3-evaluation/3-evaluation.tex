@@ -1,4 +1,6 @@
 \chapter{Evaluation}
+The evaluation of critical hardware components (wakeup receiver and microcontroller) is described in this chapter.
+
 
 \section{Wakeup Receiver}
 In this semester thesis, two different implementations of the wakeup receiver technology were compared.
@@ -17,11 +19,11 @@ More important features on the receiver end are:
 	\item[-] Three antennas (enables 3D detection)
 	\item[-] Channels individually selective to reduce power consumption
 \end{itemize}
-The low power consumption makes it possible to run the receiver in listening mode below $8.3\,\mu\text{W}$\cite{as3933}.
+The low power consumption makes it possible to run the receiver in listening mode below $8.3\,\mu\text{W}$ \cite{as3933}.
 
 The demo kit comes with a \acs{gui}, which enables the user to set the parameters as desired and address the registers directly.
 The range of the receiver of about 6\,m as first measurement turns out to be very limited.
-Even with a 3db sensitivity boost on the receiver side, it is only possible to detect wakeup events from a distance of 9\,m.
+Even with a 3\,dB sensitivity boost on the receiver side, it is only possible to detect wakeup events from a distance of 9\,m.
 The environment (indoor, outdoor) seems to make no observable difference.
 
 As a result, the limited range makes the AS3933 unusable for the prototype. 
@@ -57,11 +59,14 @@ It's main features are:
 	\item[-] Approximately  $100\,\mu\text{A}/\text{MHz}$ current consumption in active mode
 	\item[-] 128\,KB \acf{fram}
 \end{itemize}
-The display driver chip can be controlled over \acs{spi}  \cite{msp430}.
+The display can be controlled over \acs{spi}  \cite{msp430}.
 
 During development, it turned out to be very useful to store a complete image.
 The required memory to do this, assuming 16 grey levels and a $1200\times 825$ size display is:
-$$M = 1200\cdot 825\cdot4\,\text{bit}=495'000\,\text{B} < 484\,\text{kB}.$$
+\begin{align}
+	M = 1200\cdot 825\cdot4\,\text{bit}=495'000\,\text{B} \approx 484\,\text{kB}.\label{theory:bits}
+\end{align}
+
 Therefore is the \acs{fram} not sufficient.
 This is the main reason, why a different microcontroller is needed.
 
@@ -71,13 +76,13 @@ The most important features are:
 \begin{itemize}
 	\item[-] 32-bit Cortex-M4 \acs{cpu}
 	\item[-] Several clock sources between 4 and 48\,MHz
-	\item[-] Maximum clock up to 120\,MHz
+	\item[-] Maximum clock speed up to 120\,MHz
 	\item[-] 1.71\,V - 3.6\,V input voltage supply
 	\item[-] $110\,\mu \text{A}/\text{MHz}$ current consumption in run mode
 	\item[-] 2\,MB Flash and 640\,KB \acs{sram}
 \end{itemize}
 The display can again be controlled over \acs{spi}.
-Additional to the \acs{spi}, an integrated LCD-TFT controller unit could be used to control the display in a parallel mode \cite{stm32}.
+Additional to the \acs{spi}, an integrated LCD-TFT controller unit could be used to control the display with parallel bus \cite{stm32}.
 
 The STM32 is in general more flexible and, most importantly, has enough memory for a complete picture.
 That it consumes slightly more power than the MSP430 should not be to much of a problem, since it is only in run mode for a few seconds, before being completely switched off again.
