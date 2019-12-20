@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.7)  16 DEC 2019 17:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.7)  20 DEC 2019 11:34
 entering extended mode
 **./top_schematics.tex
 (top_schematics.tex
@@ -573,29 +573,29 @@ Package pdftex.def Info: ADP5090.jpg  used on input line 37.
 <nucleo.jpg, id=8, 161.85469pt x 292.84406pt>
 File: nucleo.jpg Graphic file (type jpg)
 <use nucleo.jpg>
-Package pdftex.def Info: nucleo.jpg  used on input line 49.
+Package pdftex.def Info: nucleo.jpg  used on input line 47.
 (pdftex.def)             Requested size: 62.59596pt x 113.25247pt.
 <nrf52840.jpg, id=9, 401.5pt x 873.2625pt>
 File: nrf52840.jpg Graphic file (type jpg)
 <use nrf52840.jpg>
-Package pdftex.def Info: nrf52840.jpg  used on input line 57.
+Package pdftex.def Info: nrf52840.jpg  used on input line 55.
 (pdftex.def)             Requested size: 56.9055pt x 123.76163pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 86.
+(Font)              <8> on input line 84.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 86.
+(Font)              <6> on input line 84.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 86.
+(Font)              <5> on input line 84.
  [1
 
 {C:/Users/mtischha/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Epaper
 Display.jpg> <./solar.png> <./ADP5090.jpg> <./nucleo.jpg> <./nrf52840.jpg>]
 (top_schematics.aux) ) 
 Here is how much of TeX's memory you used:
- 22849 strings out of 492484
- 575190 string characters out of 3130389
+ 22847 strings out of 492484
+ 575154 string characters out of 3130389
  753687 words of memory out of 3000000
- 26898 multiletter control sequences out of 15000+200000
+ 26896 multiletter control sequences out of 15000+200000
  6358 words of font info for 23 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,8n,71p,420b,671s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -603,7 +603,7 @@ Here is how much of TeX's memory you used:
 cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on top_schematics.pdf (1 page, 911962 bytes).
+Output written on top_schematics.pdf (1 page, 911144 bytes).
 PDF statistics:
  32 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
