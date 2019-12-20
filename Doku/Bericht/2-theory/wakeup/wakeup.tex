@@ -4,5 +4,6 @@ In order to reduce power with a conventional receiver it has to be programmed to
 	\includegraphics[width=0.9\textwidth]{2-theory/wakeup/graphics/wake_comp.pdf}
 	\caption{Top: Microcontroller checks periodically for incoming data. Bottom: Constantly listening  wakeup receiver.\label{theory:wake}}
 \end{figure}
+
 One could argue, that the wakeup receiver module consumes in general more power, than the
 microcontroller in sleep mode. However, since the microcontroller only wakes up when a task needs to be done, the overall energy consumption (area underneath the curve) is going to be smaller if the occurring wakeup event comes infrequently or over longer periods of time. The response time on the other hand can be kept in the microsecond range.
