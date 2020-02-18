@@ -36,6 +36,8 @@ void EpdOn(void)
 	HAL_GPIO_WritePin(EPD_RST_GPIO_Port, EPD_RST_Pin, SET);
 	HAL_Delay(1);
 	HAL_GPIO_WritePin(EPD_ON_GPIO_Port, EPD_ON_Pin, RESET);
+	IT8951_Power();
+	IT8951_Init();
 }
 
 void EpdOff(void)

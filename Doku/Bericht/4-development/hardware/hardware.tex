@@ -1,13 +1,16 @@
 Figure \ref{hardware:block} shows a schematics of the receiver.
-Every component is described in more detail in this section.
+Every component, except the microcontroller, which is covered in the software section, is described in more detail in this section.
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/top/top_schematics.pdf}
-	\caption{Receiver schematics\label{hardware:block}}
+	\caption{Receiver schematics.\label{hardware:block}}
 \end{figure}
 
-\subsection{Microcontroller}
+\subsection{Display}
+An 9.7\,inch (202.8\,mm $\times$ 139.425\,mm) e-paper display is used which adopts the microencapsulated electrophoretic display technology just as described in Chapter \ref{theory}.
+It has a $1200\times 825$ resolution with 16 grey scales.
+The IT8951, which is the display driver used on the evaluation board needed to drive an \acs{epd}, can be accessed from a microcontroller with a \acs{spi}-bus \cite{waveshare}. 
 
 \subsection{Communication}
 
@@ -18,60 +21,60 @@ The Rficient demo kit comes, as previously stated with a \acs{gui}.
 Is the transmitter module connected, simple steps make it possible to set the preamble and payload data rate. 
 The payload itself can partly serve as an ID and as additional transmitted data.
 The power of the transmission can also be set between -30\,dBm and 10\,dBm.
-The transmitter-\acs{gui} is shown in figure \ref{development:tx}.
+The transmitter-\acs{gui} is shown in Figure \ref{development:tx}.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/TXgui.png}
-	\caption{Transmitter GUI\label{development:tx}}
+	\caption{Transmitter GUI.\label{development:tx}}
 \end{figure}
 To test, if any data is received, it is helpful to activate the infinite loop (top right in figure \ref{development:tx}).
 The defined data is in this case sent repeatedly with an adjustable period.
 
 \paragraph{Receiver}
-To receive the data, the setting of the receiver module need to be matched to the transmitter.
+To receive the data, the settings of the receiver module need to be matched to the transmitter.
 The provided receiver-\acs{gui} makes this step very simple.
-As visible in figure \ref{development:rx}, one can enable the four possible interrupt sources: CodeA/B, ID, FIFO length and FIFO overflow.
+As visible in Figure \ref{development:rx}, one can enable the four possible interrupt sources: CodeA/B, ID, FIFO length and FIFO overflow.
 In the finished product, it should be possible to wake up the receivers individually.
 For this reason, only the ID as interrupt source is of interest.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/RXgui.png}
-	\caption{Receiver GUI\label{development:rx}}
+	\caption{Receiver GUI.\label{development:rx}}
 \end{figure}
 If an interrupt is generated, the RFicient sets a \acs{gpio}-pin to high, and transfers the received data to a \acs{fifo}-buffer.
 This data can be passed to a microcontroller over an \acs{spi}-bus.
-For the purpose of this thesis, only the \acs{gpio} high level is used as a on switch of a self-holding circuit.
+For the purpose of this thesis, only the \acs{gpio} high level is used as an on switch of a self-holding circuit.
 
 \paragraph{Tests in a realistic environment}
 To test the RFicient in more detail, some indoor measurements were made.
-As test environment served several buildings of the \acf{hsr}, since this type of facility represents a realistic condition for the developed schedule.
+As test environment served several buildings of the \acf{hsr}, since this type of facility represents realistic conditions for the developed schedule.
 
 Purpose of the first test was to measure the achievable range.
 Figure \ref{development:env1} shows the hallway where this test was executed.
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/env1.jpg}
-	\caption{Test environment 1 (\acs{hsr} building 1)\label{development:env1}}
+	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/env/env1_c.pdf}
+	\caption{Test environment 1 (\acs{hsr} building 1).\label{development:env1}}
 \end{figure}
-With a transmission power of 0\,dBm (1\,mW) it is possible to receive interrupt over a 50\,m distance (line of sight).
+With a transmission power of 0\,dBm (1\,mW) it is possible to receive interrupts over a 50\,m distance (line of sight).
 Is the transmission power increased to 10\,dBm (10\,mW), interrupts can be sent over a distance up to 80\,m.
 In this environment, the Rficient has enough range.
 But maybe reflections off the walls, floor and ceiling have contributed to this result.
 
 Out if this reason, a second test was performed to check how the RFicient penetrates obstacles.
-As test environment served this time the \acs{hsr} builing 8, as depicted in figure \ref{development:env2}.
+As test environment served this time the \acs{hsr} builing 8, as depicted in Figure \ref{development:env2}.
 An attempt was made to send wakeup signals through the ceiling.
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/env2.jpg}
-	\caption{Test environment 2 (\acs{hsr} building 8)\label{development:env2}}
+	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/env/env2_c.pdf}
+	\caption{Test environment 2 (\acs{hsr} building 8).\label{development:env2}}
 \end{figure}
 To avoid reflections, the RFicient was placed in such a way, that the zero point of the antenna pointed directly at the opposite walls.
 With a transmisson power of 0\,dBm, two ceilings can be penetrated.
 Is the power again increased to 10\,dBm, the signal reached through three ceilings.
 
 These measurements further confirmed, that the RFicient is suitable for the use-case of this semester thesis.
-
+\clearpage
 \subsubsection{nRF52480}
 A nRF52580 from nordic semiconductor serves as the wireless module.
 It is used because it supports multiple protocols like Thread, Zigbee and more important Bluetooth 5 which includes \acf{ble}\cite{nrfpb}.
@@ -103,7 +106,7 @@ given a 200 lux illuminance \cite{amorton}.
 
 \subsubsection{ADP5090}
 The ADP5090 from Analog Devices is used to manage the energy harvesting process.
-This boost regulator makes it possible to charge storage elements, such as rechargeable batteries and super capacitors with the input dc-power provided by the PV-cell. Utilized features are:
+This boost regulator makes it possible to charge storage elements, such as rechargeable batteries and super-capacitors with the input dc-power provided by the solar cells. Utilized features are:
 \begin{itemize}
 	\item[-] Maximum power point tracking
 	\item[-] Efficiency up to 90\%
@@ -111,13 +114,10 @@ This boost regulator makes it possible to charge storage elements, such as recha
 	\item[-] Programmable voltage range ($2.2\,\text{V}$ to $5.2\,\text{V}$) for the storage element
 \end{itemize}
 To prevent the storage element from overdischarging, the ADP5090 enables the user to set a maximal Voltage with resistors:
-
 \begin{align}
 	V_{\text{BAT\_TERM}} = \frac{3}{2} V_{\text{REF}}\left(1+\frac{R_{\text{TERM1}}}{R_{\text{TERM2}}} \right).\label{development:v_bat_term} 
 \end{align} 
-
 The same procedure is applied to set a minimal voltage:
-
 \begin{align}
 	V_{\text{BAT\_SD}}=V_{\text{REF}} \left(1+\frac{R_{\text{SD1}}}{R_{\text{SD2}}} \right).\label{development:v_bat_sd} 
 \end{align}  
@@ -127,24 +127,24 @@ The output voltage $V_{\text{SYS}}$, where the load is attached, will therefore 
 
 For this prototype, the evaluation board for the ADP5090 was used, where the internal reference voltage ($V_{\text{REF}}$ in \eqref{development:v_bat_term} and \eqref{development:v_bat_sd}) is $1.21\,\text{V}$ \cite{adp_eval}.
 
-\subsubsection{Super capacitor}
+\subsubsection{Super-capacitor}
 As energy storage, a super capacitor from Taiyo Yuden (LIC1235RS3R8406) has proven to be suitable, which is a $40\,\text{F}$ cylinder type lithium ion capacitor.
 The operating voltage range is between $2.2\,\text{V}$ and $3.8\,\text{V}$.
 Discharging the capacitor lower than $2.2\,\text{V}$ causes shorter lifetime and higher leakage current.
 The same unwanted behaviour occurs when charging the capacitor over $3.8\,\text{V}$ \cites{yuden}.
 
 \subsubsection{Combined test}
-To test the behaviour of the power management, supercapacitor and solar cells, a couple of measurements are executed.
+To test the behaviour of the power management, super-capacitor and solar cells, a couple of measurements are executed.
 Figure \ref{development:test} shows the layout of the test setup.
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/testaufbau.pdf}
-	\caption{Schematics of the test setup\label{development:test}}
+	\caption{Schematics of the test setup.\label{development:test}}
 \end{figure}
 
 To carry out these measurements, it is first necessary to adjust the minimal and maximal voltage of the ADP5090.
-The nrf58240 accepts supply voltages between $1.6\,\text{V}$ up to $5.5\,\text{V}$ \cite{nrf}.
+The nRF58240 accepts supply voltages between $1.6\,\text{V}$ up to $5.5\,\text{V}$ \cite{nrf}.
 The STM32 on the other side is less flexible with an input voltage range of $1.71\,\text{V}$ to $3.6\,\text{V}$ \cite{stm32}.
 As stated in the section above, the super capacitors operating voltage is between $2.2\,\text{V}$ and $3.8\,\text{V}$.
 Hence it seems reasonable, to set $V_{\text{BAT\_TERM}} \le 3.6\,\text{V}$ and $V_{\text{BAT\_SD}} \ge 2.2\,\text{V}$, to satisfy all of these three elements.
@@ -158,7 +158,7 @@ and
 	V_{\text{BAT\_SD}} = 1.21\,\text{V} \left(1 + \frac{4.3\,\text{M}\Omega}{5.1\,\text{M}\Omega} \right) \approx 2.23\,\text{V}. 
 \end{align}
 
-While testing, the input voltage from the solar cells ($V_{\text{IN}}$), voltage of the supercap ($V_{\text{BAT}}$) and the output voltage ($V_{\text{SYS}}$) are tracked. Additionally, the illuminance ($E_\text{v}$) near the PV-cells  is recorded as indicated in figure \ref{development:test}.
+While testing, the input voltage from the solar cells ($V_{\text{IN}}$), voltage of the super-capacitor ($V_{\text{BAT}}$) and the output voltage ($V_{\text{SYS}}$) are tracked. Additionally, the illuminance ($E_\text{v}$) near the solar cells  is recorded as indicated in figure \ref{development:test}.
 
 The purpose of the first test is to check, if the ADP5090 converts $V_{\text{IN}}$ to a voltage $\le V_{\text{BAT\_TERM}}$.
 The measurements where taken over a couple hours and are plotted in Figure \ref{development:charge}.
@@ -166,7 +166,7 @@ The measurements where taken over a couple hours and are plotted in Figure \ref{
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/laden.pdf}
-	\caption{Charging behaviour\label{development:charge}}
+	\caption{Charging behaviour.\label{development:charge}}
 \end{figure}
 
 No load was connected to the output ($Z_\text{LOAD} \to \infty$), which is the reason $V_{\text{SYS}}$ is overlapped by $V_{\text{BAT}}$.
@@ -175,7 +175,7 @@ that the ADP5090 controls the voltage $V_{\text{BAT}}$ like expected to the adju
 
 The second test should simulate the discharging when a load is connected, after the capacitor was fully charged.
 It was necessary to estimate the consumed power by the electronic components of the prototype.
-A rough measurement with a power analyser showed, that the microcontroller and the e-paper display together draw at its peak about $240\,\text{mA}$ when connected to $5\,\text{V}$. The nrf52840 on the other hand, only consumes 6 mA with a 3 V source. Thus the expected consumed power at is's peak is:
+A rough measurement with a power analyser showed, that the microcontroller and the \acl{epd} together draw at its peak about $240\,\text{mA}$ when connected to $5\,\text{V}$. The nRF52840 on the other hand, only consumes 6 mA with a 3 V source. Thus the expected consumed power at is's peak is:
 \begin{align}
 	P_{e} = 5\,\text{V}\cdot 0.24\,\text{A} + 3\,\text{V}\cdot 0.006\,\text{A} = 1.218\,\text{W}.
 \end{align}
@@ -188,12 +188,104 @@ Figure \ref{development:discharge} shows the result.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/entladen.pdf}
-	\caption{Discharging behaviour\label{development:discharge}}
+	\caption{Discharging behaviour.\label{development:discharge}}
 \end{figure}
 
-As soon as the load is connected (after 25\,), $V_{\text{SYS}}$ and $V_{\text{BAT}}$ first drop by almost $1\,\text{V}$ and after that steadily decrease.
-After ca. 100 s, $V_{\text{BAT}}$ reached the value of $V_{\text{BAT\_SD}}$ and the ADP5090 switches the output off ($V_{\text{SYS}}$ drops to 0) to prevent the capacitor from overdischarging.
+As soon as the load is connected (after 25\,s), $V_{\text{SYS}}$ and $V_{\text{BAT}}$ first drop by almost $1\,\text{V}$ and after that steadily decrease.
+After ca. 100\,s, $V_{\text{BAT}}$ reached the value of $V_{\text{BAT\_SD}}$ and the ADP5090 switches the output off ($V_{\text{SYS}}$ drops to 0\,V) to prevent the capacitor from overdischarging.
 The output now stays switched off, until $V_{\text{IN}}$ again supplies energy, and $V_{\text{BAT}} \le V_{\text{BAT\_SD}}$.
-It can also clearly be seen, that after 160 seconds, the ADP5090 controls $V_{\text{IN}}$ to ca. $2.1\,\text{V}$. Recall that this is the optimal power point of the solar cell.
+It can also clearly be seen, that after 160\,s, the ADP5090 controls $V_{\text{IN}}$ to ca. $2.1\,\text{V}$. Recall that this is the optimal power point of the solar cell.
 
-\subsection{Display}
+\clearpage
+\subsubsection{Power Latch}
+Considering the use of an wakeup receiver, implementing a self-holding circuit to en-/disable the power supply is a suitable option.
+In the following sections, this circuit with a DC-DC-converter is referred to as the "Power Latch".
+The first version of the latch circuit has two control inputs. A short voltage impulse on one of these inputs en-/disables the power supply for all components except the wakeup receiver and the ADP5090. Since the driver board of the \acs{epd} requires a stable input voltage to run reliable, a DC-DC-converter is needed to convert the minimum input voltage of $2.2\,\text{V}$ from the super-capacitor to $3.3\,\text{V}$. The latch circuit and the DC-DC-converter schematics are displayed in the Figure \ref{development:scematicV1}.
+As DC-DC converter, the LMR61428 from Texas Instruments was chosen.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[clip, trim=4cm 5cm 2cm 6cm, width=1\textwidth]{4-development/hardware/graphics/PowerLatch/PwrLatch_V1_sch.pdf}
+	\caption{Power latch schematics (version 1).\label{development:scematicV1}}
+\end{figure}
+
+The desired output voltage can be adjusted with the resistors $R_8$ and $R_9$
+\begin{align}
+V_{\text{out}}= 1.24\,\text{V} \left(1 + \frac{R_8+R_9}{R_9} \right)= 1.24\,\text{V} \left(1 + \frac{110\,\text{k}\Omega+68\,\text{k}\Omega}{68\,\text{k}\Omega} \right) \approx 3.245\,\text{V}.
+\end{align}
+The layout designed with the first schematics \ref{development:scematicV1} did not work properly, due to some design flaws.
+The output voltage showed a relatively big hysteresis as shown in the Figure \ref{development:rippel}.  
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/scope/rippel.pdf}
+	\caption{Output voltage ripple (in version 1).\label{development:rippel}}
+\end{figure}
+
+Because of this ripple, the charge pumps on the display driver board could not work properly.
+This resulted in an unpredictable behaviour during the display write cycle. 
+
+Additionally, a whistle noise appeared when switched on.
+The origin of the noise remained unknown since prevention actions did not help to isolate the effect.
+It is assumed, that charging of the low resistance capacitors in combination with the coil caused vibrations on the PCB within audible range.
+%\begin{figure}[ht]
+%	\centering
+%	\includegraphics[width=0.9\textwidth]{4-development/hardware/graphics/scope/Vdrop.pdf}
+%	\caption{Discharging behaviour.\label{development:vdrop}}
+%\end{figure}
+
+\clearpage
+To encounter these problems, a new layout of the DC-DC converter was the only option.
+The difference between the first and second layout is visible in the top layers displayed in the Figure \ref{fig:pwr_layout}.
+To prevent another big ripple at the output voltage, a \acf{ldo} was included in the design. To use the \acs{ldo} properly, the DC-DC output voltage got adjusted to
+\begin{align}
+V_{\text{out}}= 1.24\,\text{V} \left(1 + \frac{R_8+R_9}{R_9} \right)= 1.24\,\text{V} \left(1 + \frac{130\,\text{k}\Omega+75\,\text{k}\Omega}{75\,\text{k}\Omega} \right) \approx 3.39\,\text{V}.
+\end{align}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[clip, trim=4cm 5cm 1cm 3cm, width=1\textwidth]{4-development/hardware/graphics/PowerLatch/PwrLatch_V2_sch.pdf}
+	\caption{Power latch schematics (version 2).\label{development:scematicV2}}
+\end{figure}
+The new schematics displayed in Figure \ref{development:scematicV2} was designed with wider conductor tracks in the power relevant parts.
+Also the footprints got a direct connection to the surrounding copper.
+The results of the new layout is displayed in the Figure \ref{fig:pwrtopV2}.
+
+\begin{figure}[ht]
+	\centering
+	\subfigure[3D Model (version 1) \label{fig:pwr3dV1}]{\includegraphics[width=0.49\linewidth]{4-development/hardware/graphics/PowerLatch/PwrLatch_V1_3d.PNG}}
+	\subfigure[3D Model (version 2) \label{fig:pwr3dV2}]{\includegraphics[width=0.49\linewidth]{4-development/hardware/graphics/PowerLatch/PwrLatch_V2_3d.PNG}}\\
+	
+	\subfigure[Top layer (version 1) \label{fig:pwrtopV1}]{\includegraphics[width=0.49\linewidth,page=1]{4-development/hardware/graphics/PowerLatch/PwrLatch_V1_Layer.pdf}}
+	\subfigure[Top layer (version 2) \label{fig:pwrtopV2}]{\includegraphics[width=0.49\linewidth,page=1]{4-development/hardware/graphics/PowerLatch/PwrLatch_V2_Layer.pdf}}
+	\subfigure[Bottom layer (version 1) \label{fig:bottomV1}]{\includegraphics[width=0.49\linewidth,page=2]{4-development/hardware/graphics/PowerLatch/PwrLatch_V1_Layer.pdf}}
+	\subfigure[Bottom layer (version 2) \label{fig:bottomV2}]{\includegraphics[width=0.49\linewidth,page=2]{4-development/hardware/graphics/PowerLatch/PwrLatch_V2_Layer.pdf}}
+	\caption{Comparison between the first and second version of the power latch.}
+	\label{fig:pwr_layout}
+\end{figure}
+
+The output voltage of the second layout remains quite stable with a peak to peak voltage fluctuation under 40\,mV, which leads to a stable refreshing cycle of the display without audible noise. During the testing, an unexpected behaviour occurred.
+The microcontroller could not turn itself off.
+It could disabled the power supply but the charge left in the capacitors enabled the power supply again.
+Since the microcontroller has an higher minimum voltage to run as the MOSFET which disables the power supply, the circuit remained in a self-resetting loop.
+\newpage
+The solution to this problem was to expand the power latch with another self-holding circuit.
+This circuit (displayed in Figure \ref{development:kill}) keeps the power supply shut down for a minimum amount of time. 
+
+ \begin{figure}[ht]
+	\centering
+	\includegraphics[clip, trim=10.5cm 4cm 12cm 13cm, width=0.6\textwidth]{4-development/hardware/graphics/PowerLatch/PwrLatch_V3_sch.pdf}
+	\caption{Power kill self-holding circuit.\label{development:kill}}
+\end{figure}
+
+To execute this process properly, the microcontroller needs to follow a specific pattern.
+The kill switch has to be first enabled to block the MOSFET Q7  (Figure \ref{development:kill}) by setting the Kill pin high. After this, the Kill\_Charge pin needs to be set high to open the MOSFET Q8.
+The capacitor $C_ \text{in2}$ is now being charged.
+As soon as the display writing sequence is finished, the Kill\_Charge pin can be set low. If now the Kill pin is released, the power supply gets shut down. The capacitor $C_\text{in2}$ is holding the threshold voltage long enough to guarantee a reliable shutdown.   
+
+All these adjustments led to the final version of the power latch, displayed in Figure \ref{development:scematicV3}.
+\begin{figure}[ht]
+ 	\centering
+ 	\includegraphics[clip, trim=4cm 4cm 1cm 5cm, width=1\textwidth]{4-development/hardware/graphics/PowerLatch/PwrLatch_V3_sch.pdf}
+ 	\caption{Power latch schematics (version 3).\label{development:scematicV3}}
+\end{figure}
+
+

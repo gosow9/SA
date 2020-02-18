@@ -1,33 +1,42 @@
-\BOOKMARK [0][-]{chapter*.6}{Abbreviations}{}% 1
+\BOOKMARK [0][-]{chapter*.7}{Abbreviations}{}% 1
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 2
 \BOOKMARK [1][-]{section.1.1}{Task analysis}{chapter.1}% 3
 \BOOKMARK [1][-]{section.1.2}{Approach}{chapter.1}% 4
-\BOOKMARK [0][-]{chapter.2}{Theory}{}% 5
-\BOOKMARK [1][-]{section.2.1}{E-Paper Display}{chapter.2}% 6
-\BOOKMARK [1][-]{section.2.2}{Wakeup Receiver}{chapter.2}% 7
-\BOOKMARK [1][-]{section.2.3}{software grafik zeichen}{chapter.2}% 8
-\BOOKMARK [0][-]{chapter.3}{Evaluation}{}% 9
-\BOOKMARK [1][-]{section.3.1}{Wakeup Receiver}{chapter.3}% 10
-\BOOKMARK [2][-]{subsection.3.1.1}{AS3933}{section.3.1}% 11
-\BOOKMARK [2][-]{subsection.3.1.2}{RFicient}{section.3.1}% 12
-\BOOKMARK [1][-]{section.3.2}{Microcontroller}{chapter.3}% 13
-\BOOKMARK [2][-]{subsection.3.2.1}{MSP430}{section.3.2}% 14
-\BOOKMARK [2][-]{subsection.3.2.2}{STM32}{section.3.2}% 15
-\BOOKMARK [0][-]{chapter.4}{Development}{}% 16
-\BOOKMARK [1][-]{section.4.1}{Hardware}{chapter.4}% 17
-\BOOKMARK [2][-]{subsection.4.1.1}{Microcontroller}{section.4.1}% 18
-\BOOKMARK [2][-]{subsection.4.1.2}{Communication}{section.4.1}% 19
-\BOOKMARK [2][-]{subsection.4.1.3}{Power Management}{section.4.1}% 20
-\BOOKMARK [2][-]{subsection.4.1.4}{Display}{section.4.1}% 21
-\BOOKMARK [1][-]{section.4.2}{Software}{chapter.4}% 22
-\BOOKMARK [2][-]{subsection.4.2.1}{Receiver}{section.4.2}% 23
-\BOOKMARK [2][-]{subsection.4.2.2}{Transmitter}{section.4.2}% 24
-\BOOKMARK [0][-]{chapter.5}{Results}{}% 25
-\BOOKMARK [0][-]{chapter.6}{Summary}{}% 26
-\BOOKMARK [0][-]{chapter*.24}{Sources}{}% 27
-\BOOKMARK [0][-]{chapter*.24}{List of figures}{}% 28
-\BOOKMARK [0][-]{chapter*.25}{List of tables}{}% 29
-\BOOKMARK [0][-]{chapter*.26}{Statement of Plagiarisms}{}% 30
-\BOOKMARK [0][-]{appendix.A}{Requirements}{}% 31
-\BOOKMARK [1][-]{section.A.1}{Assignment}{appendix.A}% 32
-\BOOKMARK [1][-]{section.A.2}{Requirement Specification}{appendix.A}% 33
+\BOOKMARK [2][-]{subsection.1.2.1}{Transmitter}{section.1.2}% 5
+\BOOKMARK [2][-]{subsection.1.2.2}{Receiver}{section.1.2}% 6
+\BOOKMARK [0][-]{chapter.2}{Theory}{}% 7
+\BOOKMARK [1][-]{section.2.1}{E-Paper Display}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.2}{Wakeup Receiver}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.3}{Drawing graphics on a display}{chapter.2}% 10
+\BOOKMARK [0][-]{chapter.3}{Evaluation}{}% 11
+\BOOKMARK [1][-]{section.3.1}{Wakeup Receiver}{chapter.3}% 12
+\BOOKMARK [2][-]{subsection.3.1.1}{AS3933}{section.3.1}% 13
+\BOOKMARK [2][-]{subsection.3.1.2}{RFicient}{section.3.1}% 14
+\BOOKMARK [1][-]{section.3.2}{Microcontroller}{chapter.3}% 15
+\BOOKMARK [2][-]{subsection.3.2.1}{MSP430}{section.3.2}% 16
+\BOOKMARK [2][-]{subsection.3.2.2}{STM32}{section.3.2}% 17
+\BOOKMARK [0][-]{chapter.4}{Development}{}% 18
+\BOOKMARK [1][-]{section.4.1}{Hardware}{chapter.4}% 19
+\BOOKMARK [2][-]{subsection.4.1.1}{Display}{section.4.1}% 20
+\BOOKMARK [2][-]{subsection.4.1.2}{Communication}{section.4.1}% 21
+\BOOKMARK [2][-]{subsection.4.1.3}{Power Management}{section.4.1}% 22
+\BOOKMARK [1][-]{section.4.2}{Software}{chapter.4}% 23
+\BOOKMARK [2][-]{subsection.4.2.1}{Receiver}{section.4.2}% 24
+\BOOKMARK [2][-]{subsection.4.2.2}{Transmitter}{section.4.2}% 25
+\BOOKMARK [0][-]{chapter.5}{Results}{}% 26
+\BOOKMARK [1][-]{section.5.1}{Power supply}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.2}{Power consumption}{chapter.5}% 28
+\BOOKMARK [2][-]{subsection.5.2.1}{Power measurement}{section.5.2}% 29
+\BOOKMARK [2][-]{subsection.5.2.2}{Energy storage}{section.5.2}% 30
+\BOOKMARK [2][-]{subsection.5.2.3}{Amount of display refreshes}{section.5.2}% 31
+\BOOKMARK [1][-]{section.5.3}{Communication}{chapter.5}% 32
+\BOOKMARK [2][-]{subsection.5.3.1}{nRF52480}{section.5.3}% 33
+\BOOKMARK [2][-]{subsection.5.3.2}{RFicient}{section.5.3}% 34
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 35
+\BOOKMARK [0][-]{chapter*.35}{References}{}% 36
+\BOOKMARK [0][-]{chapter*.35}{List of figures}{}% 37
+\BOOKMARK [0][-]{chapter*.36}{List of tables}{}% 38
+\BOOKMARK [0][-]{chapter*.37}{Statement of Plagiarisms}{}% 39
+\BOOKMARK [0][-]{appendix.A}{Requirements}{}% 40
+\BOOKMARK [1][-]{section.A.1}{Assignment}{appendix.A}% 41
+\BOOKMARK [1][-]{section.A.2}{Requirement Specification}{appendix.A}% 42

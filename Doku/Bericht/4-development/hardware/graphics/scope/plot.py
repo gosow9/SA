@@ -9,19 +9,22 @@ def avfilter(x, M): #M immer ungerade
 
 #plt.style.use('ggplot')
 
-data = pd.read_csv('scope_2.csv')
+data = pd.read_csv('scope_20.csv')
 
 t = pd.DataFrame.to_numpy(data.second).reshape(-1,1)[:,0]
 volt1 = pd.DataFrame.to_numpy(data.Volt1).reshape(-1,1)[:,0]
 #volt2 = pd.DataFrame.to_numpy(data.Volt2).reshape(-1,1)[:,0]
 #volt3 = pd.DataFrame.to_numpy(data.Volt3).reshape(-1,1)[:,0]
 #volt4 = pd.DataFrame.to_numpy(data.Volt4).reshape(-1,1)[:,0]
+#volt2 = pd.DataFrame.to_numpy(data.Volt2).reshape(-1,1)[:,0]
+#volt3 = pd.DataFrame.to_numpy(data.Volt3).reshape(-1,1)[:,0]
+#volt4 = pd.DataFrame.to_numpy(data.Volt4).reshape(-1,1)[:,0]
 
 #Mitteln (ÜBERGABEPARAMETER = 1 entspricht keine mittelung)
 volt1 = avfilter(volt1, 1)
-#volt2 = avfilter(volt2, 1)
-#volt3 = avfilter(volt3, 1)
-#volt4 = avfilter(volt4, 1)
+#volt2 = avfilter(volt2, 11)
+#volt3 = avfilter(volt3, 11)
+#volt4 = avfilter(volt4, 11)
 
 
 #zuschneiden (l,r für links und recht abschneiden)
@@ -41,6 +44,9 @@ plt.rcParams.update({'font.size': 12})
 
 #plot
 plt.plot(t, volt1)
+#plt.plot(t, volt2)
+#plt.plot(t, volt3)
+#plt.plot(t, volt4)
 #plt.plot(t, volt2)
 #plt.plot(t, volt3)
 #plt.plot(t, volt4)

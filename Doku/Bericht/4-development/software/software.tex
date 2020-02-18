@@ -1,36 +1,251 @@
-\begin{figure}[ht]
+This section describes the software, which was developed for the different components.
+Figure \ref{software:sequence} shows the general sequence diagram of one display refresh cycle.
+\begin{figure}[h]
 	\centering
-	\includegraphics[width=0.9\textwidth]{4-development/software/graphics/1.png}
-	\caption{not up to date sequence\label{software:sequence}}
+	\includegraphics[width=0.9\textwidth]{4-development/software/graphics/sequence.pdf}
+	\caption{Refresh sequence.\label{software:sequence}}
 \end{figure}
 
-The software of the ULPWUR is separated in three different parts. 
-
-\includegraphics[scale=0.3]{4-development/software/graphics/font12.pdf}
-
 \subsection{Receiver}
+% C Style configuration
+\lstdefinestyle{mystyle}{
+	language=c,
+	tabsize=4,
+	showstringspaces=false,
+	backgroundcolor = \color{gray!15!white},
+	basicstyle=\scriptsize\ttfamily,
+	morekeywords={as},
+	keywordstyle=\color{red!80!black},
+	stringstyle=\color{green!50!black},
+	numberstyle=\color{red},
+	emph={int,char,double,float, uint8_t, uint16_t},
+	emphstyle=\color{green!50!black}
+}
+\lstset{style=mystyle}
 
-\subsubsection{nRF52840}
-The software on both sides of the bluetooth channel is very similar, thus it is explained in this section.
+\subsubsection{Microcontroller}
+To develop the firmware for the STM32, the Hardware abstractions layer provided by STMicroelectronics is used. The firmware running on the microcontroller is responsible for the following tasks:
+\begin{itemize}[ht]
+	\item[-] Initialize the IT8951 display driver chip
+	\item[-] Receive data via UART from the \acs{ble}-module
+	\item[-] Generate the displayed image data from a template
+	\item[-] Write received text strings to the \acs{epd}
+	\item[-] Write the image data to the display driver via \acs{spi}
+	\item[-] Control the power supply of all the different components
+\end{itemize}
+
+\paragraph{Configurations}
+The STM32 uses two bus interfaces and some extra \acs{gpio}'s to communicate and control the \acs{epd}, nRF52480 and power supply. All used pins in these interfaces are listed in Table \ref{table:stm32}.  
+
+\begin{table}[ht]
+	\begin{tabular}{ |c|c|c|c|c|c| } 
+		\hline
+	Description & Function &Pin number & Speed& Properties& mode \\
+		\hline
+	\multirow{4}{4em}{SPI} 	& Chip select & PA0&14.0\,MBits/s &No Pull-up/-down& Output \\ 
+								& Clock& PA1 & 14.0\,MBits/s&No Pull-up/-down& Push Pull \\ 
+								& MISO & PA6&14.0\,MBits/s & No Pull-up/-down& Push Pull  \\ 
+								& MOSI & PA7& 14.0\,MBits/s&No Pull-up/-down& Push Pull  \\ 
+		\hline
+	\multirow{2}{4em}{UART} & TX & PC10 & 115.2\,kBits/s & Pull-up& Push Pull   \\ 
+								& RX & PC11 & 115.2\,kBits/s & Pull-up& Push Pull \\ 
+	\hline
+	
+	\multirow{2}{4em}{Power kill} & Enable & PC3 & 112\,MHz &No Pull-up/-down& Output   \\ 
+										  & Disable& PC0 & 122\,MHz &No Pull-up/-down& Output \\ 
+	\hline
+	
+	\multirow{2}{4em}{EPD interface} & Reset & PA4 & 112\,MHz &No Pull-up/-down& Output   \\ 
+									& HARDY& PA5 & 122\,MHz &No Pull-up/-down& Output \\ 
+	\hline
+
+	\end{tabular}
+	\caption{Table of the STM32 pin configuration.\label{table:stm32}}
+\end{table}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[height=0.8\textheight]{4-development/software/graphics/main.pdf}
+	\caption{STM32 program flow chart.\label{software:main}}
+\end{figure}
+
+In the flowchart in Figure \ref{software:main} is visible, that the controller itself never enters a deep sleep mode in the end of an program cycle. Instead the controller runs trough a power kill sequence which disables it's own power supply. As a result, the controller repeats the initializing process at the begin o every wakeup.
+
+\paragraph{IT8951 Driver}
+To program the communication between the STM32 with the IT8951, a programming guide by the manufacturer ITE Tech. Inc. was used.
+The interface is based on a 16-bit \acs{spi}-bus with three additional control pins. Since the IT8951 requires a big-endian format, the STM32 has to reformat all the bytes. 
+The manufacturer recommends a SPI clock rate of 12\,MHz, while the maximum given in the data sheet is 24\,MHz.
+This leads to a maximum transfer rate of 3\,MBytes/s  \cite{IT8951}. 
+Writing an image to the \acs{epd} takes  
+\begin{align}
+	t_{\text{write}}=\frac{(1200\cdot 825)/2\,\text{bits}}{3\,\text{MB}/s}=0.165\,\text{s}.
+\end{align}
+Note that this calculation assumes 4 bits per pixel.
+
+The measured time for one writing cycle, including initialisation and fetching of the buffer registers, resulted in 0.168\,seconds. It is also possible to overclock the IT8951.
+With 28\,MHz, it was still possible to read and write the display controller.      
+
+\clearpage
+\paragraph{Template}
+The schedule template is preloaded to the flash of the STM32. To save memory, the file is converted into an $1200 \times 825$ PNG with the colour depth of 4 bit. The PNG then is used to create a c-file which holds an one dimensional array with all the pixel data in it.
+This is what the stored array looks like:
+\begin{figure}[ht]
+	\begin{lstlisting}
+	const unsigned char schedule[]={0xff,0xff,0xff,0xff,0xff,0xff,0xff,...
+									0xff,0xff,0xff,0xff,0xff,0xff,0xff,...
+									.
+									.
+									.
+									0xdd,0xdd,0xdd,0xdd,0xdd,0xdd,0xdd};
+	\end{lstlisting}
+\end{figure}
+
+Each Hex number in the array resembles two pixels of each four bit. In the template shown in Figure \ref{software:kalender}, there is already information given like the calendar week and weekdays. Storing the template like this takes 495000\,bits of flash memory (calculated in equation \eqref{theory:bits}). 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[height=0.6\textwidth]{4-development/software/graphics/Kalender.png}
+	\caption{Example schedule used as an template.\label{software:kalender}}
+\end{figure}
+
+
+\paragraph{Fonts}
+All fonts are c-files which hold two arrays.
+The first one contains all different ASCII characters, while the second array holds the font information like with and height. All characters have the compressed layout as described in Section \ref{theory:CompressedFonts}.
+%\begin{figure}[ht]
+%	\begin{lstlisting}
+%	const uint8_t Font12_Table[] = 
+%	{
+%		// @396 'A' (7 pixels wide)
+%		0x00, //        
+%		0x30, //   ##   
+%		0x10, //    #   
+%		0x28, //   # #  
+%		0x28, //   # #  
+%		0x28, //   # #  
+%		0x7C, //  ##### 
+%		0x44, //  #   # 
+%		0xEE, // ### ###
+%		0x00, //        
+%		0x00, //        
+%		0x00, // 
+%		};
+%		
+%		sFONT Font12 = {
+%		Font12_Table,
+%		7, /* Width */
+%		12, /* Height */
+%		};
+%	\caption{Stored font.\label{software:fonts}}
+%\end{figure}
+
+\paragraph{Writing characters}
+To write the desired characters to a image buffer, the pixel data needs to be converted and placed into the right spot. 
+The code in Figure \ref{software:drawchar} shows the implemented algorithm to handle this task.
+The pixel depth used in the code example is 8-bits. 
+\begin{figure}[ht]
+	\begin{lstlisting}
+	void drawChar(uint16_t Xpt, uint16_t Ypt, const char Acsii_Char,
+						sFONT* Font, uint8_t cBackground, uint8_t cForeground)
+		{
+			uint16_t Page, Column;
+			if (Xpt > Image.Width || Ypt > Image.Height) 
+			{
+				return;
+			}
+		uint32_t Char_Offset = (Acsii_Char - ' ') * Font->Height * 
+								(Font->Width / 8 + (Font->Width % 8 ? 1 : 0));
+		const unsigned char *ptr = &Font->table[Char_Offset];
+		
+		for (Page = 0; Page < Font->Height; Page ++ ) 
+		{
+			for (Column = 0; Column < Font->Width; Column ++ ) 
+			{
+				if (FONT_BACKGROUND == cBackground) 
+				{ 
+					if (*ptr & (0x80 >> (Column % 8)))
+						setPixel(Xpt+Column, Ypt+Page, cForeground);
+				} 
+				else 
+				{
+					if (*ptr & (0x80 >> (Column%8))) 
+					{
+						setPixel(Xpt + Column, Ypt + Page, cForeground);					
+					} 
+					else 
+					{
+						setPixel(Xpt + Column, Ypt + Page, cBackground);
+					}
+				}
+				//One pixel is 8 bits
+				if (Column % 8 == 7)
+					ptr++;
+			}
+			if (Font->Width % 8 != 0)
+				ptr++;
+		}
+	}
+	\end{lstlisting}
+	\caption{Write characters to image buffer.\label{software:drawchar}}
+\end{figure}
+
+All other graphical functions implemented use the \texttt{drawChar()} function to access and write information into a given display buffer. 
+
+
+%\begin{figure}[ht!]
+%\begin{lstlisting}
+%void drawString(uint16_t xStart, uint16_t yStart,const char * pString, sFONT* Font,
+%							 uint8_t cBackground,uint8_t cForeground) 
+%{
+%	uint16_t Ypt = yStart;
+%	uint16_t Xpt = xStart;
+%	
+%	if (xStart > Image.Width || yStart > Image.Height)
+%	{
+%		return;
+%	}
+%	while (* pString != '\0') 
+%	{
+%		if ((Xpt + Font->Width ) > Image.Width ) 
+%		{
+%			Xpt = xStart;
+%			Ypt += Font->Height;
+%		}
+%		if ((Ypt  + Font->Height ) > Image.Height ) 
+%		{
+%			Xpt = xStart;
+%			Ypt = yStart;
+%		}
+%		drawChar(Xpt, Ypt, * pString, Font, cBackground, cForeground);
+%		pString ++;
+%		Xpt += Font->Width;
+%	}
+%}	
+%\end{lstlisting}
+%\end{figure}
+
+\clearpage
+\subsubsection{Communication}
+Due to the fact that the software on both sides of the bluetooth channel is very similar it is explained in this section.
 A \acs{ble} example project, which was provided by nordic, was only slightly changed to fit the purpose of this prototype.
 
 Before a connection is established, the module on the receiver side is known as peripheral, and the module on transmitter end as the central device.
 After the receiver is woken up with the RFicient, the peripheral starts advertising.
 Advertising basically means sending data packets periodically with information for the central device.
-The central is scanning for the this advertisement and can based on this information decide, if it wants to connect.
+The central device is scanning for the this advertisement and can decide, whether it wants to connect based on this information.
 Is the connection established, it is now possible to exchange data through this channel.
-This process is illustrated in figure \ref{software:ble}.
+This process is illustrated in Figure \ref{software:ble}.
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.9\textwidth]{4-development/software/graphics/ble.pdf}
-	\caption{\acs{ble}-communication with the nRF52480\label{software:ble}}
+	\includegraphics[width=0.8\textwidth]{4-development/software/graphics/ble.pdf}
+	\caption{\acs{ble}-communication with the nRF52480.\label{software:ble}}
 \end{figure}
 
-The central serves after connection as the client.
+The central device serves after connection as the client.
 It can make read and write requests to access the data on the peripheral, which acts as the server.
-The server on the other hand can only send notifications to the client if new data is ready.
+The server on the other, hand can only send notifications to the client if new data is ready.
 It should be noted, that the roles of client and server do not in any case have to be assigned to central and peripheral, but also the other way around. 
 
+\newpage
 \subsection{Transmitter}
 
 \subsubsection{Python-Script}
@@ -40,7 +255,7 @@ It should be noted, that the roles of client and server do not in any case have 
 	tabsize=4,
 	showstringspaces=false,
 	backgroundcolor = \color{gray!15!white},
-	basicstyle=\footnotesize\ttfamily,
+	basicstyle=\scriptsize\ttfamily,
 	morekeywords={as},
 	keywordstyle=\color{blue!50!black},
 	stringstyle=\color{green!50!black},
@@ -51,7 +266,7 @@ It should be noted, that the roles of client and server do not in any case have 
 \lstset{style=mystyle}
 
 A short python script enables the user to send the data to the display.
-This script is looked at here step by step.
+This script is presented step by step.
 
 \begin{enumerate}
 	\item Include of the used packages, time and serial.
@@ -66,9 +281,9 @@ This script is looked at here step by step.
 	
 	device = serial.Serial(com_port, baudrate, writeTimeout=0)
 	\end{lstlisting}
-	\item Create a list of list with the desired data.
+	\item Create a list of lists with the desired data.
 	The first list contains information about how many packages are about to follow.
-	The following list contain the location on the template, the subject and the lecturer.
+	The following list contains the location on the template, the subject and the lecturer.
 	\begin{lstlisting}
 	data = [[0, chr(3), '\0\0\0\0'],[11 , 'WsComm\0', 'MAH\0'],
 			[3 , 'DigPro\0', 'SCU\0'], [22 , 'EmbSW\0', 'BON\0']]
